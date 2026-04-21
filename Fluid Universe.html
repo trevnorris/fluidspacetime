@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluid Universe — Home & Start Here (design directions)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="shared/tokens.css" />
+<style>
+  html, body, #root { height: 100%; margin: 0; background: #0a0d18; }
+  body { font-family: "Newsreader", Georgia, serif; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script src="shared/citations.js"></script>
+<script type="text/babel" src="shared/Components.jsx"></script>
+<script type="text/babel" src="shared/HeroDiagram.jsx"></script>
+<script type="text/babel" src="directions/Notebook.jsx"></script>
+<script type="text/babel" src="directions/Atlas.jsx"></script>
+<script type="text/babel" src="directions/AtlasNotebook.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "notebookAccent": "#c96442",
+  "atlasAccent": "#7aa2ff",
+  "hybridAccent": "#7aa2ff",
+  "heroSpeed": 0.3,
+  "badgeDensity": "quiet"
+}/*EDITMODE-END*/;
+
+function TweaksPanel({ tweaks, setTweaks, visible }) {
+  if (!visible) return null;
+  const notebookSwatches = ["#d9a441", "#c96442", "#89a86b", "#ede5d4"];
+  const atlasSwatches    = ["#7aa2ff", "#b88bff", "#e67ac6", "#7fd1a5"];
+  const send = (k, v) => {
+    setTweaks((t) => ({ ...t, [k]: v }));
+    window.parent.postMessage({ type: "__edit_mode_set_keys", edits: { [k]: v } }, "*");
+  };
+  const row = (label, children) => (
+    <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", gap:12, padding:"10px 0", borderBottom:"1px solid #2a2f45" }}>
+      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:"#a9b0cc", letterSpacing:".08em", textTransform:"uppercase" }}>{label}</span>
+      <div style={{ display:"flex", gap:6 }}>{children}</div>
+    </div>
+  );
+  const swatch = (c, active, onClick) => (
+    <button key={c} onClick={onClick} style={{
+      width:22, height:22, borderRadius:11, border: active ? `2px solid #fff` : "2px solid transparent",
+      background:c, cursor:"pointer", padding:0, outline:"none",
+    }} />
+  );
+  return (
+    <div style={{
+      position:"fixed", right:20, bottom:20, zIndex:100,
+      width:300, padding:"14px 18px 18px",
+      background:"rgba(16,20,42,0.92)", backdropFilter:"blur(14px)",
+      border:"1px solid #2a3160", borderRadius:6,
+      color:"#e4e7f5", fontFamily:"'Inter Tight',system-ui,sans-serif",
+      boxShadow:"0 20px 60px rgba(0,0,0,.5)",
+    }}>
+      <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:10 }}>
+        <span style={{ fontSize:14, fontWeight:600 }}>Tweaks</span>
+        <span style={{ fontSize:10, color:"#6d749a", fontFamily:"'JetBrains Mono',monospace", letterSpacing:".1em" }}>FLUID · UNIVERSE</span>
+      </div>
+      {row("Notebook accent", notebookSwatches.map(c => swatch(c, tweaks.notebookAccent===c, ()=>send("notebookAccent", c))))}
+      {row("Atlas accent",    atlasSwatches.map(c => swatch(c, tweaks.atlasAccent===c, ()=>send("atlasAccent", c))))}
+      {row("Hero motion", ["slow","normal","fast"].map((k,i) => (
+        <button key={k} onClick={()=>send("heroSpeed",[0.3,1,2.5][i])} style={{
+          padding:"4px 10px", borderRadius:4, border:"1px solid #2a3160",
+          background: tweaks.heroSpeed === [0.3,1,2.5][i] ? "#7aa2ff" : "transparent",
+          color: tweaks.heroSpeed === [0.3,1,2.5][i] ? "#0a0d18" : "#a9b0cc",
+          fontSize:11, cursor:"pointer", fontFamily:"inherit",
+        }}>{k}</button>
+      )))}
+      {row("Badge density", ["quiet","loud"].map((k) => (
+        <button key={k} onClick={()=>send("badgeDensity", k)} style={{
+          padding:"4px 10px", borderRadius:4, border:"1px solid #2a3160",
+          background: tweaks.badgeDensity === k ? "#b88bff" : "transparent",
+          color: tweaks.badgeDensity === k ? "#0a0d18" : "#a9b0cc",
+          fontSize:11, cursor:"pointer", fontFamily:"inherit",
+        }}>{k}</button>
+      )))}
+      <div style={{ fontSize:11, color:"#6d749a", marginTop:12, lineHeight:1.5 }}>
+        Changes persist. Toggle again via the toolbar.
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const [tweaks, setTweaks] = useState(TWEAK_DEFAULTS);
+  const [editMode, setEditMode] = useState(false);
+
+  useEffect(() => {
+    const onMsg = (e) => {
+      if (!e.data || typeof e.data !== "object") return;
+      if (e.data.type === "__activate_edit_mode") setEditMode(true);
+      if (e.data.type === "__deactivate_edit_mode") setEditMode(false);
+    };
+    window.addEventListener("message", onMsg);
+    window.parent.postMessage({ type: "__edit_mode_available" }, "*");
+    return () => window.removeEventListener("message", onMsg);
+  }, []);
+
+  const notebookTweaks = { accent: tweaks.notebookAccent, heroSpeed: tweaks.heroSpeed, badgeDensity: tweaks.badgeDensity };
+  const atlasTweaks    = { accent: tweaks.atlasAccent,    heroSpeed: tweaks.heroSpeed, badgeDensity: tweaks.badgeDensity };
+  const hybridTweaks   = { accent: tweaks.hybridAccent,   heroSpeed: tweaks.heroSpeed, badgeDensity: tweaks.badgeDensity };
+
+  return (
+    <>
+      <DesignCanvas>
+        <DCSection id="home" title="Fluid Universe — Home & Start Here"
+                   subtitle="Three design directions · dark, easy on the eyes, honest about uncertainty">
+          <DCArtboard id="hybrid" label="C · Atlas visuals + Notebook text (recommended)" width={1440} height={3800}>
+            <AtlasNotebookDirection tweaks={hybridTweaks} />
+          </DCArtboard>
+          <DCArtboard id="notebook" label="A · Field Notebook — charcoal + amber" width={1440} height={3800}>
+            <NotebookDirection tweaks={notebookTweaks} />
+          </DCArtboard>
+          <DCArtboard id="atlas" label="B · Fluid Atlas — deep indigo + violet/magenta" width={1440} height={3800}>
+            <AtlasDirection tweaks={atlasTweaks} />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+      <TweaksPanel tweaks={tweaks} setTweaks={setTweaks} visible={editMode} />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

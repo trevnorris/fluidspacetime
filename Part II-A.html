@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluid Universe — Part II · Applications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="shared/tokens.css" />
+<style>
+  html, body, #root { height: 100%; margin: 0; background: #0a0d18; }
+  body { font-family: "Newsreader", Georgia, serif; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script src="shared/citations.js"></script>
+<script type="text/babel" src="shared/Components.jsx"></script>
+<script type="text/babel" src="tracks/FluidDiagram.jsx"></script>
+<script type="text/babel" src="tracks/TopicPage.jsx"></script>
+
+<!-- Topic 05 · Gravity -->
+<script type="text/babel" src="tracks/PlainGravity.jsx"></script>
+<script type="text/babel" src="tracks/TechnicalGravity.jsx"></script>
+
+<!-- Topic 06 · Electromagnetism -->
+<script type="text/babel" src="tracks/PlainEM.jsx"></script>
+<script type="text/babel" src="tracks/TechnicalEM.jsx"></script>
+
+<!-- Topic 07 · Plasma -->
+<script type="text/babel" src="tracks/PlainPlasma.jsx"></script>
+<script type="text/babel" src="tracks/TechnicalPlasma.jsx"></script>
+
+<!-- Topic 08 · Light -->
+<script type="text/babel" src="tracks/PlainLight.jsx"></script>
+<script type="text/babel" src="tracks/TechnicalLight.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="topic-05" title="Topic 05 · Gravity as Brane-Inflow"
+                 subtitle="Throats as mass/volume sinks · Newton/GR from projected continuity">
+        <DCArtboard id="05-plain" label="05 · Plain English" width={1280} height={4500}>
+          <PlainGravity />
+        </DCArtboard>
+        <DCArtboard id="05-technical" label="05 · Technical" width={1280} height={5000}>
+          <TechnicalGravity />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="topic-06" title="Topic 06 · Electromagnetism as Puncture"
+                 subtitle="Charge = ±w puncture orientation · localized 4+1 Maxwell · q_eff = q⋆/√Z_int">
+        <DCArtboard id="06-plain" label="06 · Plain English" width={1280} height={4500}>
+          <PlainEM />
+        </DCArtboard>
+        <DCArtboard id="06-technical" label="06 · Technical" width={1280} height={5000}>
+          <TechnicalEM />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="topic-07" title="Topic 07 · Plasma & Magnetohydrodynamics"
+                 subtitle="Ideal MHD emerges · non-ideal terms as mixed-sector channels">
+        <DCArtboard id="07-plain" label="07 · Plain English" width={1280} height={4800}>
+          <PlainPlasma />
+        </DCArtboard>
+        <DCArtboard id="07-technical" label="07 · Technical" width={1280} height={5000}>
+          <TechnicalPlasma />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="topic-08" title="Topic 08 · Light, Waves & the Speed Limit"
+                 subtitle="c = √(κ/ρ₀) · emergent Lorentz · UV dispersion gated by Z(w)">
+        <DCArtboard id="08-plain" label="08 · Plain English" width={1280} height={4400}>
+          <PlainLight />
+        </DCArtboard>
+        <DCArtboard id="08-technical" label="08 · Technical" width={1280} height={4800}>
+          <TechnicalLight />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

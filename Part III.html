@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluid Universe — Part III · Meta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="shared/tokens.css" />
+<style>
+  html, body, #root { height: 100%; margin: 0; background: #0a0d18; }
+  body { font-family: "Newsreader", Georgia, serif; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script src="shared/citations.js"></script>
+<script type="text/babel" src="shared/Components.jsx"></script>
+<script type="text/babel" src="tracks/FluidDiagram.jsx"></script>
+<script type="text/babel" src="tracks/TopicPage.jsx"></script>
+
+<!-- Meta topics 12–14 -->
+<script type="text/babel" src="tracks/MetaWhatThisIsNot.jsx"></script>
+<script type="text/babel" src="tracks/MetaGlossary.jsx"></script>
+<script type="text/babel" src="tracks/MetaPaperLibrary.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="topic-12" title="Topic 12 · What This Is Not"
+                 subtitle="Three misreadings · claim-status legend · four falsifiers · scope">
+        <DCArtboard id="12-meta" label="12 · Meta" width={1280} height={5200}>
+          <MetaWhatThisIsNot />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="topic-13" title="Topic 13 · Glossary & Notation"
+                 subtitle="Geometry · dynamics · claim statuses · the full notation table">
+        <DCArtboard id="13-meta" label="13 · Meta" width={1280} height={7200}>
+          <MetaGlossary />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="topic-14" title="Topic 14 · Paper Library"
+                 subtitle="8 source documents · reading order · topic × source matrix">
+        <DCArtboard id="14-meta" label="14 · Meta" width={1280} height={6000}>
+          <MetaPaperLibrary />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
