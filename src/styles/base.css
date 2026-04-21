@@ -1,0 +1,17 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #0a0d18;
+}
+
+body {
+  font-family: "Newsreader", Georgia, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* KaTeX renders its own classes; make sure inline math doesn't force a line-height quirk. */
+.katex-host { display: inline-block; }

@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Pretty-URL → directory index (pre-rendered files live at <route>/index.html)
+# SPA-style fallback is intentionally omitted: every route is pre-rendered, so
+# a miss should 404 rather than silently serve the app shell.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
