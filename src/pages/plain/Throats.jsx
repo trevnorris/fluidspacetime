@@ -1,6 +1,5 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
-import { TrackToggle } from '../../components/TrackToggle.jsx';
 
 // Part 1 · Topic 04 — Throats — PLAIN ENGLISH
 
@@ -160,19 +159,6 @@ export default function PlainThroats() {
           to the throat geometry defined here.
         </TPBody>
 
-        <div style={{
-          marginTop: 30, padding: "20px 24px",
-          border: "1px dashed var(--rule-2)", borderRadius: 3,
-          display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap",
-        }}>
-          <span className="fu-mono" style={{ fontSize: 10.5, letterSpacing: "0.14em", color: "var(--ink-3)", textTransform: "uppercase" }}>
-            ◇ technical mirror
-          </span>
-          <span className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 220 }}>
-            Distributed profile <em>R(Ω, w, t)</em>, boundary conditions at the mouth, and the moving-throat frontier.
-          </span>
-          <TrackToggle track="plain" size="sm" />
-        </div>
       </TPSection>
 
       <TPSection anchor="next" eyebrow="end of part I" heading="Coming up: gravity, electromagnetism, light.">

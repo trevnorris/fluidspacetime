@@ -7,7 +7,6 @@ import {
   TPBody,
   TPCallout,
 } from '../../components/TopicPage.jsx';
-import { TrackToggle } from '../../components/TrackToggle.jsx';
 import { FluidDiagram } from '../../components/FluidDiagram.jsx';
 import { Badge, Chip, Tex, EqCard } from '../../components/ui.jsx';
 
@@ -265,38 +264,6 @@ export default function TechnicalPart1() {
           <Chip>Σ(X,t) throat locus</Chip>
         </div>
 
-        <div
-          style={{
-            marginTop: 30,
-            padding: '20px 24px',
-            border: '1px dashed var(--rule-2)',
-            borderRadius: 3,
-            display: 'flex',
-            gap: 16,
-            alignItems: 'center',
-            flexWrap: 'wrap',
-          }}
-        >
-          <span
-            className="fu-mono"
-            style={{
-              fontSize: 10.5,
-              letterSpacing: '0.14em',
-              color: 'var(--ink-3)',
-              textTransform: 'uppercase',
-            }}
-          >
-            ◇ plain mirror
-          </span>
-          <span
-            className="fu-small"
-            style={{ color: 'var(--ink-2)', flex: 1, minWidth: 220 }}
-          >
-            The metaphor-first version of this page uses the still-pond, ripple,
-            and knot images.
-          </span>
-          <TrackToggle size="sm" />
-        </div>
       </TPSection>
 
       <TPSection

@@ -1,6 +1,5 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
-import { TrackToggle } from '../../components/TrackToggle.jsx';
 
 // Part II · Topic 11 — The Moving-Throat PDE — PLAIN ENGLISH
 
@@ -232,19 +231,6 @@ export default function PlainMovingThroat() {
           Both have to agree.
         </TPBody>
 
-        <div style={{
-          marginTop: 30, padding: "20px 24px",
-          border: "1px dashed var(--rule-2)", borderRadius: 3,
-          display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap",
-        }}>
-          <span className="fu-mono" style={{ fontSize: 10.5, letterSpacing: "0.14em", color: "var(--ink-3)", textTransform: "uppercase" }}>
-            ◇ technical mirror
-          </span>
-          <span className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 220 }}>
-            Geometry lift for R(Ω, w, t), the branch data it must return, and the first operational observables of the moving-throat framework.
-          </span>
-          <TrackToggle track="plain" size="sm" />
-        </div>
       </TPSection>
     </TopicPage>
   );
