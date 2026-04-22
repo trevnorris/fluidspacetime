@@ -275,7 +275,7 @@ function ReadingOrderDiagram() {
             </div>
             <div style={{
               fontFamily: "var(--font-display)",
-              fontSize: 14.5, color: "var(--ink-1)", fontStyle: "italic", lineHeight: 1.35,
+              fontSize: 16, color: "var(--ink-1)", fontStyle: "italic", lineHeight: 1.35,
             }}>
               {s.rec.title}
             </div>
@@ -544,8 +544,8 @@ function TopicSourceMatrix() {
           alignItems: "center",
         }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
-            <span className="fu-mono" style={{ color: "#7aa2ff", fontSize: 13 }}>{t.n}</span>
-            <span className="fu-small" style={{ color: "var(--ink-2)", fontSize: 12.5, fontStyle: "italic" }}>
+            <span className="fu-mono" style={{ color: "#7aa2ff", fontSize: 15 }}>{t.n}</span>
+            <span className="fu-small" style={{ color: "var(--ink-2)", fontSize: 14, fontStyle: "italic" }}>
               {t.t}
             </span>
           </div>

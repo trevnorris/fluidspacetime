@@ -403,7 +403,7 @@ function SMTopicColumn({ topics, track, color, borderLeft }) {
           <span
             className="fu-body"
             style={{
-              fontSize: 14,
+              fontSize: 15,
               color: 'var(--ink-1)',
               flex: 1,
             }}
@@ -448,7 +448,7 @@ function SMMetaColumn({ topics, spanTwo }) {
           </span>
           <span
             className="fu-body"
-            style={{ fontSize: 14, color: 'var(--ink-1)', flex: 1 }}
+            style={{ fontSize: 15, color: 'var(--ink-1)', flex: 1 }}
           >
             {t.metaTitle}
           </span>

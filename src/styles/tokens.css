@@ -103,7 +103,7 @@
 .fu-h3 { font-size: clamp(22px, 2.2vw, 30px); font-weight: 400; letter-spacing: -0.01em; line-height: 1.2; }
 .fu-lede { font-size: clamp(18px, 1.6vw, 22px); color: var(--ink-2); line-height: 1.55; text-wrap: pretty; }
 .fu-body { font-size: 17px; color: var(--ink-2); line-height: 1.7; text-wrap: pretty; }
-.fu-small { font-size: 13px; color: var(--ink-3); line-height: 1.55; }
+.fu-small { font-size: 15px; color: var(--ink-3); line-height: 1.55; }
 
 /* ============== Layout primitives ============== */
 .fu-wrap { max-width: 1280px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; }

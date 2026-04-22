@@ -54,13 +54,13 @@ export default function PlainPN() {
               borderBottom: "1px solid var(--rule)",
               alignItems: "baseline",
             }}>
-              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 13, letterSpacing: "0.05em" }}>
+              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 15, letterSpacing: "0.05em" }}>
                 {row.order}
               </div>
-              <div className="fu-display" style={{ fontSize: 15.5, color: "var(--ink-1)", fontWeight: 400 }}>
+              <div className="fu-display" style={{ fontSize: 16, color: "var(--ink-1)", fontWeight: 400 }}>
                 {row.name}
               </div>
-              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 13, lineHeight: 1.55 }}>
+              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 15, lineHeight: 1.55 }}>
                 {row.who}
               </div>
             </div>
@@ -103,10 +103,10 @@ export default function PlainPN() {
                 <div className="fu-mono fu-small" style={{ color: c.bar, fontSize: 10.5, letterSpacing: "0.14em" }}>
                   {c.label}
                 </div>
-                <div className="fu-mono" style={{ color: "var(--ink-1)", fontSize: 13, letterSpacing: "0.05em" }}>
+                <div className="fu-mono" style={{ color: "var(--ink-1)", fontSize: 15, letterSpacing: "0.05em" }}>
                   {r.order}
                 </div>
-                <div className="fu-small" style={{ color: "var(--ink-2)", fontSize: 13.5, lineHeight: 1.55 }}>
+                <div className="fu-small" style={{ color: "var(--ink-2)", fontSize: 15, lineHeight: 1.55 }}>
                   {r.note}
                 </div>
               </div>

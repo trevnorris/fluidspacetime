@@ -175,7 +175,7 @@ function PrevNextCard({ label, fallback, item, color, alignRight = false }) {
   };
   const titleStyle = {
     color: item ? 'var(--ink-1)' : 'var(--ink-3)',
-    fontSize: 14,
+    fontSize: 15,
     fontStyle: item ? 'normal' : 'italic',
   };
   const Inner = (
@@ -277,7 +277,7 @@ function TPNav({ track, trackColor, meta = false, counterpartHref }) {
           <span
             className="fu-mono"
             style={{
-              fontSize: 13,
+              fontSize: 15,
               letterSpacing: '0.05em',
               color: 'var(--ink-1)',
             }}

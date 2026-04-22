@@ -149,19 +149,19 @@ export default function TechnicalPN() {
                   <div className="fu-mono fu-small" style={{ color: c.bar, fontSize: 10, letterSpacing: "0.14em", marginBottom: 4 }}>
                     {row.status.toUpperCase()}
                   </div>
-                  <div className="fu-mono" style={{ color: "var(--ink-1)", fontSize: 12.5 }}>
+                  <div className="fu-mono" style={{ color: "var(--ink-1)", fontSize: 14 }}>
                     {row.order}
                   </div>
                 </div>
                 <div>
-                  <div className="fu-display" style={{ fontSize: 14, color: "var(--ink-1)", fontWeight: 400, marginBottom: 4 }}>
+                  <div className="fu-display" style={{ fontSize: 15, color: "var(--ink-1)", fontWeight: 400, marginBottom: 4 }}>
                     {row.quantity}
                   </div>
-                  <div className="fu-small fu-mono" style={{ color: "var(--ink-3)", fontSize: 11.5, lineHeight: 1.5 }}>
+                  <div className="fu-small fu-mono" style={{ color: "var(--ink-3)", fontSize: 13, lineHeight: 1.5 }}>
                     {row.source}
                   </div>
                 </div>
-                <div className="fu-small" style={{ color: "var(--ink-2)", fontSize: 12.5, lineHeight: 1.55 }}>
+                <div className="fu-small" style={{ color: "var(--ink-2)", fontSize: 14, lineHeight: 1.55 }}>
                   {row.coeff}
                 </div>
               </div>

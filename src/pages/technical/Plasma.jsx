@@ -127,7 +127,7 @@ export default function TechnicalPlasma() {
               <div className="fu-display" style={{ fontSize: 15, color: "var(--ink-1)", fontWeight: 400, marginBottom: 6 }}>
                 {c.mhd}
               </div>
-              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 13, lineHeight: 1.55 }}>
+              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 15, lineHeight: 1.55 }}>
                 {c.channel}
               </div>
             </div>

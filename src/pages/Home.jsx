@@ -310,7 +310,7 @@ function TCNav() {
           <span
             className="fu-mono"
             style={{
-              fontSize: 13,
+              fontSize: 15,
               letterSpacing: '0.05em',
               color: 'var(--ink-1)',
             }}
@@ -463,7 +463,7 @@ function TrackCard({
             key={i}
             className="fu-body"
             style={{
-              fontSize: 14.5,
+              fontSize: 16,
               color: 'var(--ink-2)',
               paddingLeft: 20,
               position: 'relative',
@@ -508,7 +508,7 @@ function TrackCard({
         <div
           className="fu-body"
           style={{
-            fontSize: 14,
+            fontSize: 15,
             color: 'var(--ink-1)',
             fontStyle: kind === 'plain' ? 'italic' : 'normal',
             lineHeight: 1.6,
@@ -571,17 +571,10 @@ function HeroPlateCard() {
           padding: '12px 18px',
           borderBottom: '1px solid var(--rule)',
           display: 'flex',
-          justifyContent: 'space-between',
           alignItems: 'center',
         }}
       >
         <span className="fu-eyebrow">◇ plate 01 · brane–bulk</span>
-        <span
-          className="fu-small fu-mono"
-          style={{ color: 'var(--ink-3)' }}
-        >
-          drag · rotate · scrub
-        </span>
       </div>
       <HeroDiagram palette={AtlasPalette} />
       <div

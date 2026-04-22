@@ -173,10 +173,10 @@ export default function TechnicalHiddenDirection() {
               padding: "16px 18px", border: "1px solid var(--rule)", borderRadius: 3,
               background: "rgba(16,20,42,0.45)",
             }}>
-              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 13, marginBottom: 4 }}>
+              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 15, marginBottom: 4 }}>
                 {c.sym}
               </div>
-              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 12.5, lineHeight: 1.5 }}>
+              <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 14, lineHeight: 1.5 }}>
                 {c.role}
               </div>
             </div>

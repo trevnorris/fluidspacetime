@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Hero diagram — brane + bulk + throat cross-section.
-// Drag to rotate. Autopilot rotates gently when idle. Scrub (state) reveals the
-// 3D→projected split; exposed as a prop default so callers can freeze a pose.
+// Autopilot rotates gently. Scrub reveals the 3D→projected split; exposed as a
+// prop default so callers can freeze a pose.
 
 export function HeroDiagram({ palette, className, speed = 1, scrub: scrubProp = 0.35 }) {
-  const [drag, setDrag] = useState({ yaw: -0.35, tilt: 0.55 });
+  const [pose, setPose] = useState({ yaw: -0.35, tilt: 0.55 });
   const [scrub] = useState(scrubProp);
-  const ref = useRef(null);
-  const dragging = useRef(null);
 
   useEffect(() => {
     let raf;
@@ -17,56 +15,23 @@ export function HeroDiagram({ palette, className, speed = 1, scrub: scrubProp = 
     const tick = (t) => {
       const dt = (t - last) / 1000;
       last = t;
-      if (!dragging.current) {
-        setDrag((d) => ({
-          yaw: d.yaw + dt * 0.05 * speed,
-          tilt: 0.5 + Math.sin((t - t0) / 4000) * 0.08,
-        }));
-      }
+      setPose((d) => ({
+        yaw: d.yaw + dt * 0.05 * speed,
+        tilt: 0.5 + Math.sin((t - t0) / 4000) * 0.08,
+      }));
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
   }, [speed]);
 
-  useEffect(() => {
-    const onMove = (e) => {
-      if (!dragging.current) return;
-      const dx = e.clientX - dragging.current.x;
-      const dy = e.clientY - dragging.current.y;
-      setDrag({
-        yaw: dragging.current.yaw + dx * 0.006,
-        tilt: Math.max(0.1, Math.min(1.2, dragging.current.tilt + dy * 0.004)),
-      });
-    };
-    const onUp = () => {
-      dragging.current = null;
-    };
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup', onUp);
-    return () => {
-      window.removeEventListener('pointermove', onMove);
-      window.removeEventListener('pointerup', onUp);
-    };
-  }, []);
-
-  const onDown = (e) => {
-    e.preventDefault();
-    dragging.current = {
-      x: e.clientX,
-      y: e.clientY,
-      yaw: drag.yaw,
-      tilt: drag.tilt,
-    };
-  };
-
   // ── Geometry ──
   const W = 1200;
   const H = 760;
   const cx = W / 2;
   const cy = H / 2 + 30;
-  const yaw = drag.yaw;
-  const tilt = drag.tilt;
+  const yaw = pose.yaw;
+  const tilt = pose.tilt;
   const sin = Math.sin;
   const cos = Math.cos;
 
@@ -145,15 +110,9 @@ export function HeroDiagram({ palette, className, speed = 1, scrub: scrubProp = 
   return (
     <div className={className} style={{ position: 'relative', userSelect: 'none' }}>
       <svg
-        ref={ref}
         viewBox={`0 0 ${W} ${H}`}
         width="100%"
-        style={{
-          display: 'block',
-          cursor: dragging.current ? 'grabbing' : 'grab',
-          touchAction: 'none',
-        }}
-        onPointerDown={onDown}
+        style={{ display: 'block' }}
       >
         <defs>
           <radialGradient id="fu-bulk" cx="50%" cy="55%" r="65%">
