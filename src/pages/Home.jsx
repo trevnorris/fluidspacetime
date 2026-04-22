@@ -31,7 +31,7 @@ export default function Home() {
                 className="fu-eyebrow"
                 style={{ marginBottom: 22, color: 'var(--accent)' }}
               >
-                ◇ a speculative research program · est. 2024
+                ◇ a speculative research program · est. 2026
               </div>
               <h1
                 className="fu-display fu-h1"
@@ -196,10 +196,10 @@ export default function Home() {
           >
             {[
               { k: 'n = 5', v: 'EoS exponent' },
-              { k: 'κ_ρ = 1', v: 'mass-dressing' },
-              { k: 'κ_add = ½', v: 'added-mass' },
-              { k: 'β_1PN = 3', v: 'precession ledger' },
-              { k: 'χ_Q = 1', v: 'outgoing normalization' },
+              { k: '\\kappa_\\rho = 1', v: 'mass-dressing' },
+              { k: '\\kappa_{\\mathrm{add}} = \\tfrac{1}{2}', v: 'added-mass' },
+              { k: '\\beta_{1\\text{PN}} = 3', v: 'precession ledger' },
+              { k: '\\chi_Q = 1', v: 'outgoing normalization' },
             ].map(({ k, v }) => (
               <div
                 key={k}
@@ -209,14 +209,13 @@ export default function Home() {
                 }}
               >
                 <div
-                  className="fu-mono"
                   style={{
                     fontSize: 15,
                     color: 'var(--ink-1)',
                     marginBottom: 4,
                   }}
                 >
-                  {k}
+                  <Tex tex={k} />
                 </div>
                 <div className="fu-small" style={{ color: 'var(--ink-3)' }}>
                   {v}

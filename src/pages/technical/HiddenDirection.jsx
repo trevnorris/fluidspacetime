@@ -164,17 +164,17 @@ export default function TechnicalHiddenDirection() {
           {[
             { sym: "A_w", role: "Gauge potential component in w — enters brane leakage" },
             { sym: "J^w", role: "Matter current along w — brane–bulk exchange" },
-            { sym: "F_{μw}", role: "Mixed field-strength — electric drift in w" },
+            { sym: "F_{\\mu w}", role: "Mixed field-strength — electric drift in w" },
             { sym: "E_w", role: "Electric component in w — moving-throat response" },
             { sym: "C_a = F_{aw}", role: "Chiral mixed component — g-factor channel" },
-            { sym: "δρ_⊥", role: "Non-zero-mode density — plasma non-ideality" },
+            { sym: "\\delta\\rho_\\perp", role: "Non-zero-mode density — plasma non-ideality" },
           ].map((c) => (
             <div key={c.sym} style={{
               padding: "16px 18px", border: "1px solid var(--rule)", borderRadius: 3,
               background: "rgba(16,20,42,0.45)",
             }}>
-              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 15, marginBottom: 4 }}>
-                {c.sym}
+              <div style={{ color: "#7aa2ff", fontSize: 15, marginBottom: 4 }}>
+                <Tex tex={c.sym} />
               </div>
               <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 14, lineHeight: 1.5 }}>
                 {c.role}

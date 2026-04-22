@@ -167,18 +167,18 @@ export default function TechnicalEM() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 12, margin: "14px 0 6px" }}>
           {[
             { sym: "A_w", role: "Gauge potential in w — brane–bulk leakage current" },
-            { sym: "F_{μw}", role: "Mixed field strength — electric drift along w" },
+            { sym: "F_{\\mu w}", role: "Mixed field strength — electric drift along w" },
             { sym: "E_w", role: "w-component of the electric field — moving-throat response" },
             { sym: "C_a = F_{aw}", role: "Chiral mixed component — g-factor channel" },
             { sym: "J^w", role: "Charge current along w — exchange with bulk reservoir" },
-            { sym: "a_μ^{(k≥1)}", role: "Higher-f_k modes — cut off by Z-profile gap" },
+            { sym: "a_\\mu^{(k \\geq 1)}", role: "Higher-f_k modes — cut off by Z-profile gap" },
           ].map((c) => (
             <div key={c.sym} style={{
               padding: "16px 18px", border: "1px solid var(--rule)", borderRadius: 3,
               background: "rgba(16,20,42,0.45)",
             }}>
-              <div className="fu-mono" style={{ color: "#7aa2ff", fontSize: 15, marginBottom: 4 }}>
-                {c.sym}
+              <div style={{ color: "#7aa2ff", fontSize: 15, marginBottom: 4 }}>
+                <Tex tex={c.sym} />
               </div>
               <div className="fu-small" style={{ color: "var(--ink-3)", fontSize: 14, lineHeight: 1.5 }}>
                 {c.role}
