@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Tex } from '../components/ui.jsx';
+import { HeroDiagram, AtlasPalette } from '../components/HeroDiagram.jsx';
 
 // Home — track-choice landing. Adapted from the original TrackChoice artboard.
 export default function Home() {
@@ -14,44 +15,56 @@ export default function Home() {
 
       <section style={{ padding: '90px 0 60px', position: 'relative' }}>
         <div className="fu-wrap">
-          {/* Program framing */}
-          <div style={{ maxWidth: 860, marginBottom: 72 }}>
-            <div
-              className="fu-eyebrow"
-              style={{ marginBottom: 22, color: 'var(--accent)' }}
-            >
-              ◇ a speculative research program · est. 2024
-            </div>
-            <h1
-              className="fu-display fu-h1"
-              style={{
-                marginBottom: 28,
-                fontWeight: 280,
-                fontSize: 'clamp(48px, 6.5vw, 92px)',
-              }}
-            >
-              Physics,{' '}
-              <em
+          {/* Program framing + hero diagram */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 1fr)',
+              gap: 56,
+              alignItems: 'center',
+              marginBottom: 72,
+            }}
+          >
+            <div>
+              <div
+                className="fu-eyebrow"
+                style={{ marginBottom: 22, color: 'var(--accent)' }}
+              >
+                ◇ a speculative research program · est. 2024
+              </div>
+              <h1
+                className="fu-display fu-h1"
                 style={{
-                  fontFamily: 'var(--font-serif)',
-                  fontStyle: 'italic',
-                  background:
-                    'linear-gradient(90deg, var(--accent) 0%, #b88bff 60%, #e67ac6 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                  marginBottom: 28,
+                  fontWeight: 280,
+                  fontSize: 'clamp(40px, 4.6vw, 72px)',
+                  lineHeight: 1.05,
                 }}
               >
-                projected
-              </em>
-              .<br />
-              Particles as moving throats in a 4D fluid.
-            </h1>
-            <p className="fu-lede" style={{ maxWidth: 720 }}>
-              An atlas for a toy-model research program that tests whether
-              gravity-like, electromagnetic, plasma and atomic behavior can
-              emerge as the measured surface of a deeper four-dimensional
-              fluid substrate.
-            </p>
+                Physics,{' '}
+                <em
+                  style={{
+                    fontFamily: 'var(--font-serif)',
+                    fontStyle: 'italic',
+                    background:
+                      'linear-gradient(90deg, var(--accent) 0%, #b88bff 60%, #e67ac6 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                  }}
+                >
+                  projected
+                </em>
+                .<br />
+                Particles as moving throats in a 4D fluid.
+              </h1>
+              <p className="fu-lede" style={{ maxWidth: 560 }}>
+                An atlas for a toy-model research program that tests whether
+                gravity-like, electromagnetic, plasma and atomic behavior can
+                emerge as the measured surface of a deeper four-dimensional
+                fluid substrate.
+              </p>
+            </div>
+            <HeroPlateCard />
           </div>
 
           {/* Track choice */}
@@ -537,6 +550,92 @@ function TrackCard({
         </Link>
       </div>
     </div>
+  );
+}
+
+function HeroPlateCard() {
+  return (
+    <div
+      style={{
+        border: '1px solid var(--rule-2)',
+        borderRadius: 3,
+        background:
+          'linear-gradient(180deg, rgba(16,20,42,0.75), rgba(10,13,24,0.5))',
+        backdropFilter: 'blur(8px)',
+        overflow: 'hidden',
+        position: 'relative',
+      }}
+    >
+      <div
+        style={{
+          padding: '12px 18px',
+          borderBottom: '1px solid var(--rule)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <span className="fu-eyebrow">◇ plate 01 · brane–bulk</span>
+        <span
+          className="fu-small fu-mono"
+          style={{ color: 'var(--ink-3)' }}
+        >
+          drag · rotate · scrub
+        </span>
+      </div>
+      <HeroDiagram palette={AtlasPalette} />
+      <div
+        style={{
+          padding: '12px 18px',
+          borderTop: '1px solid var(--rule)',
+          display: 'flex',
+          gap: 18,
+          flexWrap: 'wrap',
+          alignItems: 'center',
+        }}
+      >
+        <LegendItem color="#e67ac6" label="brane" />
+        <LegendItem color="#b88bff" label="throat" />
+        <LegendItem color="#7aa2ff" label="field" dashed />
+        <LegendItem color="#f0c26b" label="projection" />
+      </div>
+    </div>
+  );
+}
+
+function LegendItem({ color, label, dashed }) {
+  return (
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+      {dashed ? (
+        <svg width="18" height="4" aria-hidden>
+          <line
+            x1="0"
+            y1="2"
+            x2="18"
+            y2="2"
+            stroke={color}
+            strokeDasharray="2 2"
+            strokeWidth="1.2"
+          />
+        </svg>
+      ) : (
+        <span
+          style={{
+            width: 8,
+            height: 8,
+            borderRadius: 4,
+            background: color,
+            boxShadow: `0 0 8px ${color}`,
+          }}
+        />
+      )}
+      <span
+        className="fu-small fu-mono"
+        style={{ color: 'var(--ink-2)', fontSize: 11 }}
+      >
+        {label}
+      </span>
+    </span>
   );
 }
 
