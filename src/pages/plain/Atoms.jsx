@@ -104,7 +104,7 @@ export default function PlainAtoms() {
           is supposed to feed several precision observables:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
           {[
             { k: "Muon g−2", v: "A candidate precision target, not yet a closed prediction." },
             { k: "Lamb shift", v: "A geometric short-distance correction target, still open." },

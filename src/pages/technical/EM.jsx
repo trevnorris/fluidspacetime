@@ -164,7 +164,7 @@ export default function TechnicalEM() {
           observables:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, margin: "14px 0 6px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 12, margin: "14px 0 6px" }}>
           {[
             { sym: "A_w", role: "Gauge potential in w — brane–bulk leakage current" },
             { sym: "F_{μw}", role: "Mixed field strength — electric drift along w" },

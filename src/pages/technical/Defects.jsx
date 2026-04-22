@@ -133,7 +133,7 @@ export default function TechnicalDefects() {
           which the brane can absorb configurations into smooth field radiation.
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, margin: "24px 0 4px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "24px 0 4px" }}>
           {[
             { k: "Allowed", v: "n ↔ n + 0 (smooth motion); n + (−n) → 0 (pair annihilation); curve reconnections preserving total winding." },
             { k: "Forbidden", v: "n → n + 1 or n → 0 by a single smooth deformation; creation of a single isolated defect from the vacuum." },

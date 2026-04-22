@@ -110,7 +110,7 @@ export default function TechnicalPlasma() {
           channels, not with new brane operators:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, margin: "14px 0" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 14, margin: "14px 0" }}>
           {[
             { mhd: "Resistivity η",       channel: "Finite-Z correction to the zero-mode effective coupling; dissipation of f_k modes into the bulk." },
             { mhd: "Hall term",           channel: "Species-split leakage J^w_s — unequal drainage of positives and negatives into the bulk reservoir." },

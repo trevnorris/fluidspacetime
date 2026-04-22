@@ -136,7 +136,8 @@ export default function PlainPart1() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
+            gridTemplateColumns:
+              'repeat(auto-fit, minmax(min(280px, 100%), 1fr))',
             gap: 20,
             margin: '28px 0 12px',
             maxWidth: 720,

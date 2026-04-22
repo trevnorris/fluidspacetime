@@ -61,7 +61,7 @@ export default function PlainDefects() {
           outside is smooth pond.
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, margin: "24px 0 12px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16, margin: "24px 0 12px", maxWidth: 820 }}>
           {[
             { k: "A point", v: "A single spot where the fluid is forced to do something it can't. Like a single tight knot on a smooth thread." },
             { k: "A line",  v: "A line-shaped defect the fluid has to flow around. A whirlpool's axis, extended." },

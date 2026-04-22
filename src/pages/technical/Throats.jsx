@@ -125,7 +125,7 @@ export default function TechnicalThroats() {
           A throat is specified by boundary data at three locations:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14, margin: "14px 0 4px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 14, margin: "14px 0 4px" }}>
           {[
             { k: "Mouth", sym: "(x_0, 0)", v: "ψ regular on the brane; density profile f matches the smooth-pond boundary condition at r → ∞." },
             { k: "Neck",  sym: "w = w_*",  v: "R(w) attains its minimum R_min; density is maximally depleted. Sets the throat's dominant inverse length scale." },

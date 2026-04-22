@@ -56,7 +56,7 @@ export default function PlainThroats() {
           Three words the program uses over and over:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, margin: "22px 0 14px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16, margin: "22px 0 14px", maxWidth: 820 }}>
           {[
             { k: "Mouth",    v: "Where the throat intersects the brane. This is the part we can point at in ordinary space.", tint: "#e67ac6" },
             { k: "Neck",     v: "The narrowest part of the throat along the hidden direction. Sets how tightly the defect is bound.", tint: "#b88bff" },
@@ -94,7 +94,7 @@ export default function PlainThroats() {
           force.
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
           <div style={{
             padding: "24px 26px",
             border: "1px solid #7aa2ff44",

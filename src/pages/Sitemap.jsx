@@ -80,7 +80,8 @@ export default function SitemapPage() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
+            gridTemplateColumns:
+              'repeat(auto-fit, minmax(min(280px, 100%), 1fr))',
             gap: 40,
             marginBottom: 36,
           }}

@@ -158,7 +158,7 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
 
         <div style={{
-          display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12,
+          display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 12,
           margin: "16px 0 4px",
         }}>
           {[

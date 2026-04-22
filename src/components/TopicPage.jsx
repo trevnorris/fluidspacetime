@@ -138,7 +138,8 @@ export function TopicPage({ track, topic, meta = false, children }) {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(260px, 100%), 1fr))',
               gap: 16,
             }}
           >
@@ -216,10 +217,10 @@ function TPAtmosphere() {
 
 function TPNav({ track, trackColor, meta = false, counterpartHref }) {
   const items = [
-    { label: 'Start Here', href: '/' },
+    { label: 'Start Here', href: '/', extra: true },
     { label: 'Site map', href: '/sitemap' },
-    { label: 'Moving-Throat PDE', href: '/plain/moving-throat' },
-    { label: 'Results Ledger', href: '/plain/pn-ledger' },
+    { label: 'Moving-Throat PDE', href: '/plain/moving-throat', extra: true },
+    { label: 'Results Ledger', href: '/plain/pn-ledger', extra: true },
     { label: 'Library', href: '/meta/paper-library' },
   ];
   return (
@@ -234,7 +235,7 @@ function TPNav({ track, trackColor, meta = false, counterpartHref }) {
       }}
     >
       <div
-        className="fu-wrap"
+        className="fu-wrap fu-nav"
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -275,7 +276,7 @@ function TPNav({ track, trackColor, meta = false, counterpartHref }) {
             <circle cx="14" cy="14" r="1.4" fill="#f0c26b" />
           </svg>
           <span
-            className="fu-mono"
+            className="fu-mono fu-nav-wordmark"
             style={{
               fontSize: 15,
               letterSpacing: '0.05em',
@@ -310,7 +311,7 @@ function TPNav({ track, trackColor, meta = false, counterpartHref }) {
           <Link
             key={x.href}
             to={x.href}
-            className="fu-small"
+            className={`fu-small${x.extra ? ' fu-nav-extra' : ''}`}
             style={{ color: 'var(--ink-2)' }}
           >
             {x.label}

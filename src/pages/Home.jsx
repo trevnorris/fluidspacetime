@@ -19,7 +19,8 @@ export default function Home() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 1fr)',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(340px, 100%), 1fr))',
               gap: 56,
               alignItems: 'center',
               marginBottom: 72,
@@ -87,7 +88,8 @@ export default function Home() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(380px, 100%), 1fr))',
               gap: 28,
             }}
           >
@@ -251,9 +253,9 @@ function TCAtmosphere() {
 function TCNav() {
   const items = [
     { label: 'Site map', href: '/sitemap' },
-    { label: 'Moving-Throat PDE', href: '/plain/moving-throat' },
-    { label: 'Results Ledger', href: '/plain/pn-ledger' },
-    { label: 'What this is not', href: '/meta/what-this-is-not' },
+    { label: 'Moving-Throat PDE', href: '/plain/moving-throat', extra: true },
+    { label: 'Results Ledger', href: '/plain/pn-ledger', extra: true },
+    { label: 'What this is not', href: '/meta/what-this-is-not', extra: true },
   ];
   return (
     <nav
@@ -267,7 +269,7 @@ function TCNav() {
       }}
     >
       <div
-        className="fu-wrap"
+        className="fu-wrap fu-nav"
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -308,7 +310,7 @@ function TCNav() {
             <circle cx="14" cy="14" r="1.4" fill="#f0c26b" />
           </svg>
           <span
-            className="fu-mono"
+            className="fu-mono fu-nav-wordmark"
             style={{
               fontSize: 15,
               letterSpacing: '0.05em',
@@ -319,7 +321,7 @@ function TCNav() {
           </span>
         </Link>
         <span
-          className="fu-small"
+          className="fu-small fu-nav-extra"
           style={{ marginLeft: 4, opacity: 0.5 }}
         >
           v0.5
@@ -329,7 +331,7 @@ function TCNav() {
           <Link
             key={x.href}
             to={x.href}
-            className="fu-small"
+            className={`fu-small${x.extra ? ' fu-nav-extra' : ''}`}
             style={{ color: 'var(--ink-2)' }}
           >
             {x.label}

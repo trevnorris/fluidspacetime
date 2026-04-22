@@ -105,7 +105,7 @@ export default function PlainLight() {
           setup:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14, margin: "18px 0 6px", maxWidth: 900 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 900 }}>
           {[
             { k: "Same c for everyone", v: "The pond's ripple speed is a property of the pond, not of whoever is watching. Every observer measures the same c because they are all embedded in the same medium." },
             { k: "Time dilation", v: "When you move through the pond, your internal clock — which is also a ripple-process — runs slower, because some of its propagation budget is spent moving you through space." },

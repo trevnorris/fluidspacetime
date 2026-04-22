@@ -112,7 +112,7 @@ export default function PlainEM() {
           other lives entirely on the brane:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
           <div style={{
             padding: "22px 24px",
             border: "1px solid #e67ac655",

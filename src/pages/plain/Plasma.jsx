@@ -87,7 +87,7 @@ export default function PlainPlasma() {
           MHD description:
         </TPBody>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
           {[
             { k: "Mixed-sector EM", v: "Components of the electromagnetic field that have one leg in the brane and one leg in the hidden direction. They're suppressed in the far-field, but hot and dense regions re-excite them." },
             { k: "Bulk leakage",    v: "Matter and charge moving bodily along the hidden direction instead of on the brane. Looks like a loss to us; conserved once you count the bulk." },
