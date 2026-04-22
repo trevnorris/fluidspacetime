@@ -37,9 +37,9 @@ export default function TechnicalEM() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="exact" label="Parent 4+1 action" />
-          <Badge status="reduction" label="Zero-mode 3+1 Maxwell" />
-          <Badge status="open" label="Mixed-sector finite-Z corrections" />
+          <Badge kind="exact">Parent 4+1 action</Badge>
+          <Badge kind="reduce">Zero-mode 3+1 Maxwell</Badge>
+          <Badge kind="open">Mixed-sector finite-Z corrections</Badge>
           <Chip label="sector: gauge" />
           <Chip label="4D · Maxwell" href={ZENODO.maxwell.url} />
           <Chip label="Prior · EM & charged defects" href={ZENODO.priorEM.url} />
@@ -60,9 +60,9 @@ export default function TechnicalEM() {
         </TPBody>
 
         <EqCard
-          eyebrow="parent action · Part II Eq. 6.1"
-          tex="S_{\text{EM}} \;=\; -\frac{1}{4\mu_0}\int Z(w)\, F_{MN}\, F^{MN}\; d^3x\, dw\, dt \;+\; \int A_M\, J^M\; d^3x\, dw\, dt"
-          note="Z(w) localizes the gauge kinetic term around the brane. Off-brane propagation is suppressed by how fast Z(w) falls off."
+          label="◇ parent action · exact"
+          plain="The current Maxwell paper includes both a gauge-fixing term and an external-source term. Minimal coupling to matter supplies the dynamical brane current bookkeeping downstream."
+          tex="S_{\text{EM}} \;=\; \int d^3x\,dw\,dt\left[-\frac{Z(w)}{4\mu_0}F_{MN}F^{MN}-\frac{1}{2\xi\,\mu_0}\big(\partial\!\cdot\!A\big)^2 + A_M J_{\rm ext}^M\right]"
         />
 
         <TPBody>
@@ -86,9 +86,9 @@ export default function TechnicalEM() {
         </TPBody>
 
         <EqCard
-          eyebrow="zero-mode ansatz · Part II Eq. 6.2"
+          label="◇ zero-mode ansatz · controlled reduction"
+          plain="f_0 is the lowest transverse mode against the localization profile Z(w). Higher f_k are suppressed by the profile gap; A_w remains part of the microscopic mixed sector."
           tex="A_\mu(x,w,t) \;=\; a_\mu(x,t)\, f_0(w) \;+\; \sum_{k \geq 1} a_\mu^{(k)}(x,t)\, f_k(w), \qquad A_w(x,w,t) \;=\; \phi_w(x,t)\, g(w) + \ldots"
-          note="f_0 is the flattest mode against Z(w). Higher f_k are suppressed by mass gaps set by Z's profile. φ_w is the mixed component."
         />
 
         <TPBody>
@@ -98,9 +98,9 @@ export default function TechnicalEM() {
         </TPBody>
 
         <EqCard
-          eyebrow="reduced 3+1 Maxwell · Part II Eq. 6.3"
+          label="◇ reduced 3+1 Maxwell · controlled reduction"
+          plain="f_{μν} = ∂_μ a_ν − ∂_ν a_μ is the brane-level field strength. The effective permeability is rescaled by the localization integral."
           tex="S_{\text{EM},0} \;=\; -\frac{Z_\text{int}}{4\mu_0} \int f_{\mu\nu}\, f^{\mu\nu}\; d^3x\, dt, \qquad \mu_{0,\text{eff}} \;=\; \mu_0 \,\big/\, Z_\text{int}"
-          note="f_{μν} = ∂_μ a_ν − ∂_ν a_μ is the brane-level field strength. The effective permeability is rescaled by the localization integral."
         />
 
         <TPBody>
@@ -124,9 +124,9 @@ export default function TechnicalEM() {
         </TPBody>
 
         <EqCard
-          eyebrow="observable charge · Part II Eq. 6.4"
+          label="◇ observable charge · controlled reduction"
+          plain="The sign η_Q is topological — set by which half of w the throat punctures into (+w or −w). The magnitude is set by canonical zero-mode normalization through Z_int."
           tex="q_\text{eff} \;=\; q_* \,\big/\, \sqrt{Z_\text{int}}, \qquad \eta_Q \in \{+1,-1\}"
-          note="The sign η_Q is topological — set by which half of w the throat punctures into (+w or −w). The magnitude is set by how deeply the brane samples into the puncture field."
         />
 
         <TPBody>
@@ -198,8 +198,8 @@ export default function TechnicalEM() {
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
-          <Badge status="reduction" label="Zero-mode Maxwell (far-field)" />
-          <Badge status="open" label="Mixed-channel corrections" />
+          <Badge kind="reduce">Zero-mode Maxwell (far-field)</Badge>
+          <Badge kind="open">Mixed-channel corrections</Badge>
           <Chip label="consumed by: topic 07, 09, 10, 11" />
         </div>
       </TPSection>

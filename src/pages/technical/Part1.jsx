@@ -37,26 +37,25 @@ export default function TechnicalPart1() {
         </TPTitle>
         <TPLede>
           Before introducing defects, gauge sectors, or projection, we fix the
-          ambient medium: a real, compressible, barotropic fluid on a
-          four-dimensional spatial manifold, with an equation of state chosen
-          so that its linear response has a single characteristic speed{' '}
-          <Tex tex="c" />.
+          ambient medium: a gauged GNLS matter sector on a four-dimensional
+          spatial manifold, with complex order parameter <Tex tex="\psi" />,
+          density <Tex tex="\rho = |\psi|^2" />, and a stiff barotropic
+          equation of state. Later brane observables are defined by projection;
+          they are not inserted by boundary condition.
         </TPLede>
       </section>
 
       <TPSection
         anchor="picture"
         eyebrow="ambient medium · parent action"
-        heading="A real scalar field φ(x,w,t) with a declared equation of state."
+        heading="A complex order parameter ψ(x,w,t) with a declared equation of state."
       >
         <TPBody>
-          Let <Tex tex="\varphi(x,w,t)" /> denote a real, nowhere-vanishing
-          order parameter on the bulk{' '}
+          Let <Tex tex="\psi(x,w,t)" /> denote the complex order parameter on the bulk{' '}
           <Tex tex="\mathbb{R}^{3}\times\mathbb{R}_{w}\times\mathbb{R}_{t}" />.
-          The magnitude <Tex tex="\rho = |\varphi|^{2}" /> plays the role of a
-          compressible fluid density; its dynamics are set by a barotropic
-          equation of state <Tex tex="P = P(\rho)" />. The declared form is a
-          stiff polytrope:
+          The hydrodynamic density is <Tex tex="\rho = |\psi|^{2}" />, and the
+          matter self-interaction is fixed by a barotropic equation of state
+          <Tex tex="P = P(\rho)" />. The declared form is a stiff polytrope:
         </TPBody>
 
         <EqCard
@@ -86,14 +85,14 @@ export default function TechnicalPart1() {
             plateNum: 'plate 01',
             plateTitle: 'bulk sector · linearized + defect',
             plateTag: 'technical · schematic',
-            medium: 'φ(x,w,t) — bulk order parameter',
-            ripple: 'δφ — linear excitation · phase velocity c',
+            medium: 'ψ(x,w,t) — bulk order parameter',
+            ripple: 'δψ — small disturbance',
             defect: 'Σ(X,t) — throat worldsheet (defect locus)',
-            speedLimit: '|δφ|-cone · phase velocity c',
+            speedLimit: 'characteristic propagation speed c',
             yAxis: 'w',
             xAxis: 'x³',
-            mediumShort: 'bulk φ',
-            rippleShort: 'δφ',
+            mediumShort: 'bulk ψ',
+            rippleShort: 'δψ',
             defectShort: 'throat',
             braneShort: 'brane w=0',
           }}
@@ -103,41 +102,39 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="ripples"
         eyebrow="linear sector · phase velocity"
-        heading="Linear fluctuations propagate at a single invariant speed c."
+        heading="Small disturbances inherit a characteristic speed fixed by the EOS."
       >
         <TPBody>
-          Expanding around a uniform background{' '}
-          <Tex tex="\varphi = \varphi_{0} + \delta\varphi" />, the quadratic
-          part of the parent action yields a d'Alembertian for{' '}
-          <Tex tex="\delta\varphi" /> with phase velocity determined by{' '}
-          <Tex tex="\frac{dP}{d\rho}\big|_{\rho_{0}}" />. Under the stiff EoS
-          above this reduces to:
+          Expanding around a uniform background density <Tex tex="\rho_0" />,
+          the characteristic small-disturbance speed is set by the EOS slope
+          <Tex tex="\frac{dP}{d\rho}\big|_{\rho_0}" />. For the stiff
+          polytrope carried forward by the program, this gives:
         </TPBody>
 
         <EqCard
-          label="◇ linear wave equation · bulk"
-          plain="Ordinary wave operator on the bulk. The characteristic speed is the invariant c."
-          tex="\left(\frac{1}{c^{2}}\partial_{t}^{2} - \nabla_{x}^{2} - \partial_{w}^{2}\right)\delta\varphi \;=\; 0"
-          chips={['4d_summary.md']}
+          label="◇ characteristic speed · bulk background"
+          plain="The EOS fixes the propagation speed used in the weak-field optical / bridge analysis."
+          tex="c_s^2(\rho_0) \;=\; \frac{1}{m}\,\frac{dP}{d\rho}\Big|_{\rho_0} \;=\; \frac{5K}{m}\,\rho_0^{4}"
+          chips={['4d.tex', '4d_1pn_bridge_summary.md']}
         />
 
         <TPBody style={{ marginTop: 20 }}>
-          The identification <Tex tex="c = \sqrt{dP/d\rho|_{\rho_{0}}}" /> fixes
-          the speed of light as the characteristic of the fluid's linear
-          sector. No super-luminal phase velocity exists for any real-valued{' '}
-          <Tex tex="\delta\varphi" /> within the stiff-polytrope closure —
-          this is not imposed; it is a consequence.
+          In the carry-forward bridge analysis, weak-field optical consistency
+          fixes <Tex tex="n=5" /> and identifies the relevant brane propagation
+          speed with this characteristic background speed. The parent 4D paper
+          itself keeps exact identities, controlled reductions, and regime
+          statements visibly separate.
         </TPBody>
 
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-          <Badge kind="exact">Follows from parent action</Badge>
-          <Chip>4d_em_fields_summary.md § linear sector</Chip>
+          <Badge kind="closure">Background characteristic speed</Badge>
+          <Chip>4d_1pn_bridge_summary.md § optics</Chip>
         </div>
 
         <TPCallout kind="note">
-          The absence of a super-luminal branch is a theorem within the linear
-          sector, not a postulate. Non-linear / large-amplitude excitations
-          require the full reduction machinery; see Part&nbsp;II §08.
+          The notation <Tex tex="\varphi" /> is reserved downstream for the
+          brane velocity potential in the Poisson-hook identity. It is not the
+          parent matter field.
         </TPCallout>
       </TPSection>
 
@@ -149,7 +146,7 @@ export default function TechnicalPart1() {
         <TPBody>
           The same parent action admits a second family of solutions that is
           not captured by the linearized sector: time-independent, localized
-          configurations of <Tex tex="\varphi" /> whose phase (or internal
+          configurations of <Tex tex="\psi" /> whose phase (or internal
           orientation) carries a non-trivial topological winding. These are the
           objects the program calls <em>throats</em>.
         </TPBody>
@@ -177,7 +174,7 @@ export default function TechnicalPart1() {
           {[
             {
               k: 'Topological charge',
-              v: "An integer winding of φ's internal phase around the defect locus. This integer cannot change continuously — it is the identity of the throat.",
+              v: "An integer winding of ψ's phase around the defect locus. This integer cannot change continuously — it is the identity of the throat.",
             },
             {
               k: 'Finite self-energy',

@@ -5,8 +5,8 @@ import { ZENODO } from '../../data/citations.js';
 
 // Part III · Topic 14 — Paper Library
 // Indexes the published Zenodo records. Two sections:
-//   A. Current 4D program (8 papers + one in prep)
-//   B. Prior work — superfluid-defect toy model era (7 papers)
+//   A. Current 4D program (9 papers + one in prep)
+//   B. Prior work — superfluid-defect toy model era (6 papers)
 
 export default function MetaPaperLibrary() {
   const topic = {
@@ -27,7 +27,7 @@ export default function MetaPaperLibrary() {
 
         <TPLede>
           The program has two vintages. The <em>current 4D toy model</em> —
-          eight preprints, from the parent action through 4PN — is the
+          nine preprints, from the parent action through 4PN — is the
           backbone of every topic page. An earlier round of{" "}
           <em>superfluid-defect toy model</em> papers established the
           ingredients that carried forward: n = 5, the throat ontology, the
@@ -36,7 +36,7 @@ export default function MetaPaperLibrary() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Chip>8 current · 7 prior</Chip>
+          <Chip>9 current · 6 prior</Chip>
           <Chip>all Zenodo · open access</Chip>
           <Chip href="https://zenodo.org/communities/">search Zenodo</Chip>
           <Chip>one PDE paper in prep</Chip>
@@ -62,28 +62,36 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="current-program"
         eyebrow="14.2 · current 4D program"
-        heading="The canonical backbone — eight preprints."
+        heading="The canonical backbone — nine preprints."
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 24 }}>
           <PaperCard
             index="01"
             rec={ZENODO.action}
-            scope="The parent action, projections, and brane-reduction control. Everything downstream sits on this file. Defines the 4+1 geometry, the stiff-polytrope n = 5, and the zero-mode closure."
+            scope="The parent action, projection-defined brane observables, exact leakage identities, the longitudinal Poisson-hook identity, and the controlled EM reduction. Everything downstream sits on this file."
             status={[{ kind: "exact", label: "Parent action" }, { kind: "closure", label: "Zero-mode reduction" }]}
-            feeds={["01", "02", "03", "04", "05"]}
+            feeds={["01", "02", "03", "04", "05", "11"]}
             highlight
           />
 
           <PaperCard
             index="02"
-            rec={ZENODO.maxwell}
-            scope="Maxwell recovered from localized 5D gauge dynamics under brane reduction. Includes explicit Kaluza–Klein corrections above the vacuum Maxwell limit."
-            status={[{ kind: "exact", label: "Vacuum Maxwell" }, { kind: "effect", label: "KK corrections" }]}
-            feeds={["06", "08", "09"]}
+            rec={ZENODO.bridge}
+            scope="The bridge from the 4D parent theory to Newtonian, optical, and first-PN observables. This is the carry-forward paper that fixes n = 5 by weak-field optical consistency and assembles the first coefficient ledger."
+            status={[{ kind: "reduce", label: "Bridge paper" }, { kind: "closure", label: "Coefficient ledger" }]}
+            feeds={["01", "05", "08", "10"]}
           />
 
           <PaperCard
             index="03"
+            rec={ZENODO.maxwell}
+            scope="Maxwell recovered from localized 5D gauge dynamics under brane reduction. Includes explicit Kaluza–Klein corrections above the vacuum Maxwell limit."
+            status={[{ kind: "exact", label: "Vacuum Maxwell" }, { kind: "effect", label: "KK corrections" }]}
+            feeds={["06", "08", "09", "11"]}
+          />
+
+          <PaperCard
+            index="04"
             rec={ZENODO.plasma}
             scope="4+1D plasma dynamics with a controlled MHD limit and explicit 4D interaction corrections. Demonstrates how ordinary magnetohydrodynamics emerges as a reduction."
             status={[{ kind: "closure", label: "MHD limit" }, { kind: "effect", label: "4D corrections" }]}
@@ -91,23 +99,23 @@ export default function MetaPaperLibrary() {
           />
 
           <PaperCard
-            index="04"
+            index="05"
             rec={ZENODO.pn1}
-            scope="The full first post-Newtonian sector derived under a stated closure. Recovers GR's 1PN two-body Lagrangian term-by-term."
+            scope="The full first post-Newtonian sector derived within the declared closure hierarchy. Recovers GR's 1PN two-body Lagrangian term-by-term."
             status={[{ kind: "reduce", label: "Full 1PN" }]}
             feeds={["05", "10"]}
           />
 
           <PaperCard
-            index="05"
+            index="06"
             rec={ZENODO.pn2}
-            scope="The full conservative 2PN sector, derived. The first major two-body test at this order in the 4D program."
+            scope="The full conservative 2PN sector within the same declared hierarchy. The first major two-body test at this order in the 4D program."
             status={[{ kind: "reduce", label: "Full 2PN conservative" }]}
             feeds={["10"]}
           />
 
           <PaperCard
-            index="06"
+            index="07"
             rec={ZENODO.pn25}
             scope="A conditional derivation of the 2.5PN point-particle sector. The coefficient matches GR's quadrupole formula subject to a stated closure condition; the condition is itself an open question."
             status={[{ kind: "closure", label: "Conditional 2.5PN" }, { kind: "open", label: "Closure condition" }]}
@@ -115,18 +123,18 @@ export default function MetaPaperLibrary() {
           />
 
           <PaperCard
-            index="07"
+            index="08"
             rec={ZENODO.pn3}
-            scope="The full conservative 3PN two-body sector, derived. Matches GR; the first non-trivial cross-check of the program at this order."
+            scope="The full conservative 3PN two-body sector within the declared hierarchy. Matches GR and closes the conservative 3PN bookkeeping."
             status={[{ kind: "reduce", label: "Full 3PN conservative" }]}
             feeds={["10"]}
           />
 
           <PaperCard
-            index="08"
+            index="09"
             rec={ZENODO.pn4}
-            scope="A conditional derivation of the full conservative 4PN two-body sector. Conditional on closure at 2.5PN and on the assumptions carried forward from 3PN."
-            status={[{ kind: "closure", label: "Conditional 4PN" }, { kind: "open", label: "Closure chain" }]}
+            scope="A conditional derivation of the full conservative 4PN two-body sector. The local instantaneous sector is assembled within the hierarchy; the remaining gate is the same quadrupole-normalization / tail bridge already isolated by 2.5PN."
+            status={[{ kind: "closure", label: "Conditional 4PN" }, { kind: "open", label: "Shared tail bridge" }]}
             feeds={["10"]}
           />
         </div>
@@ -138,7 +146,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="prior-work"
         eyebrow="14.3 · prior work"
-        heading="The superfluid-defect toy model — seven foundational preprints."
+        heading="The superfluid-defect toy model — six foundational preprints."
       >
         <TPBody>
           Before the unified 4D program, an earlier round of papers
@@ -151,8 +159,6 @@ export default function MetaPaperLibrary() {
         </TPBody>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 28 }}>
-          <PriorPaperCard rec={ZENODO.priorPnCoeffs}
-            scope="A bridge paper — key PN coefficients collected in one place. Cited by several of the current 4D PN derivations." />
           <PriorPaperCard rec={ZENODO.priorHybrid1pn}
             scope="Hybrid 1PN orbital dynamics plus the acoustic-horizon construction. The precursor to the current 1PN full-sector paper." />
           <PriorPaperCard rec={ZENODO.priorThroatOntology}
@@ -172,8 +178,12 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="topic-map"
         eyebrow="14.4 · topic → source"
-        heading="Which topic pages lean on which current 4D paper."
+        heading="Which topic pages lean on which published current 4D paper."
       >
+        <TPBody>
+          Topic 11 additionally leans on the in-prep moving-throat PDE framework,
+          which is not part of the published matrix below.
+        </TPBody>
         <TopicSourceMatrix />
       </TPSection>
 
@@ -225,13 +235,14 @@ export default function MetaPaperLibrary() {
 function ReadingOrderDiagram() {
   const steps = [
     { n: "01", rec: ZENODO.action, note: "start here — parent action" },
-    { n: "02", rec: ZENODO.maxwell, note: "add gauge" },
-    { n: "03", rec: ZENODO.plasma, note: "side branch · MHD limit" },
-    { n: "04", rec: ZENODO.pn1, note: "work out 1PN" },
-    { n: "05", rec: ZENODO.pn2, note: "… then 2PN conservative" },
-    { n: "06", rec: ZENODO.pn25, note: "conditional 2.5PN" },
-    { n: "07", rec: ZENODO.pn3, note: "… then 3PN conservative" },
-    { n: "08", rec: ZENODO.pn4, note: "conditional 4PN — the current frontier" },
+    { n: "02", rec: ZENODO.bridge, note: "bridge to optical / PN observables" },
+    { n: "03", rec: ZENODO.maxwell, note: "side branch · add gauge" },
+    { n: "04", rec: ZENODO.plasma, note: "side branch · MHD limit" },
+    { n: "05", rec: ZENODO.pn1, note: "work out 1PN" },
+    { n: "06", rec: ZENODO.pn2, note: "… then 2PN conservative" },
+    { n: "07", rec: ZENODO.pn25, note: "conditional 2.5PN" },
+    { n: "08", rec: ZENODO.pn3, note: "… then 3PN conservative" },
+    { n: "09", rec: ZENODO.pn4, note: "conditional 4PN — same tail bridge still open" },
   ];
   return (
     <div style={{ marginTop: 32 }}>
@@ -452,31 +463,31 @@ function InPrepCard() {
 
 // ─── Topic × source matrix ─────────────────────────────────
 function TopicSourceMatrix() {
-  // Columns: 8 current 4D papers. Rows: topics 01–11.
+  // Columns: 9 current 4D papers. Rows: topics 01–11.
   const cols = [
     { i: "01", rec: ZENODO.action },
-    { i: "02", rec: ZENODO.maxwell },
-    { i: "03", rec: ZENODO.plasma },
-    { i: "04", rec: ZENODO.pn1 },
-    { i: "05", rec: ZENODO.pn2 },
-    { i: "06", rec: ZENODO.pn25 },
-    { i: "07", rec: ZENODO.pn3 },
-    { i: "08", rec: ZENODO.pn4 },
+    { i: "02", rec: ZENODO.bridge },
+    { i: "03", rec: ZENODO.maxwell },
+    { i: "04", rec: ZENODO.plasma },
+    { i: "05", rec: ZENODO.pn1 },
+    { i: "06", rec: ZENODO.pn2 },
+    { i: "07", rec: ZENODO.pn25 },
+    { i: "08", rec: ZENODO.pn3 },
+    { i: "09", rec: ZENODO.pn4 },
   ];
 
-  // topic n → set of paper indices (1-based keyed to `cols`)
   const map = {
-    "01": ["01"],
+    "01": ["01", "02"],
     "02": ["01"],
     "03": ["01"],
     "04": ["01"],
-    "05": ["01", "04"],
-    "06": ["02"],
-    "07": ["03"],
-    "08": ["02"],
-    "09": ["02"],
-    "10": ["04", "05", "06", "07", "08"],
-    "11": ["01"],
+    "05": ["01", "02", "05"],
+    "06": ["03"],
+    "07": ["04"],
+    "08": ["02", "03"],
+    "09": ["03"],
+    "10": ["02", "05", "06", "07", "08", "09"],
+    "11": ["01", "03"],
   };
 
   const topics = [
@@ -504,7 +515,7 @@ function TopicSourceMatrix() {
       {/* Header */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "240px repeat(8, 1fr)",
+        gridTemplateColumns: "240px repeat(9, 1fr)",
         padding: "12px 18px",
         borderBottom: "1px solid var(--rule)",
         fontFamily: "var(--font-mono)",

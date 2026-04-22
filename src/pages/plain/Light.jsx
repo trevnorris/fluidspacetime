@@ -42,8 +42,10 @@ export default function PlainLight() {
         <TPBody>
           The pond of this program is much stiffer than water and much
           heavier — but the ratio is what matters. In the regime we care
-          about, the ratio gives a number, and that number, expressed in
-          conventional units, is <em>299,792,458 metres per second</em>.
+          about, the ratio is the quantity brane observers call <em>c</em>.
+          The current framework explains why there is one characteristic speed
+          at all. It does not yet derive the numerical value of{" "}
+          <em>299,792,458 metres per second</em> from deeper inputs.
           It's not that light was issued a speed limit by a cosmic rulebook.
           The speed limit is simply how fast the pond can move information
           from one place to another. Anything that is fundamentally a
@@ -170,7 +172,7 @@ export default function PlainLight() {
             ◇ technical mirror
           </span>
           <span className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 220 }}>
-            Transverse polarization modes, derivation of <em>c</em> from (ρ₀, κ), and the Z(w)-controlled UV dispersion.
+            Characteristic speed from the EOS slope, controlled brane Maxwell reduction, and profile-gated KK corrections.
           </span>
           <TrackToggle track="plain" size="sm" />
         </div>

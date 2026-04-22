@@ -84,10 +84,10 @@ export default function PlainGravity() {
           In the technical language, the first part is called
           <em> longitudinal</em> and the second is called
           <em> transverse</em>. A key result of the program is that, when you
-          do the math carefully, the longitudinal part of the brane's flow
-          obeys exactly the equation Newton wrote down for his gravitational
-          potential — but it comes from fluid accounting, not from a force
-          postulate.
+          do the math carefully, the longitudinal part satisfies an exact
+          bookkeeping identity, and in a controlled slow-motion regime that
+          identity reduces to the Poisson equation Newton used for gravity.
+          The force-law picture is a limit, not the starting point.
         </TPBody>
       </TPSection>
 
@@ -122,7 +122,7 @@ export default function PlainGravity() {
           It does <em>not</em> automatically give you full general relativity.
           The program climbs toward relativistic corrections one rung at a
           time through a ladder of post-Newtonian approximations
-          (topic 10), and the climb is not finished. What we have is a
+          (topic 10), and the climb is only partly closed. What we have is a
           principled answer to "why 1/<em>r</em>² and why always attractive,"
           earned rather than imposed.
         </TPBody>

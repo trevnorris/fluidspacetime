@@ -32,9 +32,9 @@ export default function TechnicalPlasma() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="reduction" label="Ideal MHD on Σ" />
-          <Badge status="open" label="Projection stress / topology stress" />
-          <Badge status="open" label="Reconnection energy budget" />
+          <Badge kind="reduce">Ideal MHD on Σ</Badge>
+          <Badge kind="open">Projection stress / topology stress</Badge>
+          <Badge kind="open">Reconnection energy budget</Badge>
           <Chip label="sector: gauge + matter" />
           <Chip label="4D · Plasma / MHD" href={ZENODO.plasma.url} />
         </div>
@@ -53,9 +53,9 @@ export default function TechnicalPlasma() {
         </TPBody>
 
         <EqCard
-          eyebrow="brane sources · Part II Eq. 7.1"
+          label="◇ brane sources · Part II Eq. 7.1"
+          plain="q_eff,s = q_*,s / √Z_int as in topic 06. η_s is embedded in the sign of q_*,s."
           tex="\rho_q(x,t) \;=\; \sum_s q_{\text{eff},s}\, n_s, \qquad \mathbf{J}(x,t) \;=\; \sum_s q_{\text{eff},s}\, n_s\, \mathbf{u}_s"
-          note="q_eff,s = q_*,s / √Z_int as in topic 06. η_s is embedded in the sign of q_*,s."
         />
 
         <TPBody>
@@ -92,9 +92,9 @@ export default function TechnicalPlasma() {
         </TPBody>
 
         <EqCard
-          eyebrow="ideal MHD · Part II Eq. 7.2"
+          label="◇ ideal MHD · Part II Eq. 7.2"
+          plain="Flux-freezing and the MHD momentum equation. All standard Maxwell constraints follow from the reduction of topic 06."
           tex="\partial_t \mathbf{B} \;=\; \nabla \times (\mathbf{V} \times \mathbf{B}), \qquad \rho\, \big(\partial_t + \mathbf{V}\cdot\nabla\big)\mathbf{V} \;=\; -\nabla p \;+\; \mathbf{J} \times \mathbf{B}"
-          note="Flux-freezing and the MHD momentum equation. All standard Maxwell constraints follow from the reduction of topic 06."
         />
       </TPSection>
 
@@ -135,8 +135,8 @@ export default function TechnicalPlasma() {
         </div>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
-          <Badge status="reduction" label="Identification of channels" />
-          <Badge status="open" label="Quantitative coefficients" />
+          <Badge kind="reduce">Identification of channels</Badge>
+          <Badge kind="open">Quantitative coefficients</Badge>
         </div>
       </TPSection>
 
@@ -154,9 +154,9 @@ export default function TechnicalPlasma() {
         </TPBody>
 
         <EqCard
-          eyebrow="projection stress · open closure"
+          label="◇ projection stress · open closure"
+          plain="Θ_{μν} is the projection stress. It is structurally required; its closed-form evaluation against a realistic throat ensemble is open."
           tex="\widehat{T}_{\mu\nu}^{\text{proj}} \;=\; \int W(w)\, T^{\text{bulk}}_{\mu\nu}\, dw \;+\; \Theta_{\mu\nu}\!\big[W, \rho, F\big]"
-          note="Θ_{μν} is the projection stress. It is structurally required; its closed-form evaluation against a realistic throat ensemble is open."
         />
 
         <TPBody>

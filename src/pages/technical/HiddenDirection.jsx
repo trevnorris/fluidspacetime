@@ -35,9 +35,9 @@ export default function TechnicalHiddenDirection() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="exact" label="Ambient geometry" />
-          <Badge status="exact" label="Projection kernel" />
-          <Badge status="reduction" label="Zero-mode closure" />
+          <Badge kind="exact">Ambient geometry</Badge>
+          <Badge kind="exact">Projection kernel</Badge>
+          <Badge kind="reduce">Zero-mode closure</Badge>
           <Chip label="sector: geometry" />
           <Chip label="4D · Action & Projections" href={ZENODO.action.url} />
         </div>
@@ -59,9 +59,9 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
 
         <EqCard
-          eyebrow="brane embedding · Part I Eq. 3.1"
+          label="◇ brane embedding · Part I Eq. 3.1"
+          plain="Σ is a static, flat 3+1 slice in this volume of the program. Moving-throat extensions promote Σ to a distributed profile in topic 11."
           tex="\Sigma \;=\; \{\, (x,w,t) \in \mathcal{M} \,:\, w = 0 \,\},\qquad \dim \Sigma = 3+1"
-          note="Σ is a static, flat 3+1 slice in this volume of the program. Moving-throat extensions promote Σ to a distributed profile in topic 11."
         />
 
         <TPBody>
@@ -84,9 +84,9 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
 
         <EqCard
-          eyebrow="projection · Part I Eq. 3.2"
+          label="◇ projection · Part I Eq. 3.2"
+          plain="W(w) is part of the data of the theory, not an approximation. It declares how the brane samples w."
           tex="\widehat{\Phi}(x,t) \;=\; \int_{-\infty}^{\infty} W(w)\, \Phi(x,w,t)\, dw, \qquad \int W(w)\, dw = 1,\ \ W \geq 0"
-          note="W(w) is part of the data of the theory, not an approximation. It declares how the brane samples w."
         />
 
         <TPBody>
@@ -100,7 +100,7 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
-          <Badge status="exact" label="W(w) given a priori" />
+          <Badge kind="exact">W(w) given a priori</Badge>
           <Chip label="consumed by: topic 06 (EM)" />
           <Chip label="consumed by: topic 05 (inflow)" />
         </div>
@@ -122,9 +122,9 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
 
         <EqCard
-          eyebrow="zero-mode ansatz · controlled reduction"
+          label="◇ zero-mode ansatz · controlled reduction"
+          plain="δΦ_⊥ is the suppressed higher-mode residual. Its neglect is the content of the reduction badge."
           tex="\Phi(x,w,t) \;\approx\; \phi_0(x,t)\, f(w) \;+\; \delta\Phi_\perp(x,w,t), \qquad \langle f,\, \delta\Phi_\perp\rangle_w = 0"
-          note="δΦ_⊥ is the suppressed higher-mode residual. Its neglect is the content of the reduction badge."
         />
 
         <TPBody>

@@ -3,13 +3,21 @@
 // and the Paper Library. Update here to update everywhere.
 
 export const ZENODO = {
-  // ── Current 4D program (8 published + 1 in prep) ──────────────
+  // ── Current 4D program (9 published + 1 in prep) ──────────────
   action: {
     id: '19449589',
     doi: '10.5281/zenodo.19449589',
     url: 'https://doi.org/10.5281/zenodo.19449589',
     title: '4D Toy Model — Action, Projections, and Controlled Brane Limits',
     short: '4D · Action & Projections',
+    year: 2026,
+  },
+  bridge: {
+    id: '19449653',
+    doi: '10.5281/zenodo.19449653',
+    url: 'https://doi.org/10.5281/zenodo.19449653',
+    title: 'Deriving Key Post-Newtonian Coefficients from the Unified 4D Toy Model',
+    short: '4D · 1PN bridge',
     year: 2026,
   },
   maxwell: {
@@ -70,14 +78,6 @@ export const ZENODO = {
   },
 
   // ── Prior work (superfluid-defect toy model era) ──────────────
-  priorPnCoeffs: {
-    id: '19449653',
-    doi: '10.5281/zenodo.19449653',
-    url: 'https://doi.org/10.5281/zenodo.19449653',
-    title: 'Deriving Key Post-Newtonian Coefficients from the Unified 4D Toy Model',
-    short: 'Prior · PN coefficients',
-    year: 2026,
-  },
   priorHybrid1pn: {
     id: '19449512',
     doi: '10.5281/zenodo.19449512',

@@ -107,18 +107,18 @@ export default function Home() {
               bullets={[
                 'Parent action stated on page 1. Every carry-forward identity is cited.',
                 'Every asserted equality carries a claim-status badge (exact · closure · open …).',
-                'Source chips link to the .md ledger — every page defends its own claims.',
+                'Source chips point back to the current Zenodo preprints and the paper library.',
               ]}
               sample={{
                 label: 'how a page opens',
                 body: (
                   <>
-                    Let <Tex tex="\varphi(x,w,t)" /> denote a real scalar field on
-                    the bulk{' '}
+                    Let <Tex tex="\psi(x,w,t)" /> denote a complex order
+                    parameter on the bulk{' '}
                     <Tex tex="\mathbb{R}^{3}\!\times\!\mathbb{R}_w\!\times\!\mathbb{R}_t" />
-                    , with a stiff polytropic EoS{' '}
-                    <Tex tex="P(\rho)=K\rho^{n}" />,<Tex tex="\,n=5" />. A
-                    brane observer at <Tex tex="w=0" /> measures…
+                    , with <Tex tex="\rho = |\psi|^2" /> and a stiff polytropic
+                    EoS <Tex tex="P(\rho)=K\rho^{n}" />, <Tex tex="\,n=5" />. A
+                    brane observer measures projection-defined fields…
                   </>
                 ),
               }}
@@ -161,7 +161,8 @@ export default function Home() {
               <Link className="fu-link" to="/meta/paper-library">
                 Paper Library
               </Link>{' '}
-              indexes all 8 .md source documents.
+              indexes the 9 published 4D papers plus the earlier superfluid-defect
+              papers they build on.
             </span>
           </div>
 

@@ -32,9 +32,9 @@ export default function TechnicalThroats() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="exact" label="Throat ansatz" />
-          <Badge status="reduction" label="Static radius/length" />
-          <Badge status="open" label="Moving-wall R(Ω,w,t)" />
+          <Badge kind="exact">Throat ansatz</Badge>
+          <Badge kind="reduce">Static radius/length</Badge>
+          <Badge kind="open">Moving-wall R(Ω,w,t)</Badge>
           <Chip label="sector: geometry + matter" />
           <Chip label="source: moving_throat_pde_program_compact.md" />
         </div>
@@ -54,9 +54,9 @@ export default function TechnicalThroats() {
         </TPBody>
 
         <EqCard
-          eyebrow="throat ansatz · Part I Eq. 4.1"
+          label="◇ throat ansatz · Part I Eq. 4.1"
+          plain="f is a monotone profile with f(0)=0 and f(∞)=√ρ_∞. R(w) is the throat radius; n ∈ ℤ is the winding; φ specifies angular phase and w-twist."
           tex="\psi_\text{throat}(r, \Omega, w) \;=\; f\!\big(r/R(w)\big)\, e^{\,i n\,\varphi(\Omega,w)}"
-          note="f is a monotone profile with f(0)=0, f(∞)=√ρ_∞. R(w) is the throat radius; n ∈ ℤ is the winding; φ specifies angular phase and w-twist."
         />
 
         <TPBody>
@@ -94,9 +94,9 @@ export default function TechnicalThroats() {
         </TPBody>
 
         <EqCard
-          eyebrow="charge sign · Part I Eq. 4.2"
+          label="◇ charge sign · Part I Eq. 4.2"
+          plain="q_* is the microscopic branch coupling; q_eff is the observable brane charge. The factor 1/√Z_int dresses q_* through the EM localization integral."
           tex="\eta_Q \in \{+1,\,-1\}, \qquad q_* \;=\; \eta_Q\, e_*, \qquad q_\text{eff} \;=\; q_* \,\big/\, \sqrt{Z_\text{int}}"
-          note="q_* is the microscopic branch coupling; q_eff is the observable brane charge. The factor 1/√Z_int dresses q_* through the EM localization integral."
         />
 
         <TPBody>
@@ -163,9 +163,9 @@ export default function TechnicalThroats() {
         </TPBody>
 
         <EqCard
-          eyebrow="brane observables · Part I Eq. 4.3"
+          label="◇ brane observables · Part I Eq. 4.3"
+          plain="M_brane is the brane-observed mass. Its dependence on (R_0, L) is the content of the Part II gravity chapters."
           tex="\widehat{\delta\rho}(r) \;=\; \int W(w)\,\big(|\psi_\text{throat}|^2 - \rho_\infty\big)\, dw, \qquad M_\text{brane} \;=\; \int \widehat{\delta\rho}(r)\, d^3x"
-          note="M_brane is the brane-observed mass. Its dependence on (R_0, L) is the content of the Part II gravity chapters."
         />
 
         <TPBody>
@@ -179,9 +179,9 @@ export default function TechnicalThroats() {
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 18 }}>
-          <Badge status="reduction" label="Projected mass (static throat)" />
-          <Badge status="reduction" label="Zero-mode EM coupling" />
-          <Badge status="open" label="Moving-wall mass correction" />
+          <Badge kind="reduce">Projected mass (static throat)</Badge>
+          <Badge kind="reduce">Zero-mode EM coupling</Badge>
+          <Badge kind="open">Moving-wall mass correction</Badge>
         </div>
       </TPSection>
 

@@ -68,13 +68,12 @@ export default function MetaWhatThisIsNot() {
           wrong="“It replaces general relativity.”"
           right={
             <>
-              It doesn't. GR is recovered as the weak-field, long-wavelength
-              limit of the inflow picture (topic 05) and carries forward
-              through 2PN (topic 10). The program's testable content lives in
-              corrections <em>beyond</em> the GR sector — 2.5PN normalisation,
-              3.5PN and 4PN radiation reaction, and specific fluid-frame
-              effects near throats. If a prediction disagrees with GR inside
-              GR's domain of validity, the program is wrong, not GR.
+              It doesn't. GR is the comparison target throughout the weak-field
+              inflow and PN program. The current published conservative
+              carry-forward reaches 3PN within a declared hierarchy; 2.5PN and
+              4PN remain conditional on one shared outgoing quadrupole
+              normalization. If a prediction disagrees with GR inside GR's
+              domain of validity, the program is wrong, not GR.
             </>
           }
         />
@@ -86,11 +85,12 @@ export default function MetaWhatThisIsNot() {
             <>
               The fluid is not a picture-language for something else. It's
               the object the parent action is written down on. Topics 02–11
-              are literal consequences of that action, evaluated at various
-              orders. The Plain English track <em>is</em> metaphor-first, and
-              the Technical track strips the metaphor away — but the
-              underlying object is the same on both tracks, and it is
-              mathematical, not verbal.
+              are claims about that object at different strengths: some are
+              exact projection identities, some are controlled reductions, and
+              some are open branch-data targets. The Plain English track
+              <em> is</em> metaphor-first, and the Technical track strips the
+              metaphor away — but the underlying object is the same on both
+              tracks, and it is mathematical, not verbal.
             </>
           }
         />
@@ -102,10 +102,11 @@ export default function MetaWhatThisIsNot() {
             <>
               Not yet. Several central equations are{" "}
               <em>controlled reductions</em> (zero-mode closure, core-scaling
-              ansatz) or carry open coefficients (the 2.5PN{" "}
-              <span className="fu-mono">δ_Z</span>, the g−2 series matching).
-              The moving-throat PDE — the program's frontier — is a{" "}
-              <em>statement of the problem</em>, not a closed solution.
+              ansatz) or carry open branch data (the shared 2.5PN / 4PN
+              outgoing normalization, the g−2 branch-selection residue). The
+              moving-throat PDE — the program's frontier — is a{" "}
+              <em>framework and reduced-system statement</em>, not a closed
+              nonlinear solution.
               Treat the badges as the contract. <Badge kind="exact" />{" "}
               means exact. <Badge kind="open" /> means unresolved.
             </>
@@ -146,27 +147,27 @@ export default function MetaWhatThisIsNot() {
 
           <FalsifierCard
             tag="F-2 · ring-down"
-            heading="Throat quasi-normal spectrum"
+            heading="Realized throat-response spectrum"
             body={<>
-              The moving-throat PDE predicts a specific ring-down spectrum
-              for a perturbed throat. A black-hole ring-down spectrum
-              measured cleanly by LIGO/LISA that disagrees with the
-              throat-PDE prediction at the leading two modes would rule out
-              the throat-identification ansatz.
+              Topic 11 does not yet supply a finished ring-down spectrum.
+              What it does supply is the framework that a realized branch
+              would have to turn into one. Once that branch is fixed, a
+              clean LIGO/LISA spectrum that misses the leading throat
+              response would rule out the throat-identification route.
             </>}
             crossref="topic 11"
           />
 
           <FalsifierCard
             tag="F-3 · anomalous moment"
-            heading="g−2 sign or α-series shape"
+            heading="g−2 branch when completed"
             body={<>
-              The fluid picture reproduces the Schwinger α/2π piece by
-              construction (geometric form factor). At α² it predicts a
-              specific sign and magnitude from the first-loop brane-bulk
-              mixed sector. A measured electron or muon g−2 anomaly at α²
-              with the <em>wrong sign</em> would falsify the geometric
-              origin claim.
+              The current anomaly package narrows the residue to one branch
+              datum; it does not yet justify claiming that the published
+              stack has already derived the full electron or muon anomaly
+              series. If the completed branch realization yields the wrong
+              sign or wrong α-series shape against experiment, that would
+              falsify the geometric-anomaly route.
             </>}
             crossref="topic 09"
           />
@@ -176,12 +177,11 @@ export default function MetaWhatThisIsNot() {
             heading="n ≠ 5 from an independent constraint"
             body={<>
               The whole program sits on the stiff polytrope exponent{" "}
-              <span className="fu-mono">n = 5</span>. This is not tuned: it
-              is fixed by requiring a single throat to exist as a regular
-              solution. An independent calculation (e.g., from UV
-              completion, or from the finite-thickness brane spectrum)
-              that fixed <span className="fu-mono">n</span> to a different
-              value would collapse the picture.
+              <span className="fu-mono">n = 5</span>. In the current
+              carry-forward record this is fixed by weak-field optical
+              consistency, not by downstream fitting. An independent
+              calculation that forced <span className="fu-mono">n</span> to
+              a different value would collapse the picture.
             </>}
             crossref="topic 01"
           />
@@ -222,7 +222,7 @@ export default function MetaWhatThisIsNot() {
           are a working exposition of a specific research program whose
           central PDE is not yet closed. If you are a referee, start at the{" "}
           <span className="fu-mono">source:</span> chips and read the{" "}
-          <em>.md</em> documents directly. If you are a physicist
+          cited preprints and summaries directly. If you are a physicist
           evaluating whether to spend time on this, read topic 10 (the
           ledger) before anything else — it states exactly what is and
           isn't derived.

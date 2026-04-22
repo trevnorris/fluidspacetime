@@ -32,8 +32,8 @@ export default function TechnicalDefects() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="exact" label="Winding invariance" />
-          <Badge status="reduction" label="3D slice homotopy" />
+          <Badge kind="exact">Winding invariance</Badge>
+          <Badge kind="reduce">3D slice homotopy</Badge>
           <Chip label="sector: matter" />
           <Chip label="4D · Action & Projections" href={ZENODO.action.url} />
           <Chip label="Prior · throat ontology" href={ZENODO.priorThroatOntology.url} />
@@ -57,9 +57,9 @@ export default function TechnicalDefects() {
         </TPBody>
 
         <EqCard
-          eyebrow="matter decomposition · Part I Eq. 2.1"
+          label="◇ matter decomposition · Part I Eq. 2.1"
+          plain="θ is multi-valued in the presence of defects; it lives on the universal cover of the punctured domain."
           tex="\psi(x,w,t) \;=\; \sqrt{\rho(x,w,t)}\; e^{i\theta(x,w,t)}, \qquad \rho \geq 0,\ \theta \in \mathbb{R}/2\pi\mathbb{Z}"
-          note="θ is multi-valued in the presence of defects; it lives on the universal cover of the punctured domain."
         />
 
         <TPCallout kind="note">
@@ -83,9 +83,9 @@ export default function TechnicalDefects() {
         </TPBody>
 
         <EqCard
-          eyebrow="winding invariant · Part I Eq. 2.2"
+          label="◇ winding invariant · Part I Eq. 2.2"
+          plain="Integer-valued by virtue of π₁(S¹) = ℤ. Independent of the representative loop within the defect's homotopy class."
           tex="n(\gamma) \;=\; \frac{1}{2\pi}\oint_\gamma d\theta \;\in\; \mathbb{Z}"
-          note="Integer-valued by virtue of π₁(S¹) = ℤ. Independent of the representative loop within the defect's homotopy class."
         />
 
         <TPBody>
@@ -165,9 +165,9 @@ export default function TechnicalDefects() {
         </TPBody>
 
         <EqCard
-          eyebrow="core scaling · controlled reduction"
+          label="◇ core scaling · controlled reduction"
+          plain="Treated here as order-of-magnitude. Full self-similar core profile lives in the throat-ontology preprint (prior work)."
           tex="\xi \;\sim\; \sqrt{K \rho_\infty^{\,3}} \;\Big/\; c_s, \qquad E_\text{core} \;\sim\; \rho_\infty c_s^2\, \xi^2"
-          note="Treated here as order-of-magnitude. Full self-similar core profile lives in the throat-ontology preprint (prior work)."
         />
 
         <TPBody>
@@ -179,8 +179,8 @@ export default function TechnicalDefects() {
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 18 }}>
-          <Badge status="reduction" label="Core scaling" />
-          <Badge status="open" label="Profile uniqueness" />
+          <Badge kind="reduce">Core scaling</Badge>
+          <Badge kind="open">Profile uniqueness</Badge>
           <Chip label="consumed by: topic 05 (inflow), topic 09 (atoms)" />
         </div>
       </TPSection>

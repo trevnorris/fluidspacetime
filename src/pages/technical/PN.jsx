@@ -18,23 +18,24 @@ export default function TechnicalPN() {
     <TopicPage track="technical" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Newton · 1PN · 2PN · 3PN — derived. 2.5PN · 4PN — conditional,
-          closure gated by the moving-throat PDE.
+          Newton through 3PN sit inside one declared hierarchy. 2.5PN and 4PN
+          share one outgoing quadrupole-normalization gate.
         </TPTitle>
         <TPLede>
-          The post-Newtonian expansion of the brane-projected EoM (topic 05)
-          reproduces the full conservative sectors of GR through 3PN. Two
-          conditional results sit on top of this ladder: the 2.5PN
-          point-particle quadrupole formula, and the full conservative 4PN
-          sector. Both are <em>conditional</em> — they rest on a stated
-          closure that will be resolved when the moving-throat PDE
-          (topic 11) is closed. This page states the ledger as a table of
-          coefficients with Zenodo sources on every row.
+          The current 4D program does not phrase the PN story as a fresh set of
+          projected Einstein equations. It builds a carried two-body ledger
+          inside a declared closure hierarchy: Newtonian matching, the 1PN
+          bridge package, the full conservative 1PN/2PN/3PN sectors, then the
+          conditional 2.5PN and 4PN bridges. The remaining open datum is not a
+          new 4PN constant; it is the same passive/outgoing quadrupole
+          normalization already isolated by 2.5PN.
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge status="exact" label="Newton · 1PN · 2PN · 3PN" />
-          <Badge status="reduction" label="2.5PN · 4PN (conditional)" />
+          <Badge kind="reduce">1PN · 2PN · 3PN within hierarchy</Badge>
+          <Badge kind="closure">2.5PN · 4PN share one gate</Badge>
+          <Chip label="4D · Action" href={ZENODO.action.url} />
+          <Chip label="4D · 1PN bridge" href={ZENODO.bridge.url} />
           <Chip label="4D · 1PN" href={ZENODO.pn1.url} />
           <Chip label="4D · 2PN" href={ZENODO.pn2.url} />
           <Chip label="4D · 2.5PN" href={ZENODO.pn25.url} />
@@ -46,95 +47,88 @@ export default function TechnicalPN() {
       <TPSection
         anchor="setup"
         eyebrow="setup"
-        heading="PN expansion of the projected Einstein equations."
+        heading="The ledger lives inside a declared closure hierarchy."
       >
         <TPBody>
-          Linearize the projected EoM of topic 05 about a flat ambient
-          brane. Expand in <Tex tex="\varepsilon = v/c" /> and organize by
-          powers of <Tex tex="\varepsilon" />:
+          The bridge and full 1PN papers freeze the lower-order data carried by
+          the rest of the PN stack:
         </TPBody>
 
         <EqCard
-          eyebrow="metric expansion · Eq. 10.1"
-          tex="\widehat{g}_{\mu\nu} \;=\; \eta_{\mu\nu} \;+\; h^{(2)}_{\mu\nu} \,\varepsilon^2 \;+\; h^{(3)}_{\mu\nu}\,\varepsilon^3 \;+\; h^{(4)}_{\mu\nu}\,\varepsilon^4 \;+\; \ldots"
-          note="h^(n) is the n-th PN metric perturbation. Odd-n terms carry radiation; even-n terms carry conservative dynamics."
+          label="◇ carry-forward closure package"
+          plain="The bridge / 1PN package freezes the lower-order data used throughout the PN stack."
+          tex="n=5, \qquad \kappa_\rho = 1, \qquad \kappa_{\rm add} = \frac12, \qquad \kappa_{\rm PV} = \frac32, \qquad \beta_{1{\rm PN}} = 3"
         />
 
         <TPBody>
-          The EoM at each order is a linear Poisson-type equation in{" "}
-          <Tex tex="h^{(n)}" />, sourced by a combination of lower-order{" "}
-          <Tex tex="h^{(k &lt; n)}" /> and the matter stress tensor. The
-          fluid-picture modification is a specific correction to this
-          source:
+          That is the sense in which the site should use words like
+          <em> derived</em> and <em>closed</em>: exact within the named
+          hierarchy, not assumption-free theorems of a fully solved moving-throat
+          PDE.
         </TPBody>
-
-        <EqCard
-          eyebrow="modified source · Eq. 10.2"
-          tex="\Box\, h^{(n)}_{\mu\nu} \;=\; -16\pi G \, T^{\text{brane}}_{\mu\nu} \;+\; \Theta^{(n)}_{\mu\nu}\big[W, Z, \rho, F\big]"
-          note="Θ^{(n)} is the projection/mixed-sector correction at order n. Θ^{(n)} = 0 for n ≤ 4 under the controlled reduction, except at n = 5 (2.5PN) and n = 7 (3.5PN) where mixed-channel contributions survive."
-        />
       </TPSection>
 
       <TPSection
         anchor="ledger"
         eyebrow="the ledger · coefficients"
-        heading="One row per PN order."
+        heading="One row per PN rung."
       >
         <div style={{ margin: "14px 0" }}>
           {[
             {
-              status: "exact",
-              order: "Newton (0PN)",
-              quantity: "Φ = −GM/r",
-              coeff: "G matches Newton's constant via G = (throat integral) / (4π ρ₀)",
-              source: "topic 05 · Eq. 5.3",
+              status: "effect",
+              order: "Newtonian regime",
+              quantity: "Poisson / inverse-square hook",
+              coeff: "Exact projection identities plus a controlled Poisson regime; downstream matching fixes κ_ρ = 1 in the bridge package.",
+              source: "4D · Action + 4D · 1PN bridge",
             },
             {
-              status: "exact",
+              status: "reduction",
               order: "1PN (full)",
               quantity: "Full first post-Newtonian sector",
-              coeff: "Full 1PN two-body Lagrangian derived under the controlled reduction; term-by-term match to GR",
-              source: "4D · 1PN full  ·  zenodo.19450102",
+              coeff: "Full conservative 1PN two-body ledger derived within the declared hierarchy; term-by-term match to GR.",
+              source: "4D · 1PN full · zenodo.19450102",
             },
             {
-              status: "exact",
+              status: "reduction",
               order: "2PN (conservative)",
               quantity: "Full conservative 2PN sector",
-              coeff: "All conservative terms at O(v⁴/c⁴) derived; match to GR verified",
-              source: "4D · 2PN conservative  ·  zenodo.19450284",
+              coeff: "All conservative terms at O(v⁴/c⁴) fixed within the same hierarchy and matched to the standard target.",
+              source: "4D · 2PN conservative · zenodo.19450284",
             },
             {
-              status: "reduction",
+              status: "closure",
               order: "2.5PN (conditional)",
               quantity: "Point-particle quadrupole radiation",
-              coeff: "dE/dt reproduces the GR quadrupole formula under a stated closure; the closure is itself conditional",
-              source: "4D · 2.5PN conditional  ·  zenodo.19492270",
-            },
-            {
-              status: "exact",
-              order: "3PN (conservative)",
-              quantity: "Full conservative 3PN sector",
-              coeff: "All conservative terms at O(v⁶/c⁶) derived and matched to GR — the strongest cross-check to date",
-              source: "4D · 3PN conservative  ·  zenodo.19501724",
+              coeff: "Structure and coefficient match GR subject to the passive/outgoing quadrupole normalization.",
+              source: "4D · 2.5PN conditional · zenodo.19492270",
             },
             {
               status: "reduction",
+              order: "3PN (conservative)",
+              quantity: "Full conservative 3PN sector",
+              coeff: "The conservative 3PN ledger is fully assigned in the fixed ADM chart inside the declared hierarchy.",
+              source: "4D · 3PN conservative · zenodo.19501724",
+            },
+            {
+              status: "closure",
               order: "4PN (conditional)",
               quantity: "Full conservative 4PN sector",
-              coeff: "All conservative terms at O(v⁸/c⁸) derived conditional on (i) the 2.5PN closure and (ii) assumptions carried from 3PN",
-              source: "4D · 4PN conditional  ·  zenodo.19561056",
+              coeff: "The local instantaneous 4PN sector is assembled inside the hierarchy; the remaining gate is the same quadrupole-normalization / tail bridge already isolated by 2.5PN.",
+              source: "4D · 4PN conditional · zenodo.19561056",
             },
             {
               status: "open",
-              order: "radiation reaction (2.5PN+)",
-              quantity: "Closure of the conditional 2.5PN branch",
-              coeff: "Conditionality of 2.5PN and 4PN will be resolved by the moving-throat PDE (topic 11)",
-              source: "gated by in-prep PDE paper",
+              order: "frontier",
+              quantity: "Passive/outgoing quadrupole normalization",
+              coeff: "This is the live theorem target carried jointly by 2.5PN and 4PN. 4PN does not open a second independent normalization datum.",
+              source: "moving-throat branch realization",
             },
-          ].map((row, i) => {
+          ].map((row) => {
             const colorMap = {
-              exact:     { bar: "#7fc69d", ring: "#7fc69d55", tint: "rgba(127,198,157,0.07)" },
+              effect:    { bar: "#d7c9a1", ring: "#d7c9a155", tint: "rgba(215,201,161,0.07)" },
               reduction: { bar: "#7aa2ff", ring: "#7aa2ff55", tint: "rgba(122,162,255,0.07)" },
+              closure:   { bar: "#7fc69d", ring: "#7fc69d55", tint: "rgba(127,198,157,0.07)" },
               open:      { bar: "#e67ac6", ring: "#e67ac655", tint: "rgba(230,122,198,0.07)" },
             };
             const c = colorMap[row.status];
@@ -147,8 +141,9 @@ export default function TechnicalPN() {
                 borderRadius: 3,
                 background: `linear-gradient(160deg, ${c.tint}, rgba(16,20,42,0.4))`,
                 display: "grid",
-                gridTemplateColumns: "140px 1fr 1fr",
-                gap: 16, alignItems: "baseline",
+                gridTemplateColumns: "150px 1fr 1fr",
+                gap: 16,
+                alignItems: "baseline",
               }}>
                 <div>
                   <div className="fu-mono fu-small" style={{ color: c.bar, fontSize: 10, letterSpacing: "0.14em", marginBottom: 4 }}>
@@ -177,75 +172,53 @@ export default function TechnicalPN() {
 
       <TPSection
         anchor="gap"
-        eyebrow="the normalization gap"
-        heading="A single bulk integral gates 2.5PN → 4PN."
+        eyebrow="the shared gate"
+        heading="2.5PN and 4PN wait on the same outgoing quadrupole normalization."
       >
         <TPBody>
-          The 2.5PN quadrupole formula reproduces GR's point-particle
-          expression, but only under a closure on a mixed-sector scalar
-          integral. Write the power as
+          The 2.5PN paper writes the odd sector as the standard quadrupole
+          formula times one open normalization factor, while the 4PN paper shows
+          that the hereditary tail coefficient is controlled by that same
+          normalization:
         </TPBody>
 
         <EqCard
-          eyebrow="δ_Z · Eq. 10.3 · conditional"
-          tex="\frac{dE}{dt}\bigg|_{\text{2.5PN}} \;=\; -\,\frac{G}{5 c^5}\,\langle \dddot Q_{jk}\, \dddot Q^{jk} \rangle \cdot (1 + \delta_Z), \qquad \delta_Z \;=\; \mathcal{I}_{\text{mix}}\!\big[Z,\,\partial_w F\big]"
-          note="𝓘_mix is a scalar integral over the brane-bulk mixed-sector channels of topic 06, evaluated in the radiation zone. GR predicts δ_Z = 0. The 4D · 2.5PN manuscript derives the GR quadrupole formula conditional on δ_Z = 0; the closure itself is gated by the moving-throat PDE."
+          label="◇ shared normalization gate · conditional"
+          plain="2.5PN odd radiation and the 4PN tail coefficient wait on the same outgoing quadrupole normalization."
+          tex="\frac{dE}{dt}\Big|_{2.5{\rm PN}} \;=\; -\,\frac{G}{5c^5}\,\langle \dddot Q_{jk}\dddot Q^{jk}\rangle\,(1+\delta_Z), \qquad C_{\rm tail} \;=\; \frac{GM}{2c^3}\,\gamma_{\rm quad}^{\rm eff}"
         />
 
         <TPCallout kind="note">
-          <strong style={{ color: "var(--ink-1)" }}>Why this must hold.</strong>{" "}
-          The Hulse–Taylor binary's orbital decay agrees with GR to{" "}
-          <Tex tex="\sim 0.1\%" />. Any <Tex tex="|\delta_Z|" /> larger
-          than about <Tex tex="10^{-3}" /> is already ruled out. The open
-          question is whether the fluid picture <em>derives</em>{" "}
-          <Tex tex="\delta_Z = 0" /> from topic 11, or whether{" "}
-          <Tex tex="\delta_Z = 0" /> must be imposed as a constraint on
-          the closure. The program expects the former; the 2.5PN and 4PN
-          manuscripts currently assume it, which is what "conditional"
-          means on this page.
+          <strong style={{ color: "var(--ink-1)" }}>Strategic point.</strong>{" "}
+          The open problem is no longer more local 4PN algebra. It is the
+          branch-realization problem for the passive/outgoing quadrupole
+          normalization on the moving-throat side.
         </TPCallout>
-
-        <TPBody>
-          The 4PN conservative sector inherits the same{" "}
-          <Tex tex="\delta_Z" /> closure plus additional assumptions on
-          the inner-zone propagator carried forward from 3PN. Both
-          conditional rungs are downstream of topic 11.
-        </TPBody>
       </TPSection>
 
       <TPSection
         anchor="tests"
         eyebrow="experimental cross-checks"
-        heading="What the ledger is measured against."
+        heading="What this ledger must eventually answer to."
       >
         <TPBody>
-          The rungs of the ladder correspond to distinct experimental
-          regimes. In order of historical precision:
+          Each rung is anchored to familiar tests:
         </TPBody>
 
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 15.5 }}>
-          <li>Mercury perihelion advance — 1PN (sub-arcsec/century),</li>
-          <li>Shapiro delay (Cassini 2003) — 2PN (<Tex tex="\gamma - 1 = 2.1 \pm 2.3 \times 10^{-5}" />),</li>
-          <li>Light bending (VLBI) — 2PN (<Tex tex="10^{-4}" /> fractional),</li>
-          <li>Hulse–Taylor binary decay — 2.5PN (~0.1% agreement with GR),</li>
-          <li>Double pulsar J0737−3039 — 2.5PN / 3PN (<Tex tex="10^{-4}" />),</li>
-          <li>LIGO/Virgo inspirals — 3PN–4PN coefficients cross-checked against template waveforms.</li>
+          <li>Mercury perihelion advance — 1PN.</li>
+          <li>Shapiro delay and light-bending — bridge / 1PN / 2PN carry-forward sector.</li>
+          <li>Hulse–Taylor and double-pulsar timing — 2.5PN normalization test.</li>
+          <li>LIGO/Virgo inspirals — 3PN and conditional 4PN waveform coefficients.</li>
         </ul>
-
-        <TPBody>
-          The fluid picture must match all of these to the same precision
-          GR matches them. That's the task the ledger encodes.
-        </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What actually remains to be done.">
         <TPBody>
-          This chapter is the driver for topic 11. The two{" "}
-          <span className="fu-mono" style={{ color: "#7aa2ff" }}>REDUCTION</span>{" "}
-          rows (2.5PN and 4PN) are function of the moving-throat PDE, and
-          closing the PDE would retire both conditionalities at once. The
-          program's current front is the PDE closure of{" "}
-          <Tex tex="\mathcal{I}_{\text{mix}}" />.
+          Topic 11 is not waiting to invent a new 4PN constant. It is waiting
+          to realize the passive/outgoing quadrupole normalization on the
+          moving-throat branch. That is the one gate this page should keep in
+          view.
         </TPBody>
       </TPSection>
     </TopicPage>

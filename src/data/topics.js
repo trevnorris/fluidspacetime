@@ -41,7 +41,7 @@ export const TOPICS = [
     plainDesc:
       'Why a fourth spatial direction is not "time" — and how the things we call brane and bulk relate through projection, not reduction.',
     techDesc:
-      'The brane/bulk split: the w-axis, localized zero modes, and projection as a controlled restriction rather than a dimensional reduction.',
+      'The brane/bulk split: the w-axis, projection-defined brane observables, and the distinction between exact projection and controlled reduction.',
   },
   {
     n: '04',
@@ -101,7 +101,7 @@ export const TOPICS = [
     plainDesc:
       'Why there is a top speed at all, why it is the same for everyone, and what "light" is in this picture.',
     techDesc:
-      'c = √(κ/ρ₀) from the linear sector, emergent Lorentz invariance, and UV dispersion gated by the depth profile Z(w).',
+      'Characteristic propagation speed from the linearized 4D matter sector, controlled brane Maxwell reduction, and profile-gated UV corrections.',
   },
   {
     n: '09',
@@ -111,9 +111,9 @@ export const TOPICS = [
     plainTitle: 'Atoms, g-factors & Anomalies',
     techTitle: 'Atomic Spectra, g-factors, Anomalies',
     plainDesc:
-      'How the spectrum of hydrogen and the anomalous magnetic moment of the electron show up inside the fluid picture.',
+      'How atomic bound-state and anomaly bookkeeping are intended to emerge in the fluid picture, and which parts are still open.',
     techDesc:
-      'Coulomb-limit Schrödinger from the zero mode; the anomalous magnetic moment as a geometric form factor.',
+      'Coulomb-limit and anomaly bookkeeping as current program targets; the atomic and g−2 sector is not yet a closed theorem of the current stack.',
   },
   {
     n: '10',
@@ -125,7 +125,7 @@ export const TOPICS = [
     plainDesc:
       'The honest scorecard: which post-Newtonian sectors this program has actually derived, and which are still open.',
     techDesc:
-      'Newton · 1PN · 2PN · 3PN derived; 2.5PN reduced under declared closure; 3.5PN / 4PN still open.',
+      'Newton through 3PN in the declared hierarchy, plus the shared 2.5PN / 4PN quadrupole-normalization gate.',
   },
   {
     n: '11',
@@ -167,7 +167,7 @@ export const TOPICS = [
     meta: true,
     metaTitle: 'Paper Library',
     metaDesc:
-      'The eight source documents behind the program, with reading order and a topic × source matrix.',
+      'The nine published current-4D papers plus the earlier superfluid-defect papers, with reading order and a topic × source matrix.',
   },
 ];
 

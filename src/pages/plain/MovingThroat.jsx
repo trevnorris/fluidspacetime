@@ -114,7 +114,7 @@ export default function PlainMovingThroat() {
             { where: "Topic 07", what: "Non-ideal MHD terms and the reconnection energy budget" },
             { where: "Topic 08", what: "UV dispersion coefficient α_Z" },
             { where: "Topic 09", what: "Higher-order electron anomaly terms; muon g−2; Lamb shift" },
-            { where: "Topic 10", what: "2.5PN normalization δ_Z; 3.5PN radiation reaction; 4PN inspiral" },
+            { where: "Topic 10", what: "Shared 2.5PN / 4PN outgoing quadrupole normalization" },
           ].map((r) => (
             <div key={r.where} style={{
               display: "grid",
@@ -145,37 +145,38 @@ export default function PlainMovingThroat() {
 
       <TPSection anchor="progress" eyebrow="progress" heading="What's been done.">
         <TPBody>
-          Three reductions have been worked out:
+          Three partial windows are already on the table:
         </TPBody>
 
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Static limit</strong> —
-            the <em>R</em> profile is time-independent. Gives the exact
-            Coulomb and Newtonian limits. This is what underwrote chapters
-            5 through 9.
+            the <em>R</em> profile is time-independent. This underwrites the
+            source bookkeeping and controlled Coulomb / Newtonian regimes used
+            earlier on the site, but it is not itself a full nonlinear
+            moving-throat theorem.
           </li>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Rigid-body limit</strong> —
-            the throat translates as a whole without changing shape. Gives
-            1PN and 2PN corrections, and the clean emergence of effective
-            metric + gauge field descriptions.
+            the throat translates as a whole without changing shape. This is
+            the collective-motion regime behind the lower-order bridge and PN
+            bookkeeping, and behind the clean emergence of effective metric +
+            gauge-field language.
           </li>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Linearized perturbation</strong> —
-            small deviations from a static throat. Gives the leading-order
-            radiation formula at 2.5PN, and the structural reproduction of
-            quantum scattering in the atomic chapter.
+            small deviations from a stationary throat. This gives the first
+            wall/support/gauge response problem and the first observables the
+            PDE framework asks a realized branch to return.
           </li>
         </ul>
 
         <TPBody>
           The remaining frontier — the nonlinear, large-amplitude, dynamic
-          regime — is partially characterized but not closed. Current work
-          is on asymptotic expansions near specific configurations (slow
-          inspiral, near-equilibrium oscillation) and on matching to
-          numerical solutions in the bulk regions where analytic methods
-          fail.
+          regime — is partially characterized but not closed. Current work is
+          on asymptotic expansions near specific configurations and on the
+          branch data needed to connect those reductions to an actual realized
+          moving-throat solution.
         </TPBody>
       </TPSection>
 
@@ -240,7 +241,7 @@ export default function PlainMovingThroat() {
             ◇ technical mirror
           </span>
           <span className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 220 }}>
-            Formal statement of the free-boundary PDE for R(Ω, w, t); linearized spectrum; known reductions and match conditions.
+            Geometry lift for R(Ω, w, t), the branch data it must return, and the first operational observables of the moving-throat framework.
           </span>
           <TrackToggle track="plain" size="sm" />
         </div>
