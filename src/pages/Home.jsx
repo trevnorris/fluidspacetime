@@ -319,12 +319,6 @@ function TCNav() {
             fluid<span style={{ color: 'var(--accent)' }}>·</span>spacetime
           </span>
         </Link>
-        <span
-          className="fu-small fu-nav-extra"
-          style={{ marginLeft: 4, opacity: 0.5 }}
-        >
-          v0.5
-        </span>
         <div style={{ flex: 1 }} />
         {items.map((x) => (
           <Link

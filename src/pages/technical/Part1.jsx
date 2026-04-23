@@ -61,7 +61,6 @@ export default function TechnicalPart1() {
           label="◇ equation of state · parent"
           plain="Stiff polytropic EoS. The exponent n is fixed, not tuned."
           tex="P(\rho) \;=\; K\,\rho^{\,n}, \qquad n = 5"
-          chips={['4d_summary.md', 'moving_throat_pde_program_compact.md']}
         />
 
         <TPBody style={{ marginTop: 20 }}>
@@ -114,7 +113,6 @@ export default function TechnicalPart1() {
           label="◇ characteristic speed · bulk background"
           plain="The EOS fixes the propagation speed used in the weak-field optical / bridge analysis."
           tex="c_s^2(\rho_0) \;=\; \frac{1}{m}\,\frac{dP}{d\rho}\Big|_{\rho_0} \;=\; \frac{5K}{m}\,\rho_0^{4}"
-          chips={['4d.tex', '4d_1pn_bridge_summary.md']}
         />
 
         <TPBody style={{ marginTop: 20 }}>
@@ -127,7 +125,6 @@ export default function TechnicalPart1() {
 
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <Badge kind="closure">Background characteristic speed</Badge>
-          <Chip>4d_1pn_bridge_summary.md § optics</Chip>
         </div>
 
         <TPCallout kind="note">
@@ -154,7 +151,6 @@ export default function TechnicalPart1() {
           label="◇ throat worldsheet · moving-throat PDE"
           plain="The throat locus is a moving surface Σ(X,t), with angular, bulk-depth, and time structure."
           tex="\Sigma(X,t) \;=\; r - R(\Omega, w, t) \;=\; 0"
-          chips={['moving_throat_pde_program_compact.md']}
         />
 
         <TPBody style={{ marginTop: 20 }}>
@@ -223,7 +219,6 @@ export default function TechnicalPart1() {
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <Badge kind="closure">Closure — two-number ansatz</Badge>
           <Badge kind="open">Open — moving-throat PDE branch</Badge>
-          <Chip>moving_throat_pde_program_compact.md</Chip>
         </div>
       </TPSection>
 

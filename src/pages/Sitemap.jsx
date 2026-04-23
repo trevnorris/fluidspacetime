@@ -36,7 +36,7 @@ export default function SitemapPage() {
             className="fu-eyebrow"
             style={{ color: 'var(--accent)', marginBottom: 18 }}
           >
-            ◇ information architecture · v0.5
+            ◇ information architecture
           </div>
           <h1
             className="fu-display fu-h2"

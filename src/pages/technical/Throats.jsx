@@ -36,7 +36,6 @@ export default function TechnicalThroats() {
           <Badge kind="reduce">Static radius/length</Badge>
           <Badge kind="open">Moving-wall R(Ω,w,t)</Badge>
           <Chip label="sector: geometry + matter" />
-          <Chip label="source: moving_throat_pde_program_compact.md" />
         </div>
       </section>
 
