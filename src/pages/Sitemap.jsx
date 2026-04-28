@@ -46,9 +46,10 @@ export default function SitemapPage() {
           </h1>
           <p className="fu-lede" style={{ maxWidth: 760 }}>
             Every topic exists twice: a plain-English page for the curious
-            reader, a technical page for the working physicist. Same sections,
-            same diagrams, same anchor IDs. A single <em>Plain ↔ Technical</em>{' '}
-            toggle in the page chrome lets readers swap voices at any time.
+            reader, a technical page for the working physicist. Matching
+            structure and anchor IDs keep the tracks aligned. A single{' '}
+            <em>Plain ↔ Technical</em> toggle in the page chrome lets readers
+            swap voices at any time.
           </p>
         </div>
 

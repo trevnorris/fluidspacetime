@@ -64,17 +64,19 @@ export default function TechnicalPart1() {
         />
 
         <TPBody style={{ marginTop: 20 }}>
-          The choice <Tex tex="n = 5" /> is not a free knob. It is fixed by the
-          optical-consistency requirement that the linearized excitation
-          spectrum supports a single isotropic phase velocity, independent of
-          amplitude, which is then identified with the cosmic invariant{' '}
-          <Tex tex="c" />. Any other exponent introduces amplitude-dependent
-          dispersion and breaks this identification.
+          The choice <Tex tex="n = 5" /> is not a downstream fit. In the bridge
+          paper it is selected by weak-field optical matching: if brane-observed
+          wavepackets see the local characteristic speed <Tex tex="c_s(\rho)" />,
+          then the leading refractive coefficient is{' '}
+          <Tex tex="\alpha_n=(n-1)/2" />. Matching the GR light-bending and
+          Shapiro coefficient <Tex tex="\alpha_n=2" /> gives <Tex tex="n=5" />.
+          The dimensional scale <Tex tex="K" /> remains fixed by the chosen
+          background normalization.
         </TPBody>
 
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 8 }}>
           <Badge kind="exact">Exact (parent definition)</Badge>
-          <Badge kind="closure">Closure — linear sector</Badge>
+          <Badge kind="reduce">Weak-field optical matching</Badge>
         </div>
 
         <FluidDiagram
@@ -118,9 +120,11 @@ export default function TechnicalPart1() {
         <TPBody style={{ marginTop: 20 }}>
           In the carry-forward bridge analysis, weak-field optical consistency
           fixes <Tex tex="n=5" /> and identifies the relevant brane propagation
-          speed with this characteristic background speed. The parent 4D paper
-          itself keeps exact identities, controlled reductions, and regime
-          statements visibly separate.
+          speed with this characteristic background speed. This is an
+          optical-sector constraint on the weak-field refraction map; it is not
+          by itself a complete effective metric theorem for massive-body
+          dynamics. The parent 4D paper itself keeps exact identities,
+          controlled reductions, and regime statements visibly separate.
         </TPBody>
 
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -140,11 +144,12 @@ export default function TechnicalPart1() {
         heading="Non-linear solutions with stable topological charge."
       >
         <TPBody>
-          The same parent action admits a second family of solutions that is
-          not captured by the linearized sector: time-independent, localized
+          The same parent framework is used to describe non-linear localized
+          defect sectors that are not captured by the linearized wave limit:
           configurations of <Tex tex="\psi" /> whose phase (or internal
-          orientation) carries a non-trivial topological winding. These are the
-          objects the program calls <em>throats</em>.
+          orientation) carries non-trivial topological winding. The throat
+          subfamily is the particle-like sector the rest of the site tracks,
+          while the fully realized moving-wall branch remains open.
         </TPBody>
 
         <EqCard
@@ -170,11 +175,11 @@ export default function TechnicalPart1() {
           {[
             {
               k: 'Topological charge',
-              v: "An integer winding of ψ's phase around the defect locus. This integer cannot change continuously — it is the identity of the throat.",
+              v: "An integer winding of ψ's phase around the defect locus. This integer cannot change continuously within the smooth sector.",
             },
             {
               k: 'Finite self-energy',
-              v: 'The action is concentrated near Σ and integrable; far-field contributions decay rapidly in w and fall off as 1/r in the brane sector.',
+              v: 'The source model is localized near Σ and must have controlled far-field tails; the full moving-wall realization is tracked later as branch data.',
             },
           ].map((c) => (
             <div

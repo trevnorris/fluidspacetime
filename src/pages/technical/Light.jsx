@@ -58,9 +58,10 @@ export default function TechnicalLight() {
 
         <TPBody>
           Weak-field optical consistency in the bridge package is what fixes
-          <Tex tex="n=5" /> in the current source record. The site should not
-          present this as a standalone exact relativistic wave theorem for a
-          separate transverse matter field.
+          <Tex tex="n=5" /> in the current source record. This is an
+          optical-sector constraint on the brane wave-speed response, not a
+          standalone exact relativistic wave theorem for every sector of the
+          parent medium.
         </TPBody>
       </TPSection>
 
@@ -108,8 +109,9 @@ export default function TechnicalLight() {
         <TPBody>
           That is the precise current-paper meaning of “UV dispersion” on this
           site: not a finished microscopic prediction for every light-sector
-          coefficient, but a controlled departure from pure Maxwell behaviour
-          once the KK tower becomes relevant.
+          coefficient, but a controlled set of Yukawa, threshold, and causal-tail
+          departures from pure Maxwell behaviour once the KK tower becomes
+          relevant.
         </TPBody>
       </TPSection>
 
@@ -122,7 +124,11 @@ export default function TechnicalLight() {
           In the zero-mode Maxwell reduction, the brane-to-brane response depends
           only on the Lorentz scalar <Tex tex="k^2" /> with the retarded
           prescription. That is the current stack's route to brane Lorentz
-          covariance in the wave-propagation sector.
+          covariance in the wave-propagation sector. It should not be promoted
+          to exact Lorentz invariance of the full parent system: the GNLS matter
+          sector, leakage, dispersion, projection stress, dissipation, and
+          sector non-universality remain the places where preferred-frame
+          sensitivity can re-enter.
         </TPBody>
       </TPSection>
 

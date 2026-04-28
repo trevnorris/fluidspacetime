@@ -5,7 +5,7 @@ import { ZENODO } from '../../data/citations.js';
 
 // Part III · Topic 14 — Paper Library
 // Indexes the published Zenodo records. Two sections:
-//   A. Current 4D program (9 papers + one in prep)
+//   A. Current 4D program (9 papers + PDE ledger archive + PDE draft)
 //   B. Prior work — superfluid-defect toy model era (6 papers)
 
 export default function MetaPaperLibrary() {
@@ -21,25 +21,28 @@ export default function MetaPaperLibrary() {
     <TopicPage track="technical" topic={topic} meta>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          The published record. Every topic page on this site is derived from
-          one or more of these preprints.
+          The published record, plus the draft/ledger context behind the
+          newest pages.
         </TPTitle>
 
         <TPLede>
           The program has two vintages. The <em>current 4D toy model</em> —
-          nine preprints, from the parent action through 4PN — is the
-          backbone of every topic page. An earlier round of{" "}
+          nine preprints, from the parent action through 4PN, plus a published
+          moving-throat derivation archive — is the backbone of the reviewed
+          topic pages. Some newer claims also rely on draft/future-note
+          material, especially the moving-throat, atom, and anomaly pages. An
+          earlier round of{" "}
           <em>superfluid-defect toy model</em> papers established the
           ingredients that carried forward: n = 5, the throat ontology, the
-          initial EM and 1PN derivations. Both are indexed below. All records
-          are on Zenodo.
+          initial EM and 1PN derivations. The published records are indexed
+          below.
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Chip>9 current · 6 prior</Chip>
+          <Chip>9 current · PDE archive · 6 prior</Chip>
           <Chip>all Zenodo · open access</Chip>
           <Chip href="https://zenodo.org/communities/">search Zenodo</Chip>
-          <Chip>one PDE paper in prep</Chip>
+          <Chip>PDE paper draft in prep</Chip>
         </div>
       </section>
 
@@ -62,13 +65,13 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="current-program"
         eyebrow="14.2 · current 4D program"
-        heading="The canonical backbone — nine preprints."
+        heading="The canonical backbone — nine preprints plus one derivation archive."
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 24 }}>
           <PaperCard
             index="01"
             rec={ZENODO.action}
-            scope="The parent action, projection-defined brane observables, exact leakage identities, the longitudinal Poisson-hook identity, and the controlled EM reduction. Everything downstream sits on this file."
+            scope="The parent action, projection-defined brane observables, exact leakage identities, the longitudinal Poisson-hook identity, and the controlled EM reduction. It is the base file for the current 4D stack."
             status={[{ kind: "exact", label: "Parent action" }, { kind: "closure", label: "Zero-mode reduction" }]}
             feeds={["01", "02", "03", "04", "05", "11"]}
             highlight
@@ -85,15 +88,15 @@ export default function MetaPaperLibrary() {
           <PaperCard
             index="03"
             rec={ZENODO.maxwell}
-            scope="Maxwell recovered from localized 5D gauge dynamics under brane reduction. Includes explicit Kaluza–Klein corrections above the vacuum Maxwell limit."
-            status={[{ kind: "exact", label: "Vacuum Maxwell" }, { kind: "effect", label: "KK corrections" }]}
+            scope="Localized 4+1 Maxwell dynamics and the controlled far-field zero-mode reduction to brane Maxwell. Includes Kaluza–Klein/Yukawa/threshold corrections above the zero-mode limit."
+            status={[{ kind: "exact", label: "Localized Maxwell" }, { kind: "closure", label: "Zero-mode reduction" }]}
             feeds={["06", "08", "09", "11"]}
           />
 
           <PaperCard
             index="04"
             rec={ZENODO.plasma}
-            scope="4+1D plasma dynamics with a controlled MHD limit and explicit 4D interaction corrections. Demonstrates how ordinary magnetohydrodynamics emerges as a reduction."
+            scope="4+1D plasma dynamics with a controlled MHD limit and explicit hidden-channel corrections/diagnostics beyond the ideal zero-mode reduction."
             status={[{ kind: "closure", label: "MHD limit" }, { kind: "effect", label: "4D corrections" }]}
             feeds={["07"]}
           />
@@ -117,8 +120,8 @@ export default function MetaPaperLibrary() {
           <PaperCard
             index="07"
             rec={ZENODO.pn25}
-            scope="A conditional derivation of the 2.5PN point-particle sector. The coefficient matches GR's quadrupole formula subject to a stated closure condition; the condition is itself an open question."
-            status={[{ kind: "closure", label: "Conditional 2.5PN" }, { kind: "open", label: "Closure condition" }]}
+            scope="A conditional derivation of the 2.5PN point-particle sector. The surviving branch is narrowed to the STF quadrupole channel; the passive/outgoing normalization remains an open branch-data gate."
+            status={[{ kind: "closure", label: "Conditional 2.5PN" }, { kind: "open", label: "Quadrupole gate" }]}
             feeds={["10"]}
           />
 
@@ -133,12 +136,13 @@ export default function MetaPaperLibrary() {
           <PaperCard
             index="09"
             rec={ZENODO.pn4}
-            scope="A conditional derivation of the full conservative 4PN two-body sector. The local instantaneous sector is assembled within the hierarchy; the remaining gate is the same quadrupole-normalization / tail bridge already isolated by 2.5PN."
-            status={[{ kind: "closure", label: "Conditional 4PN" }, { kind: "open", label: "Shared tail bridge" }]}
+            scope="A conditional 4PN assembly. The local instantaneous sector is separated from the inherited tail bridge, whose remaining gate is the same passive/outgoing quadrupole normalization isolated at 2.5PN."
+            status={[{ kind: "closure", label: "Conditional 4PN" }, { kind: "open", label: "Shared normalization gate" }]}
             feeds={["10"]}
           />
         </div>
 
+        <ArchiveCard />
         <InPrepCard />
       </TPSection>
 
@@ -153,24 +157,23 @@ export default function MetaPaperLibrary() {
           established the pieces that carried forward: the throat ontology,
           the first EM derivation, spin and vorticity, the N-body dynamics,
           and a hybrid 1PN calculation that motivated the full PN ladder.
-          These records are the historical backbone — they aren't
-          superseded, but the current program's derivations reference the
-          4D papers above.
+          These records are the historical backbone, but the current status of
+          public claims should be read from the 4D papers and audit notes above.
         </TPBody>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 28 }}>
-          <PriorPaperCard rec={ZENODO.priorHybrid1pn}
-            scope="Hybrid 1PN orbital dynamics plus the acoustic-horizon construction. The precursor to the current 1PN full-sector paper." />
-          <PriorPaperCard rec={ZENODO.priorThroatOntology}
-            scope="The brane-bulk throat ontology. Where throats-as-defects is first worked out. Carries forward into every current topic that talks about R(Ω,w,t)." />
-          <PriorPaperCard rec={ZENODO.priorEM}
-            scope="EM fields and charged defects in the pre-4D picture. The antecedent to the current Maxwell paper." />
-          <PriorPaperCard rec={ZENODO.priorSpinVorticity}
-            scope="Spin, vorticity, and N-body dynamics — the mechanical scaffolding that underlies the current program's matter sector." />
-          <PriorPaperCard rec={ZENODO.priorOptics}
-            scope="Gravitational optics and soliton geodesics. The first place light-bending and null trajectories were computed in the defect picture." />
           <PriorPaperCard rec={ZENODO.priorNewtonian1pn}
-            scope="Newtonian and 1PN orbital dynamics — the foundation of the whole PN program. n = 5 is established here." />
+            scope="Newtonian and 1PN orbital dynamics in the earlier superfluid-defect toy model. Historical precursor, not the current PN proof." />
+          <PriorPaperCard rec={ZENODO.priorOptics}
+            scope="Gravitational optics and soliton geodesics. Early light-bending and null-trajectory calculations in the defect picture." />
+          <PriorPaperCard rec={ZENODO.priorSpinVorticity}
+            scope="Spin, vorticity, and N-body dynamics — mechanical scaffolding behind later matter-sector ideas." />
+          <PriorPaperCard rec={ZENODO.priorEM}
+            scope="EM fields and charged defects in the pre-4D picture. Antecedent to the current localized Maxwell paper." />
+          <PriorPaperCard rec={ZENODO.priorThroatOntology}
+            scope="The brane-bulk throat ontology. Historical source for throats-as-defects, updated by the current open-conduit audit." />
+          <PriorPaperCard rec={ZENODO.priorHybrid1pn}
+            scope="Hybrid 1PN orbital dynamics plus the acoustic-horizon construction. Precursor to the current 1PN full-sector paper." />
         </div>
       </TPSection>
 
@@ -181,8 +184,9 @@ export default function MetaPaperLibrary() {
         heading="Which topic pages lean on which published current 4D paper."
       >
         <TPBody>
-          Topic 11 additionally leans on the in-prep moving-throat PDE framework,
-          which is not part of the published matrix below.
+          Topic 11 additionally leans on the published moving-throat derivation
+          archive and the in-prep PDE framework, which are not part of the
+          nine-preprint matrix below.
         </TPBody>
         <TopicSourceMatrix />
       </TPSection>
@@ -242,7 +246,8 @@ function ReadingOrderDiagram() {
     { n: "06", rec: ZENODO.pn2, note: "… then 2PN conservative" },
     { n: "07", rec: ZENODO.pn25, note: "conditional 2.5PN" },
     { n: "08", rec: ZENODO.pn3, note: "… then 3PN conservative" },
-    { n: "09", rec: ZENODO.pn4, note: "conditional 4PN — same tail bridge still open" },
+    { n: "09", rec: ZENODO.pn4, note: "conditional 4PN — same normalization gate" },
+    { n: "10", rec: ZENODO.pdeLedger, note: "derivation archive · moving-throat companion" },
   ];
   return (
     <div style={{ marginTop: 32 }}>
@@ -435,7 +440,36 @@ function PriorPaperCard({ rec, scope }) {
   );
 }
 
-// ─── In-prep callout ───────────────────────────────────────
+// ─── Archive / in-prep callouts ────────────────────────────
+function ArchiveCard() {
+  return (
+    <a href={ZENODO.pdeLedger.url} target="_blank" rel="noopener noreferrer" style={{
+      marginTop: 24,
+      padding: "22px 26px",
+      border: "1px solid var(--rule)",
+      borderRadius: 3,
+      background: "rgba(127,198,157,0.035)",
+      display: "flex", gap: 20, alignItems: "baseline", flexWrap: "wrap",
+      textDecoration: "none",
+    }}>
+      <span className="fu-mono" style={{
+        color: "#7fc69d", fontSize: 10.5,
+        letterSpacing: "0.12em", textTransform: "uppercase",
+      }}>
+        ◇ published archive
+      </span>
+      <div className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 280, lineHeight: 1.55 }}>
+        <span style={{ color: "var(--ink-1)" }}>{ZENODO.pdeLedger.title}</span>{" "}
+        is the Zenodo derivation companion for the moving-throat PDE ledger and
+        Topic 11 branch-realization machinery.
+      </div>
+      <span className="fu-mono fu-small" style={{ color: "var(--ink-4)", fontSize: 10 }}>
+        {ZENODO.pdeLedger.id} ↗
+      </span>
+    </a>
+  );
+}
+
 function InPrepCard() {
   return (
     <div style={{
@@ -453,9 +487,10 @@ function InPrepCard() {
         ◇ in preparation
       </span>
       <div className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 280, lineHeight: 1.55 }}>
-        The full PDE-derivation paper — the moving-throat free-boundary
-        program underpinning Topic 11 — is the next record in the sequence.
-        It will be added here when posted.
+        The full PDE paper — the moving-throat free-boundary framework
+        underpinning Topic 11 — remains a draft/in-prep record. The published
+        archive above is a derivation companion, not a replacement for the
+        final paper.
       </div>
     </div>
   );
@@ -538,7 +573,7 @@ function TopicSourceMatrix() {
       {topics.map((t, i) => (
         <div key={t.n} style={{
           display: "grid",
-          gridTemplateColumns: "240px repeat(8, 1fr)",
+          gridTemplateColumns: "240px repeat(9, 1fr)",
           padding: "10px 18px",
           borderTop: i === 0 ? "none" : "1px solid var(--rule-2)",
           alignItems: "center",

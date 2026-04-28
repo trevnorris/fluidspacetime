@@ -18,20 +18,21 @@ export default function TechnicalAtoms() {
     <TopicPage track="technical" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Coulomb-limit atomic physics is a carry-forward target of the current
-          reduction stack; the anomaly package still has one branch datum open.
+          Coulomb-limit atomic physics has a reduced Bohr-scale foothold; the
+          anomaly package still has one branch datum open.
         </TPTitle>
         <TPLede>
           The current source stack supports the localized Maxwell reduction, the
-          Coulomb-limit bookkeeping needed for atomic bound states, a rough
-          hydrogenic scaling argument, and a sharply narrowed g−2
-          branch-selection problem. It does <em>not</em> currently justify the
-          older site wording that treated the hydrogen spectrum or the leading
-          anomaly term as finished derived results of the published 4D stack.
+          Coulomb-limit bookkeeping needed for atomic bound states, a reduced
+          hydrogenic Bohr-scale/binding-scale derivation, and a sharply narrowed
+          g−2 branch-selection problem. It does <em>not</em> currently justify
+          older site wording that treated the full hydrogen spectrum or the
+          leading anomaly term as finished derived results of the published 4D
+          stack.
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge kind="reduce">Coulomb-limit target</Badge>
+          <Badge kind="reduce">Coulomb-limit reduction</Badge>
           <Badge kind="open">Hydrogenic precision still provisional</Badge>
           <Badge kind="open">g−2 branch datum still live</Badge>
           <Chip label="4D · Maxwell" href={ZENODO.maxwell.url} />
@@ -45,54 +46,59 @@ export default function TechnicalAtoms() {
         heading="The atomic sector starts from the controlled brane Maxwell reduction."
       >
         <TPBody>
-          In the far-field zero-mode limit, a charged throat sources the usual
-          Coulomb potential on the brane:
+          In the far-field zero-mode limit, an opposite-charge pair inherits the
+          usual attractive Coulomb potential energy on the brane:
         </TPBody>
 
         <EqCard
-          label="◇ static Coulomb potential · controlled reduction"
-          plain="This is the standard Coulomb law read through the localized Maxwell zero mode."
-          tex="\begin{aligned} a_0(r) &\;=\; -\frac{Z\,e_{\rm eff}}{4\pi\varepsilon_0\,r}, \\ e_{\rm eff} &\;=\; e_\star/\sqrt{Z_{\rm int}} \end{aligned}"
+          label="◇ static Coulomb sector · controlled reduction"
+          plain="This is the attractive Coulomb coefficient read through the localized Maxwell zero mode."
+          tex="\begin{aligned} V_C(r) &\;=\; -\frac{g_C}{r}, \\ g_C &\;=\; \frac{Z_{\rm nuc}\,e_{\rm eff}^2}{4\pi\varepsilon_0}, \\ e_{\rm eff} &\;=\; e_\star/\sqrt{Z_{\rm int}} \end{aligned}"
         />
 
         <TPBody>
-          If one then takes the non-relativistic Coulomb limit for a slow probe,
-          the target effective equation is the standard Schrödinger problem
+          If one then takes the non-relativistic Coulomb limit for a slow probe
+          and suppresses the inherited finite-localization and GNLS corrections,
+          the leading effective equation is the standard Schrödinger problem
         </TPBody>
 
         <EqCard
           label="◇ Coulomb-limit target equation"
-          plain="This is the intended brane-effective non-relativistic limit. The current site should treat it as a controlled target, not as a finished exact theorem of the full stack."
-          tex="i\hbar\,\partial_t \chi \;=\; \left[-\frac{\hbar^2}{2m_e}\nabla^2 - \frac{Z\,e_{\rm eff}^2}{4\pi\varepsilon_0\,r}\right]\chi"
+          plain="This is the brane-effective non-relativistic limit. The current site should treat it as a reduced-sector result, not as a finished exact theorem of the full moving-throat stack."
+          tex="i\hbar\,\partial_t \chi \;=\; \left[-\frac{\hbar^2}{2m_e}\nabla^2 - \frac{Z_{\rm nuc}\,e_{\rm eff}^2}{4\pi\varepsilon_0\,r}\right]\chi"
         />
       </TPSection>
 
       <TPSection
         anchor="spectrum"
         eyebrow="hydrogenic target"
-        heading="The current source record supports hydrogenic structure, not an exact closed-site claim."
+        heading="The current source record supports the Bohr-scale reduction, not the full spectrum."
       >
         <TPBody>
-          The standard Coulomb target has the usual textbook energy ladder
+          The clean one-body variational reduction gives the familiar Bohr
+          radius and binding scale
         </TPBody>
 
         <EqCard
-          label="◇ hydrogenic spectrum · target form"
-          plain="This is the spectrum the Coulomb-limit reduction aims to reproduce. The current repo evidence I found supports hydrogenic scaling arguments, but not the site's former 'exact reproduction' badge."
-          tex="\begin{aligned} E_n &\;=\; -\frac{m_e\,Z^2e_{\rm eff}^4}{2(4\pi\varepsilon_0)^2\hbar^2\,n^2}, \\ n &\;\in\; \mathbb Z^+ \end{aligned}"
+          label="◇ hydrogenic Bohr scale · reduced sector"
+          plain="This is the clean decoupling-sector result. Excited-state and precision-spectrum structure still need a clean current-paper derivation."
+          tex="\begin{aligned} a_\star &\;=\; \frac{4\pi\varepsilon_0\hbar^2}{m e_{\rm eff}^2}, \\ E_\star-E_\perp &\;=\; -\frac{m e_{\rm eff}^4}{2(4\pi\varepsilon_0)^2\hbar^2} \end{aligned}"
         />
 
         <TPBody>
-          In the current repo, the strongest direct support I found is the
-          hydrogenic clock-scaling discussion in the older optics paper, not a
-          standalone current-paper theorem of exact Rydberg matching. This page
-          should therefore present hydrogen as a controlled target / intended
-          limit, with precision matching still to be documented cleanly.
+          The same note upgrades the fixed-source result to a two-defect
+          reduction, replacing <Tex tex="m" /> by the reduced mass{" "}
+          <Tex tex="\mu" />, and shows that the orbital scale is
+          thickness-controlled through{" "}
+          <Tex tex="e_{\rm eff}=e_\star/\sqrt{Z_{\rm int}}" />. What is still
+          not closed is the complete excited-state/angular structure, the full
+          finite-size interaction, and precision Rydberg matching from the
+          full moving-throat branch.
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
-          <Badge kind="reduce">Coulomb-limit structure</Badge>
-          <Badge kind="open">Exact precision claim not yet sourced here</Badge>
+          <Badge kind="reduce">Bohr-scale reduced consequence</Badge>
+          <Badge kind="open">Full precision spectrum still open</Badge>
         </div>
       </TPSection>
 
@@ -137,7 +143,7 @@ export default function TechnicalAtoms() {
         heading="What still belongs on the ledger."
       >
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
-          <li>Document a clean current-paper derivation of the hydrogenic spectrum if one exists in the stack.</li>
+          <li>Document a clean current-paper derivation of the full hydrogenic spectrum and excited-state structure if one exists in the stack.</li>
           <li>Close the remaining g−2 branch-selection datum on the realized moving-throat branch.</li>
           <li>Translate the same branch data into Lamb-shift and muon-anomaly observables.</li>
         </ul>

@@ -113,7 +113,7 @@ export default function TechnicalPN() {
             {
               status: "closure",
               order: "4PN (conditional)",
-              quantity: "Full conservative 4PN sector",
+              quantity: "Local 4PN plus inherited tail bridge",
               coeff: "The local instantaneous 4PN sector is assembled inside the hierarchy; the remaining gate is the same quadrupole-normalization / tail bridge already isolated by 2.5PN.",
               source: "4D · 4PN conditional · zenodo.19561056",
             },
@@ -177,15 +177,15 @@ export default function TechnicalPN() {
       >
         <TPBody>
           The 2.5PN paper writes the odd sector as the standard quadrupole
-          formula times one open normalization factor, while the 4PN paper shows
+          branch with one open normalization factor, while the 4PN paper shows
           that the hereditary tail coefficient is controlled by that same
-          normalization:
+          scalar:
         </TPBody>
 
         <EqCard
           label="◇ shared normalization gate · conditional"
           plain="2.5PN odd radiation and the 4PN tail coefficient wait on the same outgoing quadrupole normalization."
-          tex="\begin{aligned} \frac{dE}{dt}\Big|_{2.5{\rm PN}} &\;=\; -\,\frac{G}{5c^5}\,\langle \dddot Q_{jk}\dddot Q^{jk}\rangle\,(1+\delta_Z), \\ C_{\rm tail} &\;=\; \frac{GM}{2c^3}\,\gamma_{\rm quad}^{\rm eff} \end{aligned}"
+          tex="\begin{aligned} \gamma_{\rm quad}^{\rm eff} &\;=\; \hat m_0^2\Gamma_5, \\ \gamma_{\rm quad}^{\rm eff}\big|_{\rm GR} &\;=\; \frac{2G}{5c^5}, \\ C_{\rm tail} &\;=\; \frac{GM}{2c^3}\,\gamma_{\rm quad}^{\rm eff} \end{aligned}"
         />
 
         <TPCallout kind="note">

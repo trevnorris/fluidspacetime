@@ -26,8 +26,9 @@ export default function PlainThroats() {
           defects can live in. This chapter introduces the single geometric
           object around which the rest of the program is organized: the
           <em> throat</em>. A throat is the defect shape that does the work of
-          representing a particle — and lets gravity and electromagnetism come
-          out of the same piece of geometry, looked at two different ways.
+          representing a particle-like branch — and lets gravity and
+          electromagnetism be organized as two brane-readable channels of the
+          same finite bulk object.
         </TPLede>
       </section>
 
@@ -59,8 +60,8 @@ export default function PlainThroats() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16, margin: "22px 0 14px", maxWidth: 820 }}>
           {[
             { k: "Mouth",    v: "Where the throat intersects the brane. This is the part we can point at in ordinary space.", tint: "#e67ac6" },
-            { k: "Neck",     v: "The narrowest part of the throat along the hidden direction. Sets how tightly the defect is bound.", tint: "#b88bff" },
-            { k: "Interior", v: "The region deeper in the bulk where the throat broadens or closes off. Not directly visible; felt through its influence on the brane.", tint: "#7aa2ff" },
+            { k: "Neck",     v: "A narrow support region along the hidden direction. It helps set internal support scales, but it is not the whole defect.", tint: "#b88bff" },
+            { k: "Interior", v: "The region deeper in the bulk where support, mixed fields, and open-system bookkeeping live. Not directly visible; felt through its influence on the brane.", tint: "#7aa2ff" },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "22px 22px",
@@ -88,10 +89,10 @@ export default function PlainThroats() {
         heading="One object, two behaviours — and both of them matter."
       >
         <TPBody>
-          Here's the reason throats are the star of the show. A throat can do
-          two different things along the hidden direction, and our 3D
-          experience reads each of those behaviours as a different fundamental
-          force.
+          Here's the reason throats are the star of the show. A throat carries
+          more than one kind of brane-readable data along the hidden direction,
+          and our 3D experience reads those channels as different long-range
+          interactions.
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
@@ -110,7 +111,7 @@ export default function PlainThroats() {
             <div className="fu-small" style={{ color: "var(--ink-2)", lineHeight: 1.65 }}>
               Fluid flows into the throat along the hidden direction. The brane
               reads the surrounding inflow as an <em>attraction</em> to the
-              mouth. This is what we will call <strong style={{ color: "var(--ink-1)" }}>gravity</strong>.
+              mouth in the gravity sector.
             </div>
           </div>
 
@@ -128,35 +129,37 @@ export default function PlainThroats() {
             </div>
             <div className="fu-small" style={{ color: "var(--ink-2)", lineHeight: 1.65 }}>
               The throat opens through the brane into one side of the
-              hidden direction — either the +w half or the −w half. The
-              brane reads which side as{" "}
-              <strong style={{ color: "var(--ink-1)" }}>electric charge</strong>.
-              Opens into +w: positive charge. Opens into −w: negative.
+              hidden direction. The orientation branch is recorded as{" "}
+              <strong style={{ color: "var(--ink-1)" }}>electric charge sign</strong>,
+              written <em>eta</em><sub>Q</sub> = +1 or -1. Once a sign
+              convention is fixed, the two orientations give opposite charge
+              signs.
             </div>
           </div>
         </div>
 
         <TPBody>
-          This is the punchline of Part I: <strong style={{ color: "var(--ink-1)" }}>gravity and
-          electromagnetism aren't two different forces of nature</strong> in the
-          Fluid Spacetime picture. They are two different geometric things a
-          single kind of object — a throat — can do along a direction we can't
-          see.
+          This is the punchline of Part I: gravity and electromagnetism are not
+          introduced here as unrelated primitives. They are modeled as different
+          geometric or field-theoretic channels of a single kind of object — a
+          throat — along a direction we can't see.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="caution" eyebrow="honest caveats" heading="What a throat is not.">
         <TPBody>
           A throat is not a wormhole to another universe. The fluid on either
-          side of the neck is the same fluid. A throat is not a literal hole:
-          the medium fills it smoothly, the geometry just bends.
+          side of the neck is the same fluid. It is also not a surface dimple or
+          a capped pocket. In the current ontology it is a finite-radius opening
+          into a bulk throat.
         </TPBody>
         <TPBody>
-          And a throat is not, by itself, a particle. A particle is a
-          throat with specific numbers attached — a particular winding, a
-          particular size, a particular way of trading inflow against
-          circulation. Part II takes each of those numbers and traces it back
-          to the throat geometry defined here.
+          And a throat is not, by itself, a completed particle model. A
+          particle-like branch needs specific branch data: mouth geometry,
+          interior support, inflow/source data, puncture orientation, charge
+          normalization, and any magnetic or vortical winding data. Those labels
+          are related, but the current ontology does not collapse them into one
+          number.
         </TPBody>
 
       </TPSection>
@@ -165,9 +168,9 @@ export default function PlainThroats() {
         <TPBody>
           Part II takes the throat and runs it through each of the forces we
           know. Gravity comes first, because it's the cleanest: inflow, and
-          only inflow, with no puncture in sight. Electromagnetism follows,
-          and it's where the throat's other behaviour — the puncture — earns
-          its keep.
+          only inflow, without using the electric charge branch. Electromagnetism
+          follows, and it's where the throat's puncture orientation and localized
+          Maxwell sector enter.
         </TPBody>
       </TPSection>
     </TopicPage>
@@ -292,8 +295,9 @@ function ThroatDiagramPlain() {
 
       <figcaption className="fu-small" style={{ color: "var(--ink-3)", marginTop: 14, lineHeight: 1.55, maxWidth: 680 }}>
         The throat pierces the brane (faint blue sheet). The <em>mouth</em> is what we see. Along
-        the hidden direction, fluid flows in (blue arrows, producing gravity) and the internal
-        state winds (magenta spiral, producing electric charge). Same object, two behaviours.
+        the hidden direction, fluid inflow is read in the gravity sector and puncture
+        orientation carries electric charge sign. Circulation or winding belongs to the
+        magnetic/vortical sector, not to the electric-charge definition.
       </figcaption>
     </figure>
   );

@@ -25,7 +25,7 @@ export default function PlainMovingThroat() {
           idealization: a throat that isn't moving, or is moving only as a
           rigid whole. Real throats deform. Their walls ripple; their necks
           breathe; they shed energy into the pond and back. Describing that
-          motion accurately is the single mathematical task most of the
+          motion accurately is one of the main mathematical tasks the
           open ledger items are waiting on. This chapter is about what the
           equation for a moving throat looks like, why it's hard, and what
           closing it would buy.
@@ -34,21 +34,22 @@ export default function PlainMovingThroat() {
 
       <TPSection anchor="what" eyebrow="what's on the page" heading="A moving boundary is a hard problem.">
         <TPBody>
-          The simplest way to describe a throat is as a boundary in the
-          pond — a tube-shaped region where the fluid's order parameter
-          goes to zero. Outside the tube, the pond is in its normal state;
-          inside, it isn't. The <em>shape</em> of that tube is a function
-          of angular position around it, depth along the hidden direction,
-          and time. Call it <em>R(Ω, w, t)</em>, where <em>Ω</em> is the
-          angular coordinate and <em>w</em> is the depth.
+          The simplest way to describe a throat is as a moving boundary in the
+          pond — a finite opening from the brane into a bulk conduit. Outside
+          that surface is the brane-side fluid region; inside is the throat's
+          support and interior region. The <em>shape</em> of that surface is a
+          function of angular position around it, depth along the hidden
+          direction, and time. Call it <em>R(Ω, w, t)</em>, where <em>Ω</em> is
+          the angular coordinate and <em>w</em> is the depth.
         </TPBody>
         <TPBody>
           In every previous chapter, we treated <em>R</em> as approximately
           constant — the throat's walls are smooth, static, and rigid enough
-          that we can ignore their dynamics. The moving-throat PDE is what
-          you get when you <em>stop</em> making that approximation. It's a
-          partial differential equation for the full shape function, with
-          the pond's equations of motion providing the forcing.
+          that we can ignore their dynamics. The moving-throat framework is
+          what you get when you <em>stop</em> making that approximation. It is
+          a partial differential equation, or effective wall closure, for the
+          full shape function, with the pond's matter and gauge equations
+          providing the forcing once the wall data are specified.
         </TPBody>
 
         <TPCallout kind="note">
@@ -79,7 +80,7 @@ export default function PlainMovingThroat() {
             },
             {
               k: "Boundary conditions",
-              v: "The behaviour at the mouth (where the throat meets the brane) and at the interior (deep in the bulk) both have to be specified, and neither is fully obvious.",
+              v: "The behaviour at the mouth (where the throat meets the brane) and at the open finite exit both have to be specified as branch data.",
             },
             {
               k: "Topology change",
@@ -100,18 +101,18 @@ export default function PlainMovingThroat() {
         </div>
       </TPSection>
 
-      <TPSection anchor="what-closes" eyebrow="what it closes" heading="Every open item in one place.">
+      <TPSection anchor="what-closes" eyebrow="what it closes" heading="Many open items pass through the same gate.">
         <TPBody>
           Here's why this chapter matters out of proportion to its length.
-          Nearly every <em>open</em> entry from earlier in the program
-          points back at the moving-throat PDE:
+          Many <em>open</em> entries from earlier in the program point back at
+          the same moving-throat branch problem:
         </TPBody>
 
         <div style={{ margin: "20px 0", display: "flex", flexDirection: "column", gap: 8 }}>
           {[
             { where: "Topic 06", what: "Mixed-sector coefficients in the zero-mode reduction" },
             { where: "Topic 07", what: "Non-ideal MHD terms and the reconnection energy budget" },
-            { where: "Topic 08", what: "UV dispersion coefficient α_Z" },
+            { where: "Topic 08", what: "KK/Yukawa threshold and localization-tail light-sector corrections" },
             { where: "Topic 09", what: "Higher-order electron anomaly terms; muon g−2; Lamb shift" },
             { where: "Topic 10", what: "Shared 2.5PN / 4PN outgoing quadrupole normalization" },
           ].map((r) => (
@@ -135,10 +136,10 @@ export default function PlainMovingThroat() {
         </div>
 
         <TPBody>
-          Closing the PDE in a controlled way — even approximately, even in
-          specific regimes — retires multiple ledger entries at once.
-          That's why it's the active front of the program, and it's why
-          progress here is worth more than progress elsewhere.
+          A realized branch that closes this system in a controlled way — even
+          approximately, even in specific regimes — would settle or sharpen
+          multiple ledger entries at once. That's why it is the active front of
+          the program.
         </TPBody>
       </TPSection>
 
@@ -159,8 +160,8 @@ export default function PlainMovingThroat() {
             <strong style={{ color: "var(--ink-1)" }}>Rigid-body limit</strong> —
             the throat translates as a whole without changing shape. This is
             the collective-motion regime behind the lower-order bridge and PN
-            bookkeeping, and behind the clean emergence of effective metric +
-            gauge-field language.
+            bookkeeping, and behind the effective metric and gauge-field
+            language used earlier on the site.
           </li>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Linearized perturbation</strong> —
@@ -209,8 +210,8 @@ export default function PlainMovingThroat() {
           <div className="fu-body" style={{ fontSize: 17, color: "var(--ink-1)", lineHeight: 1.6 }}>
             Solve — or close in a controlled expansion — the partial
             differential equation governing a throat's wall{" "}
-            <em>R(Ω, w, t)</em> coupled to the surrounding pond. Everything
-            else downstream follows.
+            <em>R(Ω, w, t)</em> coupled to the surrounding pond, then freeze
+            the branch data before comparing to the target ledger.
           </div>
         </div>
       </TPSection>
@@ -218,9 +219,9 @@ export default function PlainMovingThroat() {
       <TPSection anchor="end" eyebrow="end of the book" heading="Where the thread ends.">
         <TPBody>
           That's the whole argument, start to finish. A stiff pond; some
-          defects in it; a single hidden direction; the rules you already
-          know fall out as reductions; the open questions point at one
-          equation. Eleven chapters, two tracks, one story.
+          defects in it; a single hidden direction; familiar rules appearing as
+          controlled reductions; the open questions pointing at one
+          branch-realization problem. Eleven chapters, two tracks, one story.
         </TPBody>
         <TPBody>
           The value of telling it this way — plain and technical,

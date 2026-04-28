@@ -153,7 +153,7 @@ export default function TechnicalGravity() {
 
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
           <li><strong>Newtonian regime:</strong> exact projection identities plus a controlled Poisson reduction.</li>
-          <li><strong>1PN / 2PN / 3PN:</strong> full conservative sectors derived within one declared closure hierarchy.</li>
+          <li><strong>1PN / 2PN / 3PN:</strong> conservative sectors handled downstream within one declared closure hierarchy.</li>
           <li><strong>2.5PN / 4PN:</strong> conditional on the shared passive/outgoing quadrupole normalization.</li>
           <li><strong>Moving-throat frontier:</strong> the remaining theorem gap is branch realization, not another round of local Newtonian algebra.</li>
         </ul>

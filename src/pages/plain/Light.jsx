@@ -21,10 +21,11 @@ export default function PlainLight() {
         </TPTitle>
         <TPLede>
           We started this whole story with the observation that the universe
-          behaves like a stiff, still pond. Now it's time to make good on
-          that. A pond propagates ripples at a characteristic speed set by
-          how resistant it is to being disturbed. For our pond, that speed
-          is <em>c</em>.
+          behaves like a stiff, still pond. Now it's time to make that
+          precise. A pond propagates ripples at a characteristic speed set
+          by how resistant it is to being disturbed. In the controlled
+          brane wave sector of this program, that characteristic speed is
+          the quantity we call <em>c</em>.
         </TPLede>
       </section>
 
@@ -40,42 +41,39 @@ export default function PlainLight() {
         </TPBody>
         <TPBody>
           The pond of this program is much stiffer than water and much
-          heavier — but the ratio is what matters. In the regime we care
-          about, the ratio is the quantity brane observers call <em>c</em>.
-          The current framework explains why there is one characteristic speed
-          at all. It does not yet derive the numerical value of{" "}
-          <em>299,792,458 metres per second</em> from deeper inputs.
-          It's not that light was issued a speed limit by a cosmic rulebook.
-          The speed limit is simply how fast the pond can move information
-          from one place to another. Anything that is fundamentally a
-          ripple is stuck with it.
+          heavier — but the ratio is what matters. In the weakly perturbed,
+          long-wavelength regime, the ratio is the quantity brane observers
+          call <em>c</em>. The current framework explains how a characteristic
+          signal speed appears from the equation of state. It does not yet
+          derive the numerical value of <em>299,792,458 metres per second</em>{" "}
+          from deeper inputs. The speed limit is not imposed as a separate
+          rule; it is the propagation speed of the wave sector used by
+          brane observers to build signals, clocks, and rulers.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="identity" eyebrow="what light is" heading="A specific kind of ripple.">
         <TPBody>
           Not every disturbance of the pond is light. A throat moving
-          through the pond drags along some of the ambient fluid with it —
-          that's gravity. A throat's gauge field distributes around it —
-          that's the electric field. What <em>light</em> is, in this picture, is
-          the <em>transverse</em> part of the pond's disturbance — the part
-          that ripples sideways rather than outward, and that carries no
-          net flow with it. It's the pond vibrating in a particular
-          shear-y mode that doesn't pile up matter or charge in any one
-          place.
+          through the pond has a longitudinal, density-sourcing side —
+          that's the gravity story from topic 05. A charged throat also
+          sources the localized gauge field from topic 06. What <em>light</em>{" "}
+          is, in the current papers, is the brane-facing electromagnetic
+          zero mode: the massless, transverse part of that localized gauge
+          sector in the regime where mixed and higher modes are quiet.
         </TPBody>
         <TPBody>
-          That's why light has two polarizations (two transverse directions
-          in three-space), why it doesn't have mass (no pileup), and why it
-          interacts with charged throats (those throats source the gauge
-          field that this transverse vibration couples to). All of it falls out of
-          asking: what modes can a stiff, incompressible-ish pond actually
-          carry?
+          That's the source-backed reason the site treats light as a
+          two-polarization, massless brane signal in the Maxwell limit. The
+          surrounding picture is still medium-like, but the exact statement
+          here is a controlled reduction: localized 4+1 electromagnetism
+          reduces to ordinary 3+1 Maxwell propagation on the brane only under
+          the zero-mode assumptions.
         </TPBody>
 
         <TPCallout kind="note">
-          Shorthand: light is what the pond does when nothing is being
-          pushed <em>through</em> it — only <em>along</em> it.
+          Shorthand: light is the quiet brane zero mode of the localized gauge
+          sector, not every disturbance the parent medium can carry.
         </TPCallout>
       </TPSection>
 
@@ -85,31 +83,31 @@ export default function PlainLight() {
           framework is honest: the microscopic parameters that set the
           pond's stiffness and density aren't <em>derived</em> from anything
           deeper in this work. They're inputs. What the framework shows is
-          that, <em>given</em> those inputs, the speed limit is what you get,
-          that all ripples must travel at it, and that all the textbook
-          consequences (relativity, length contraction, time dilation)
-          follow as properties of the pond.
+          that, <em>given</em> those inputs and the controlled long-wavelength
+          assumptions, the brane signal sector has an invariant propagation
+          speed and wave-supported clocks and rulers acquire the usual
+          Lorentz factors.
         </TPBody>
         <TPBody>
-          This is a proper scientific stance: the theory explains why
-          there's a speed limit at all, and why everything obeys it, and
-          why it's identical for every observer. It doesn't yet explain why
-          the specific number is what it is. That's an open question marked
-          as such.
+          This is a proper scientific stance: the theory explains a route to
+          operational Lorentz behavior in the sectors checked so far. It does
+          not yet prove that every possible correction channel is invisible,
+          and it does not explain why the measured number has its specific
+          value. Those remain marked as scope boundaries.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="consequences" eyebrow="consequences" heading="What follows from the pond being stiff.">
         <TPBody>
-          Three famous results of relativity are all consequences of this
-          setup:
+          Three famous results of relativity have a medium-mechanism in the
+          controlled regime:
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 900 }}>
           {[
-            { k: "Same c for everyone", v: "The pond's ripple speed is a property of the pond, not of whoever is watching. Every observer measures the same c because they are all embedded in the same medium." },
-            { k: "Time dilation", v: "When you move through the pond, your internal clock — which is also a ripple-process — runs slower, because some of its propagation budget is spent moving you through space." },
-            { k: "Length contraction", v: "A ruler made of matter that is itself ripples gets geometrically squeezed in the direction of travel by the same mechanism." },
+            { k: "Same c in the brane law", v: "The localized Maxwell zero mode depends on the Lorentz scalar k², so its brane response has the usual observer-independent form." },
+            { k: "Time dilation", v: "For wave-supported matter with linear dispersion, the phase along the moving object's worldline ticks slower by the usual gamma factor." },
+            { k: "Length contraction", v: "A wave-supported ruler contracts along the direction of motion when its internal timing is made self-consistent with that same phase kinematics." },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "18px 20px",
@@ -124,42 +122,43 @@ export default function PlainLight() {
         </div>
 
         <TPBody>
-          None of this contradicts Einstein's relativity — it <em>is</em>
-          relativity, derived as the behaviour of a specific kind of medium.
-          The shift is from taking the Lorentz symmetry as an axiom to
-          taking it as a consequence.
+          None of this is meant to contradict Einstein's relativity. It is a
+          proposed mechanism for why the familiar kinematics can appear to
+          brane observers even if the parent medium has a distinguished rest
+          frame. The remaining work is to quantify where leakage, dispersion,
+          dissipation, or sector mismatch could reintroduce preferred-frame
+          signals.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="dispersion" eyebrow="what's different" heading="Where this picture predicts something new.">
         <TPBody>
-          If light were <em>just</em> a textbook ripple in empty
-          three-space, different colours (different frequencies) would
-          always travel at exactly the same speed. In our picture, once you
-          look carefully, the pond has a hidden direction too, and very
-          high-frequency ripples can briefly explore it before coming back.
-          This predicts, at frequencies unimaginably higher than anything
-          we've tested, a small deviation from perfectly uniform <em>c</em>
-          — a <em>dispersion</em>.
+          If light were only the zero mode of textbook Maxwell theory in
+          empty three-space, the brane response would stay exactly Maxwellian
+          at every scale. In this picture the localized gauge sector also has
+          a hidden-direction mode tower. For a Gaussian localization profile,
+          the higher modes have fixed masses, produce Yukawa corrections in
+          static fields, and add threshold and tail effects in time-dependent
+          response.
         </TPBody>
         <TPBody>
           This isn't a prediction that's currently in tension with any
           experiment. It's a place the framework sticks its neck out: some
-          day, at some energy we haven't reached, the speed of light
-          depends very slightly on its colour. If we ever measure that, we
-          know where to look for the geometry responsible.
+          day, at some frequency or distance scale we haven't reached, an
+          electromagnetic signal could show the fixed pattern of massive-mode
+          corrections. If we ever measure that, we know where to look for the
+          geometry responsible.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="next" eyebrow="up next" heading="Next: atoms.">
         <TPBody>
-          Light on its own is one mode of the pond. What we see it do in
-          practice — illuminate atoms, get absorbed, get emitted in specific
-          colours — is the interaction between that mode and the standing-wave
-          structure of matter itself. Which means it's time to do atoms
-          properly, and to ask where the most precisely measured number in
-          physics — the electron's magnetic moment — comes from in this
-          picture.
+          Light on its own is one brane-readable mode of the pond. What we
+          see it do in practice — illuminate atoms, get absorbed, get emitted
+          in specific colours — is the interaction between that mode and the
+          standing-wave structure of matter itself. Which means it's time to
+          turn to the reduced Coulomb/atomic sector, and to ask what is known
+          and still open about the electron's magnetic moment in this picture.
         </TPBody>
 
       </TPSection>

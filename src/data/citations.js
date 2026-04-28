@@ -3,7 +3,7 @@
 // and the Paper Library. Update here to update everywhere.
 
 export const ZENODO = {
-  // ── Current 4D program (9 published + 1 in prep) ──────────────
+  // ── Current 4D program (9 published + PDE ledger archive; PDE paper in prep) ──────────────
   action: {
     id: '19449589',
     doi: '10.5281/zenodo.19449589',
@@ -74,6 +74,14 @@ export const ZENODO = {
     url: 'https://doi.org/10.5281/zenodo.19561056',
     title: 'A Conditional Full Conservative Derivation of the Two-Body 4PN Sector from the Unified 4D Toy Model',
     short: '4D · 4PN conditional',
+    year: 2026,
+  },
+  pdeLedger: {
+    id: '19699523',
+    doi: '10.5281/zenodo.19699523',
+    url: 'https://doi.org/10.5281/zenodo.19699523',
+    title: 'Moving-Throat PDE Derivation Companion Archive Ledger',
+    short: '4D · PDE ledger',
     year: 2026,
   },
 

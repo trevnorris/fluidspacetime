@@ -26,7 +26,8 @@ export default function PlainDefects() {
           sticks, nothing counts, nothing <em>is</em>. To get a universe with
           distinguishable things in it, the fluid has to be allowed to fail —
           in specific, well-behaved ways. Those failures are called
-          <em> defects</em>, and they are how the pond makes matter.
+          <em> defects</em>, and they are the program's proposed route to
+          matter-like objects.
         </TPLede>
       </section>
 
@@ -104,23 +105,26 @@ export default function PlainDefects() {
         <TPBody>
           This is what makes defects <em>stable</em>. Not because they're made
           of sturdy stuff, but because their <em>bookkeeping</em> doesn't allow
-          them to disappear. In the Fluid Spacetime picture, this is the
-          explanation for why matter persists — why an electron is still an
-          electron a billion years later. It isn't a little marble; it's a
-          <em> locked count</em>.
+          them to disappear. In the Fluid Spacetime picture, this is part of
+          the candidate explanation for why matter persists — why an
+          electron-like object could keep the same identity over time. It
+          isn't a little marble; it is a protected pattern.
         </TPBody>
       </TPSection>
 
       <TPSection
         anchor="what"
         eyebrow="so what"
-        heading="Every stable particle is a defect of this kind."
+        heading="The proposal: stable particle-like objects are defects."
       >
         <TPBody>
-          That's the proposal. What we call <em>charge</em> is one such count.
-          What we call <em>spin</em> is another. What we call the <em>identity</em>
-          of a particle — the thing that survives every collision — is, in this
-          story, the geometric stubbornness of the underlying knot.
+          That's the proposal. Some particle labels are topological branch data,
+          but the current ontology keeps the labels separate: electric charge
+          sign is tied to puncture orientation, while circulation belongs to the
+          magnetic or vortical sector. What we call the <em>identity</em> of a
+          particle-like object — the part that survives ordinary interactions —
+          is, in this story, the geometric stubbornness of the underlying
+          pattern.
         </TPBody>
         <TPBody>
           That is a bold claim, and we haven't earned it yet. The rest of Part I

@@ -24,10 +24,10 @@ export default function PlainAtoms() {
           Three things meet in an atom: a charged throat, a cloud of
           standing-wave matter around it, and the gauge field that binds the
           whole pattern together. The honest current status is that the program
-          has a clear Coulomb-limit story and a narrowed anomaly bookkeeping
-          story, but this site should not present the full hydrogen spectrum or
-          the electron anomaly as already re-derived exactly from the finished
-          stack.
+          has a clear reduced Coulomb-limit story for the Bohr scale and
+          binding scale, plus a narrowed anomaly bookkeeping story. What it
+          should not do is present the full hydrogen spectrum or the electron
+          anomaly as already re-derived exactly from the finished stack.
         </TPLede>
       </section>
 
@@ -42,24 +42,28 @@ export default function PlainAtoms() {
 
         <TPCallout kind="note">
           <strong style={{ color: "var(--ink-1)" }}>What is actually supported.</strong>{" "}
-          The current source stack supports the idea that the Coulomb-limit
-          atomic problem should reduce to the familiar textbook bound-state
-          story. It does not, as the site previously implied, clearly document a
-          finished precision-hydrogen theorem in the current 4D papers.
+          The current source stack supports a reduced zero-mode Coulomb sector
+          in which the Bohr-scale bound-state minimum appears from the reduced
+          action. It does not, as the site previously implied, document a
+          finished all-level precision-hydrogen theorem in the current 4D
+          papers.
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="spectrum" eyebrow="the spectrum" heading="Hydrogen is a target the program is aiming at, not yet a finished flagship result here.">
+      <TPSection anchor="spectrum" eyebrow="the spectrum" heading="Hydrogen has a reduced Bohr-scale result, not a finished full-spectrum theorem.">
         <TPBody>
           The right claim for this page is modest but still interesting: in the
-          Coulomb limit, the framework aims at the same hydrogen ladder ordinary
-          quantum mechanics gives. The repo contains hydrogenic scaling
-          arguments, but this site should stop saying the whole spectrum has
-          already been reproduced exactly and without qualification.
+          Coulomb limit, the reduced action produces the familiar Bohr radius
+          and binding scale as an energy minimum. The repo also isolates
+          correction channels from finite localization, finite throat response,
+          and inherited GNLS stiffness. But the site should stop saying the
+          whole spectrum has already been reproduced exactly and without
+          qualification.
         </TPBody>
         <TPBody>
-          That does not mean the atomic story is empty. It means the honest verb
-          is <em>targets</em>, not <em>has landed</em>.
+          That does not mean the atomic story is empty. It means the landed
+          claim is the reduced hydrogenic sector and Bohr scale; the complete
+          precision spectrum remains a target.
         </TPBody>
       </TPSection>
 
@@ -100,8 +104,8 @@ export default function PlainAtoms() {
 
       <TPSection anchor="anomalies" eyebrow="what else is on the list" heading="Other targets under the same umbrella.">
         <TPBody>
-          Once the remaining branch data are under control, the same machinery
-          is supposed to feed several precision observables:
+          Once the remaining branch and finite-size data are under control, the
+          same machinery is supposed to feed several precision observables:
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
@@ -129,8 +133,8 @@ export default function PlainAtoms() {
           QED already owns this terrain experimentally. So the right standard
           for the fluid picture is severe: if it wants to talk about atoms and
           anomalies, it has to reproduce the same numbers. This page should read
-          as a map of that target, not as a declaration that the target has
-          already been fully hit.
+          as a map of the reduced foothold and the remaining target, not as a
+          declaration that the target has already been fully hit.
         </TPBody>
       </TPSection>
 

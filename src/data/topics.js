@@ -15,7 +15,7 @@ export const TOPICS = [
     plainTitle: 'The Universe as a Fluid',
     techTitle: 'The Universe as a Fluid',
     plainDesc:
-      'A metaphor-first tour of the still-pond picture: the medium, the ripple that is light, and the knot that is a particle.',
+      'A metaphor-first tour of the fluid picture: the medium, the brane-readable wave sector, and finite throat defects.',
     techDesc:
       'The parent action: a stiff polytropic fluid (n = 5) on ℝ³ × ℝ_w × ℝ_t, its linearized sector, and the throat locus Σ(X,t).',
   },
@@ -27,9 +27,9 @@ export const TOPICS = [
     plainTitle: 'Defects — When Perfection Breaks',
     techTitle: 'Defects and Topological Stability',
     plainDesc:
-      'Where the perfect fluid cannot be perfect: zero-loci of ψ, winding numbers, and why some patterns refuse to untie.',
+      'Where the perfect fluid cannot be perfect: defects, winding/circulation, and why some patterns can be stable.',
     techDesc:
-      'Zero-locus defects of ψ, their π₁ winding class, and the topological-stability argument that promotes them to conserved sectors.',
+      'Defect classes, winding/circulation sectors, finite-throat scaling, and the stability/realization boundaries still open.',
   },
   {
     n: '03',
@@ -51,9 +51,9 @@ export const TOPICS = [
     plainTitle: 'Throats — Defects That Connect',
     techTitle: 'Throat Defects',
     plainDesc:
-      'Two behaviors a connected defect can have — inflow (gravity) and twist (charge) — and why that matters for the rest of the program.',
+      'Two behaviors a connected defect can have — inflow and oriented puncture charge — with circulation kept separate.',
     techDesc:
-      'Throat anatomy — mouth, neck, interior — plus the inflow and twist sectors that seed gravity and charge downstream.',
+      'Finite open-throat anatomy, orientation charge bookkeeping, circulation separation, and effective moving-wall status.',
   },
   {
     n: '05',
@@ -63,9 +63,9 @@ export const TOPICS = [
     plainTitle: 'Gravity as Inflow',
     techTitle: 'Gravity as Brane-Inflow',
     plainDesc:
-      'How mass-like attraction emerges from throats acting as volume sinks for the ambient fluid.',
+      'How the positive-mass throat branch produces the projected inflow used in the Newtonian regime.',
     techDesc:
-      'Throats as mass/volume sinks; Newton and the 1PN/2PN sectors recovered from projected continuity.',
+      'Projected inflow identities, the controlled Poisson/Newtonian regime, and the PN carry-forward boundary.',
   },
   {
     n: '06',
@@ -87,9 +87,9 @@ export const TOPICS = [
     plainTitle: 'Plasma & Magnetohydrodynamics',
     techTitle: 'Plasma and Beyond-MHD',
     plainDesc:
-      'Where ideal MHD comes from in the fluid picture, and what the "non-ideal" corrections are telling you about deeper structure.',
+      'Where ideal MHD comes from in the fluid picture, and which extra hidden-channel diagnostics may survive beyond it.',
     techDesc:
-      'Ideal MHD as the emergent limit; non-ideal corrections as mixed-sector channels of the underlying 4+1D dynamics.',
+      'Ideal MHD as a controlled limit, with standard extended-MHD terms separated from 4+1D leakage, topology, and mixed channels.',
   },
   {
     n: '08',
@@ -99,7 +99,7 @@ export const TOPICS = [
     plainTitle: 'Light, Waves & the Speed Limit',
     techTitle: 'Wave Propagation & the Ambient Speed',
     plainDesc:
-      'Why there is a top speed at all, why it is the same for everyone, and what "light" is in this picture.',
+      'Why a controlled brane wave sector has a characteristic speed, and what "light" is in the localized Maxwell limit.',
     techDesc:
       'Characteristic propagation speed from the linearized 4D matter sector, controlled brane Maxwell reduction, and profile-gated UV corrections.',
   },
@@ -135,9 +135,9 @@ export const TOPICS = [
     plainTitle: 'The Moving-Throat PDE',
     techTitle: 'The Moving-Throat PDE',
     plainDesc:
-      'The program’s frontier: the equation that would let a throat move and emit simultaneously, and why it isn’t solved yet.',
+      'The program’s frontier: the branch problem for a throat that moves, couples, and radiates, and why it is not solved yet.',
     techDesc:
-      'The free-boundary problem for R(Ω, w, t) — the program’s open frontier, and the closure ladder that bounds what has been proved so far.',
+      'The effective free-boundary framework for R(Ω, w, t), the branch-data contract, and the closure ladder that bounds current claims.',
   },
   {
     n: '12',
@@ -167,7 +167,7 @@ export const TOPICS = [
     meta: true,
     metaTitle: 'Paper Library',
     metaDesc:
-      'The nine published current-4D papers plus the earlier superfluid-defect papers, with reading order and a topic × source matrix.',
+      'The nine published current-4D papers, PDE derivation archive, and earlier superfluid-defect papers, with reading order and a topic × source matrix.',
   },
 ];
 

@@ -17,23 +17,25 @@ export default function TechnicalThroats() {
     <TopicPage track="technical" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          A throat is a brane-anchored zero of{" "}
-          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>ψ</span>{" "}
-          with non-trivial profile along{" "}
-          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>w</span>.
+          A throat is a finite-radius brane-bulk opening represented by{" "}
+          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>
+            Σ = r - R(Ω,w,t)
+          </span>.
         </TPTitle>
         <TPLede>
-          The particle-analog of the program is the <em>throat</em>: a defect
-          of the complex order parameter whose zero-locus meets the brane
-          transversely at an isolated point and extends as a smooth curve into
-          the bulk. Early closures parameterize a throat by a <em>radius</em>
-          and a <em>length</em>; the upgrade treats it as a distributed
-          moving wall <Tex tex="R(\Omega, w, t)" /> (topic 11).
+          The particle analog of the program is the <em>throat</em>: a finite
+          brane-bulk defect, or puncture/open conduit, whose brane-side mouth is
+          only the entrance cross-section. The interior carries support,
+          wall, Maxwell/mixed, and outgoing-port degrees of freedom. Early
+          closures parameterize a throat by a <em>radius</em> and a{" "}
+          <em>length</em>; the distributed moving-wall lift uses{" "}
+          <Tex tex="R(\Omega, w, t)" /> but remains an effective closure until
+          the promoted parent wall action is supplied.
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge kind="exact">Throat ansatz</Badge>
-          <Badge kind="reduce">Static radius/length</Badge>
+          <Badge kind="exact">Physical ontology</Badge>
+          <Badge kind="reduce">Effective wall closure</Badge>
           <Badge kind="open">Moving-wall R(Ω,w,t)</Badge>
           <Chip label="sector: geometry + matter" />
         </div>
@@ -41,55 +43,58 @@ export default function TechnicalThroats() {
 
       <TPSection
         anchor="ansatz"
-        eyebrow="throat ansatz"
-        heading="Cylindrical symmetry about the mouth."
+        eyebrow="effective throat geometry"
+        heading="The throat is a surface/open conduit, not a pointlike zero."
       >
         <TPBody>
-          Place the mouth at the origin of the brane,{" "}
-          <Tex tex="(x_0, 0) \in \Sigma" />. Use coordinates{" "}
-          <Tex tex="(r, \Omega, w)" /> where <Tex tex="r = |x - x_0|" /> and{" "}
-          <Tex tex="\Omega \in S^2" /> is the angular part on the brane slice.
-          The throat ansatz is
+          Place the mouth near <Tex tex="x_0" /> on the brane and use local
+          coordinates <Tex tex="(r,\Omega,w)" />, where{" "}
+          <Tex tex="r = |x-x_0|" /> and <Tex tex="\Omega" /> labels direction
+          on the brane-side mouth sphere. The current ontology represents the
+          finite throat by a level-set or shape-field closure:
         </TPBody>
 
         <EqCard
-          label="◇ throat ansatz · Part I Eq. 4.1"
-          plain="f is a monotone profile with f(0)=0 and f(∞)=√ρ_∞. R(w) is the throat radius; n ∈ ℤ is the winding; φ specifies angular phase and w-twist."
-          tex="\psi_\text{throat}(r, \Omega, w) \;=\; f\!\big(r/R(w)\big)\, e^{\,i n\,\varphi(\Omega,w)}"
+          label="◇ throat surface · ontology closure"
+          plain="The mouth is at w = 0 with radius a. The open-exit condition is R(L) > 0; a hard cap R(L) = 0 is obsolete except as a negative-control toy model."
+          tex="\begin{aligned} \Sigma(\mathbf X,t) &\;=\; r - R(\Omega,w,t), \\ \Sigma(\mathbf X,t) &\;=\;0, \\ R(0) &\;=\; a,\qquad R(L) > 0 \end{aligned}"
         />
 
         <TPBody>
-          The <em>radius</em> <Tex tex="R(w)" /> is the scale below which
-          density is depleted at depth <Tex tex="w" />. Two limits are
-          particularly useful:
+          Axisymmetric or static reductions may collapse{" "}
+          <Tex tex="R(\Omega,w,t)" /> to a simpler radial profile or to the
+          coarse parameters <Tex tex="(a,L)" />. Those variables are useful
+          branch data, but the current strict parent action does not yet contain
+          an autonomous wall PDE unless an explicit wall/throat action{" "}
+          <Tex tex="S_\Sigma" /> is added.
         </TPBody>
 
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Static closure.</strong>{" "}
-            <Tex tex="R(w) = R_0" /> constant up to a neck at{" "}
-            <Tex tex="w = w_*" /> where the throat closes, with total length{" "}
-            <Tex tex="L" />.
+            The branch is summarized by a finite mouth radius{" "}
+            <Tex tex="a" />, a finite depth <Tex tex="L" />, and an open exit{" "}
+            <Tex tex="R(L)>0" />.
           </li>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Moving-wall closure.</strong>{" "}
             <Tex tex="R(\Omega, w, t)" /> is a dynamical field on the
-            throat's cylindrical coordinates, satisfying its own PDE —
-            currently <em>open</em>.
+            throat's coordinates in an effective wall/throat closure; its
+            strict parent-level promotion is currently <em>open</em>.
           </li>
         </ul>
       </TPSection>
 
       <TPSection
         anchor="charges"
-        eyebrow="two integer charges"
-        heading="A throat carries both a winding and an electric sign."
+        eyebrow="winding and charge branch"
+        heading="Winding and electric sign are separate data."
       >
         <TPBody>
           The winding integer <Tex tex="n \in \mathbb{Z}" /> counts the phase
           change of <Tex tex="\psi" /> around the throat axis — the same
-          homotopy invariant introduced in topic 02. Independently, the
-          throat carries an electric sign
+          homotopy invariant introduced in topic 02. Independently, a charged
+          throat branch carries an electric sign:
         </TPBody>
 
         <EqCard
@@ -99,26 +104,28 @@ export default function TechnicalThroats() {
         />
 
         <TPBody>
-          It is a load-bearing feature of the framework that these two
-          integers are <em>independent</em>. Circulation (winding) and electric
-          sign are distinct geometric attributes of the throat. In particular:
+          It is a load-bearing feature of the framework that these two pieces
+          of branch data are <em>independent</em>. Circulation (winding) and
+          electric sign are distinct throat-sector labels. In particular:
         </TPBody>
 
         <TPCallout kind="warn">
           <strong style={{ color: "#e67ac6" }}>Firewall.</strong>{" "}
           Electric charge is <em>not</em> circulation. Circulation belongs to
           the magnetic / vortical sector of the matter field; the electric
-          sign <Tex tex="\eta_Q" /> lives in the gauge sector's response along
-          <Tex tex="\ w" />. The historical identifier <Tex tex="q = 1" /> on the
+          sign <Tex tex="\eta_Q" /> is the puncture-orientation branch, and the
+          observed brane coupling is the localization-dressed{" "}
+          <Tex tex="q_\text{eff}" />. The historical identifier{" "}
+          <Tex tex="q = 1" /> on the
           gravity side is now <Tex tex="\kappa_\rho = 1" /> — a mass-dressing
-          coefficient, not an electric charge. See §6.5 of the brief.
+          coefficient, not an electric charge.
         </TPCallout>
       </TPSection>
 
       <TPSection
         anchor="bcs"
         eyebrow="boundary conditions"
-        heading="Mouth, neck, and asymptotic profile."
+        heading="Mouth, interior support, and open exit."
       >
         <TPBody>
           A throat is specified by boundary data at three locations:
@@ -126,9 +133,9 @@ export default function TechnicalThroats() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 14, margin: "14px 0 4px" }}>
           {[
-            { k: "Mouth", sym: "(x_0, 0)", v: "ψ regular on the brane; density profile f matches the smooth-pond boundary condition at r → ∞." },
-            { k: "Neck",  sym: "w = w_*",  v: "R(w) attains its minimum R_min; density is maximally depleted. Sets the throat's dominant inverse length scale." },
-            { k: "Interior tail", sym: "w → ∞", v: "Throat either closes smoothly (ψ → √ρ_∞) or extends indefinitely in the moving-wall case." },
+            { k: "Mouth", sym: "w = 0, R(0)=a", v: "The brane-side cross-section. It is the observable entrance geometry, not the whole defect." },
+            { k: "Interior support",  sym: "Σ < 0",  v: "The bulk throat/cavity region carrying support, wall, Maxwell/mixed, and outgoing-port degrees of freedom." },
+            { k: "Open exit", sym: "w = L, R(L)>0", v: "The finite-radius outlet into unconfined bulk. A hard cap R(L)=0 is obsolete except as an explicit negative control." },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "18px 20px",
@@ -154,23 +161,23 @@ export default function TechnicalThroats() {
       >
         <TPBody>
           Applying the projection of topic 03 to a throat produces a pair of
-          localized brane densities: a density deficit{" "}
-          <Tex tex="\widehat{\delta\rho}(r)" /> (read as mass) and an inflow
-          current <Tex tex="\widehat{J^w}(r)" /> (read in topic 05 as the
-          source of Newtonian attraction). Under the stiff EoS{" "}
-          <Tex tex="P = K\rho^5" />, the projected mass is finite.
+          localized brane profiles: density/source bookkeeping such as{" "}
+          <Tex tex="\widehat{\delta\rho}(r)" /> and transverse current data
+          such as <Tex tex="\widehat{J^w}(r)" />. Topic 05 uses the projected
+          inflow channel in the Newtonian regime; the amplitudes are branch
+          data rather than a completed generic throat theorem.
         </TPBody>
 
         <EqCard
-          label="◇ brane observables · Part I Eq. 4.3"
-          plain="M_brane is the brane-observed mass. Its dependence on (R_0, L) is the content of the Part II gravity chapters."
-          tex="\begin{aligned} \widehat{\delta\rho}(r) &\;=\; \int W(w)\,\big(|\psi_\text{throat}|^2 - \rho_\infty\big)\, dw, \\ M_\text{brane} &\;=\; \int \widehat{\delta\rho}(r)\, d^3x \end{aligned}"
+          label="◇ projected throat data · bookkeeping"
+          plain="These projected quantities are readouts of a frozen branch; they are not the full physical ontology of the throat."
+          tex="\begin{aligned} \widehat{\delta\rho}(r) &\;=\; \int W(w)\,\big(\rho(r,w)-\rho_\infty\big)\, dw, \\ \widehat{J^w}(r) &\;=\; \int W(w)\,J^w(r,w)\,dw \end{aligned}"
         />
 
         <TPBody>
-          The electric sector reads{" "}
-          <Tex tex="\widehat{A}_\mu, \widehat{F}_{\mu\nu}" /> through the
-          localization profile <Tex tex="Z(w)" />, producing standard-looking
+          The electric far-field sector is a controlled reduction of the
+          localized 4+1 Maxwell system. Under the zero-mode assumptions, the
+          localization profile <Tex tex="Z(w)" /> produces standard-looking
           3+1 Maxwell theory with{" "}
           <Tex tex="\mu_{0,\text{eff}} = \mu_0 / Z_\text{int}" /> and{" "}
           <Tex tex="q_\text{eff} = q_*/\sqrt{Z_\text{int}}" />. The derivation
@@ -178,9 +185,9 @@ export default function TechnicalThroats() {
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 18 }}>
-          <Badge kind="reduce">Projected mass (static throat)</Badge>
+          <Badge kind="reduce">Projected source profiles</Badge>
           <Badge kind="reduce">Zero-mode EM coupling</Badge>
-          <Badge kind="open">Moving-wall mass correction</Badge>
+          <Badge kind="open">Moving-wall branch amplitudes</Badge>
         </div>
       </TPSection>
 
@@ -191,16 +198,16 @@ export default function TechnicalThroats() {
       >
         <TPBody>
           The suppressed channels of topic 03 — <Tex tex="A_w,\ J^w,\ F_{\mu w},\ E_w,\ C_a = F_{a w}" /> —
-          do not vanish near a throat. The near-field geometry sets a scale
-          (the neck radius <Tex tex="R_\text{min}" />) below which the
-          zero-mode ansatz breaks down. This is the locus of:
+          are generically expected near a charged throat. The zero-mode ansatz
+          suppresses them only in the controlled far-field brane limit. This is
+          the locus of:
         </TPBody>
 
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
-          <li>brane–bulk leakage — matter and charge moving between <Tex tex="\Sigma" /> and the bulk,</li>
+          <li>brane–bulk leakage and transverse current exchange,</li>
           <li>plasma non-ideality corrections in dense throat ensembles,</li>
-          <li>outgoing quadrupole normalization for moving-throat radiation,</li>
-          <li>the g-factor / anomaly channel for bound-throat configurations.</li>
+          <li>outgoing quadrupole normalization targets for moving-throat radiation,</li>
+          <li>conditional g-factor / anomaly channels for bound-throat configurations.</li>
         </ul>
 
         <TPBody>
@@ -215,11 +222,12 @@ export default function TechnicalThroats() {
           Part II will run the throat through each of the familiar force
           sectors. Gravity (topic 05) reads the projected inflow{" "}
           <Tex tex="\widehat{J^w}" />. Electromagnetism (topic 06) reads the
-          projected Maxwell sector with its localization. Light (topic 08)
+          localized Maxwell sector through its zero-mode reduction. Light (topic 08)
           reads the linearized ambient fluid's ripple. Atoms (topic 09) read
-          bound throat–antithroat pairs. Two-body PN (topic 10) reads
-          throat–throat response at large separation. The moving-throat
-          frontier (topic 11) is the uncompleted PDE that ties it together.
+          reduced bound-throat configurations. Two-body PN (topic 10) reads
+          finite-throat response at large separation. The moving-throat
+          frontier (topic 11) is the effective closure whose strict parent
+          promotion and branch realization remain open.
         </TPBody>
       </TPSection>
     </TopicPage>

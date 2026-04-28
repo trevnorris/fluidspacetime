@@ -29,7 +29,7 @@ export default function MetaGlossary() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Chip>4 sections · ~40 entries</Chip>
+          <Chip>5 sections · working entries</Chip>
           <Chip>notation table at the bottom</Chip>
           <Chip>single-track</Chip>
         </div>
@@ -45,9 +45,9 @@ export default function MetaGlossary() {
           { term: "bulk", aliases: ["4+1 bulk", "ambient"], def: "The full 4+1 dimensional space on which the parent action lives. Four spatial dimensions plus time.", ref: "topic 01" },
           { term: "brane / 3-slice", aliases: ["emergent 3+1"], def: "The projection-defined 3+1 subspace where ordinary physics is read off from the 4+1 parent theory.", ref: "topic 03" },
           { term: "bulk direction w", aliases: ["transverse direction"], def: "The extra spatial direction perpendicular to the brane. It is sampled by projection and reduced to a zero mode only in controlled far-field limits.", ref: "topic 03" },
-          { term: "inflow", aliases: ["radial inflow"], def: "Steady radial motion of the fluid into a throat. The mechanical origin of Newtonian gravity.", ref: "topic 05" },
-          { term: "throat", aliases: ["wormhole throat", "puncture"], def: "A finite-radius opening in the 3-slice connecting to the bulk. The locus Σ(X,t) = r − R(Ω,w,t) = 0.", ref: "topic 04" },
-          { term: "defect", aliases: ["vortex", "topological defect"], def: "A localized singularity of the fluid order parameter. Includes throats as a subclass.", ref: "topic 02" },
+          { term: "inflow", aliases: ["radial inflow"], def: "Projected flow into a positive-mass throat branch. In the controlled Newtonian regime it supplies the effective source used for the gravity analogy.", ref: "topic 05" },
+          { term: "throat", aliases: ["bulk conduit", "puncture"], def: "A finite-radius opening in the 3-slice connecting to an open brane-bulk conduit. In the effective geometry lift its surface is Σ(X,t) = r − R(Ω,w,t) = 0.", ref: "topic 04" },
+          { term: "defect", aliases: ["vortex", "topological defect"], def: "A localized nontrivial configuration of the fluid/order-parameter system. Throats are finite brane-bulk defects; vortical circulation is a separate topological sector.", ref: "topic 02" },
         ]} />
       </TPSection>
 
@@ -58,14 +58,14 @@ export default function MetaGlossary() {
         heading="Equations of motion, sectors, and closures."
       >
         <GlossaryList entries={[
-          { term: "parent action", aliases: ["bulk action"], def: "The single Lagrangian the whole program sits on: a 4+1 gauged GNLS / inviscid, irrotational fluid with stiff polytropic equation of state P(ρ) = K ρⁿ.", ref: "topic 01" },
+          { term: "parent action", aliases: ["bulk action"], def: "The declared 4+1 action for the GNLS / inviscid, irrotational fluid sector, with localized Maxwell added where used. Autonomous wall dynamics require an additional promoted S_Σ action.", ref: "topic 01, 11" },
           { term: "stiff polytrope", aliases: ["EoS exponent n = 5"], def: "The equation of state of the bulk fluid. In the current carry-forward story, n = 5 is fixed by weak-field optical consistency rather than by downstream fitting.", ref: "topic 01" },
-          { term: "zero-mode closure", aliases: ["zero-mode reduction"], def: "A controlled reduction in which the w-dependence of perturbations is projected onto the lowest transverse mode. Gives a 3+1 effective theory.", ref: "topic 03" },
+          { term: "zero-mode closure", aliases: ["zero-mode reduction"], def: "A controlled reduction in which only the lowest transverse w-mode is retained. Gives a 3+1 effective theory in the stated far-field regime.", ref: "topic 03" },
           { term: "gravity sector", def: "The projected density / velocity sector. It gives exact brane identities first, then a controlled Newtonian regime and the carried PN hierarchy within a declared closure package.", ref: "topic 05, 10" },
           { term: "gauge sector", aliases: ["EM sector"], def: "A localized 4+1 gauge field with profile Z(w). Its far-field zero mode gives a controlled 3+1 Maxwell reduction on the brane.", ref: "topic 06" },
           { term: "matter sector", def: "The parent complex order-parameter sector and its reduced defect / bound-state targets. Atomic precision claims remain partly open in the current source stack.", ref: "topic 01, 09" },
-          { term: "mixed sector", aliases: ["brane-bulk mixed"], def: "Interactions between the brane zero mode and off-brane channels. Source of finite-profile corrections, outgoing-normalization data, and the remaining g−2 residue.", ref: "topic 09, 10, 11" },
-          { term: "inviscid", def: "No viscous dissipation in the parent action. Dissipation enters only through throat-radiation channels.", ref: "topic 01" },
+          { term: "mixed sector", aliases: ["brane-bulk mixed"], def: "Interactions between the brane zero mode and off-brane channels such as A_w, J^w, F_μw, E_w, and C_a. Source of finite-profile corrections, outgoing-normalization data, and conditional anomaly packets.", ref: "topic 06, 09, 10, 11" },
+          { term: "inviscid", def: "No viscosity term in the parent fluid action. Effective dissipation, when present, belongs to reductions, collisions, leakage/work ledgers, or outgoing ports rather than parent viscosity.", ref: "topic 01" },
           { term: "irrotational", def: "∇×v = 0 except at defects. The fluid velocity is a gradient field in the bulk of the flow.", ref: "topic 01" },
         ]} />
       </TPSection>
@@ -87,12 +87,12 @@ export default function MetaGlossary() {
       >
         <GlossaryList entries={[
           { term: "PN / post-Newtonian", def: "Expansion of GR dynamics in powers of v/c. 1PN ≡ (v/c)², 2PN ≡ (v/c)⁴, etc.", ref: "topic 10" },
-          { term: "κ_ρ dressing", aliases: ["density dressing"], def: "A specific dressing of the fluid density that makes the inflow match the GR potential at 1PN. κ_ρ = 1 here is the chosen normalization.", ref: "topic 05, 10" },
-          { term: "quadrupole formula", aliases: ["dE/dt|_2.5PN"], def: "GW power at leading order. The fluid picture reproduces the structure; the open scalar δ_Z captures how close the coefficient is to GR's.", ref: "topic 10" },
-          { term: "δ_Z", def: "The open dimensionless number that multiplies the GR quadrupole coefficient in the fluid picture. GR has δ_Z = 0.", ref: "topic 10" },
+          { term: "κ_ρ dressing", aliases: ["density dressing"], def: "A gravity-side density/mass dressing used in the Newtonian/PN ladder. κ_ρ = 1 is not electric charge.", ref: "topic 05, 10" },
+          { term: "quadrupole formula", aliases: ["dE/dt|_2.5PN"], def: "GW power at leading order. The fluid picture narrows the surviving branch to the STF quadrupole channel, with the coefficient still gated by passive/outgoing normalization.", ref: "topic 10" },
+          { term: "δ_Q / δ_tail", def: "Residual diagnostics for the 2.5PN / 4PN interface: δ_Q is the quadrupole-normalization miss and δ_tail is the tail-transport or scattering miss.", ref: "topic 10" },
           { term: "radiation reaction", def: "Self-force on a radiating body. The leading odd sector is isolated at 2.5PN; higher outgoing corrections remain downstream targets.", ref: "topic 10" },
           { term: "ring-down / QNM", aliases: ["quasi-normal modes"], def: "Characteristic oscillation modes of a perturbed throat. A realized moving-throat branch would have to return them; topic 11 does not yet publish a finished spectrum.", ref: "topic 11" },
-          { term: "moving-throat PDE", def: "The free-boundary equation for R(Ω,w,t). The program's frontier.", ref: "topic 11" },
+          { term: "moving-throat PDE", def: "The free-boundary framework for R(Ω,w,t). It is an effective wall/throat closure unless the autonomous throat action S_Σ is promoted and frozen.", ref: "topic 11" },
         ]} />
       </TPSection>
 
@@ -174,13 +174,13 @@ function StatusTable() {
   const rows = [
     {
       kind: "exact",
-      formal: "An equality that follows from the parent action by a chain of exact identities. No discarded terms, no small-parameter expansion.",
+      formal: "An equality that follows from the declared action, exact definitions, or exact algebra. No discarded terms, no small-parameter expansion.",
       example: "∂tρ_brane + ∇·j_brane = S_leak (projected continuity with leakage)",
       falsifies: "Disagreement indicates an error in the derivation — not the physics.",
     },
     {
       kind: "closure",
-      formal: "An equality that follows within a named closure (zero-mode, stiff polytrope, irrotationality). The closure is stated on the page where the claim is made.",
+      formal: "An equality that follows within a named closure or declared branch. The closure is stated on the page where the claim is made.",
       example: "The carried 1PN / 2PN / 3PN ledger inside the declared closure package.",
       falsifies: "Disagreement may indicate the closure is too restrictive at the regime in question.",
     },
@@ -205,7 +205,7 @@ function StatusTable() {
     {
       kind: "open",
       formal: "Unresolved: the coefficient, sign, or existence is not known. Bounds and expectations may be stated; a value is not.",
-      example: "The shared 2.5PN / 4PN outgoing normalization or the last g−2 branch datum.",
+      example: "The shared 2.5PN / 4PN outgoing normalization or the g−2 common branch packet.",
       falsifies: "Resolution — in either direction — is a result. Disagreement with an expectation is not falsification.",
     },
   ];
@@ -267,19 +267,22 @@ function NotationTable() {
   const rows = [
     { sym: "\\rho", read: "rho", means: "Bulk fluid density.", where: "parent action · topic 01" },
     { sym: "\\rho_\\infty", read: "rho-infinity", means: "Asymptotic / vacuum density far from defects.", where: "topic 01" },
-    { sym: "K,\\; n", read: "K, n", means: "EoS coefficient K and exponent n. Stiff polytrope uses n = 5.", where: "topic 01" },
+    { sym: "K,\\; n", read: "K, n", means: "EoS coefficient K and exponent n. The carried weak-field branch uses n = 5.", where: "topic 01" },
     { sym: "\\psi", read: "psi", means: "Complex parent order parameter. The density is ρ = |ψ|².", where: "topic 01" },
-    { sym: "c", read: "c", means: "Characteristic signal speed used by the brane-facing reductions.", where: "topic 08" },
-    { sym: "c_s", read: "c-sub-s", means: "Local sound speed with c_s² = (1/m) dP/dρ = 5Kρ⁴/m on the n = 5 background.", where: "topic 01, 08" },
+    { sym: "c", read: "c", means: "Brane-facing light/signal speed used in reductions. Its material relation is branch-dependent.", where: "topic 08" },
+    { sym: "c_s", read: "c-sub-s", means: "Local sound speed; in the frozen n = 5 EOS, c_s² = (1/m) dP/dρ = 5Kρ⁴/m.", where: "topic 01, 08" },
     { sym: "w", read: "w", means: "The bulk direction — the 4th spatial dimension.", where: "topic 03" },
     { sym: "X^\\mu", read: "X-mu", means: "3+1 brane coordinates (t, x, y, z).", where: "topic 03" },
-    { sym: "\\Sigma(X,t)", read: "Sigma of X, t", means: "The throat locus. Zero set of r − R(Ω,w,t).", where: "topic 04, 11" },
-    { sym: "R(\\Omega, w, t)", read: "R of Omega, w, t", means: "Throat radius as a function of angle, bulk depth, and time. The central unknown of the moving-throat PDE.", where: "topic 11" },
-    { sym: "v^i", read: "v-i", means: "Fluid velocity. ∇·(ρv) = 0 away from throats.", where: "topic 01, 05" },
+    { sym: "\\Sigma(X,t)", read: "Sigma of X, t", means: "Effective throat-surface variable: zero set of r − R(Ω,w,t).", where: "topic 04, 11" },
+    { sym: "R(\\Omega, w, t)", read: "R of Omega, w, t", means: "Throat radius as a function of angle, bulk depth, and time. The central shape variable of the moving-throat framework.", where: "topic 11" },
+    { sym: "v^i", read: "v-i", means: "Bulk fluid velocity.", where: "topic 01, 05" },
     { sym: "\\varphi", read: "varphi", means: "Brane velocity potential in the longitudinal Helmholtz split v_brane = ∇varphi + v_T.", where: "topic 05" },
-    { sym: "\\kappa_\\rho", read: "kappa-rho", means: "Density-dressing parameter. κ_ρ = 1 is the normalization used throughout.", where: "topic 05, 10" },
-    { sym: "\\delta_Z", read: "delta-Z", means: "Open scalar multiplying the GR quadrupole coefficient at 2.5PN.", where: "topic 10" },
-    { sym: "\\xi", read: "xi", means: "A reduced throat/core scale used in older defect bookkeeping; its precise branch dependence is model-specific.", where: "topic 02, 04" },
+    { sym: "\\kappa_\\rho", read: "kappa-rho", means: "Gravity-side density/mass dressing parameter. κ_ρ = 1 is not electric charge.", where: "topic 05, 10" },
+    { sym: "\\eta_Q", read: "eta-Q", means: "Electric charge-orientation branch sign, η_Q = ±1.", where: "topic 04, 06" },
+    { sym: "q_\\star,\\;q_{\\rm eff}", read: "q-star, q-eff", means: "Microscopic branch charge and observed brane charge after localization normalization, q_eff = q_star / sqrt(Z_int).", where: "topic 06" },
+    { sym: "Z_{\\rm int}", read: "Z-int", means: "Localization integral ∫ Z(w) dw controlling the zero-mode charge normalization.", where: "topic 06" },
+    { sym: "\\delta_Q,\\;\\delta_{\\rm tail}", read: "delta-Q, delta-tail", means: "Quadrupole-normalization and tail-transport residual diagnostics.", where: "topic 10" },
+    { sym: "\\xi", read: "xi", means: "A reduced healing/profile scale in older or auxiliary defect bookkeeping; not the final throat radius.", where: "topic 02, 04" },
     { sym: "\\alpha", read: "alpha", means: "Fine-structure constant. A target observable of the EM localization / mixed sector, with precision matching still branch-sensitive.", where: "topic 06, 09" },
     { sym: "Q_{jk}", read: "Q-j-k", means: "Mass quadrupole tensor of a source. Appears in the GW power formula.", where: "topic 10" },
   ];

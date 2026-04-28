@@ -16,17 +16,19 @@ export default function PlainGravity() {
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Gravity isn't a force reaching across space. It's the pond
+          In this picture, gravity isn't a force reaching across space. It's the pond
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>
             {" "}noticing{" "}
           </em>
           that something is draining it.
         </TPTitle>
         <TPLede>
-          We have throats, and throats drink fluid from the bulk. This chapter
-          is the claim that the <em>drinking</em> is what we experience as
-          gravity — not as a mysterious pull across distance, but as a shift
-          in the pond's flow pattern that every other throat can feel.
+          We have throats, and the gravity-side branch treats them as
+          sink-like sources for projected flow. This chapter explains the
+          proposal that this inflow is what we experience as gravity — not as a
+          mysterious pull across distance, but as a shift in the pond's flow
+          pattern that other throat branches can feel in the controlled
+          Newtonian regime.
         </TPLede>
       </section>
 
@@ -40,11 +42,12 @@ export default function PlainGravity() {
           just riding the flow.
         </TPBody>
         <TPBody>
-          Our pond has drains too — throats. Each throat lets fluid seep down
-          into the hidden direction. That draining sets up a gentle, steady
-          flow in the surrounding pond, all pointing inward. Another throat
-          sitting nearby is itself made of the pond; it drifts with the local
-          current. We call that drift <em>gravitational attraction</em>.
+          In the model, a throat can act like a sink for the projected brane
+          flow. In the simple Newtonian limit, that source sets up a gentle,
+          steady longitudinal current in the surrounding pond. Another throat
+          sitting nearby is itself made of the pond; in the reduced picture, it
+          responds to that local current. That is the route to{" "}
+          <em>gravitational attraction</em>.
         </TPBody>
       </TPSection>
 
@@ -90,21 +93,20 @@ export default function PlainGravity() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="mass" eyebrow="what mass actually is" heading="Mass is how much the pond gets depleted.">
+      <TPSection anchor="mass" eyebrow="what mass means here" heading="Mass is tied to source strength.">
         <TPBody>
           In ordinary physics, mass is one of those words everyone uses but
           nobody defines — it's just a number attached to a particle. In the
-          fluid picture, it's concrete: <strong style={{ color: "var(--ink-1)" }}>
-          the mass of a throat is how much fluid is missing from its vicinity
-          compared to undisturbed pond</strong>. More depletion, more mass.
+          fluid picture, the Newtonian mass of a throat branch is tied to its
+          localized source strength: the density/source bookkeeping and the
+          inflow data that the brane projection reads near the mouth.
         </TPBody>
         <TPBody>
-          This also explains why mass is always positive. You can't have
-          <em> less</em> than no density. The pond can be undisturbed or
-          depleted, never overfull beyond its natural level in the throat's
-          neighbourhood. So every throat gravitates the same way — inward.
-          There's no anti-gravity in this picture, because there's no
-          anti-drain.
+          For the positive-mass throat branches used in the Newtonian and PN
+          ladder, the effective source is sink-like, so the resulting
+          longitudinal flow points inward. That is the branch this website is
+          describing. It is not a theorem here about every mathematically
+          possible exotic source one could write down.
         </TPBody>
       </TPSection>
 
@@ -122,18 +124,18 @@ export default function PlainGravity() {
           The program climbs toward relativistic corrections one rung at a
           time through a ladder of post-Newtonian approximations
           (topic 10), and the climb is only partly closed. What we have is a
-          principled answer to "why 1/<em>r</em>² and why always attractive,"
-          earned rather than imposed.
+          principled answer to "why 1/<em>r</em>²" and why the modeled
+          positive-mass branch is attractive, earned rather than imposed.
         </TPBody>
 
       </TPSection>
 
       <TPSection anchor="next" eyebrow="up next" heading="Coming up: the other behaviour of the same throat.">
         <TPBody>
-          Gravity came from one of the two things a throat does — drinking.
-          The next chapter is about the other — puncturing through. That
-          behaviour is what the brane reads as electromagnetism. Same
-          object, same geometry, different channel of the pond responding.
+          Gravity came from one throat channel — projected inflow. The next
+          chapter is about the electromagnetic channel: puncture orientation,
+          localized Maxwell fields, and the controlled brane limit. Same finite
+          object, different brane-readable channel.
         </TPBody>
       </TPSection>
     </TopicPage>

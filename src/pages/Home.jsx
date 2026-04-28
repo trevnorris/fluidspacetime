@@ -101,13 +101,13 @@ export default function Home() {
               tagline="Metaphor first. Math optional."
               audience="Curious readers, students, science writers."
               bullets={[
-                'Every idea explained with superfluids, ripples, and knots before any formula appears.',
+                'Every idea explained with fluid analogies before any formula appears.',
                 'No equations in the body. Occasional “here\'s the math if you want it” fold-outs.',
                 '14 topics, ~45 minutes end to end.',
               ]}
               sample={{
                 label: 'how a page opens',
-                body: 'Imagine the universe is a still pond, but four-dimensional. Light is a ripple across it. What we call a particle is a tiny whirlpool — a knot in the water that refuses to untie.',
+                body: 'Imagine a four-dimensional fluid with our world as the measured surface. Some familiar fields appear in controlled limits; particle-like defects are modeled as finite throats rather than points.',
               }}
               cta="Start reading plain →"
               href="/plain/universe-as-fluid"
@@ -176,8 +176,8 @@ export default function Home() {
               <Link className="fu-link" to="/meta/paper-library">
                 Paper Library
               </Link>{' '}
-              indexes the 9 published 4D papers plus the earlier superfluid-defect
-              papers they build on.
+              indexes the 9 published 4D papers, the PDE derivation archive,
+              and the earlier superfluid-defect papers they build on.
             </span>
           </div>
 
@@ -195,11 +195,11 @@ export default function Home() {
             }}
           >
             {[
-              { k: 'n = 5', v: 'EoS exponent' },
-              { k: '\\kappa_\\rho = 1', v: 'mass-dressing' },
+              { k: 'n = 5', v: 'weak-field EoS' },
+              { k: '\\kappa_\\rho = 1', v: 'mass-dressing, not charge' },
               { k: '\\kappa_{\\mathrm{add}} = \\tfrac{1}{2}', v: 'added-mass' },
               { k: '\\beta_{1\\text{PN}} = 3', v: 'precession ledger' },
-              { k: '\\chi_Q = 1', v: 'outgoing normalization' },
+              { k: '\\chi_Q = 1', v: 'normalization target' },
             ].map(({ k, v }) => (
               <div
                 key={k}
@@ -663,7 +663,7 @@ function HomeFooter() {
               style={{ color: 'var(--ink-3)', maxWidth: 460 }}
             >
               A speculative research program. Every claim carries its own badge;
-              no hype, no placeholders.
+              no status-free shortcuts.
             </div>
           </div>
           <div

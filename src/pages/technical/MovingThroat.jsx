@@ -32,7 +32,7 @@ export default function TechnicalMovingThroat() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge kind="exact">Geometry lift from the parent theory</Badge>
+          <Badge kind="exact">Geometry lift as confinement argument</Badge>
           <Badge kind="reduce">Linearized wall/support/gauge system</Badge>
           <Badge kind="open">Branch realization</Badge>
           <Chip label="4D · Action" href={ZENODO.action.url} />
@@ -44,22 +44,25 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="lift"
         eyebrow="geometry lift"
-        heading="The first exact move is to promote the throat to a moving surface."
+        heading="The first framework move is to represent the throat as a moving surface."
       >
         <TPBody>
           The framework paper's starting point is the geometry lift
         </TPBody>
 
         <EqCard
-          label="◇ geometry lift · exact framework variable"
-          plain="The old collective variables a(t) and L(t) survive only as collective moments of this distributed interface."
+          label="◇ geometry lift · confinement argument"
+          plain="The old collective variables a(t) and L(t) survive only as collective moments of this distributed open interface."
           tex="\Sigma(\mathbf X,t) \;=\; r - R(\Omega,w,t)"
         />
 
         <TPBody>
-          That is the paper's central conceptual upgrade. It makes the grouped
-          real <Tex tex="P_2" /> wall/support sector literal rather than
-          symbolic.
+          As a confinement argument, <Tex tex="\Sigma/R" /> belongs to the
+          exact matter-sector bookkeeping. As an autonomous dynamical wall
+          field, it remains an effective closure unless a throat action{" "}
+          <Tex tex="S_\Sigma" /> is promoted into the parent action. The branch
+          geometry used for realization tests is also open:{" "}
+          <Tex tex="R_0(0)=a_0" /> and <Tex tex="R_0(L_0)>0" />, not a hard cap.
         </TPBody>
       </TPSection>
 
@@ -76,8 +79,8 @@ export default function TechnicalMovingThroat() {
 
         <EqCard
           label="◇ branch data set · operational input"
-          plain="These are the unresolved data the realized branch must return. The paper is explicit that they are not yet supplied by a solved nonlinear theorem."
-          tex="\begin{aligned} \mathfrak B \;=\; \big\{\ &R_0,\ \text{wall constitutive data}, \\ &\text{support spectrum},\ \text{overlap integrals}, \\ &\text{outgoing DtN data}\ \big\} \end{aligned}"
+          plain="These are frozen branch data, not fit knobs. The paper is explicit that they are not yet supplied by a solved nonlinear theorem."
+          tex="\begin{aligned} \mathfrak B \;=\; \big\{\ &\text{parent-action status},\ R_0,\ R_{\rm exit}>0, \\ &\text{wall/material data},\ \text{support spectrum}, \\ &\text{mixed/outgoing ports},\ \text{source normalization}\ \big\} \end{aligned}"
         />
 
         <TPBody>
@@ -93,7 +96,7 @@ export default function TechnicalMovingThroat() {
       >
         <EqCard
           label="◇ first framework outputs"
-          plain="These are the reader-facing observables singled out in the PDE paper abstract."
+          plain="These are the reader-facing observables singled out by the PDE program, in the stated source/port convention."
           tex="\hat m_0^{\,2} P_0 \;=\; \frac{54Gc_s^5}{5a^5c^5}, \qquad \Xi_1 \;=\; P_1/P_0"
         />
 
@@ -112,14 +115,16 @@ export default function TechnicalMovingThroat() {
       >
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 15.5 }}>
           <li>No complete first-principles solution of the nonlinear moving-throat PDE.</li>
+          <li>No autonomous parent-level wall PDE unless <Tex tex="S_\Sigma" /> is promoted and frozen.</li>
           <li>No proof that the passive/outgoing quadrupole branch is already realized on the true defect solution.</li>
+          <li>No post-residual tuning of wall, material, source, or outgoing coefficients.</li>
           <li>No finished ring-down catalogue that can simply be compared to LIGO/LISA data today.</li>
         </ul>
 
         <TPCallout kind="note">
           Topic 11 should therefore be framed as a framework / reduced-system
-          page. It should not read like a solved wall action plus explicit
-          nonlinear spectrum page.
+          page. It should not read like a parent-complete wall action plus
+          explicit nonlinear spectrum page.
         </TPCallout>
       </TPSection>
 
@@ -129,10 +134,11 @@ export default function TechnicalMovingThroat() {
         heading="Why this still gates so much."
       >
         <TPBody>
-          Once a real branch returns the data in <Tex tex="\mathfrak B" />, the
-          same output bundle feeds the 2.5PN / 4PN normalization question, the
-          anomaly package, and the mixed-sector finite-profile corrections
-          elsewhere on the site.
+          Once a real target-blind branch returns the frozen data in{" "}
+          <Tex tex="\mathfrak B" />, the same output bundle feeds the 2.5PN /
+          4PN normalization question, the anomaly package, and the mixed-sector
+          finite-profile corrections elsewhere on the site. A stable branch can
+          pass or fail those residuals; it is not repaired after the comparison.
         </TPBody>
       </TPSection>
     </TopicPage>

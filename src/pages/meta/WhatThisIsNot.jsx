@@ -45,13 +45,14 @@ export default function MetaWhatThisIsNot() {
         heading="A single parent action, and a ledger of what follows from it."
       >
         <TPBody>
-          The program takes one object seriously: a 4+1 dimensional inviscid,
-          irrotational fluid governed by a specific parent action with a stiff
-          polytropic equation of state. That object is stated on page 1 of
-          every source document and is not renegotiated downstream. Everything
-          else on the site — gravity as inflow, EM as puncture, atoms as
-          bound states, the PN ledger — is a <em>claim about that object</em>.
-          The badges say how strong each claim is.
+          The program starts from one declared object: a 4+1 dimensional
+          inviscid, irrotational fluid action with a stiff polytropic equation
+          of state, plus the localized Maxwell, projection, and geometry
+          structures named where they are used. That starting point is not
+          renegotiated downstream. Everything else on the site — gravity as
+          inflow, EM as puncture-localized Maxwell, atoms as reduced bound
+          states, the PN ledger — is a <em>claim about that object</em>. The
+          badges say how strong each claim is.
         </TPBody>
 
         <MetaClaimLegend />
@@ -69,11 +70,13 @@ export default function MetaWhatThisIsNot() {
           right={
             <>
               It doesn't. GR is the comparison target throughout the weak-field
-              inflow and PN program. The current published conservative
-              carry-forward reaches 3PN within a declared hierarchy; 2.5PN and
-              4PN remain conditional on one shared outgoing quadrupole
-              normalization. If a prediction disagrees with GR inside GR's
-              domain of validity, the program is wrong, not GR.
+              inflow and PN program. The current carry-forward reaches the
+              conservative 3PN ladder within a declared hierarchy, and the 4PN
+              local sector is separated from the inherited tail bridge; 2.5PN
+              radiation reaction and the full 4PN tail remain conditional on
+              one shared outgoing quadrupole normalization. If a prediction
+              disagrees with GR inside GR's tested domain after the same
+              assumptions are applied, the program is wrong, not GR.
             </>
           }
         />
@@ -101,9 +104,10 @@ export default function MetaWhatThisIsNot() {
           right={
             <>
               Not yet. Several central equations are{" "}
-              <em>controlled reductions</em> (zero-mode closure, core-scaling
-              ansatz) or carry open branch data (the shared 2.5PN / 4PN
-              outgoing normalization, the g−2 branch-selection residue). The
+              <em>controlled reductions</em> or named closures (zero-mode
+              closure, finite-throat support branch, effective wall dynamics)
+              or carry open branch data (the shared 2.5PN / 4PN outgoing
+              normalization, the g−2 branch-selection residue). The
               moving-throat PDE — the program's frontier — is a{" "}
               <em>framework and reduced-system statement</em>, not a closed
               nonlinear solution.
@@ -133,14 +137,15 @@ export default function MetaWhatThisIsNot() {
         }}>
           <FalsifierCard
             tag="F-1 · binary pulsar"
-            heading="δ_Z at the 10⁻³ level"
+            heading="Quadrupole residual outside bounds"
             body={<>
-              The Hulse–Taylor binary's orbital-decay agreement with GR at
-              the ~0.1% level already constrains the 2.5PN anomaly{" "}
-              <span className="fu-mono">δ_Z</span>. A refined measurement
-              showing <span className="fu-mono">|δ_Z|</span> above ~10⁻³,
-              with no other systematic, would falsify the fluid derivation
-              of quadrupole radiation.
+              The current source record narrows the radiation problem to an
+              outgoing quadrupole normalization residual, with the 4PN tail
+              diagnostic split as <span className="fu-mono">δ_Q + δ_tail</span>{" "}
+              at linear order. Once a frozen branch returns those quantities,
+              binary-pulsar or gravitational-wave damping data can test them
+              directly. A confirmed mismatch outside observational bounds would
+              falsify the fluid route to quadrupole radiation.
             </>}
             crossref="topic 10"
           />
@@ -150,10 +155,11 @@ export default function MetaWhatThisIsNot() {
             heading="Realized throat-response spectrum"
             body={<>
               Topic 11 does not yet supply a finished ring-down spectrum.
-              What it does supply is the framework that a realized branch
-              would have to turn into one. Once that branch is fixed, a
-              clean LIGO/LISA spectrum that misses the leading throat
-              response would rule out the throat-identification route.
+              What it does supply is the framework and branch-data contract
+              that a realized throat solution would have to turn into one.
+              Once that branch is fixed, gravitational-wave spectra that
+              exclude its predicted response would rule out that
+              throat-identification route.
             </>}
             crossref="topic 11"
           />
@@ -162,12 +168,13 @@ export default function MetaWhatThisIsNot() {
             tag="F-3 · anomalous moment"
             heading="g−2 branch when completed"
             body={<>
-              The current anomaly package narrows the residue to one branch
-              datum; it does not yet justify claiming that the published
-              stack has already derived the full electron or muon anomaly
-              series. If the completed branch realization yields the wrong
-              sign or wrong α-series shape against experiment, that would
-              falsify the geometric-anomaly route.
+              The current anomaly package organizes the residue into a
+              common quotient / prefactor-slope branch packet; it does not yet
+              justify claiming that the published stack has already derived
+              the full electron or muon anomaly series. If the completed
+              branch realization yields the wrong sign or wrong series shape
+              against experiment, that would falsify the geometric-anomaly
+              route.
             </>}
             crossref="topic 09"
           />
@@ -176,12 +183,13 @@ export default function MetaWhatThisIsNot() {
             tag="F-4 · EoS exponent"
             heading="n ≠ 5 from an independent constraint"
             body={<>
-              The whole program sits on the stiff polytrope exponent{" "}
-              <span className="fu-mono">n = 5</span>. In the current
-              carry-forward record this is fixed by weak-field optical
-              consistency, not by downstream fitting. An independent
-              calculation that forced <span className="fu-mono">n</span> to
-              a different value would collapse the picture.
+              The weak-field / PN carry-forward sits on the stiff polytrope
+              exponent <span className="fu-mono">n = 5</span>. In the current
+              source record this is fixed by weak-field optical consistency,
+              not by downstream fitting. An independent calculation that
+              forced the same branch to use a different{" "}
+              <span className="fu-mono">n</span> would force a rebuild or
+              demotion of the picture.
             </>}
             crossref="topic 01"
           />
@@ -202,11 +210,11 @@ export default function MetaWhatThisIsNot() {
         </TPBody>
 
         <div style={{ marginTop: 20 }}>
-          <ScopeRow label="Weak-interaction sector" note="No derivation of W/Z bosons or flavor structure. Out of scope until a second defect class is identified." />
-          <ScopeRow label="Color / QCD confinement" note="No derivation of SU(3) gauge structure from the fluid. Out of scope; same reason." />
+          <ScopeRow label="Weak-interaction sector" note="No derivation of W/Z bosons or flavor structure. Out of scope." />
+          <ScopeRow label="Color / QCD confinement" note="No derivation of SU(3) gauge structure from the fluid. Out of scope." />
           <ScopeRow label="Cosmological constant" note="Addressed only obliquely as a vacuum-pressure term. The Λ-problem in GR is not solved here." />
           <ScopeRow label="Neutrino masses, mixing, CP violation" note="Silent. Not claimed, not derived." />
-          <ScopeRow label="Dark matter" note="A throat-remnant candidate is suggested in topic 11, but not predicted. Open." />
+          <ScopeRow label="Dark matter" note="No realistic dark-matter or cosmological model is derived here. Possible large-scale or remnant interpretations are speculative." />
           <ScopeRow label="Dark energy as inflow boundary" note="Speculative scaling argument only. No claim." />
         </div>
       </TPSection>
@@ -235,7 +243,7 @@ export default function MetaWhatThisIsNot() {
 // ─── Claim-status legend ────────────────────────────────────
 function MetaClaimLegend() {
   const rows = [
-    { kind: "exact", text: "Follows from the parent action by a chain of equalities with no discarded terms. If the action is right, this is right." },
+    { kind: "exact", text: "Follows from the declared action, exact definitions, or exact algebra with no discarded terms. If the premises are right, this is right." },
     { kind: "closure", text: "Follows within a stated closure assumption (zero-mode, stiff-polytrope, irrotationality). The closure is named on the page." },
     { kind: "reduce", text: "A controlled reduction: an ansatz that is provably consistent at the order claimed, but not derived from a deeper principle." },
     { kind: "effect", text: "An effective identity that holds because the dropped terms are parametrically small. Bound stated." },

@@ -31,10 +31,12 @@ export default function PlainPlasma() {
 
       <TPSection anchor="picture" eyebrow="the picture" heading="Many throats, moving, talking.">
         <TPBody>
-          Imagine a dense soup of throats, half puncturing into +w (call
-          them positive), half into −w (negative). Each one drinks a
-          little fluid and sits in the gauge field of its neighbours.
-          The positives and negatives attract and repel in the usual ways.
+          Imagine a dense soup of throats, some carrying one puncture
+          orientation and some carrying the opposite orientation. Once a
+          convention is chosen, those are the positive and negative charge
+          branches. Each one drinks a little fluid and sits in the gauge
+          field of its neighbours. The positives and negatives attract and
+          repel in the usual ways.
           They push on each other; they move; and as they move, they
           generate new gauge fields, which push on more throats, which
           move, which generate more fields. This feedback loop is what makes a
@@ -46,37 +48,40 @@ export default function PlainPlasma() {
           <em> magnetohydrodynamics</em> — MHD for short. It's a set of
           equations that treat the plasma as a conducting fluid, and for a
           remarkable range of situations it works beautifully. The fluid
-          picture should reproduce MHD in that range. It does. What's
-          interesting is where it doesn't.
+          picture has to recover MHD in that controlled range: long scales,
+          low frequencies, negligible transverse leakage, and a quiet mixed
+          sector. The plasma paper builds exactly that limit. What's
+          interesting is what becomes visible when those assumptions fail.
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="where" eyebrow="where MHD breaks" heading="Real plasmas do things MHD says they can't.">
+      <TPSection anchor="where" eyebrow="where ideal MHD breaks" heading="Real plasmas do things ideal MHD says they can't.">
         <TPBody>
-          Textbook MHD assumes the plasma is a perfect conductor — the
+          Ideal MHD assumes the plasma is a perfect conductor — the
           magnetic field lines are frozen into the fluid and never break or
           rearrange. But real plasmas break field lines all the time. The
           aurora, solar flares, the dynamics inside a tokamak — all of them
           involve rapid reconfigurations of magnetic structure that perfect
-          MHD forbids. Patching this up usually requires adding little terms
-          to the equations that don't have a first-principles origin —
-          resistivity, Hall effects, kinetic instabilities. Useful, but
-          conceptually messy.
+          MHD forbids. Standard plasma theory patches the ideal limit in
+          principled ways — Hall drift, electron pressure, electron inertia,
+          collisions, kinetic effects — but large simulations still have to
+          choose closures and numerical rules for how topology changes.
         </TPBody>
         <TPBody>
           The Fluid Spacetime program has a specific story about where those
-          corrections come from: they are not extra terms added to the pond's
-          equations. They are what happens when some of the pond's activity
-          takes a shortcut through the hidden direction instead of staying
-          visible on the brane.
+          additional beyond-MHD terms can come from: not by replacing the
+          usual Hall or resistive closures, but by keeping the channels that
+          ideal MHD deliberately suppresses. Some of the pond's activity can
+          move through the hidden direction, or into transverse field modes,
+          instead of staying visible on the brane.
         </TPBody>
 
         <TPCallout kind="note">
-          Put differently: textbook non-ideality is often a bookkeeping
-          problem — energy and momentum appear to vanish from the
-          brane-visible equations. In the fluid picture, they don't vanish.
-          They move into channels a brane observer can't directly see, but
-          can still balance the books against.
+          Put differently: part of the non-ideal ledger can be an open-system
+          bookkeeping problem. Energy, momentum, charge, or helicity may leave
+          the brane-visible variables without leaving the parent system. The
+          hidden-channel terms are designed to make that exchange measurable,
+          not to rename every ordinary plasma effect.
         </TPCallout>
       </TPSection>
 
@@ -89,10 +94,10 @@ export default function PlainPlasma() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 14, margin: "18px 0 6px", maxWidth: 820 }}>
           {[
-            { k: "Mixed-sector EM", v: "Components of the electromagnetic field that have one leg in the brane and one leg in the hidden direction. They're suppressed in the far-field, but hot and dense regions re-excite them." },
-            { k: "Bulk leakage",    v: "Matter and charge moving bodily along the hidden direction instead of on the brane. Looks like a loss to us; conserved once you count the bulk." },
-            { k: "Higher modes",    v: "Excitations of the brane's thickness profile above its lowest mode. Normally frozen out, but accessible at high field gradients." },
-            { k: "Throat-stress",   v: "Mechanical stress in the throat geometries themselves, supplied by the distributed moving-throat dynamics of topic 11." },
+            { k: "Mixed-sector EM", v: "Components of the electromagnetic field with one leg on the brane and one leg in the hidden direction. They're suppressed in the far-field limit, but strong gradients can make them relevant." },
+            { k: "Bulk leakage",    v: "Matter or current moving along the hidden direction instead of only along the brane. It can look like a source or loss to us while remaining conservative in the bulk." },
+            { k: "Higher modes",    v: "Excitations above the lowest localized electromagnetic mode. Normally quiet, but expected when structures approach the localization scale." },
+            { k: "Projection stress", v: "Residual terms from projecting products, ratios, and unresolved transverse structure into a brane-only description." },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "20px 22px",
@@ -109,27 +114,30 @@ export default function PlainPlasma() {
         <TPBody>
           These aren't new particles or new forces. They're different
           geometric modes of the same underlying medium — channels that
-          brane-level MHD is blind to by construction. If you stay far from
-          throats, stay at modest field strengths, and stay at long
-          wavelengths, those channels are quiet and MHD looks complete. Step
-          outside any of those conditions and the hidden channels turn on.
+          brane-level MHD is blind to by construction. If the plasma is
+          long-wavelength, low-frequency, well localized, and has negligible
+          transverse current, those channels are quiet and MHD looks complete.
+          Step outside those assumptions and the hidden channels can become
+          dynamically important.
         </TPBody>
       </TPSection>
 
       <TPSection anchor="reconnection" eyebrow="where this might help" heading="The reconnection question.">
         <TPBody>
           Magnetic reconnection — the sudden rearrangement of field
-          topology in a conducting fluid — is one of the oldest open
-          problems in plasma physics. Observations tell us it happens fast
-          and releases enormous energy. Ideal MHD says it shouldn't happen
-          at all. Dozens of patches exist, none universally accepted.
+          topology in a conducting fluid — is one of the central stress tests
+          for plasma theory. Observations tell us it happens fast and releases
+          enormous energy. Ideal MHD says it shouldn't happen at all; extended
+          MHD and kinetic theory explain many regimes, but the closure and
+          energy-ledger problem remains important in large-scale models.
         </TPBody>
         <TPBody>
           The fluid picture suggests a geometric angle: what looks on the
           brane like topology changing discontinuously may, in the bulk, be
           a smooth rearrangement whose brane shadow only looks abrupt. The
-          energy budget for the abrupt event is supplied by the hidden
-          channels going quiet as the brane topology settles. This is a
+          energy and helicity budget for the event should then correlate with
+          measurable hidden-channel activity: transverse current, mixed-field
+          energy, leakage, and higher-mode storage. This is a
           <em> hypothesis</em>, not a completed derivation — it's where the
           program expects its insights to pay off, not where they've
           already landed.
@@ -153,12 +161,13 @@ export default function PlainPlasma() {
 
       <TPSection anchor="caveats" eyebrow="honest caveats" heading="Where we stand.">
         <TPBody>
-          The fluid picture does reproduce ordinary MHD in the regime where
-          ordinary MHD works. The identification of non-ideal effects with
-          hidden channels is structural — we know where to park the missing
-          books — but turning that into quantitative predictions requires the
-          moving-throat PDE of topic 11 to be solved or closed in the
-          relevant limit. That's ongoing work.
+          The fluid picture reproduces standard ideal MHD under the paper's
+          controlled brane/zero-mode assumptions. The hidden-channel story is
+          structural and diagnostic: it says what to measure when those
+          assumptions fail. Turning that into quantitative reconnection rates
+          or closure coefficients requires simulations and the moving-throat
+          PDE of topic 11 to be solved or closed in the relevant limit. That's
+          ongoing work.
         </TPBody>
         <TPBody>
           So this chapter is a placeholder in a specific sense: the

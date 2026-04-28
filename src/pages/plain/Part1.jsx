@@ -86,27 +86,29 @@ export default function PlainPart1() {
       <TPSection
         anchor="ripples"
         eyebrow="ripples"
-        heading="Every ripple has a top speed. That speed is the cosmic speed limit."
+        heading="The ripples we use as signals have a top speed."
       >
         <TPBody>
           Real ponds have a maximum ripple speed — set by the water itself. Push
-          harder, the ripple doesn't go faster; it just gets bigger. Our pond
-          has a maximum ripple speed too. We call it <em>c</em>. You know it by
-          another name: the speed of light.
+          harder, the ripple doesn't go faster in that simple wave regime; it
+          just gets bigger. The fluid model has a characteristic signal speed
+          too. In the long-wavelength brane limit, the speed used by light and
+          by operational clocks is the one we call <em>c</em>.
         </TPBody>
         <TPBody>
-          This is the first thing worth sitting with. In this picture, light
-          isn't a special guest in the universe — it's what a ripple <em>is</em>
-          . The cosmic speed limit isn't a rule handed down from above. It's
-          just the maximum speed at which one spot in the medium can push on the
-          next spot.
+          This is the first thing worth sitting with. In this picture, light is
+          not dropped in as a separate ingredient; it is the brane-readable wave
+          sector of the medium, under the controlled assumptions where the
+          effective Maxwell and signal-speed reductions apply. The speed limit
+          is therefore a property of that wave sector, not a rule handed down
+          from above.
         </TPBody>
 
         <TPCallout kind="note">
-          If you've ever wondered why nothing can go faster than light — here's
-          a candidate answer. It's not that some cosmic police force forbids
-          it. It's that “faster than light” would mean a ripple outrunning the
-          medium it's made of. The ripple would just stop being a ripple.
+          If you've ever wondered why the same speed keeps showing up in
+          relativity, this is the candidate answer the program is testing:
+          rods, clocks, and light are all built from wave-supported structures
+          that share one effective signal speed in the controlled regime.
         </TPCallout>
       </TPSection>
 
@@ -126,7 +128,7 @@ export default function PlainPart1() {
           have a position. A shape. A sort of mass. Bump one and it moves. Bring
           two close and they feel each other. In the Fluid Spacetime picture,{' '}
           <strong style={{ color: 'var(--ink-1)' }}>
-            what we usually call a particle is a knot of this kind
+            what we usually call a particle is modeled as a defect of this kind
           </strong>{' '}
           — not a tiny marble dropped into space, but a stubborn pattern{' '}
           <em>of</em> space itself.
@@ -145,11 +147,11 @@ export default function PlainPart1() {
           {[
             {
               k: 'Ripples',
-              v: 'Fade. Carry energy. Travel at top speed. We call them light.',
+              v: 'Fade. Carry energy. In the brane signal sector, their long-wavelength speed is c.',
             },
             {
               k: 'Knots',
-              v: 'Stay. Carry identity. Move more slowly. We call them matter.',
+              v: 'Stay. Carry identity. In this program, they are the particle-like defect sector.',
             },
           ].map((c) => (
             <div

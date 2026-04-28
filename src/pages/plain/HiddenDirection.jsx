@@ -60,9 +60,9 @@ export default function PlainHiddenDirection() {
           Pinch the sheet of paper: the creature sees a point, but the pinch
           itself extends up and down into the room. The w direction is what
           gives our defects room to be more than pointlike. It's also where
-          certain long-range interactions park their bookkeeping — in a way
-          that makes gravity and electromagnetism fall out of the same
-          geometry, not as two separate inventions.
+          certain long-range interactions keep their bookkeeping — in a way
+          that lets gravity and electromagnetism be organized inside the same
+          brane-bulk framework, not as two unrelated inventions.
         </TPBody>
         <TPBody>
           If you've read about string theory or Kaluza–Klein before, resist the
@@ -88,7 +88,8 @@ export default function PlainHiddenDirection() {
           which says how much each layer of w contributes to what we see. A
           narrow kernel means a thin brane: we feel only the fluid very close
           to our slice. A broader kernel means we feel deeper into the bulk.
-          In this program, the kernel is part of the setup, not a free knob.
+          In this program, the kernel is part of the observer definition, not
+          something adjusted separately for each brane equation.
         </TPBody>
 
         <TPCallout kind="note">
@@ -103,14 +104,15 @@ export default function PlainHiddenDirection() {
 
       <TPSection anchor="so-what" eyebrow="why it matters" heading="Two sector lives — one brane view.">
         <TPBody>
-          Gravity and electromagnetism will, in the chapters to come, emerge as
-          two different things a defect can do along the w axis. Gravity is
-          about <em>flow inward</em>: a defect drinks fluid from the bulk, and
-          the brane reads the inflow as attraction. Electromagnetism is about
-          <em> orientation in w</em>: a defect punctures through the brane into
-          one half of the hidden direction, and the brane reads which half as
-          charge. Same defect, two bulk behaviours. Same slice — but a slice
-          that sees more than its own thickness.
+          Gravity and electromagnetism will, in the chapters to come, be modeled
+          as two different brane-readable channels tied to what a defect does
+          along the w axis. Gravity is about <em>flow inward</em>: a defect
+          drinks fluid from the bulk, and the brane reads the inflow as
+          attraction. Electromagnetism is about <em> orientation in w</em>: a
+          defect punctures through the brane into one half of the hidden
+          direction, and the brane reads which half as charge sign. Same defect
+          family, two bulk behaviours. Same slice — but a slice that sees more
+          than its own thickness.
         </TPBody>
         <TPBody>
           The next chapter introduces the specific defect that the whole

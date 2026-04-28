@@ -37,9 +37,9 @@ export default function TechnicalEM() {
         </TPLede>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
-          <Badge kind="exact">Parent 4+1 action</Badge>
+          <Badge kind="exact">Localized 4+1 Maxwell</Badge>
           <Badge kind="reduce">Zero-mode 3+1 Maxwell</Badge>
-          <Badge kind="open">Mixed-sector finite-Z corrections</Badge>
+          <Badge kind="exact">Mixed-sector invariants retained</Badge>
           <Chip label="sector: gauge" />
           <Chip label="4D · Maxwell" href={ZENODO.maxwell.url} />
           <Chip label="Prior · EM & charged defects" href={ZENODO.priorEM.url} />
@@ -61,18 +61,19 @@ export default function TechnicalEM() {
 
         <EqCard
           label="◇ parent action · exact"
-          plain="The current Maxwell paper includes both a gauge-fixing term and an external-source term. Minimal coupling to matter supplies the dynamical brane current bookkeeping downstream."
-          tex="S_{\text{EM}} \;=\; \int d^3x\,dw\,dt\left[-\frac{Z(w)}{4\mu_0}F_{MN}F^{MN}-\frac{1}{2\xi\,\mu_0}\big(\partial\!\cdot\!A\big)^2 + A_M J_{\rm ext}^M\right]"
+          plain="The unweighted Lorenz term is used as a bulk gauge-fixing device; it is not naively integrated as a finite noncompact zero-mode gauge-fixing action."
+          tex="S_{\text{EM}} \;=\; \int d^3x\,dw\,dt\left[-\frac{Z(w)}{4\mu_0}F_{MN}F^{MN}-\frac{1}{2\xi\,\mu_0}\big(\partial\!\cdot\!A\big)^2 - A_M J^M\right]"
         />
 
         <TPBody>
-          Two limits of <Tex tex="Z(w)" /> bracket the physical picture. In
-          the <em>thin-brane</em> limit <Tex tex="Z(w) \to \delta(w)" />, the
-          gauge field is confined entirely to the brane and 3+1 Maxwell is
-          exact. In the <em>uniform</em> limit <Tex tex="Z(w) = \text{const}" />{" "}
-          the theory is a homogeneous 4+1 Maxwell — all <Tex tex="w" /> layers
-          equivalent. The program treats a physical regime between these:
-          localized but not degenerate.
+          The source paper uses a localized profile with finite{" "}
+          <Tex tex="Z_\text{int}" />; a Gaussian profile is the canonical
+          worked example. The ordinary 3+1 Maxwell equations are not obtained
+          by declaring the brane infinitesimally thin. They arise from a
+          controlled zero-mode/far-field reduction of the localized 4+1 system.
+          The unweighted gauge-fixing term has to be read conservatively:
+          impose Lorenz gauge before the zero-mode reduction, or use a
+          localized gauge-fixing patch in a future parent-action cleanup.
         </TPBody>
       </TPSection>
 
@@ -82,13 +83,13 @@ export default function TechnicalEM() {
         heading="Ansatz for the brane-localized gauge modes."
       >
         <TPBody>
-          Decompose the potential into a zero-mode and transverse residuals:
+          The brane Maxwell limit uses the far-field zero-mode assumptions:
         </TPBody>
 
         <EqCard
           label="◇ zero-mode ansatz · controlled reduction"
-          plain="f_0 is the lowest transverse mode against the localization profile Z(w). Higher f_k are suppressed by the profile gap; A_w remains part of the microscopic mixed sector."
-          tex="\begin{aligned} A_\mu(x,w,t) &\;=\; a_\mu(x,t)\, f_0(w) \;+\; \sum_{k \geq 1} a_\mu^{(k)}(x,t)\, f_k(w), \\ A_w(x,w,t) &\;=\; \phi_w(x,t)\, g(w) + \ldots \end{aligned}"
+          plain="These assumptions define the far-field brane limit. They suppress mixed channels; they do not remove them from the microscopic theory."
+          tex="\begin{aligned} A_\mu(x,w,t) &\;\simeq\; a_\mu(x,t), \\ \partial_w A_\mu &\;\simeq\; 0,\qquad A_w\simeq 0,\qquad J^w\simeq 0 \end{aligned}"
         />
 
         <TPBody>
@@ -105,8 +106,8 @@ export default function TechnicalEM() {
 
         <TPBody>
           Brane observers, using <Tex tex="\mu_{0,\text{eff}}" /> in place of
-          the microscopic <Tex tex="\mu_0" />, recover exactly Maxwell's
-          equations in their standard 3+1 form.
+          the microscopic <Tex tex="\mu_0" />, recover Maxwell's equations in
+          their standard 3+1 form within this controlled zero-mode regime.
         </TPBody>
       </TPSection>
 
@@ -131,14 +132,12 @@ export default function TechnicalEM() {
 
         <TPBody>
           This factorization has two important consequences. First: the
-          electron's elementary charge, in the framework, is not a free
-          parameter of the theory. It is{" "}
-          <Tex tex="e_* / \sqrt{Z_\text{int}}" /> where{" "}
-          <Tex tex="e_*" /> is the microscopic branch coupling and{" "}
-          <Tex tex="Z_\text{int}" /> is set by the declared localization
-          profile. Second: if the brane's thickness varied cosmologically,
-          observable coupling strengths would track — a testable but not
-          currently claimed prediction.
+          observable brane coupling separates the microscopic branch scale{" "}
+          <Tex tex="e_*" /> from the localization normalization{" "}
+          <Tex tex="Z_\text{int}" />. The current source record does not derive{" "}
+          <Tex tex="e_*" /> from the throat dynamics; it treats it as a branch
+          scale. Second: for a fixed branch scale, changes in the localization
+          normalization would change the observed brane coupling.
         </TPBody>
 
         <TPCallout kind="warn">
@@ -148,8 +147,7 @@ export default function TechnicalEM() {
           half-bulk (<Tex tex="+w" /> or <Tex tex="-w" />) the throat opens
           into. It is <em>not</em> the matter field's circulation on the
           brane. Circulation belongs to the magnetic/vortical sector and
-          lives in the matter order parameter's phase field. See §6.5 of
-          the brief.
+          lives in the matter order parameter's phase field.
         </TPCallout>
       </TPSection>
 
@@ -166,12 +164,12 @@ export default function TechnicalEM() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 12, margin: "14px 0 6px" }}>
           {[
-            { sym: "A_w", role: "Gauge potential in w — brane–bulk leakage current" },
-            { sym: "F_{\\mu w}", role: "Mixed field strength — electric drift along w" },
-            { sym: "E_w", role: "w-component of the electric field — moving-throat response" },
-            { sym: "C_a = F_{aw}", role: "Chiral mixed component — g-factor channel" },
-            { sym: "J^w", role: "Charge current along w — exchange with bulk reservoir" },
-            { sym: "a_\\mu^{(k \\geq 1)}", role: "Higher-f_k modes — cut off by Z-profile gap" },
+            { sym: "A_w", role: "Transverse gauge component — retained in the parent ontology" },
+            { sym: "F_{\\mu w}", role: "Mixed field strength — absent only in the zero-mode limit" },
+            { sym: "E_w", role: "Gauge-invariant transverse electric component" },
+            { sym: "C_a = F_{aw}", role: "Gauge-invariant brane-transverse mixed component" },
+            { sym: "J^w", role: "Transverse current — brane-bulk exchange" },
+            { sym: "a_\\mu^{(k \\geq 1)}", role: "Higher transverse modes — finite-Z corrections" },
           ].map((c) => (
             <div key={c.sym} style={{
               padding: "16px 18px", border: "1px solid var(--rule)", borderRadius: 3,
@@ -188,18 +186,18 @@ export default function TechnicalEM() {
         </div>
 
         <TPBody>
-          These channels matter in four downstream contexts: plasma
-          non-ideality (topic 07), outgoing quadrupole normalization at
-          2.5PN and 4PN (topic 10), near-throat leakage under moving-wall
-          dynamics (topic 11), and the g-factor / anomaly program for bound
-          configurations (topic 09). In each case, the relevant channel
-          re-excites because an assumption of the zero-mode reduction fails —
-          strong fields, rapid w-dynamics, or resonance with a higher mode.
+          These channels matter downstream in plasma non-ideality (topic 07),
+          near-throat leakage and moving-wall response (topic 11), reduced
+          outgoing-transfer ledgers (topic 10), and conditional bound-state
+          anomaly work (topic 09). In each case, the relevant channel becomes
+          visible because an assumption of the zero-mode reduction fails —
+          strong fields, rapid w-dynamics, transverse current, or excitation of
+          a higher mode.
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
           <Badge kind="reduce">Zero-mode Maxwell (far-field)</Badge>
-          <Badge kind="open">Mixed-channel corrections</Badge>
+          <Badge kind="exact">Mixed invariants</Badge>
           <Chip label="consumed by: topic 07, 09, 10, 11" />
         </div>
       </TPSection>

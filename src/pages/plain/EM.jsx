@@ -26,8 +26,8 @@ export default function PlainEM() {
           topologically, into <em>one side</em> of the hidden direction —
           either the +w half or the −w half. Which side it opens into is
           what the brane reads as the sign of electric charge. And because
-          the pond is the same pond, the rules governing those punctures
-          end up looking exactly like Maxwell's equations.
+          the model includes a localized Maxwell sector, the far-field,
+          zero-mode brane limit gives the Maxwell equations we measure.
         </TPLede>
       </section>
 
@@ -35,72 +35,67 @@ export default function PlainEM() {
         <TPBody>
           Picture the hidden direction as a two-sided axis: there's a +w
           half above the brane and a −w half below. A plain gravitational
-          throat drains locally without preference — it's symmetric about
-          the brane, opening equally to both sides. A <em>charged</em> throat
-          is different. It punctures through the brane and opens into one
-          side in particular. Either the +w half, or the −w half. Never
-          neither. Never a little of both.
+          throat drains locally without using the electric charge branch. A{" "}
+          <em>charged</em> throat is different. It carries an orientation
+          label tied to the puncture branch: either the +w half, or the −w
+          half, once a sign convention is fixed.
         </TPBody>
         <TPBody>
           That's a topological choice, and a topological choice has no
           middle ground. The brane reads the two options as{" "}
           <strong style={{ color: "var(--ink-1)" }}>positive and negative
-          charge</strong>. Anti-particles, in this picture, are throats
-          that opened into the opposite half of the hidden direction from
-          their particle counterparts.
+          charge sign</strong>. In this picture, an opposite-charge partner is
+          represented by the opposite orientation branch.
         </TPBody>
 
         <TPCallout kind="note">
           <strong style={{ color: "var(--ink-1)" }}>Electric sign is
           topological.</strong> It isn't "how much" charge — it's which
           half of the hidden direction the throat opens into. The{" "}
-          <em>amount</em> of charge we measure, on the other hand, depends
-          on how thin the brane is. Two separate numbers, two separate
-          stories.
+          <em>amount</em> of charge we measure, on the other hand, depends on
+          the localization normalization of the brane gauge mode. Two separate
+          numbers, two separate stories.
         </TPCallout>
       </TPSection>
 
       <TPSection anchor="how-much" eyebrow="how much charge?" heading="Thickness sets the strength; sign sets the direction.">
         <TPBody>
           The brane isn't infinitely thin. It has a little thickness along
-          the hidden direction — a kind of blurring profile that determines
-          how much of the bulk's activity we actually feel. A thicker brane
-          samples deeper into the puncture's field and reads a larger
-          charge. A thinner brane reads less.
+          the hidden direction — a localization profile that determines how
+          the zero-mode gauge field is normalized on the brane. For the
+          Gaussian profile used in the source paper, a thicker localization
+          gives a larger normalization integral, so the brane-observed charge
+          coupling is weaker.
         </TPBody>
         <TPBody>
           So the <em>observable</em> electric charge we measure in experiments
           isn't the raw puncture coupling of the throat. It's the puncture
           <em> as sampled through our brane's thickness</em>. This factor shows up over and
           over in the technical notation as a simple denominator attached to
-          the charge: the thinner the brane relative to the throat, the
-          weaker the apparent coupling. In particular, the observable charge
-          scales with the brane's thickness in a very specific, predictable
+          the charge: q_eff is the microscopic branch charge divided
+          by the square root of the localization integral. In particular, the
+          observable coupling scales with localization thickness in a specific
           way.
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="maxwell" eyebrow="from pond rules to Maxwell" heading="Why Maxwell's equations fall out.">
+      <TPSection anchor="maxwell" eyebrow="from bulk gauge rules to Maxwell" heading="When Maxwell's equations appear.">
         <TPBody>
-          This is where it gets unreasonable. If you start with a simple
-          higher-dimensional rulebook for how the pond's gauge field behaves
-          — essentially the same kind of rule that applies to any flexible
-          medium that stores energy in its distortions — and then ask what a
-          brane observer would measure, the answer is not "something
-          vaguely like Maxwell's equations." The answer is Maxwell's
-          equations. Coulomb's law, Ampere's law, Faraday's law, the
-          displacement current — all of them, in their standard 3D form,
-          emerge from the brane's view of the bulk gauge sector, sourced by
-          the punctures.
+          The model starts this sector with a localized 4+1 Maxwell field. If
+          the brane-facing gauge field is dominated by its zero mode, and if
+          transverse current is negligible, then a brane observer sees the
+          ordinary 3+1 Maxwell equations with a rescaled coupling. Coulomb's
+          law, Ampere's law, Faraday's law, and the displacement current are
+          the far-field brane limit of that localized gauge sector.
         </TPBody>
         <TPBody>
           The work is in showing that the emergence is clean. Under the same
           kind of controlled-reduction assumptions we saw for gravity — the
           brane is thin enough, the fields vary slowly compared to some
-          reference scale — the bulk's rules, projected down, match Maxwell's.
-          This is not a coincidence; it's a structural feature of how any
-          gauge-like field theory on a higher-dimensional background reduces
-          to its lower-dimensional observable sector.
+          reference scale, and mixed w-channels are suppressed — the bulk
+          gauge rules reduce to Maxwell's equations on the brane. Outside that
+          regime, the same source record keeps the higher modes and mixed
+          channels as real microscopic structure.
         </TPBody>
       </TPSection>
 
@@ -123,8 +118,9 @@ export default function PlainEM() {
               electric charge
             </div>
             <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
-              A topological puncture <em>along the hidden direction</em>.
-              Two options: opens into +w, or opens into −w. Sign, not
+              A branch sign tied to puncture orientation{" "}
+              <em>along the hidden direction</em>. Two options: opens into +w,
+              or opens into −w. Sign, not
               magnitude.
             </div>
           </div>
@@ -140,18 +136,19 @@ export default function PlainEM() {
             </div>
             <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
               The fluid actually moving in a loop <em>around</em> the throat
-              in the brane itself. An integer number of turns. Gives magnetic
-              moments and spin-like effects.
+              in the brane itself. An integer number of turns. This belongs to
+              the magnetic or vortical sector; spin-like structure is a later
+              mixed-sector question.
             </div>
           </div>
         </div>
 
         <TPBody>
-          These are distinct channels. A throat can carry charge without
-          circulation, or circulation without charge, or both. In earlier
-          drafts of the program these two were sometimes written with the
-          same letter <em>q</em>; the current, corrected vocabulary keeps them
-          strictly apart.
+          These are distinct channels. The current vocabulary does not let you
+          infer electric charge from circulation, or circulation from electric
+          charge. In earlier drafts of the program these two were sometimes
+          written with the same letter <em>q</em>; the current, corrected
+          vocabulary keeps them strictly apart.
         </TPBody>
       </TPSection>
 

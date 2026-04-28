@@ -23,7 +23,7 @@ export default function TechnicalDefects() {
           are topologically protected.
         </TPTitle>
         <TPLede>
-          Matter is introduced as a complex scalar{" "}
+          The parent matter field is introduced as a complex scalar{" "}
           <Tex tex="\psi: \mathbb{R}^3 \times \mathbb{R}_w \times \mathbb{R}_t \to \mathbb{C}" />{" "}
           of finite <Tex tex="L^2" /> norm away from background. Zeros of{" "}
           <Tex tex="\psi" /> — where both real and imaginary parts vanish — form
@@ -90,7 +90,7 @@ export default function TechnicalDefects() {
 
         <TPBody>
           Because <Tex tex="n(\gamma)" /> takes discrete values, it is a
-          <em> conserved charge</em> of the smooth sector: any continuous
+          <em> conserved winding</em> of the smooth sector: any continuous
           deformation of <Tex tex="\psi" /> that keeps <Tex tex="\gamma" />{" "}
           inside <Tex tex="\rho > 0" /> preserves <Tex tex="n" />. The only way
           to change <Tex tex="n" /> locally is for a second defect of opposite
@@ -115,22 +115,21 @@ export default function TechnicalDefects() {
         heading="Stability is kinematic, not dynamical."
       >
         <TPBody>
-          A crucial feature: the persistence of a defect in this framework
-          follows from topology alone. No potential barrier, no binding energy,
-          no exotic force is required. The <em>only</em> way a winding-1 defect
-          can be removed is if the ambient field is allowed to pass through{" "}
-          <Tex tex="\rho = 0" /> over an extended region — equivalent to
-          demanding that a pointlike zero of <Tex tex="\psi" /> delocalize into
-          a sheet. Within the PDE's regularity class this cannot happen
-          spontaneously.
+          A crucial feature: the persistence of an isolated winding defect is a
+          kinematic statement about the smooth sector. No potential barrier, no
+          binding energy, and no exotic force is needed for the winding integer
+          to be invariant under continuous deformations that keep the loop in{" "}
+          <Tex tex="\rho > 0" />. Under those regularity assumptions, an
+          isolated winding-1 defect cannot be erased by a local smooth motion.
         </TPBody>
 
         <TPBody>
           Annihilation of defect pairs, by contrast, is allowed: a winding-1
           defect and a winding-(−1) defect can meet and vanish, with total
-          winding conserved. This is the mechanism by which bound defect
-          structures — which matter for atoms, in topic 09 — can decay, and by
-          which the brane can absorb configurations into smooth field radiation.
+          winding conserved. This gives one allowed channel by which bound
+          defect structures — relevant to the atom sector in topic 09 — can
+          decay, and by which the brane can absorb configurations into smooth
+          field radiation.
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "24px 0 4px" }}>
@@ -154,32 +153,31 @@ export default function TechnicalDefects() {
       <TPSection
         anchor="energy"
         eyebrow="energetics · controlled reduction"
-        heading="Defect core energy is finite under the stiff EoS."
+        heading="Core energetics are a controlled scaling target."
       >
         <TPBody>
-          Under the stiff polytropic equation of state{" "}
-          <Tex tex="P(\rho) = K\rho^5" /> (see topic 01), the core size of an
-          isolated winding-1 defect is set by balancing gradient stiffness
-          against the pressure cost of depleting <Tex tex="\rho" />. The core
-          radius <Tex tex="\xi" /> scales as
+          The current source record supports order-of-magnitude energetics for
+          controlled defect and throat reductions, not a unique generic core
+          profile theorem. In the prior brane-bulk throat ontology, the
+          cylindrical throat modes have the scaling
         </TPBody>
 
         <EqCard
-          label="◇ core scaling · controlled reduction"
-          plain="Treated here as order-of-magnitude. Full self-similar core profile lives in the throat-ontology preprint (prior work)."
-          tex="\begin{aligned} \xi &\;\sim\; \sqrt{K \rho_\infty^{\,3}} \;\Big/\; c_s, \\ E_\text{core} &\;\sim\; \rho_\infty c_s^2\, \xi^2 \end{aligned}"
+          label="◇ throat-mode scaling · prior ontology"
+          plain="At fixed mode amplitude, energy scales with transverse and bulk wave numbers; at fixed mode normalization, lower wave-number modes are energetically preferred."
+          tex="\begin{aligned} \mathcal E_{mn} &\;\propto\; A_{mn}^{2}(k_r^2+k_w^2)a^2L, \\ \mathcal Q_{mn} &\;\propto\; A_{mn}^{2}a^2L \end{aligned}"
         />
 
         <TPBody>
-          The exponent <Tex tex="n = 5" /> in the EoS is a carry-forward of the
-          4D parent theory; it is <em>not</em> tuned to reproduce a specific
-          defect size. Its role in the defect sector is to make the core
-          regularize at a finite length scale without producing unphysical
-          tails — a condition needed for the inflow analysis in topic 05.
+          The exponent <Tex tex="n = 5" /> in the EoS is inherited from the
+          parent weak-field optical matching discussed in topic 01; it is{" "}
+          <em>not</em> chosen to set a defect size. Profile uniqueness and the
+          full moving-wall realization remain open issues rather than settled
+          consequences of the stiff EoS alone.
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 18 }}>
-          <Badge kind="reduce">Core scaling</Badge>
+          <Badge kind="reduce">Mode scaling</Badge>
           <Badge kind="open">Profile uniqueness</Badge>
           <Chip label="consumed by: topic 05 (inflow), topic 09 (atoms)" />
         </div>

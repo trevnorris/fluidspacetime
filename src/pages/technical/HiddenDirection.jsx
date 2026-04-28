@@ -90,17 +90,18 @@ export default function TechnicalHiddenDirection() {
         />
 
         <TPBody>
-          Two projections of particular importance are the <em>normalization
-          integral</em>{" "}
-          <Tex tex="W_\text{int} = \int W(w)^2\, dw" /> (which weights density
-          couplings on the brane) and the gauge localization integral{" "}
-          <Tex tex="Z_\text{int} = \int Z(w)\, dw" /> — appearing in the EM
-          sector of topic 06 and setting the observable coupling{" "}
+          Two pieces of bookkeeping matter downstream. The first is the
+          normalized measurement kernel <Tex tex="W(w)" />, whose derivative
+          controls leakage terms when brane-projected continuity is written as
+          an open-system identity. The second is the independent gauge
+          localization profile <Tex tex="Z(w)" />, whose integral{" "}
+          <Tex tex="Z_\text{int} = \int Z(w)\, dw" /> enters the zero-mode EM
+          reduction and sets{" "}
           <Tex tex="\mu_{0,\text{eff}} = \mu_0 / Z_\text{int}" />.
         </TPBody>
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14 }}>
-          <Badge kind="exact">W(w) given a priori</Badge>
+          <Badge kind="exact">W(w) measurement definition</Badge>
           <Chip label="consumed by: topic 06 (EM)" />
           <Chip label="consumed by: topic 05 (inflow)" />
         </div>
@@ -129,13 +130,14 @@ export default function TechnicalHiddenDirection() {
 
         <TPBody>
           The program keeps these two operations notationally and
-          epistemically distinct. A reduction that is also a projection (i.e.
-          the zero-mode captures the entire projected quantity) is signalled
-          with the stronger <em>exact</em> badge. A reduction that requires
-          the zero-mode hypothesis carries the <em>controlled reduction</em>{" "}
-          badge. Open residuals — e.g. the moving-throat PDE's non-local{" "}
-          <Tex tex="A_w, J^w" /> channels of topic 11 — are labelled{" "}
-          <em>open</em>.
+          epistemically distinct. A brane identity that follows directly from
+          the projection definition can be labelled <em>exact</em>. A brane
+          equation that also requires a zero-mode or long-wavelength ansatz
+          carries the <em>controlled reduction</em> badge. Residual mixed
+          channels such as <Tex tex="A_w" />, <Tex tex="J^w" />, and{" "}
+          <Tex tex="F_{\mu w}" /> are suppressed only inside those controlled
+          limits, and are labelled <em>open</em> when their full dynamics are
+          not yet closed.
         </TPBody>
 
         <TPCallout kind="warn">
@@ -162,12 +164,12 @@ export default function TechnicalHiddenDirection() {
           margin: "16px 0 4px",
         }}>
           {[
-            { sym: "A_w", role: "Gauge potential component in w — enters brane leakage" },
-            { sym: "J^w", role: "Matter current along w — brane–bulk exchange" },
-            { sym: "F_{\\mu w}", role: "Mixed field-strength — electric drift in w" },
-            { sym: "E_w", role: "Electric component in w — moving-throat response" },
-            { sym: "C_a = F_{aw}", role: "Chiral mixed component — g-factor channel" },
-            { sym: "\\delta\\rho_\\perp", role: "Non-zero-mode density — plasma non-ideality" },
+            { sym: "A_w", role: "Transverse gauge component — excited outside the pure zero mode" },
+            { sym: "J^w", role: "Transverse current — brane-bulk exchange and leakage" },
+            { sym: "F_{\\mu w}", role: "Mixed field strength — absent in strict 3+1 Maxwell" },
+            { sym: "E_w", role: "Transverse electric component" },
+            { sym: "C_a = F_{aw}", role: "Brane-transverse mixed component" },
+            { sym: "\\delta\\rho_\\perp", role: "Higher-mode density residual — plasma non-ideality" },
           ].map((c) => (
             <div key={c.sym} style={{
               padding: "16px 18px", border: "1px solid var(--rule)", borderRadius: 3,
@@ -199,8 +201,9 @@ export default function TechnicalHiddenDirection() {
           projection kernel above. Gravity (topic 05) comes from the projected
           inflow current{" "}
           <Tex tex="\widehat{J^w}" /> into a throat. Electromagnetism (topic
-          06) comes from the projected circulation of a 4+1 Maxwell sector with
-          its own localization profile <Tex tex="Z(w)" />.
+          06) comes from a localized 4+1 Maxwell sector with its own
+          localization profile <Tex tex="Z(w)" /> and a controlled zero-mode
+          brane reduction.
         </TPBody>
       </TPSection>
     </TopicPage>
