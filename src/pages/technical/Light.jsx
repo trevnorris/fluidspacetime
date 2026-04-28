@@ -78,7 +78,7 @@ export default function TechnicalLight() {
         <EqCard
           label="◇ brane Maxwell reduction · controlled"
           plain="Standard 3+1 Maxwell on the brane appears only after the stated zero-mode / far-field assumptions."
-          tex="\partial_\nu f^{\nu\mu} \;=\; \mu_{0,\rm eff}\,J^\mu_{\rm eff}, \qquad \mu_{0,\rm eff} = \mu_0 / Z_{\rm int}, \qquad q_{\rm eff} = q_\star/\sqrt{Z_{\rm int}}"
+          tex="\begin{aligned} \partial_\nu f^{\nu\mu} &\;=\; \mu_{0,\rm eff}\,J^\mu_{\rm eff}, \\ \mu_{0,\rm eff} &\;=\; \mu_0 / Z_{\rm int}, \\ q_{\rm eff} &\;=\; q_\star/\sqrt{Z_{\rm int}} \end{aligned}"
         />
 
         <TPCallout kind="note">

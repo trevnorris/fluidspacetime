@@ -88,7 +88,7 @@ export default function TechnicalEM() {
         <EqCard
           label="◇ zero-mode ansatz · controlled reduction"
           plain="f_0 is the lowest transverse mode against the localization profile Z(w). Higher f_k are suppressed by the profile gap; A_w remains part of the microscopic mixed sector."
-          tex="A_\mu(x,w,t) \;=\; a_\mu(x,t)\, f_0(w) \;+\; \sum_{k \geq 1} a_\mu^{(k)}(x,t)\, f_k(w), \qquad A_w(x,w,t) \;=\; \phi_w(x,t)\, g(w) + \ldots"
+          tex="\begin{aligned} A_\mu(x,w,t) &\;=\; a_\mu(x,t)\, f_0(w) \;+\; \sum_{k \geq 1} a_\mu^{(k)}(x,t)\, f_k(w), \\ A_w(x,w,t) &\;=\; \phi_w(x,t)\, g(w) + \ldots \end{aligned}"
         />
 
         <TPBody>
@@ -100,7 +100,7 @@ export default function TechnicalEM() {
         <EqCard
           label="◇ reduced 3+1 Maxwell · controlled reduction"
           plain="f_{μν} = ∂_μ a_ν − ∂_ν a_μ is the brane-level field strength. The effective permeability is rescaled by the localization integral."
-          tex="S_{\text{EM},0} \;=\; -\frac{Z_\text{int}}{4\mu_0} \int f_{\mu\nu}\, f^{\mu\nu}\; d^3x\, dt, \qquad \mu_{0,\text{eff}} \;=\; \mu_0 \,\big/\, Z_\text{int}"
+          tex="\begin{aligned} S_{\text{EM},0} &\;=\; -\frac{Z_\text{int}}{4\mu_0} \int f_{\mu\nu}\, f^{\mu\nu}\; d^3x\, dt, \\ \mu_{0,\text{eff}} &\;=\; \mu_0 \,\big/\, Z_\text{int} \end{aligned}"
         />
 
         <TPBody>
@@ -126,7 +126,7 @@ export default function TechnicalEM() {
         <EqCard
           label="◇ observable charge · controlled reduction"
           plain="The sign η_Q is topological — set by which half of w the throat punctures into (+w or −w). The magnitude is set by canonical zero-mode normalization through Z_int."
-          tex="q_\text{eff} \;=\; q_* \,\big/\, \sqrt{Z_\text{int}}, \qquad \eta_Q \in \{+1,-1\}"
+          tex="\begin{aligned} q_\text{eff} &\;=\; q_* \,\big/\, \sqrt{Z_\text{int}}, \\ \eta_Q &\;\in\; \{+1,-1\} \end{aligned}"
         />
 
         <TPBody>

@@ -18,8 +18,7 @@ export default function TechnicalMovingThroat() {
     <TopicPage track="technical" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          A framework paper for{" "}
-          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>R(\Omega,w,t)</span>,
+          A framework paper for <Tex tex="R(\Omega,w,t)" />,
           not a solved nonlinear throat theorem.
         </TPTitle>
         <TPLede>
@@ -78,7 +77,7 @@ export default function TechnicalMovingThroat() {
         <EqCard
           label="◇ branch data set · operational input"
           plain="These are the unresolved data the realized branch must return. The paper is explicit that they are not yet supplied by a solved nonlinear theorem."
-          tex="\mathfrak B \;=\; \{R_0,\ \text{wall constitutive data},\ \text{support spectrum},\ \text{overlap integrals},\ \text{outgoing DtN data}\}"
+          tex="\begin{aligned} \mathfrak B \;=\; \big\{\ &R_0,\ \text{wall constitutive data}, \\ &\text{support spectrum},\ \text{overlap integrals}, \\ &\text{outgoing DtN data}\ \big\} \end{aligned}"
         />
 
         <TPBody>

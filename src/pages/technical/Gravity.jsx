@@ -53,7 +53,7 @@ export default function TechnicalGravity() {
         <EqCard
           label="◇ projected continuity · exact"
           plain="Exact projected continuity with the full leakage source."
-          tex="\partial_t \rho_{\rm brane} \;+\; \nabla_3\!\cdot\!\mathbf j_{\rm brane} \;=\; S_{\rm leak}, \qquad S_{\rm leak} \;=\; -\big[W\,j^w\big]_{-\infty}^{+\infty} + \int_{-\infty}^{+\infty} W'(w)\,j^w\,dw"
+          tex="\begin{aligned} \partial_t \rho_{\rm brane} \;+\; \nabla_3\!\cdot\!\mathbf j_{\rm brane} &\;=\; S_{\rm leak}, \\ S_{\rm leak} &\;=\; -\big[W\,j^w\big]_{-\infty}^{+\infty} + \int_{-\infty}^{+\infty} W'(w)\,j^w\,dw \end{aligned}"
         />
 
         <TPBody>
@@ -77,7 +77,7 @@ export default function TechnicalGravity() {
         <EqCard
           label="◇ Helmholtz decomposition · exact"
           plain="The Poisson hook is built from the brane velocity potential ϕ, not from the parent matter field."
-          tex="\mathbf v_{\rm brane} \;=\; \nabla_3 \varphi \;+\; \mathbf v_T, \qquad \nabla_3\!\cdot\!\mathbf v_T = 0"
+          tex="\begin{aligned} \mathbf v_{\rm brane} &\;=\; \nabla_3 \varphi \;+\; \mathbf v_T, \\ \nabla_3\!\cdot\!\mathbf v_T &\;=\; 0 \end{aligned}"
         />
 
         <TPBody>
@@ -106,7 +106,7 @@ export default function TechnicalGravity() {
         <EqCard
           label="◇ Poisson hook · regime statement"
           plain="Poisson and inverse-square are controlled regime statements, not exact laws."
-          tex="\nabla_3^2 \varphi \;\approx\; \frac{1}{\rho_{\rm ref}}\,S_{\rm eff}(\mathbf x,t), \qquad \mathbf v_L \equiv \nabla_3\varphi \sim \frac{1}{r^2}\,\hat{\mathbf r}"
+          tex="\begin{aligned} \nabla_3^2 \varphi &\;\approx\; \frac{1}{\rho_{\rm ref}}\,S_{\rm eff}(\mathbf x,t), \\ \mathbf v_L \;\equiv\; \nabla_3\varphi &\;\sim\; \frac{1}{r^2}\,\hat{\mathbf r} \end{aligned}"
         />
 
         <TPCallout kind="note">

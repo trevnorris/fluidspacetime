@@ -60,7 +60,7 @@ export default function TechnicalPart1() {
         <EqCard
           label="◇ equation of state · parent"
           plain="Stiff polytropic EoS. The exponent n is fixed, not tuned."
-          tex="P(\rho) \;=\; K\,\rho^{\,n}, \qquad n = 5"
+          tex="\begin{aligned} P(\rho) &\;=\; K\,\rho^{\,n}, \\ n &\;=\; 5 \end{aligned}"
         />
 
         <TPBody style={{ marginTop: 20 }}>

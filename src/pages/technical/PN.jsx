@@ -57,7 +57,7 @@ export default function TechnicalPN() {
         <EqCard
           label="◇ carry-forward closure package"
           plain="The bridge / 1PN package freezes the lower-order data used throughout the PN stack."
-          tex="n=5, \qquad \kappa_\rho = 1, \qquad \kappa_{\rm add} = \frac12, \qquad \kappa_{\rm PV} = \frac32, \qquad \beta_{1{\rm PN}} = 3"
+          tex="\begin{aligned} n &\;=\; 5, \\ \kappa_\rho &\;=\; 1, \\ \kappa_{\rm add} &\;=\; \tfrac12, \\ \kappa_{\rm PV} &\;=\; \tfrac32, \\ \beta_{1{\rm PN}} &\;=\; 3 \end{aligned}"
         />
 
         <TPBody>
@@ -185,7 +185,7 @@ export default function TechnicalPN() {
         <EqCard
           label="◇ shared normalization gate · conditional"
           plain="2.5PN odd radiation and the 4PN tail coefficient wait on the same outgoing quadrupole normalization."
-          tex="\frac{dE}{dt}\Big|_{2.5{\rm PN}} \;=\; -\,\frac{G}{5c^5}\,\langle \dddot Q_{jk}\dddot Q^{jk}\rangle\,(1+\delta_Z), \qquad C_{\rm tail} \;=\; \frac{GM}{2c^3}\,\gamma_{\rm quad}^{\rm eff}"
+          tex="\begin{aligned} \frac{dE}{dt}\Big|_{2.5{\rm PN}} &\;=\; -\,\frac{G}{5c^5}\,\langle \dddot Q_{jk}\dddot Q^{jk}\rangle\,(1+\delta_Z), \\ C_{\rm tail} &\;=\; \frac{GM}{2c^3}\,\gamma_{\rm quad}^{\rm eff} \end{aligned}"
         />
 
         <TPCallout kind="note">

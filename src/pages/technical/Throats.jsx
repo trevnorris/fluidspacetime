@@ -95,7 +95,7 @@ export default function TechnicalThroats() {
         <EqCard
           label="◇ charge sign · Part I Eq. 4.2"
           plain="q_* is the microscopic branch coupling; q_eff is the observable brane charge. The factor 1/√Z_int dresses q_* through the EM localization integral."
-          tex="\eta_Q \in \{+1,\,-1\}, \qquad q_* \;=\; \eta_Q\, e_*, \qquad q_\text{eff} \;=\; q_* \,\big/\, \sqrt{Z_\text{int}}"
+          tex="\begin{aligned} \eta_Q &\;\in\; \{+1,\,-1\}, \\ q_* &\;=\; \eta_Q\, e_*, \\ q_\text{eff} &\;=\; q_* \,\big/\, \sqrt{Z_\text{int}} \end{aligned}"
         />
 
         <TPBody>
@@ -164,7 +164,7 @@ export default function TechnicalThroats() {
         <EqCard
           label="◇ brane observables · Part I Eq. 4.3"
           plain="M_brane is the brane-observed mass. Its dependence on (R_0, L) is the content of the Part II gravity chapters."
-          tex="\widehat{\delta\rho}(r) \;=\; \int W(w)\,\big(|\psi_\text{throat}|^2 - \rho_\infty\big)\, dw, \qquad M_\text{brane} \;=\; \int \widehat{\delta\rho}(r)\, d^3x"
+          tex="\begin{aligned} \widehat{\delta\rho}(r) &\;=\; \int W(w)\,\big(|\psi_\text{throat}|^2 - \rho_\infty\big)\, dw, \\ M_\text{brane} &\;=\; \int \widehat{\delta\rho}(r)\, d^3x \end{aligned}"
         />
 
         <TPBody>

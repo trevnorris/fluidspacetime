@@ -52,7 +52,7 @@ export default function TechnicalAtoms() {
         <EqCard
           label="◇ static Coulomb potential · controlled reduction"
           plain="This is the standard Coulomb law read through the localized Maxwell zero mode."
-          tex="a_0(r) \;=\; -\frac{Z\,e_{\rm eff}}{4\pi\varepsilon_0\,r}, \qquad e_{\rm eff}=e_\star/\sqrt{Z_{\rm int}}"
+          tex="\begin{aligned} a_0(r) &\;=\; -\frac{Z\,e_{\rm eff}}{4\pi\varepsilon_0\,r}, \\ e_{\rm eff} &\;=\; e_\star/\sqrt{Z_{\rm int}} \end{aligned}"
         />
 
         <TPBody>
@@ -79,7 +79,7 @@ export default function TechnicalAtoms() {
         <EqCard
           label="◇ hydrogenic spectrum · target form"
           plain="This is the spectrum the Coulomb-limit reduction aims to reproduce. The current repo evidence I found supports hydrogenic scaling arguments, but not the site's former 'exact reproduction' badge."
-          tex="E_n \;=\; -\frac{m_e\,Z^2e_{\rm eff}^4}{2(4\pi\varepsilon_0)^2\hbar^2\,n^2}, \qquad n\in\mathbb Z^+"
+          tex="\begin{aligned} E_n &\;=\; -\frac{m_e\,Z^2e_{\rm eff}^4}{2(4\pi\varepsilon_0)^2\hbar^2\,n^2}, \\ n &\;\in\; \mathbb Z^+ \end{aligned}"
         />
 
         <TPBody>
@@ -110,7 +110,7 @@ export default function TechnicalAtoms() {
         <EqCard
           label="◇ anomaly bookkeeping · current status"
           plain="The current g−2 summary does not force the final electron-point quartic sliver. It localizes the remaining freedom to one narrow microscopic branch-selection / outgoing-normalization datum."
-          tex="g \;=\; 2\,[1+a_{\rm geom}], \qquad a_{\rm geom} = a_{\rm carried} + \delta a_{\rm branch}"
+          tex="\begin{aligned} g &\;=\; 2\,[1+a_{\rm geom}], \\ a_{\rm geom} &\;=\; a_{\rm carried} + \delta a_{\rm branch} \end{aligned}"
         />
 
         <TPBody>

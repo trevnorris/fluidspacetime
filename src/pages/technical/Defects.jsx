@@ -59,7 +59,7 @@ export default function TechnicalDefects() {
         <EqCard
           label="◇ matter decomposition · Part I Eq. 2.1"
           plain="θ is multi-valued in the presence of defects; it lives on the universal cover of the punctured domain."
-          tex="\psi(x,w,t) \;=\; \sqrt{\rho(x,w,t)}\; e^{i\theta(x,w,t)}, \qquad \rho \geq 0,\ \theta \in \mathbb{R}/2\pi\mathbb{Z}"
+          tex="\begin{aligned} \psi(x,w,t) &\;=\; \sqrt{\rho(x,w,t)}\; e^{i\theta(x,w,t)}, \\ \rho &\;\geq\; 0,\ \theta \in \mathbb{R}/2\pi\mathbb{Z} \end{aligned}"
         />
 
         <TPCallout kind="note">
@@ -167,7 +167,7 @@ export default function TechnicalDefects() {
         <EqCard
           label="◇ core scaling · controlled reduction"
           plain="Treated here as order-of-magnitude. Full self-similar core profile lives in the throat-ontology preprint (prior work)."
-          tex="\xi \;\sim\; \sqrt{K \rho_\infty^{\,3}} \;\Big/\; c_s, \qquad E_\text{core} \;\sim\; \rho_\infty c_s^2\, \xi^2"
+          tex="\begin{aligned} \xi &\;\sim\; \sqrt{K \rho_\infty^{\,3}} \;\Big/\; c_s, \\ E_\text{core} &\;\sim\; \rho_\infty c_s^2\, \xi^2 \end{aligned}"
         />
 
         <TPBody>

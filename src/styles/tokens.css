@@ -185,8 +185,11 @@
 .fu-eq-body {
   font-size: 18px;
   color: var(--ink-1);
+  overflow-x: auto;
+  max-width: 100%;
 }
 .fu-eq-body .katex { font-size: 1.05em; }
+.fu-eq-body .katex-display { margin: 0; overflow-x: auto; overflow-y: hidden; padding: 2px 0 6px; }
 
 /* ============== Links / hover ============== */
 .fu-link {

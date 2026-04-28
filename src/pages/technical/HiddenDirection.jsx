@@ -61,7 +61,7 @@ export default function TechnicalHiddenDirection() {
         <EqCard
           label="◇ brane embedding · Part I Eq. 3.1"
           plain="Σ is a static, flat 3+1 slice in this volume of the program. Moving-throat extensions promote Σ to a distributed profile in topic 11."
-          tex="\Sigma \;=\; \{\, (x,w,t) \in \mathcal{M} \,:\, w = 0 \,\},\qquad \dim \Sigma = 3+1"
+          tex="\begin{aligned} \Sigma &\;=\; \{\, (x,w,t) \in \mathcal{M} \,:\, w = 0 \,\}, \\ \dim \Sigma &\;=\; 3+1 \end{aligned}"
         />
 
         <TPBody>
@@ -86,7 +86,7 @@ export default function TechnicalHiddenDirection() {
         <EqCard
           label="◇ projection · Part I Eq. 3.2"
           plain="W(w) is part of the data of the theory, not an approximation. It declares how the brane samples w."
-          tex="\widehat{\Phi}(x,t) \;=\; \int_{-\infty}^{\infty} W(w)\, \Phi(x,w,t)\, dw, \qquad \int W(w)\, dw = 1,\ \ W \geq 0"
+          tex="\begin{aligned} \widehat{\Phi}(x,t) &\;=\; \int_{-\infty}^{\infty} W(w)\, \Phi(x,w,t)\, dw, \\ \int W(w)\, dw &\;=\; 1,\ \ W \geq 0 \end{aligned}"
         />
 
         <TPBody>
@@ -124,7 +124,7 @@ export default function TechnicalHiddenDirection() {
         <EqCard
           label="◇ zero-mode ansatz · controlled reduction"
           plain="δΦ_⊥ is the suppressed higher-mode residual. Its neglect is the content of the reduction badge."
-          tex="\Phi(x,w,t) \;\approx\; \phi_0(x,t)\, f(w) \;+\; \delta\Phi_\perp(x,w,t), \qquad \langle f,\, \delta\Phi_\perp\rangle_w = 0"
+          tex="\begin{aligned} \Phi(x,w,t) &\;\approx\; \phi_0(x,t)\, f(w) \;+\; \delta\Phi_\perp(x,w,t), \\ \langle f,\, \delta\Phi_\perp\rangle_w &\;=\; 0 \end{aligned}"
         />
 
         <TPBody>

@@ -55,7 +55,7 @@ export default function TechnicalPlasma() {
         <EqCard
           label="◇ brane sources · Part II Eq. 7.1"
           plain="q_eff,s = q_*,s / √Z_int as in topic 06. η_s is embedded in the sign of q_*,s."
-          tex="\rho_q(x,t) \;=\; \sum_s q_{\text{eff},s}\, n_s, \qquad \mathbf{J}(x,t) \;=\; \sum_s q_{\text{eff},s}\, n_s\, \mathbf{u}_s"
+          tex="\begin{aligned} \rho_q(x,t) &\;=\; \sum_s q_{\text{eff},s}\, n_s, \\ \mathbf{J}(x,t) &\;=\; \sum_s q_{\text{eff},s}\, n_s\, \mathbf{u}_s \end{aligned}"
         />
 
         <TPBody>
@@ -94,7 +94,7 @@ export default function TechnicalPlasma() {
         <EqCard
           label="◇ ideal MHD · Part II Eq. 7.2"
           plain="Flux-freezing and the MHD momentum equation. All standard Maxwell constraints follow from the reduction of topic 06."
-          tex="\partial_t \mathbf{B} \;=\; \nabla \times (\mathbf{V} \times \mathbf{B}), \qquad \rho\, \big(\partial_t + \mathbf{V}\cdot\nabla\big)\mathbf{V} \;=\; -\nabla p \;+\; \mathbf{J} \times \mathbf{B}"
+          tex="\begin{aligned} \partial_t \mathbf{B} &\;=\; \nabla \times (\mathbf{V} \times \mathbf{B}), \\ \rho\, \big(\partial_t + \mathbf{V}\cdot\nabla\big)\mathbf{V} &\;=\; -\nabla p \;+\; \mathbf{J} \times \mathbf{B} \end{aligned}"
         />
       </TPSection>
 
