@@ -85,48 +85,9 @@ export function TopicPage({ track, topic, meta = false, children }) {
 
       {children}
 
-      {/* Cross-track bridge + prev/next */}
+      {/* Prev/next */}
       <section style={{ padding: '80px 0', borderTop: '1px solid var(--rule)' }}>
         <div className="fu-wrap-narrow" style={{ maxWidth: 820 }}>
-          {!meta && other && (
-            <div
-              style={{
-                padding: '22px 26px',
-                border: `1px dashed ${trackColor}55`,
-                borderRadius: 3,
-                background: `linear-gradient(160deg, ${trackColor}0c, rgba(10,13,24,0.3))`,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: 20,
-                flexWrap: 'wrap',
-                marginBottom: 40,
-              }}
-            >
-              <div>
-                <div
-                  className="fu-mono"
-                  style={{
-                    fontSize: 10,
-                    letterSpacing: '0.14em',
-                    color: 'var(--ink-3)',
-                    textTransform: 'uppercase',
-                    marginBottom: 6,
-                  }}
-                >
-                  ◇ switch tracks
-                </div>
-                <div
-                  className="fu-body"
-                  style={{ fontSize: 15.5, color: 'var(--ink-1)' }}
-                >
-                  Same section, same anchors — switch any time.
-                </div>
-              </div>
-              <TrackToggle track={track} counterpartHref={other.href} size="md" />
-            </div>
-          )}
-
           {meta && (
             <div
               style={{

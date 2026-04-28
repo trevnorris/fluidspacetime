@@ -1,6 +1,5 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
-import { TrackToggle } from '../../components/TrackToggle.jsx';
 
 // Part 1 · Topic 02 — Defects, When Perfection Breaks — PLAIN ENGLISH
 
@@ -129,20 +128,6 @@ export default function PlainDefects() {
           defects can extend into, and a specific kind of defect — the
           <em> throat</em> — that lets the whole picture hang together.
         </TPBody>
-
-        <div style={{
-          marginTop: 30, padding: "20px 24px",
-          border: "1px dashed var(--rule-2)", borderRadius: 3,
-          display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap",
-        }}>
-          <span className="fu-mono" style={{ fontSize: 10.5, letterSpacing: "0.14em", color: "var(--ink-3)", textTransform: "uppercase" }}>
-            ◇ want the math
-          </span>
-          <span className="fu-small" style={{ color: "var(--ink-2)", flex: 1, minWidth: 220 }}>
-            Homotopy classes, winding integrals, and why <em>π₁</em> is the hero.
-          </span>
-          <TrackToggle track="plain" size="sm" />
-        </div>
       </TPSection>
     </TopicPage>
   );

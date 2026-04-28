@@ -7,7 +7,6 @@ import {
   TPBody,
   TPCallout,
 } from '../../components/TopicPage.jsx';
-import { TrackToggle } from '../../components/TrackToggle.jsx';
 import { FluidDiagram } from '../../components/FluidDiagram.jsx';
 
 // Part 1 · The Universe as a Fluid — PLAIN ENGLISH track
@@ -205,39 +204,6 @@ export default function PlainPart1() {
           The first is easier to hold in your head; the second is what gets
           checked.
         </TPBody>
-
-        <div
-          style={{
-            marginTop: 30,
-            padding: '20px 24px',
-            border: '1px dashed var(--rule-2)',
-            borderRadius: 3,
-            display: 'flex',
-            gap: 16,
-            alignItems: 'center',
-            flexWrap: 'wrap',
-          }}
-        >
-          <span
-            className="fu-mono"
-            style={{
-              fontSize: 10.5,
-              letterSpacing: '0.14em',
-              color: 'var(--ink-3)',
-              textTransform: 'uppercase',
-            }}
-          >
-            ◇ for the curious
-          </span>
-          <span
-            className="fu-small"
-            style={{ color: 'var(--ink-2)', flex: 1, minWidth: 220 }}
-          >
-            Want the actual equation of state, and why the exponent must be{' '}
-            <em>n&nbsp;=&nbsp;5</em>?
-          </span>
-          <TrackToggle size="sm" />
-        </div>
       </TPSection>
 
       <TPSection
