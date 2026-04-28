@@ -193,21 +193,30 @@ export function pathOf(topic, track) {
 }
 
 // Prev/next within the same track. Returns { n, title, href } or null.
+// Plain and technical tracks flow forward into the meta sequence after their
+// last topic. The first meta topic flows back to the last plain topic — there
+// is no way at render time to know which track the reader arrived from, so we
+// default to plain (the home page's primary CTA).
 export function neighborsOf(topic, track) {
   const list = topic.meta ? META_TOPICS : track === 'plain' ? PLAIN_TOPICS : TECH_TOPICS;
   const i = list.findIndex((t) => t.slug === topic.slug);
-  const make = (t) =>
+  const make = (t, asTrack = track) =>
     t
       ? {
           n: t.n,
-          title: titleOf(t, track),
-          href: pathOf(t, track),
+          title: titleOf(t, asTrack),
+          href: pathOf(t, asTrack),
         }
       : null;
-  return {
-    prev: make(list[i - 1]),
-    next: make(list[i + 1]),
-  };
+  let nextTopic = list[i + 1];
+  if (!topic.meta && !nextTopic) nextTopic = META_TOPICS[0];
+  let prev;
+  if (topic.meta && i === 0 && PLAIN_TOPICS.length > 0) {
+    prev = make(PLAIN_TOPICS[PLAIN_TOPICS.length - 1], 'plain');
+  } else {
+    prev = make(list[i - 1]);
+  }
+  return { prev, next: make(nextTopic) };
 }
 
 // Cross-track counterpart for a non-meta topic.

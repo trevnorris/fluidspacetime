@@ -1,7 +1,9 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrackToggle } from './TrackToggle.jsx';
 import { crossTrack, neighborsOf, findBySlug } from '../data/topics.js';
+
+const TRACK_MEMORY_KEY = 'fs-last-track';
 
 // Context for inline widgets inside topic body content (e.g. TrackToggle in a
 // callout) so they don't need to repeat the current track / counterpart href.
@@ -21,6 +23,26 @@ export function TopicPage({ track, topic, meta = false, children }) {
   const canonical = meta ? findBySlug(topic.slug) : findBySlug(topic.slug);
   const { prev, next } = canonical ? neighborsOf(canonical, track) : { prev: null, next: null };
   const other = canonical ? crossTrack(canonical, track) : null;
+
+  // Remember which track the reader was on so meta pages can link back to the
+  // matching plain/technical version of moving-throat instead of always plain.
+  const [rememberedTrack, setRememberedTrack] = useState(null);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      if (!meta) {
+        window.sessionStorage.setItem(TRACK_MEMORY_KEY, track);
+      } else {
+        const stored = window.sessionStorage.getItem(TRACK_MEMORY_KEY);
+        if (stored === 'plain' || stored === 'technical') setRememberedTrack(stored);
+      }
+    } catch {}
+  }, [meta, track]);
+
+  const finalPrev =
+    rememberedTrack === 'technical' && prev?.href === '/plain/moving-throat'
+      ? { ...prev, href: '/technical/moving-throat' }
+      : prev;
 
   return (
     <TopicCtx.Provider value={{ track, topic, counterpartHref: other?.href, counterpartTrack: other?.track }}>
@@ -143,7 +165,7 @@ export function TopicPage({ track, topic, meta = false, children }) {
               gap: 16,
             }}
           >
-            <PrevNextCard label="← previous" fallback="You're at the start." item={prev} color="var(--ink-3)" />
+            <PrevNextCard label="← previous" fallback="You're at the start." item={finalPrev} color="var(--ink-3)" />
             <PrevNextCard label="next →" fallback="—" item={next} color={trackColor} alignRight />
           </div>
         </div>
