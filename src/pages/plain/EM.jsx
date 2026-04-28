@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
 
-// Part II · Topic 06 — Electromagnetism as Puncture — PLAIN ENGLISH
+// Part II · Topic 06 — Electric Charge as Puncture — PLAIN ENGLISH
 
 export default function PlainEM() {
   const topic = {
@@ -9,7 +9,7 @@ export default function PlainEM() {
     part: "II",
     partName: "Applications",
     slug: "electromagnetism",
-    title: "Electromagnetism as Puncture",
+    title: "Electric Charge as Puncture",
   };
 
   return (
@@ -18,16 +18,18 @@ export default function PlainEM() {
         <TPTitle>
           If gravity is how the pond{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>drains</em>,
-          electromagnetism is how it{" "}
-          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>punctures</em> through.
+          electric charge is which way a throat{" "}
+          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>punctures</em>.
         </TPTitle>
         <TPLede>
           A throat doesn't only drain fluid on the brane. It also opens,
           topologically, into <em>one side</em> of the hidden direction —
           either the +w half or the −w half. Which side it opens into is
-          what the brane reads as the sign of electric charge. And because
-          the model includes a localized Maxwell sector, the far-field,
-          zero-mode brane limit gives the Maxwell equations we measure.
+          what the brane reads as the sign of electric charge. Magnetism and
+          vortical circulation are kept separate. The broader electromagnetic
+          field behavior comes from the localized Maxwell sector: in the
+          far-field, zero-mode brane limit, it gives the Maxwell equations we
+          measure.
         </TPLede>
       </section>
 

@@ -72,7 +72,7 @@ export const TOPICS = [
     slug: 'electromagnetism',
     part: 'II',
     partName: 'Applications',
-    plainTitle: 'Electromagnetism as Puncture',
+    plainTitle: 'Electric Charge as Puncture',
     techTitle: 'Localized 4+1 Maxwell',
     plainDesc:
       'Charge as a ±w puncture orientation, and why the familiar Maxwell behavior is the brane readout of a localized 4+1 gauge.',
