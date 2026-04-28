@@ -6,10 +6,10 @@
   --bg-1: #1c1915;        /* panel */
   --bg-2: #24201a;        /* raised */
   --bg-3: #2d2821;        /* hairline contrast */
-  --ink-1: #ede5d4;       /* primary ink (warm off-white) */
-  --ink-2: #c8bda6;       /* secondary */
-  --ink-3: #8e846f;       /* tertiary / muted */
-  --ink-4: #5f5749;       /* faintest */
+  --ink-1: #f4eeda;       /* primary ink (warm off-white) */
+  --ink-2: #ddd2bb;       /* secondary */
+  --ink-3: #aba18a;       /* tertiary / muted */
+  --ink-4: #6e6757;       /* faintest */
   --rule: #2f2a22;        /* hairline rules */
   --rule-2: #3a342a;      /* stronger rule */
   --accent: #d9a441;      /* amber — primary accent */
@@ -31,10 +31,10 @@
   --bg-1: #10142a;
   --bg-2: #151a36;
   --bg-3: #1c2246;
-  --ink-1: #e4e7f5;
-  --ink-2: #a9b0cc;
-  --ink-3: #6d749a;
-  --ink-4: #4a507a;
+  --ink-1: #ecf0fb;
+  --ink-2: #c6cce4;
+  --ink-3: #8e96bd;
+  --ink-4: #5b6294;
   --rule: #1e2446;
   --rule-2: #2a3160;
   --accent: #7aa2ff;        /* cyan/blue for gauge/EM */
