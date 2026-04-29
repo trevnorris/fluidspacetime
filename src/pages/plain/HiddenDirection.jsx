@@ -25,8 +25,9 @@ export default function PlainHiddenDirection() {
           If the last chapter convinced you that stable matter needs defects,
           this chapter asks a harder question: where do the defects <em>live</em>?
           In the Fluid Spacetime picture, the answer is that our familiar 3D
-          space is a thin slice of a larger 4D arena. We see the slice.
-          The defects use the whole room.
+          space is a thin slice of a larger 4D arena. We see only the part of
+          a defect that crosses our slice; the full defect can extend into the
+          hidden direction.
         </TPLede>
       </section>
 
@@ -76,10 +77,10 @@ export default function PlainHiddenDirection() {
       <TPSection anchor="see" eyebrow="what we see" heading="We see the slice — but the slice sees what passes through it">
         <TPBody>
           A brane observer — that's us — measures things on the slice. A
-          defect that extends into the bulk isn't invisible: its <em>trace</em>
-          on the slice is what we read as “a particle sitting here.” Two
-          different bulk objects can leave the same trace. That's not a bug;
-          it's part of why the theory is interesting.
+          defect that extends into the bulk isn't invisible: the part that
+          crosses our slice is what we read as “a particle sitting here.” Two
+          different bulk shapes could look the same from inside the slice.
+          That's not a bug; it's part of why the theory is interesting.
         </TPBody>
         <TPBody>
           How does the slice measure the bulk? It averages — not naively, but
@@ -94,9 +95,9 @@ export default function PlainHiddenDirection() {
 
         <TPCallout kind="note">
           <em>Projection</em> is the exact operation that turns a bulk object
-          into its brane trace. <em>Reduction</em> is a later, approximate
-          operation that uses a physical limit (weak gradients in w, say) to
-          write a brane-only equation.
+          into the part we can read on the slice. <em>Reduction</em> is a
+          later, approximate operation that uses a physical limit (weak
+          gradients in w, say) to write a brane-only equation.
           Those two words look interchangeable — they aren't. The honesty rail
           on technical pages tracks which one is in play.
         </TPCallout>
@@ -106,12 +107,13 @@ export default function PlainHiddenDirection() {
         <TPBody>
           Gravity and electromagnetism will, in the chapters to come, be modeled
           as two different brane-readable channels tied to what a defect does
-          along the w axis. Gravity is about <em>flow inward</em>: a defect
-          drinks fluid from the bulk, and the brane reads the inflow as
-          attraction. Electromagnetism is about <em> orientation in w</em>: a
-          defect punctures through the brane into one half of the hidden
-          direction, and the brane reads which half as charge sign. Same defect
-          family, two bulk behaviours. Same slice — but a slice that sees more
+          along the w axis. Gravity is about <em>flow inward</em>: nearby
+          brane-side fluid flows into the throat mouth and continues into the
+          hidden direction, and the brane reads that inflow as attraction.
+          Electromagnetism is about <em>orientation in w</em>: a defect
+          punctures through the brane into one half of the hidden direction,
+          and the brane reads which half as charge sign. Same defect family,
+          two brane-bulk behaviours. Same slice — but a slice that sees more
           than its own thickness.
         </TPBody>
         <TPBody>
