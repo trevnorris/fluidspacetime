@@ -32,7 +32,6 @@ export default function TechnicalPart1() {
           >
             ℝ³ × ℝ<sub>w</sub> × ℝ<sub>t</sub>
           </span>
-          .
         </TPTitle>
         <TPLede>
           Before introducing defects, gauge sectors, or projection, we fix the

@@ -16,9 +16,9 @@ export default function PlainDefects() {
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          A perfect pond is elegant. A <em style={{
+          A perfect pond is elegant; a <em style={{
             fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6",
-          }}>flawed</em> pond is interesting.
+          }}>flawed</em> pond is interesting
         </TPTitle>
         <TPLede>
           The last chapter left us with a too-smooth universe — a perfect fluid

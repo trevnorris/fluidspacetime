@@ -19,7 +19,7 @@ export default function TechnicalGravity() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           The Poisson hook: an exact projected identity plus a controlled
-          Newtonian regime.
+          Newtonian regime
         </TPTitle>
         <TPLede>
           The current 4D paper does not postulate Newton's law. It derives an

@@ -19,7 +19,7 @@ export default function TechnicalMovingThroat() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           A framework paper for <Tex tex="R(\Omega,w,t)" />,
-          not a solved nonlinear throat theorem.
+          not a solved nonlinear throat theorem
         </TPTitle>
         <TPLede>
           The current moving-throat paper is explicit about its status. It lifts

@@ -21,10 +21,10 @@ export default function TechnicalHiddenDirection() {
           The ambient arena is{" "}
           <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>
             ℝ³ × ℝ<sub>w</sub>
-          </span>. The brane is the hypersurface{" "}
+          </span>; the brane is the hypersurface{" "}
           <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>
             w = 0
-          </span>.
+          </span>
         </TPTitle>
         <TPLede>
           A brane observer measures the fluid through a projection in{" "}

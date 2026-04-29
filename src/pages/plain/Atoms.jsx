@@ -18,7 +18,7 @@ export default function PlainAtoms() {
         <TPTitle>
           An atom is a{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>standing wave</em> of the pond —
-          pinned by a throat, rung by the gauge field.
+          pinned by a throat, rung by the gauge field
         </TPTitle>
         <TPLede>
           Three things meet in an atom: a charged throat, a cloud of

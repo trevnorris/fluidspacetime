@@ -18,8 +18,8 @@ export default function TechnicalPN() {
     <TopicPage track="technical" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Newton through 3PN sit inside one declared hierarchy. 2.5PN and 4PN
-          share one outgoing quadrupole-normalization gate.
+          Newton through 3PN sit inside one declared hierarchy; 2.5PN and 4PN
+          share one outgoing quadrupole-normalization gate
         </TPTitle>
         <TPLede>
           The current 4D program does not phrase the PN story as a fresh set of

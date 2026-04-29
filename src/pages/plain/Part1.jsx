@@ -34,7 +34,6 @@ export default function PlainPart1() {
           >
             very still pond
           </em>
-          .
         </TPTitle>
         <TPLede>
           Before anything becomes a particle, before there's light or gravity or

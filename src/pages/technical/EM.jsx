@@ -23,7 +23,7 @@ export default function TechnicalEM() {
             ℝ³ × ℝ<sub>w</sub> × ℝ<sub>t</sub>
           </span>{" "}
           with a localization profile{" "}
-          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>Z(w)</span>.
+          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>Z(w)</span>
         </TPTitle>
         <TPLede>
           The EM sector is a 4+1 Maxwell theory carrying a localization

@@ -17,7 +17,7 @@ export default function PlainLight() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           Light is a ripple running across the{" "}
-          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>tension</em> of the pond.
+          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>tension</em> of the pond
         </TPTitle>
         <TPLede>
           We started this whole story with the observation that the universe

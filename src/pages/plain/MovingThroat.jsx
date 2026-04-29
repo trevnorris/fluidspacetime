@@ -18,7 +18,7 @@ export default function PlainMovingThroat() {
         <TPTitle>
           The{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>frontier</em> —
-          an equation for throats that don't sit still.
+          an equation for throats that don't sit still
         </TPTitle>
         <TPLede>
           Almost everything in the rest of the program was done in a specific

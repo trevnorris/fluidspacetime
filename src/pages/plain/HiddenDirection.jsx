@@ -19,7 +19,7 @@ export default function PlainHiddenDirection() {
           There's a direction you can't look in — but defects can{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>
             extend into it
-          </em>.
+          </em>
         </TPTitle>
         <TPLede>
           If the last chapter convinced you that stable matter needs defects,

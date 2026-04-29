@@ -17,11 +17,11 @@ export default function PlainGravity() {
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          In this picture, gravity isn't a force reaching across space. It's the pond
+          In this picture, gravity isn't a force reaching across space — it's the pond
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>
             {" "}noticing{" "}
           </em>
-          that something is draining it.
+          that something is draining it
         </TPTitle>
         <TPLede>
           We have throats, and the gravity-side branch treats them as

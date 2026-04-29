@@ -20,7 +20,7 @@ export default function TechnicalDefects() {
         <TPTitle>
           Zero-locus defects of the complex order parameter{" "}
           <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>ψ(x,w,t)</span>{" "}
-          are topologically protected.
+          are topologically protected
         </TPTitle>
         <TPLede>
           The parent matter field is introduced as a complex scalar{" "}

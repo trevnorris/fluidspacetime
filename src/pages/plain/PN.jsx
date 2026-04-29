@@ -19,7 +19,7 @@ export default function PlainPN() {
           An honest{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>ledger</em> —
           what closes in the current hierarchy, and what still waits on the
-          moving-throat branch.
+          moving-throat branch
         </TPTitle>
         <TPLede>
           The point of this page is not to declare victory. It is to say, as

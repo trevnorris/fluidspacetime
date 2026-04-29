@@ -20,7 +20,7 @@ export default function TechnicalThroats() {
           A throat is a finite-radius brane-bulk opening represented by{" "}
           <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>
             Σ = r - R(Ω,w,t)
-          </span>.
+          </span>
         </TPTitle>
         <TPLede>
           The particle analog of the program is the <em>throat</em>: a finite

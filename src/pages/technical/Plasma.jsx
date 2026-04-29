@@ -20,7 +20,7 @@ export default function TechnicalPlasma() {
         <TPTitle>
           Ideal MHD emerges on the brane; beyond-MHD ledgers live in
           transverse channels along{" "}
-          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>w</span>.
+          <span className="fu-mono" style={{ fontSize: "0.68em", color: "#7aa2ff" }}>w</span>
         </TPTitle>
         <TPLede>
           A multi-species charged medium is assembled from charged throats

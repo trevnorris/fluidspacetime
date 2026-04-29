@@ -19,8 +19,8 @@ export default function MetaWhatThisIsNot() {
     <TopicPage track="technical" topic={topic} meta>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          A program, not a theory. A fluid picture, not a replacement for
-          general relativity or quantum field theory.
+          A program, not a theory; a fluid picture, not a replacement for
+          general relativity or quantum field theory
         </TPTitle>
 
         <TPLede>

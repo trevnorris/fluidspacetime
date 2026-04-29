@@ -19,7 +19,7 @@ export default function TechnicalAtoms() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           Coulomb-limit atomic physics has a reduced Bohr-scale foothold; the
-          anomaly package still has one branch datum open.
+          anomaly package still has one branch datum open
         </TPTitle>
         <TPLede>
           The current source stack supports the localized Maxwell reduction, the

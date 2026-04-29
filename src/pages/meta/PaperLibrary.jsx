@@ -22,7 +22,7 @@ export default function MetaPaperLibrary() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           The published record, plus the draft/ledger context behind the
-          newest pages.
+          newest pages
         </TPTitle>
 
         <TPLede>

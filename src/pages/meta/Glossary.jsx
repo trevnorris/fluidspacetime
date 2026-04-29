@@ -18,7 +18,7 @@ export default function MetaGlossary() {
     <TopicPage track="technical" topic={topic} meta>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          The program's working vocabulary, in one place.
+          The program's working vocabulary, in one place
         </TPTitle>
 
         <TPLede>

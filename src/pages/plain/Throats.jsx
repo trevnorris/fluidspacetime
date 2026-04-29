@@ -16,10 +16,10 @@ export default function PlainThroats() {
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Some defects aren't points. They're{" "}
+          Some defects aren't points — they're{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>
             openings
-          </em>.
+          </em>
         </TPTitle>
         <TPLede>
           We have the fluid. We have defects. We have a hidden direction the

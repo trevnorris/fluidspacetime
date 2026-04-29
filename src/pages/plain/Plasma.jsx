@@ -17,7 +17,7 @@ export default function PlainPlasma() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           A plasma is the pond talking to{" "}
-          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>itself</em> — many charged throats, one medium.
+          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>itself</em> — many charged throats, one medium
         </TPTitle>
         <TPLede>
           The sun is a plasma. So is a lightning bolt, the aurora, the

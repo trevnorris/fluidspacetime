@@ -22,7 +22,7 @@ export default function PlainEM() {
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>punctures</em>,
           while magnetism is circulation{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>around</em>{" "}
-          it.
+          it
         </TPTitle>
         <TPLede>
           A throat doesn't only drain fluid on the brane. It also opens,

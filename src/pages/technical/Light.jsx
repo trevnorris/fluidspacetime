@@ -19,7 +19,7 @@ export default function TechnicalLight() {
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
           Characteristic propagation speed from the 4D matter sector; brane
-          electromagnetism from a controlled zero-mode reduction.
+          electromagnetism from a controlled zero-mode reduction
         </TPTitle>
         <TPLede>
           The current 4D stack does not rest on the older
