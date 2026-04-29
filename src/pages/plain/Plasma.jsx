@@ -33,15 +33,17 @@ export default function PlainPlasma() {
 
       <TPSection anchor="picture" eyebrow="the picture" heading="Many throats, moving, talking">
         <TPBody>
-          Imagine a dense soup of throats, some carrying one puncture
-          orientation and some carrying the opposite orientation. Once a
-          convention is chosen, those are the positive and negative charge
-          branches. Each one drinks a little fluid and sits in the gauge
-          field of its neighbours. The positives and negatives attract and
-          repel in the usual ways.
-          They push on each other; they move; and as they move, they
-          generate new gauge fields, which push on more throats, which
-          move, which generate more fields. This feedback loop is what makes a
+          Picture a cluster of whirlpools close together. Drop a tiny
+          floating marker into that water and its path can become hard to
+          predict: each whirlpool pulls, each swirl bends the motion, and the
+          combined flow keeps changing as the water moves. A plasma is like
+          that, except the moving objects are not passive markers. They are
+          charged throats. Some carry one puncture orientation and some carry
+          the opposite orientation, which we call positive and negative. Each
+          throat takes in a little fluid, its circulation contributes magnetic
+          structure, and nearby throats create electric and magnetic patterns
+          around it. Those patterns push on other throats, which move, which
+          change the patterns again. This feedback loop is what makes a
           plasma behave unlike either a gas or a collection of separate
           particles.
         </TPBody>
@@ -79,11 +81,11 @@ export default function PlainPlasma() {
         </TPBody>
 
         <TPCallout kind="note">
-          Put differently: part of the non-ideal ledger can be an open-system
-          bookkeeping problem. Energy, momentum, charge, or helicity may leave
-          the brane-visible variables without leaving the parent system. The
-          hidden-channel terms are designed to make that exchange measurable,
-          not to rename every ordinary plasma effect.
+          Put differently: when ordinary plasma equations seem to lose track
+          of energy, momentum, charge, or magnetic twist, this model asks
+          whether some of it has moved into hidden channels rather than
+          disappeared. The hidden-channel terms are designed to make that
+          exchange measurable, not to rename every ordinary plasma effect.
         </TPCallout>
       </TPSection>
 
@@ -98,8 +100,8 @@ export default function PlainPlasma() {
           {[
             { k: "Mixed-sector EM", v: "Components of the electromagnetic field with one leg on the brane and one leg in the hidden direction. They're suppressed in the far-field limit, but strong gradients can make them relevant." },
             { k: "Bulk leakage",    v: "Matter or current moving along the hidden direction instead of only along the brane. It can look like a source or loss to us while remaining conservative in the bulk." },
-            { k: "Higher modes",    v: "Excitations above the lowest localized electromagnetic mode. Normally quiet, but expected when structures approach the localization scale." },
-            { k: "Projection stress", v: "Residual terms from projecting products, ratios, and unresolved transverse structure into a brane-only description." },
+            { k: "Higher patterns", v: "Usually the plasma only uses the simplest electric-and-magnetic pattern. Near very small or intense structures, more complicated hidden-direction patterns may wake up." },
+            { k: "Projection leftovers", v: "A brane-only plasma model is a flattened view of a richer motion. When hidden-direction structure is sharp or changing fast, that flattening can leave extra correction terms." },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "20px 22px",
@@ -141,7 +143,7 @@ export default function PlainPlasma() {
           measurable hidden-channel activity: transverse current, mixed-field
           energy, leakage, and higher-mode storage. This is a
           <em> hypothesis</em>, not a completed derivation — it's where the
-          program expects its insights to pay off, not where they've
+          program expects its insights to pay off, not where it has
           already landed.
         </TPBody>
 
