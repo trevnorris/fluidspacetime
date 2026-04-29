@@ -9,17 +9,17 @@ export default function PlainThroats() {
     part: "I",
     partName: "Foundations",
     slug: "throats",
-    title: "Throats — Defects That Connect",
+    title: "Throats — Defect Openings",
   };
 
   return (
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          Some defects aren't points — they're{" "}
+          The defects in this model are{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>
             openings
-          </em>
+          </em>, not points
         </TPTitle>
         <TPLede>
           We have the fluid. We have defects. We have a hidden direction the
@@ -32,21 +32,21 @@ export default function PlainThroats() {
         </TPLede>
       </section>
 
-      <TPSection anchor="opening" eyebrow="the opening" heading="Picture a funnel in the bedsheet">
+      <TPSection anchor="opening" eyebrow="the opening" heading="Picture an intake mouth in the fluid">
         <TPBody>
-          Go back to the sheet metaphor. Most defects we've met so far were
-          local tangles — the sheet pinched at a point. A throat is different:
-          it's where the sheet develops an <em>opening</em>. Imagine pushing
-          your finger down into a soft fabric. A dimple forms. The dimple has
-          a <em>mouth</em> on the surface and a <em>neck</em> that descends
-          into the fabric. If you could reach through, you'd pass into a
-          region the surface itself can't see.
+          Earlier pages sometimes draw a defect as a dot because that is what a
+          distant brane observer can mark. This page resolves the diagram: the
+          dot is the mouth of an <em>opening</em>. Picture a tiny intake mouth
+          in the fluid. From our side it looks localized, but the object does
+          not stop at the visible mouth. It has a neck and an interior that
+          extend along the hidden direction.
         </TPBody>
         <TPBody>
-          That is the cartoon for a throat. Upstairs on the brane — our 3D
-          world — we see a mouth: a localized spot where something is
-          happening. Down the neck, along the hidden direction, the defect
-          has depth. Fluid can flow into it. Something can come out of it.
+          That is the diagram for a throat. On the brane — our 3D world — we
+          see a mouth: a localized place where fluid can enter or where a
+          charge orientation can be read. Along the hidden direction, the
+          defect has depth. The visible mouth is only the entrance, not the
+          whole object.
         </TPBody>
 
         <ThroatDiagramPlain />
@@ -149,7 +149,7 @@ export default function PlainThroats() {
       <TPSection anchor="caution" eyebrow="honest caveats" heading="What a throat is not">
         <TPBody>
           A throat is not a wormhole to another universe. The fluid on either
-          side of the neck is the same fluid. It is also not a surface dimple or
+          side of the neck is the same fluid. It is also not a shallow dent or
           a capped pocket. In the current ontology it is a finite-radius opening
           into a bulk throat.
         </TPBody>
@@ -192,112 +192,135 @@ function ThroatDiagramPlain() {
           plate 04 · mouth, neck, interior
         </span>
         <span className="fu-mono fu-small" style={{ color: "var(--ink-4)", fontSize: 10.5 }}>
-          metaphor · plain english
+          cutaway schematic · plain english
         </span>
       </div>
 
-      <svg viewBox="0 0 780 340" width="100%" style={{ display: "block" }}>
+      <svg viewBox="0 0 780 360" width="100%" style={{ display: "block" }}>
         <defs>
-          <radialGradient id="th-mouth" cx="50%" cy="30%" r="50%">
+          <radialGradient id="th-mouth" cx="50%" cy="45%" r="55%">
             <stop offset="0%" stopColor="#f0c26b" stopOpacity="1" />
             <stop offset="60%" stopColor="#e67ac6" stopOpacity="0.6" />
             <stop offset="100%" stopColor="#e67ac6" stopOpacity="0" />
           </radialGradient>
-          <linearGradient id="th-brane" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#7aa2ff" stopOpacity="0.18" />
-            <stop offset="100%" stopColor="#7aa2ff" stopOpacity="0.03" />
+          <linearGradient id="th-throat" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#e67ac6" stopOpacity="0.28" />
+            <stop offset="52%" stopColor="#b88bff" stopOpacity="0.12" />
+            <stop offset="100%" stopColor="#e67ac6" stopOpacity="0.22" />
           </linearGradient>
+          <marker id="th-arrow-blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <path d="M0,0 L7,3.5 L0,7 Z" fill="#7aa2ff" />
+          </marker>
+          <marker id="th-arrow-pink" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <path d="M0,0 L7,3.5 L0,7 Z" fill="#e67ac6" />
+          </marker>
         </defs>
 
         {/* w-axis */}
-        <g transform="translate(50,30)">
-          <line x1="0" y1="0" x2="0" y2="280" stroke="#6d749a" strokeWidth="0.8" strokeDasharray="3 3" />
+        <g transform="translate(50,34)">
+          <line x1="0" y1="0" x2="0" y2="300" stroke="#6d749a" strokeWidth="0.8" strokeDasharray="3 3" />
           <path d="M-4 4 L0 0 L4 4" stroke="#6d749a" fill="none" strokeWidth="0.8" />
           <text x="-28" y="6" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">w</text>
-          <text x="-44" y="146" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">hidden</text>
+          <text x="-44" y="154" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">hidden</text>
         </g>
 
-        {/* brane sheet */}
-        <g transform="translate(80,30)">
-          <path d="M0,120 L520,120 L600,90 L80,90 Z" fill="url(#th-brane)" stroke="#7aa2ff" strokeOpacity="0.6" />
-          <text x="500" y="114" fill="#7aa2ff" fontFamily="JetBrains Mono, monospace" fontSize="10" textAnchor="end">
-            brane — w = 0
-          </text>
-        </g>
-
-        {/* throat body — symmetric hourglass-ish */}
-        <g transform="translate(80,30)">
-          {/* outer throat wall (two mirrored bezier) */}
+        <g transform="translate(80,26)">
+          {/* 2D cutaway brane-side fluid line bending into the finite-width mouth */}
           <path
-            d="M220 30
-               C 230 60 260 90 290 105
-               C 310 115 310 155 290 165
-               C 260 180 230 210 220 240
-               M360 30
-               C 350 60 320 90 290 105
-               M 290 165
-               C 320 180 350 210 360 240"
+            d="M40,132
+               L210,132
+               M370,132
+               L650,132"
+            fill="none"
+            stroke="#7aa2ff"
+            strokeOpacity="0.72"
+            strokeWidth="1.35"
+          />
+          <text x="638" y="122" fill="#7aa2ff" fontFamily="JetBrains Mono, monospace" fontSize="10" textAnchor="end">
+            brane-side fluid line — w = 0
+          </text>
+
+          {/* finite-width hyper-trumpet conduit: narrows but does not pinch closed */}
+          <path
+            d="M210,132
+               C238,166 255,194 264,222
+               C271,244 268,268 258,290
+               C248,310 232,326 210,338
+               L370,338
+               C348,326 332,310 322,290
+               C312,268 309,244 316,222
+               C325,194 342,166 370,132
+               Z"
+            fill="url(#th-throat)"
+            stroke="#e67ac6"
+            strokeOpacity="0.25"
+          />
+          <path
+            d="M210 132
+               C238 166 255 194 264 222
+               C271 244 268 268 258 290
+               C248 310 232 326 210 338"
             fill="none"
             stroke="#e67ac6"
             strokeOpacity="0.65"
             strokeWidth="1.4"
           />
-          {/* soft interior fill */}
           <path
-            d="M220 30
-               C 230 60 260 90 290 105
-               C 260 90 230 60 220 30
-               Z"
-            fill="rgba(230,122,198,0.08)"
+            d="M370 132
+               C342 166 325 194 316 222
+               C309 244 312 268 322 290
+               C332 310 348 326 370 338"
+            fill="none"
+            stroke="#e67ac6"
+            strokeOpacity="0.65"
+            strokeWidth="1.4"
           />
 
-          {/* mouth highlight at the brane intersection */}
-          <ellipse cx="290" cy="105" rx="72" ry="14" fill="url(#th-mouth)" opacity="0.85" />
-          <ellipse cx="290" cy="105" rx="72" ry="14" fill="none" stroke="#f0c26b" strokeWidth="0.8" opacity="0.9" />
+          {/* mouth, neck, and open exit */}
+          <path d="M210 132 L370 132" fill="none" stroke="#f0c26b" strokeWidth="1.05" opacity="0.92" />
+          <circle cx="290" cy="132" r="3.5" fill="#f0c26b" opacity="0.95" />
 
-          {/* inflow arrows above the mouth */}
-          {[-70, -40, -10, 20, 50].map((dx, i) => (
-            <g key={i} transform={`translate(${290 + dx},${58})`}>
-              <line x1="0" y1="0" x2="0" y2="36" stroke="#7aa2ff" strokeWidth="1" opacity="0.7" />
-              <path d="M0 36 L-3 30 M0 36 L3 30" stroke="#7aa2ff" strokeWidth="1" fill="none" opacity="0.7" />
-            </g>
-          ))}
+          {/* brane-side inflow bends into the mouth */}
+          <path d="M155 82 C190 100 225 124 262 141" stroke="#7aa2ff" strokeWidth="1.1" opacity="0.75" fill="none" markerEnd="url(#th-arrow-blue)" />
+          <path d="M425 82 C390 100 355 124 318 141" stroke="#7aa2ff" strokeWidth="1.1" opacity="0.75" fill="none" markerEnd="url(#th-arrow-blue)" />
+          <path d="M250 80 C258 104 270 126 284 141" stroke="#7aa2ff" strokeWidth="1.1" opacity="0.72" fill="none" markerEnd="url(#th-arrow-blue)" />
+          <path d="M330 80 C322 104 310 126 296 141" stroke="#7aa2ff" strokeWidth="1.1" opacity="0.72" fill="none" markerEnd="url(#th-arrow-blue)" />
 
           {/* puncture indicator — throat opens into +w half */}
-          <line x1="290" y1="95" x2="290" y2="230" stroke="#e67ac6" strokeWidth="1.1" strokeDasharray="3 3" opacity="0.85" />
-          <path d="M290 230 L286 223 M290 230 L294 223" stroke="#e67ac6" strokeWidth="1.1" fill="none" opacity="0.85" />
+          <path d="M290 132 L290 318" stroke="#e67ac6" strokeWidth="1.1" strokeDasharray="4 4" opacity="0.85" fill="none" markerEnd="url(#th-arrow-pink)" />
 
           {/* labels */}
-          <line x1="290" y1="105" x2="440" y2="66" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
-          <text x="444" y="64" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
+          <line x1="350" y1="132" x2="492" y2="76" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
+          <text x="496" y="74" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
             mouth — what the brane sees
           </text>
 
-          <line x1="290" y1="160" x2="450" y2="160" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
-          <text x="454" y="162" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
-            neck — narrowest point
+          <line x1="318" y1="238" x2="470" y2="238" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
+          <text x="474" y="241" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
+            neck — narrow support region
           </text>
 
-          <line x1="310" y1="230" x2="460" y2="240" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
-          <text x="464" y="243" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
-            interior — bulk reservoir
+          <line x1="352" y1="338" x2="486" y2="304" stroke="#e4e7f5" strokeWidth="0.5" opacity="0.55" strokeDasharray="2 2" />
+          <text x="490" y="307" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="12">
+            open exit into bulk
           </text>
 
           {/* inflow label */}
-          <text x="190" y="54" fill="#7aa2ff" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11" textAnchor="end">
-            inflow → gravity
+          <text x="210" y="76" fill="#7aa2ff" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11" textAnchor="end">
+            brane-side inflow → gravity
           </text>
-          <text x="340" y="200" fill="#e67ac6" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11">
+          <text x="334" y="292" fill="#e67ac6" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11">
             puncture orientation → charge sign
           </text>
         </g>
       </svg>
 
       <figcaption className="fu-small" style={{ color: "var(--ink-3)", marginTop: 14, lineHeight: 1.55, maxWidth: 680 }}>
-        The throat pierces the brane (faint blue sheet). The <em>mouth</em> is what we see. Along
-        the hidden direction, fluid inflow is read in the gravity sector and puncture
-        orientation carries electric charge sign. Circulation or winding belongs to the
-        magnetic/vortical sector, not to the electric-charge definition.
+        This is a 2D cutaway schematic, not a literal 3D rendering. The brane-side fluid
+        line bends into the throat mouth instead of ending at it. The finite-width throat
+        narrows without pinching shut, then opens into the bulk at finite radius.
+        Inflow is read in the gravity sector, while puncture orientation carries electric
+        charge sign. Circulation or winding belongs to the magnetic/vortical sector.
       </figcaption>
     </figure>
   );

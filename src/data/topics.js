@@ -48,7 +48,7 @@ export const TOPICS = [
     slug: 'throats',
     part: 'I',
     partName: 'Foundations',
-    plainTitle: 'Throats — Defects That Connect',
+    plainTitle: 'Throats — Defect Openings',
     techTitle: 'Throat Defects',
     plainDesc:
       'Two behaviors a connected defect can have — inflow and oriented puncture charge — with circulation kept separate.',
