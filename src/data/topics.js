@@ -72,20 +72,20 @@ export const TOPICS = [
     slug: 'electromagnetism',
     part: 'II',
     partName: 'Applications',
-    plainTitle: 'Electric Charge as Puncture',
+    plainTitle: 'Electromagnetism: Charge & Circulation',
     techTitle: 'Localized 4+1 Maxwell',
     plainDesc:
-      'Charge as a ±w puncture orientation, and why the familiar Maxwell behavior is the brane readout of a localized 4+1 gauge.',
+      'Electric charge as ±w puncture orientation, magnetism as circulation, and Maxwell behavior as the brane readout of a localized 4+1 gauge.',
     techDesc:
-      'Localized 4+1 Maxwell with brane reduction and KK corrections; q_eff = q⋆/√Z_int as the carry-forward identity.',
+      'Localized 4+1 Maxwell with brane reduction, charge/circulation bookkeeping, KK corrections, and q_eff = q⋆/√Z_int as the carry-forward identity.',
   },
   {
     n: '07',
     slug: 'plasma',
     part: 'II',
     partName: 'Applications',
-    plainTitle: 'Magnetism, Plasma & MHD',
-    techTitle: 'Magnetism, Plasma and Beyond-MHD',
+    plainTitle: 'Plasma & Magnetohydrodynamics',
+    techTitle: 'Plasma and Beyond-MHD',
     plainDesc:
       'Where ideal MHD comes from in the fluid picture, and which extra hidden-channel diagnostics may survive beyond it.',
     techDesc:

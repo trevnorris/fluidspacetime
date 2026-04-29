@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
 
-// Part II · Topic 06 — Electric Charge as Puncture — PLAIN ENGLISH
+// Part II · Topic 06 — Electromagnetism: Charge & Circulation — PLAIN ENGLISH
 
 export default function PlainEM() {
   const topic = {
@@ -9,27 +9,30 @@ export default function PlainEM() {
     part: "II",
     partName: "Applications",
     slug: "electromagnetism",
-    title: "Electric Charge as Puncture",
+    title: "Electromagnetism: Charge & Circulation",
   };
 
   return (
     <TopicPage track="plain" topic={topic}>
       <section style={{ padding: "10px 0 40px" }}>
         <TPTitle>
-          If gravity is how the pond{" "}
-          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>drains</em>,
-          electric charge is which way a throat{" "}
-          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>punctures</em>.
+          Electromagnetism has two different throat-side stories: charge is
+          which way a throat{" "}
+          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>punctures</em>,
+          while magnetism is circulation{" "}
+          <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>around</em>{" "}
+          it.
         </TPTitle>
         <TPLede>
           A throat doesn't only drain fluid on the brane. It also opens,
           topologically, into <em>one side</em> of the hidden direction —
           either the +w half or the −w half. Which side it opens into is
-          what the brane reads as the sign of electric charge. Magnetism and
-          vortical circulation are kept separate. The broader electromagnetic
-          field behavior comes from the localized Maxwell sector: in the
-          far-field, zero-mode brane limit, it gives the Maxwell equations we
-          measure.
+          what the brane reads as the sign of electric charge. Magnetism is
+          not that puncture sign; it belongs to circulation and the
+          magnetic/vortical sector around the throat. The broader
+          electromagnetic field behavior comes from the localized Maxwell
+          sector: in the far-field, zero-mode brane limit, it gives the
+          Maxwell equations we measure.
         </TPLede>
       </section>
 
@@ -101,7 +104,7 @@ export default function PlainEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="firewall" eyebrow="the charge firewall" heading="One thing that is easy to get confused about.">
+      <TPSection anchor="firewall" eyebrow="charge and magnetism" heading="Charge and circulation are both electromagnetic, but not the same channel.">
         <TPBody>
           The fluid picture has two quite different things that both
           <em> could</em> be called "charge" if you're not careful. They
@@ -154,13 +157,13 @@ export default function PlainEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Coming up: when you have many charged throats.">
+      <TPSection anchor="next" eyebrow="up next" heading="Coming up: when you have many charged and circulating throats.">
         <TPBody>
-          A single charged throat is instructive. A whole population of them
-          — interacting with each other and with the ambient pond — is a
-          plasma. The next chapter asks what the fluid picture says about
-          plasma physics, and where ordinary magnetohydrodynamics comes from
-          and where it starts to deviate.
+          A single charged or circulating throat is instructive. A whole
+          population of them — interacting with each other and with the
+          ambient pond — is a plasma. The next chapter asks what the fluid
+          picture says about many-body plasma physics, and where ordinary
+          magnetohydrodynamics comes from and where it starts to deviate.
         </TPBody>
 
       </TPSection>
