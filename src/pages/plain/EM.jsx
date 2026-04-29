@@ -37,6 +37,54 @@ export default function PlainEM() {
         </TPLede>
       </section>
 
+      <TPSection anchor="firewall" eyebrow="charge and magnetism" heading="Two electromagnetic channels, not one">
+        <TPBody>
+          Before the details, keep the map simple. Electric charge and
+          magnetic circulation both belong on the electromagnetism page, but
+          they are not the same throat feature:
+        </TPBody>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
+          <div style={{
+            padding: "22px 24px",
+            border: "1px solid #e67ac655",
+            borderRadius: 3,
+            background: "linear-gradient(160deg, rgba(230,122,198,0.08), rgba(16,20,42,0.5))",
+          }}>
+            <div className="fu-mono fu-small" style={{ color: "#e67ac6", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
+              electric charge
+            </div>
+            <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
+              The puncture channel. Its sign comes from which way the throat
+              opens into the hidden direction, and its strength is the fixed
+              charge unit carried by that branch.
+            </div>
+          </div>
+
+          <div style={{
+            padding: "22px 24px",
+            border: "1px solid #7aa2ff55",
+            borderRadius: 3,
+            background: "linear-gradient(160deg, rgba(122,162,255,0.08), rgba(16,20,42,0.5))",
+          }}>
+            <div className="fu-mono fu-small" style={{ color: "#7aa2ff", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
+              circulation (magnetic)
+            </div>
+            <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
+              The swirl channel. It is fluid motion <em>around</em> the throat
+              in the brane itself, and belongs to the magnetic or vortical
+              side of the model.
+            </div>
+          </div>
+        </div>
+
+        <TPBody>
+          The page keeps these channels separate. Electric charge does not
+          come from the swirl, and magnetic circulation does not set the
+          electric charge sign.
+        </TPBody>
+      </TPSection>
+
       <TPSection anchor="puncture" eyebrow="the puncture, not the drain" heading="A different way a throat can behave">
         <TPBody>
           Picture the hidden direction as a two-sided axis: there's a +w
@@ -54,34 +102,20 @@ export default function PlainEM() {
           represented by the opposite orientation branch.
         </TPBody>
 
-        <TPCallout kind="note">
-          <strong style={{ color: "var(--ink-1)" }}>Electric sign is
-          topological.</strong> It isn't "how much" charge — it's which
-          half of the hidden direction the throat opens into. The{" "}
-          <em>amount</em> of charge we measure, on the other hand, depends on
-          the localization normalization of the brane gauge mode. Two separate
-          numbers, two separate stories.
-        </TPCallout>
       </TPSection>
 
-      <TPSection anchor="how-much" eyebrow="how much charge?" heading="Thickness sets the strength; sign sets the direction">
+      <TPSection anchor="how-much" eyebrow="charge strength" heading="A bigger throat is not a bigger electric charge">
         <TPBody>
-          The brane isn't infinitely thin. It has a little thickness along
-          the hidden direction — a localization profile that determines how
-          the zero-mode gauge field is normalized on the brane. For the
-          Gaussian profile used in the source paper, a thicker localization
-          gives a larger normalization integral, so the brane-observed charge
-          coupling is weaker.
+          Electric charge has two parts. The first is the sign: which way the
+          puncture opens into the hidden direction. One orientation reads as
+          positive; the opposite orientation reads as negative.
         </TPBody>
         <TPBody>
-          So the <em>observable</em> electric charge we measure in experiments
-          isn't the raw puncture coupling of the throat. It's the puncture
-          <em> as sampled through our brane's thickness</em>. This factor shows up over and
-          over in the technical notation as a simple denominator attached to
-          the charge: q_eff is the microscopic branch charge divided
-          by the square root of the localization integral. In particular, the
-          observable coupling scales with localization thickness in a specific
-          way.
+          The second is the strength: a puncture carries a fixed electric
+          charge unit. Making the throat larger does not make it more
+          electrically charged. Throat size belongs to other parts of the
+          model, like mass and inflow. Charge comes from the puncture branch
+          itself.
         </TPBody>
       </TPSection>
 
@@ -92,101 +126,50 @@ export default function PlainEM() {
           direction. Magnetic circulation is fluid motion <em>around</em> the
           throat on the brane. The schematic below treats the picture as a
           top-down view of two side-by-side circulating defects, not as a pair
-          of magnetic monopoles. Fluxoid winding alone does not set a
-          universal pair force, but under the passive current-like mixed
-          closure with positive plumbing sign, same top-down circulation
-          corresponds to parallel side-by-side dipoles and repels. Opposite
-          top-down circulation attracts in that same conditional branch. The
-          tracers also drift slowly inward so the objects read as throat
-          defects taking in the superfluid, not as passive markers.
+          of magnetic monopoles. Circulation around a throat is not enough, by
+          itself, to determine the force between two throats. In the simplified
+          current-like branch used here, same top-down circulation repels,
+          while opposite top-down circulation attracts. The tracers also drift
+          slowly inward so the objects read as throat defects taking in the
+          superfluid, not as passive markers.
         </TPBody>
 
         <MagnetismCirculationSim />
 
         <TPCallout kind="note">
           <strong style={{ color: "var(--ink-1)" }}>What this is allowed to
-          mean:</strong> this is a conditional magnetism-like force picture,
-          not a fluxoid-only theorem, not a full MHD solver, and not the
-          gravity inflow animation from topic 05. The small inward drift is
-          only a throat-intake cue; the attraction/repulsion arrows come from
-          the conditional circulation/current closure. The swirl toggle is not
-          an electric charge switch. Electric charge sign remains the separate
-          puncture-orientation branch. The remaining PDE-side work is deriving
-          the plumbing coefficient sign from the full mixed moving-throat
-          branch.
+          mean:</strong> this is a simplified picture of how circulation could
+          create an attraction-or-repulsion tendency in this model. It is not
+          claiming that swirl by itself automatically gives the full force law,
+          and it is not a complete simulation of magnetized fluid dynamics. The
+          moving dots show two things at once: they circle around each throat
+          to show the magnetic/circulation channel, and they drift inward to
+          show that each object is still a throat taking in fluid. The
+          attraction and repulsion arrows show the simplified circulation rule
+          used here; they are not computed from a full fluid simulation. The
+          swirl toggle is not an electric charge switch. Electric charge sign
+          remains the separate puncture-orientation branch.
         </TPCallout>
       </TPSection>
 
       <TPSection anchor="maxwell" eyebrow="from bulk gauge rules to Maxwell" heading="When Maxwell's equations appear">
         <TPBody>
-          The model starts this sector with a localized 4+1 Maxwell field. If
-          the brane-facing gauge field is dominated by its zero mode, and if
-          transverse current is negligible, then a brane observer sees the
-          ordinary 3+1 Maxwell equations with a rescaled coupling. Coulomb's
-          law, Ampere's law, Faraday's law, and the displacement current are
-          the far-field brane limit of that localized gauge sector.
+          Our brane is like the surface of the ocean. We can describe what
+          happens by watching the surface water: how it flows, ripples,
+          circles, or gets pulled toward a whirlpool. The simplified equations
+          are about that surface-readable motion. They are not trying to
+          describe every detail of what the water does after it dives down into
+          the whirlpool.
         </TPBody>
         <TPBody>
-          The work is in showing that the emergence is clean. Under the same
-          kind of controlled-reduction assumptions we saw for gravity — the
-          brane is thin enough, the fields vary slowly compared to some
-          reference scale, and mixed w-channels are suppressed — the bulk
-          gauge rules reduce to Maxwell's equations on the brane. Outside that
-          regime, the same source record keeps the higher modes and mixed
-          channels as real microscopic structure.
-        </TPBody>
-      </TPSection>
-
-      <TPSection anchor="firewall" eyebrow="charge and magnetism" heading="Charge and circulation are both electromagnetic, but not the same channel">
-        <TPBody>
-          The fluid picture has two quite different things that both
-          <em> could</em> be called "charge" if you're not careful. They
-          are not the same. One lives along the hidden direction, the
-          other lives entirely on the brane:
-        </TPBody>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
-          <div style={{
-            padding: "22px 24px",
-            border: "1px solid #e67ac655",
-            borderRadius: 3,
-            background: "linear-gradient(160deg, rgba(230,122,198,0.08), rgba(16,20,42,0.5))",
-          }}>
-            <div className="fu-mono fu-small" style={{ color: "#e67ac6", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
-              electric charge
-            </div>
-            <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
-              A branch sign tied to puncture orientation{" "}
-              <em>along the hidden direction</em>. Two options: opens into +w,
-              or opens into −w. Sign, not
-              magnitude.
-            </div>
-          </div>
-
-          <div style={{
-            padding: "22px 24px",
-            border: "1px solid #7aa2ff55",
-            borderRadius: 3,
-            background: "linear-gradient(160deg, rgba(122,162,255,0.08), rgba(16,20,42,0.5))",
-          }}>
-            <div className="fu-mono fu-small" style={{ color: "#7aa2ff", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
-              circulation (magnetic)
-            </div>
-            <div className="fu-body" style={{ fontSize: 15.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
-              The fluid actually moving in a loop <em>around</em> the throat
-              in the brane itself. An integer number of turns. This belongs to
-              the magnetic or vortical sector; spin-like structure is a later
-              mixed-sector question.
-            </div>
-          </div>
-        </div>
-
-        <TPBody>
-          These are distinct channels. The current vocabulary does not let you
-          infer electric charge from circulation, or circulation from electric
-          charge. In earlier drafts of the program these two were sometimes
-          written with the same letter <em>q</em>; the current, corrected
-          vocabulary keeps them strictly apart.
+          Maxwell's equations are like the clean surface rules. If the
+          disturbance stays readable on the ocean surface, and the deeper
+          motion through the whirlpool is quiet enough not to dominate the
+          surface pattern, then a surface observer can use familiar electric
+          and magnetic laws: Coulomb's law, Ampere's law, Faraday's law, and
+          the displacement current. If the disturbance dives strongly into the
+          hidden direction, the simple surface law is no longer the whole
+          story.
         </TPBody>
       </TPSection>
 

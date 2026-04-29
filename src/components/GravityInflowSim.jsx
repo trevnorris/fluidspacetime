@@ -308,7 +308,7 @@ export function GravityInflowSim() {
 
       ctx.font = '11px "JetBrains Mono", ui-monospace, monospace';
       ctx.fillStyle = 'rgba(198,204,228,0.8)';
-      ctx.fillText('combined projected inflow', 18, 25);
+      ctx.fillText('combined brane-side inflow', 18, 25);
       ctx.fillStyle = 'rgba(240,194,107,0.9)';
       ctx.fillText(
         width > 760
@@ -351,7 +351,7 @@ export function GravityInflowSim() {
       <div style={{ position: 'relative' }}>
         <canvas
           ref={canvasRef}
-          aria-label="Schematic two-body animation of projected superfluid inflow into positive-mass throat defects"
+          aria-label="Schematic two-body animation of brane-side superfluid inflow into positive-mass throat defects"
           style={{ display: 'block', width: '100%', minHeight: 340 }}
         />
       </div>

@@ -24,12 +24,12 @@ export default function PlainGravity() {
           that something is draining it
         </TPTitle>
         <TPLede>
-          We have throats, and the gravity-side branch treats them as
-          sink-like sources for projected flow. This chapter explains the
-          proposal that this inflow is what we experience as gravity — not as a
-          mysterious pull across distance, but as a shift in the pond's flow
-          pattern that other throat branches can feel in the controlled
-          Newtonian regime.
+          We have throats, and on the gravity side they behave like drains for
+          the part of the fluid motion our world can measure. This chapter
+          explains the proposal that this inflow is what we experience as
+          gravity — not as a mysterious pull across distance, but as a shift in
+          the pond's flow pattern that other throat branches can feel in the
+          controlled Newtonian regime.
         </TPLede>
       </section>
 
@@ -43,11 +43,12 @@ export default function PlainGravity() {
           just riding the flow.
         </TPBody>
         <TPBody>
-          In the model, a throat can act like a sink for the projected brane
-          flow. In the simple Newtonian limit, that source sets up a gentle,
-          steady longitudinal current in the surrounding pond. Another throat
-          sitting nearby is itself made of the pond; in the reduced picture, it
-          responds to that local current. That is the route to{" "}
+          In the model, a throat can act like a drain for the part of the
+          fluid motion our world can measure. In the simple Newtonian limit,
+          that drain sets up a gentle, steady longitudinal current in the
+          surrounding pond. Another throat sitting nearby is itself made of the
+          pond; in the reduced picture, it responds to that local current. That
+          is the route to{" "}
           <em>gravitational attraction</em>.
         </TPBody>
       </TPSection>
@@ -56,11 +57,11 @@ export default function PlainGravity() {
         <TPBody>
           The picture below is not a full fluid solver. It is a schematic of
           the branch used in this chapter: each visible positive-mass throat
-          acts like a sink-like source term for the projected brane flow. The
+          acts like a localized drain in the flow our world can measure. The
           smaller body has a weaker source strength and a smaller capture
           basin; nearby flow can enter it, while flow outside that basin bends
-          around and continues toward the larger body. The colored bands show
-          a qualitative potential/source-gradient landscape, not a separate
+          around and continues toward the larger body. The colored bands show a
+          qualitative potential/source-gradient landscape, not a separate
           pressure law.
         </TPBody>
 
@@ -69,10 +70,10 @@ export default function PlainGravity() {
         <TPCallout kind="note">
           <strong style={{ color: "var(--ink-1)" }}>What the simulation is
           allowed to mean:</strong> in the controlled Newtonian regime, the
-          source record supports a projected inflow identity and its Poisson
-          limit. The animation visualizes that local-inflow story. It does not
-          claim that every exotic source is attractive, and it does not replace
-          the post-Newtonian ladder.
+          source record supports an inflow identity for the brane-side flow and
+          its Poisson limit. The animation visualizes that local-inflow story.
+          It does not claim that every exotic source is attractive, and it does
+          not replace the post-Newtonian ladder.
         </TPCallout>
       </TPSection>
 
@@ -124,7 +125,7 @@ export default function PlainGravity() {
           nobody defines — it's just a number attached to a particle. In the
           fluid picture, the Newtonian mass of a throat branch is tied to its
           localized source strength: the density/source bookkeeping and the
-          inflow data that the brane projection reads near the mouth.
+          inflow data read near the mouth.
         </TPBody>
         <TPBody>
           For the positive-mass throat branches used in the Newtonian and PN
@@ -140,9 +141,9 @@ export default function PlainGravity() {
           The Fluid Spacetime program has a specific, computable version of
           this story. Under a carefully declared set of assumptions — slow
           motion, throats much smaller than the distances between them, and a
-          stable background pond — the brane's projected flow equation
-          becomes a Poisson equation for a potential that looks and acts like
-          Newtonian gravity.
+          stable background pond — the brane-side flow equation becomes a
+          Poisson equation for a potential that looks and acts like Newtonian
+          gravity.
         </TPBody>
         <TPBody>
           It does <em>not</em> automatically give you full general relativity.
@@ -157,7 +158,7 @@ export default function PlainGravity() {
 
       <TPSection anchor="next" eyebrow="up next" heading="Coming up: the other behaviour of the same throat">
         <TPBody>
-          Gravity came from one throat channel — projected inflow. The next
+          Gravity came from one throat channel — brane-side inflow. The next
           chapter is about the electromagnetic channel: puncture orientation,
           localized Maxwell fields, and the controlled brane limit. Same finite
           object, different brane-readable channel.
