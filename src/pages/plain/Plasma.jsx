@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
 
-// Part II · Topic 07 — Plasma & MHD — PLAIN ENGLISH
+// Part II · Topic 07 — Magnetism, Plasma & MHD — PLAIN ENGLISH
 
 export default function PlainPlasma() {
   const topic = {
@@ -9,7 +9,7 @@ export default function PlainPlasma() {
     part: "II",
     partName: "Applications",
     slug: "plasma",
-    title: "Plasma & Magnetohydrodynamics",
+    title: "Magnetism, Plasma & MHD",
   };
 
   return (
@@ -22,10 +22,11 @@ export default function PlainPlasma() {
         <TPLede>
           The sun is a plasma. So is a lightning bolt, the aurora, the
           interstellar medium, and the interior of most stars in the universe.
-          When the fluid picture has many charged throats swimming together
-          in the pond, it has to reproduce the physics of plasmas — not only
-          the textbook parts, but specific places where textbooks are known
-          to be incomplete. That's this chapter.
+          When the fluid picture has many charged throats and magnetic
+          circulation fields moving together in the pond, it has to reproduce
+          the physics of plasmas — not only the textbook parts, but specific
+          places where textbooks are known to be incomplete. That's this
+          chapter.
         </TPLede>
       </section>
 

@@ -84,8 +84,8 @@ export const TOPICS = [
     slug: 'plasma',
     part: 'II',
     partName: 'Applications',
-    plainTitle: 'Plasma & Magnetohydrodynamics',
-    techTitle: 'Plasma and Beyond-MHD',
+    plainTitle: 'Magnetism, Plasma & MHD',
+    techTitle: 'Magnetism, Plasma and Beyond-MHD',
     plainDesc:
       'Where ideal MHD comes from in the fluid picture, and which extra hidden-channel diagnostics may survive beyond it.',
     techDesc:

@@ -532,7 +532,7 @@ function TopicSourceMatrix() {
     { n: "04", t: "Throats" },
     { n: "05", t: "Gravity as Inflow" },
     { n: "06", t: "EM as Puncture" },
-    { n: "07", t: "Plasma & MHD" },
+    { n: "07", t: "Magnetism, Plasma & MHD" },
     { n: "08", t: "Light & the Speed Limit" },
     { n: "09", t: "Atoms, g-factors" },
     { n: "10", t: "PN Ledger" },

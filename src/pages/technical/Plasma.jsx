@@ -3,7 +3,7 @@ import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../
 import { Badge, Chip, EqCard, Tex } from '../../components/ui.jsx';
 import { ZENODO } from '../../data/citations.js';
 
-// Part II · Topic 07 — Plasma and Beyond-MHD — TECHNICAL track
+// Part II · Topic 07 — Magnetism, Plasma and Beyond-MHD — TECHNICAL track
 
 export default function TechnicalPlasma() {
   const topic = {
@@ -11,7 +11,7 @@ export default function TechnicalPlasma() {
     part: "II",
     partName: "Applications",
     slug: "plasma",
-    title: "Plasma and Beyond-MHD",
+    title: "Magnetism, Plasma and Beyond-MHD",
   };
 
   return (

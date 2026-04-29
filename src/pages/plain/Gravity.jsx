@@ -1,5 +1,6 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
+import { GravityInflowSim } from '../../components/GravityInflowSim.jsx';
 
 // Part II · Topic 05 — Gravity as Inflow — PLAIN ENGLISH
 
@@ -51,6 +52,30 @@ export default function PlainGravity() {
         </TPBody>
       </TPSection>
 
+      <TPSection anchor="inflow-visual" eyebrow="schematic simulation" heading="A local inflow field can look like attraction.">
+        <TPBody>
+          The picture below is not a full fluid solver. It is a schematic of
+          the branch used in this chapter: each visible positive-mass throat
+          acts like a sink-like source term for the projected brane flow. The
+          smaller body has a weaker source strength and a smaller capture
+          basin; nearby flow can enter it, while flow outside that basin bends
+          around and continues toward the larger body. The colored bands show
+          a qualitative potential/source-gradient landscape, not a separate
+          pressure law.
+        </TPBody>
+
+        <GravityInflowSim />
+
+        <TPCallout kind="note">
+          <strong style={{ color: "var(--ink-1)" }}>What the simulation is
+          allowed to mean:</strong> in the controlled Newtonian regime, the
+          source record supports a projected inflow identity and its Poisson
+          limit. The animation visualizes that local-inflow story. It does not
+          claim that every exotic source is attractive, and it does not replace
+          the post-Newtonian ladder.
+        </TPCallout>
+      </TPSection>
+
       <TPSection anchor="why-inverse" eyebrow="why the inverse square" heading="Why does it fall off like 1/r²?">
         <TPBody>
           The inverse-square law of gravity — and of almost every radial
@@ -79,8 +104,8 @@ export default function PlainGravity() {
           <em> outward or inward</em> (like water flowing straight toward a
           drain) and a part that swirls <em>around</em> it (like a whirlpool).
           The first part is the one the brane reads as gravity. The second
-          part — the swirling — becomes important when we get to
-          electromagnetism and to light.
+          part — the swirling — becomes important when we get to magnetism,
+          plasma, and the broader Maxwell-sector story.
         </TPBody>
         <TPBody>
           In the technical language, the first part is called
