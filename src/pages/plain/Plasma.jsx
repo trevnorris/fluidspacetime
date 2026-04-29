@@ -31,7 +31,7 @@ export default function PlainPlasma() {
         </TPLede>
       </section>
 
-      <TPSection anchor="picture" eyebrow="the picture" heading="Many throats, moving, talking.">
+      <TPSection anchor="picture" eyebrow="the picture" heading="Many throats, moving, talking">
         <TPBody>
           Imagine a dense soup of throats, some carrying one puncture
           orientation and some carrying the opposite orientation. Once a
@@ -57,7 +57,7 @@ export default function PlainPlasma() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="where" eyebrow="where ideal MHD breaks" heading="Real plasmas do things ideal MHD says they can't.">
+      <TPSection anchor="where" eyebrow="where ideal MHD breaks" heading="Real plasmas do things ideal MHD says they can't">
         <TPBody>
           Ideal MHD assumes the plasma is a perfect conductor — the
           magnetic field lines are frozen into the fluid and never break or
@@ -87,7 +87,7 @@ export default function PlainPlasma() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="channels" eyebrow="the hidden channels" heading="Where the energy goes.">
+      <TPSection anchor="channels" eyebrow="the hidden channels" heading="Where the energy goes">
         <TPBody>
           The rigorous version of the previous paragraph lists four specific
           places the pond can park energy that aren't part of the brane's
@@ -124,7 +124,7 @@ export default function PlainPlasma() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="reconnection" eyebrow="where this might help" heading="The reconnection question.">
+      <TPSection anchor="reconnection" eyebrow="where this might help" heading="The reconnection question">
         <TPBody>
           Magnetic reconnection — the sudden rearrangement of field
           topology in a conducting fluid — is one of the central stress tests
@@ -161,7 +161,7 @@ export default function PlainPlasma() {
         </div>
       </TPSection>
 
-      <TPSection anchor="caveats" eyebrow="honest caveats" heading="Where we stand.">
+      <TPSection anchor="caveats" eyebrow="honest caveats" heading="Where we stand">
         <TPBody>
           The fluid picture reproduces standard ideal MHD under the paper's
           controlled brane/zero-mode assumptions. The hidden-channel story is
@@ -180,7 +180,7 @@ export default function PlainPlasma() {
 
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Next: what ripples in the pond actually are.">
+      <TPSection anchor="next" eyebrow="up next" heading="Next: what ripples in the pond actually are">
         <TPBody>
           We've now extracted gravity, electromagnetism, and plasma behaviour
           from the throat-and-fluid picture. The one piece we haven't

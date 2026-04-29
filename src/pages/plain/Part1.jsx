@@ -48,7 +48,7 @@ export default function PlainPart1() {
       <TPSection
         anchor="picture"
         eyebrow="the picture"
-        heading="Imagine a perfectly still pond."
+        heading="Imagine a perfectly still pond"
       >
         <TPBody>
           Only, instead of being a flat surface in our ordinary world, the pond
@@ -69,15 +69,15 @@ export default function PlainPart1() {
             plateNum: 'plate 01',
             plateTitle: 'the still pond, disturbed',
             plateTag: 'metaphor · plain english',
-            medium: 'the pond — the fluid everywhere',
+            medium: 'the fluid filling space',
             ripple: 'a ripple — a disturbance spreading',
-            defect: "a knot — a persistent pattern that won't unwind",
-            speedLimit: 'ripples have a top speed',
+            defect: ['a defect — a stable', 'pattern of the fluid'],
+            speedLimit: 'signals have a top speed',
             yAxis: 'here',
             xAxis: 'there →',
             mediumShort: 'pond',
             rippleShort: 'ripple',
-            defectShort: 'knot',
+            defectShort: 'defect',
             braneShort: 'what we see',
           }}
         />
@@ -86,22 +86,22 @@ export default function PlainPart1() {
       <TPSection
         anchor="ripples"
         eyebrow="ripples"
-        heading="The ripples we use as signals have a top speed."
+        heading="The ripples we use as signals have a top speed"
       >
         <TPBody>
           Real ponds have a maximum ripple speed — set by the water itself. Push
           harder, the ripple doesn't go faster in that simple wave regime; it
           just gets bigger. The fluid model has a characteristic signal speed
-          too. In the long-wavelength brane limit, the speed used by light and
-          by operational clocks is the one we call <em>c</em>.
+          too. In the clean long-wavelength case used later, the relevant
+          ripples move at the speed we call <em>c</em>.
         </TPBody>
         <TPBody>
           This is the first thing worth sitting with. In this picture, light is
-          not dropped in as a separate ingredient; it is the brane-readable wave
-          sector of the medium, under the controlled assumptions where the
-          effective Maxwell and signal-speed reductions apply. The speed limit
-          is therefore a property of that wave sector, not a rule handed down
-          from above.
+          not dropped in as a separate ingredient. It is modeled as one of the
+          medium's signal-carrying ripples, in the clean regime where the math
+          reduces to ordinary electromagnetic waves. The speed limit comes from
+          how those ripples move through the medium; it is not imposed from
+          outside.
         </TPBody>
 
         <TPCallout kind="note">
@@ -113,20 +113,19 @@ export default function PlainPart1() {
       </TPSection>
 
       <TPSection
-        anchor="knots"
-        eyebrow="patterns that refuse to untie"
-        heading="And every once in a while, a disturbance gets stuck."
+        anchor="defects"
+        eyebrow="stable patterns"
+        heading="And every once in a while, a disturbance gets stuck"
       >
         <TPBody>
           Ripples spread out and fade. But the pond can also host another kind
-          of pattern — one that doesn't fade. A little whorl of water that
-          circles back on itself and, for geometric reasons, has no way to
-          untie. A <em>knot</em>, if you like.
+          of pattern: a stable <em>defect</em>. Instead of dissolving back into
+          the background, a defect keeps its identity.
         </TPBody>
         <TPBody>
-          These knots have the remarkable property of acting like objects. They
+          Defects have the remarkable property of acting like objects. They
           have a position. A shape. A sort of mass. Bump one and it moves. Bring
-          two close and they feel each other. In the Fluid Spacetime picture,{' '}
+          two close and they can affect each other. In the Fluid Spacetime picture,{' '}
           <strong style={{ color: 'var(--ink-1)' }}>
             what we usually call a particle is modeled as a defect of this kind
           </strong>{' '}
@@ -147,11 +146,11 @@ export default function PlainPart1() {
           {[
             {
               k: 'Ripples',
-              v: 'Fade. Carry energy. In the brane signal sector, their long-wavelength speed is c.',
+              v: 'Travel. Carry energy and signals. Photons and wave-like disturbances belong here; they are not stable defect cores.',
             },
             {
-              k: 'Knots',
-              v: 'Stay. Carry identity. In this program, they are the particle-like defect sector.',
+              k: 'Defects',
+              v: 'Stay. Carry identity. In this program, they are the particle-like sector.',
             },
           ].map((c) => (
             <div
@@ -188,7 +187,7 @@ export default function PlainPart1() {
       <TPSection
         anchor="why"
         eyebrow="why bother"
-        heading="A metaphor you can do math with is not just a metaphor."
+        heading="A metaphor you can do math with is not just a metaphor"
       >
         <TPBody>
           Lots of physics books reach for the pond metaphor and then quickly
@@ -200,7 +199,7 @@ export default function PlainPart1() {
         <TPBody>
           So when you meet the word <em>fluid</em> on this site, read it both
           ways. On the plain-English pages, it's the still pond, the spreading
-          ripple, the knot that won't untie. On the technical pages, it's a
+          ripple, the stable defect. On the technical pages, it's a
           very specific kind of mathematical object with a stated equation of
           state and declared rules of behavior. Both describe the same thing.
           The first is easier to hold in your head; the second is what gets
@@ -211,7 +210,7 @@ export default function PlainPart1() {
       <TPSection
         anchor="next"
         eyebrow="up next"
-        heading="Next: what happens when the perfect pond breaks."
+        heading="Next: what happens when the perfect pond breaks"
       >
         <TPBody>
           A perfect medium with perfect ripples is elegant, but you can't make

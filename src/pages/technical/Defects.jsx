@@ -43,7 +43,7 @@ export default function TechnicalDefects() {
       <TPSection
         anchor="order-param"
         eyebrow="matter sector · order parameter"
-        heading="ψ is a complex scalar; ρ = |ψ|² is the hydrodynamic density."
+        heading="ψ is a complex scalar; ρ = |ψ|² is the hydrodynamic density"
       >
         <TPBody>
           Following the Madelung decomposition{" "}
@@ -73,7 +73,7 @@ export default function TechnicalDefects() {
       <TPSection
         anchor="winding"
         eyebrow="winding invariant · π₁(S¹)"
-        heading="The winding integer is a homotopy invariant."
+        heading="The winding integer is a homotopy invariant"
       >
         <TPBody>
           Let <Tex tex="\gamma" /> be a small closed loop in a 2D slice
@@ -112,7 +112,7 @@ export default function TechnicalDefects() {
       <TPSection
         anchor="stab"
         eyebrow="stability"
-        heading="Stability is kinematic, not dynamical."
+        heading="Stability is kinematic, not dynamical"
       >
         <TPBody>
           A crucial feature: the persistence of an isolated winding defect is a
@@ -153,7 +153,7 @@ export default function TechnicalDefects() {
       <TPSection
         anchor="energy"
         eyebrow="energetics · controlled reduction"
-        heading="Core energetics are a controlled scaling target."
+        heading="Core energetics are a controlled scaling target"
       >
         <TPBody>
           The current source record supports order-of-magnitude energetics for
@@ -183,7 +183,7 @@ export default function TechnicalDefects() {
         </div>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What this does not yet include.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What this does not yet include">
         <TPBody>
           Two essential refinements remain. First, defects acquire structure
           along a direction that is not part of the brane's 3D slice — the

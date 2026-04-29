@@ -49,7 +49,7 @@ export default function TechnicalEM() {
       <TPSection
         anchor="parent"
         eyebrow="parent 4+1 action"
-        heading="Maxwell kinetic term, weighted by a localization profile."
+        heading="Maxwell kinetic term, weighted by a localization profile"
       >
         <TPBody>
           Introduce a real gauge potential <Tex tex="A_M(x,w,t)" /> with{" "}
@@ -80,7 +80,7 @@ export default function TechnicalEM() {
       <TPSection
         anchor="zero-mode"
         eyebrow="zero-mode reduction · controlled"
-        heading="Ansatz for the brane-localized gauge modes."
+        heading="Ansatz for the brane-localized gauge modes"
       >
         <TPBody>
           The brane Maxwell limit uses the far-field zero-mode assumptions:
@@ -114,7 +114,7 @@ export default function TechnicalEM() {
       <TPSection
         anchor="charge"
         eyebrow="observable charge"
-        heading="Thickness-controlled coupling."
+        heading="Thickness-controlled coupling"
       >
         <TPBody>
           A throat with microscopic branch coupling{" "}
@@ -154,7 +154,7 @@ export default function TechnicalEM() {
       <TPSection
         anchor="mixed"
         eyebrow="mixed channels"
-        heading="What the zero-mode reduction leaves out."
+        heading="What the zero-mode reduction leaves out"
       >
         <TPBody>
           The zero-mode closure suppresses several channels that are not
@@ -205,7 +205,7 @@ export default function TechnicalEM() {
       <TPSection
         anchor="gauge"
         eyebrow="gauge structure"
-        heading="Choice of gauge on Σ is free; mixed gauge is not."
+        heading="Choice of gauge on Σ is free; mixed gauge is not"
       >
         <TPBody>
           The brane-reduced action is gauge-invariant under{" "}
@@ -227,7 +227,7 @@ export default function TechnicalEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this">
         <TPBody>
           The plasma chapter (topic 07) lifts the single-throat charge to a
           multi-species charged medium and asks how MHD emerges. The light

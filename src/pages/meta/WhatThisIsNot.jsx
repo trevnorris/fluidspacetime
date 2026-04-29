@@ -42,7 +42,7 @@ export default function MetaWhatThisIsNot() {
       <TPSection
         anchor="what-it-is"
         eyebrow="12.1 · what this program is"
-        heading="A single parent action, and a ledger of what follows from it."
+        heading="A single parent action, and a ledger of what follows from it"
       >
         <TPBody>
           The program starts from one declared object: a 4+1 dimensional
@@ -62,7 +62,7 @@ export default function MetaWhatThisIsNot() {
       <TPSection
         anchor="what-it-is-not"
         eyebrow="12.2 · the three misreadings"
-        heading="Three ways to misread this program, and how to avoid them."
+        heading="Three ways to misread this program, and how to avoid them"
       >
         <MisreadingRow
           n="01"
@@ -200,7 +200,7 @@ export default function MetaWhatThisIsNot() {
       <TPSection
         anchor="scope"
         eyebrow="12.4 · scope"
-        heading="What the program does not address."
+        heading="What the program does not address"
       >
         <TPBody>
           The program is a mechanical-fluid picture of{" "}
@@ -223,7 +223,7 @@ export default function MetaWhatThisIsNot() {
       <TPSection
         anchor="tone"
         eyebrow="12.5 · tone"
-        heading="One last disclaimer, about tone."
+        heading="One last disclaimer, about tone"
       >
         <TPCallout>
           Parts of this site read like a physics textbook. They are not. They

@@ -31,7 +31,7 @@ export default function PlainDefects() {
         </TPLede>
       </section>
 
-      <TPSection anchor="flaw" eyebrow="the flaw" heading="Some patterns just can't be smoothed out.">
+      <TPSection anchor="flaw" eyebrow="the flaw" heading="Some patterns just can't be smoothed out">
         <TPBody>
           Lay a bedsheet on a table and smooth it. Most wrinkles come out with a
           hand-sweep. But if you pinch one spot and twist, you can produce a
@@ -53,7 +53,7 @@ export default function PlainDefects() {
         <DefectDiagramPlain />
       </TPSection>
 
-      <TPSection anchor="types" eyebrow="the family" heading="Three kinds of stubborn.">
+      <TPSection anchor="types" eyebrow="the family" heading="Three kinds of stubborn">
         <TPBody>
           Defects come in families, distinguished by how they're stuck. The
           ones the Fluid Spacetime program cares about most share a property:
@@ -86,7 +86,7 @@ export default function PlainDefects() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="count" eyebrow="counting" heading="Defects carry a number — and that number never changes.">
+      <TPSection anchor="count" eyebrow="counting" heading="Defects carry a number — and that number never changes">
         <TPBody>
           Here's the strange and useful thing. Each defect carries an integer
           label. Call it a <em>winding number</em> for short. You can compute it by
@@ -115,7 +115,7 @@ export default function PlainDefects() {
       <TPSection
         anchor="what"
         eyebrow="so what"
-        heading="The proposal: stable particle-like objects are defects."
+        heading="The proposal: stable particle-like objects are defects"
       >
         <TPBody>
           That's the proposal. Some particle labels are topological branch data,

@@ -37,7 +37,7 @@ export default function PlainEM() {
         </TPLede>
       </section>
 
-      <TPSection anchor="puncture" eyebrow="the puncture, not the drain" heading="A different way a throat can behave.">
+      <TPSection anchor="puncture" eyebrow="the puncture, not the drain" heading="A different way a throat can behave">
         <TPBody>
           Picture the hidden direction as a two-sided axis: there's a +w
           half above the brane and a −w half below. A plain gravitational
@@ -64,7 +64,7 @@ export default function PlainEM() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="how-much" eyebrow="how much charge?" heading="Thickness sets the strength; sign sets the direction.">
+      <TPSection anchor="how-much" eyebrow="how much charge?" heading="Thickness sets the strength; sign sets the direction">
         <TPBody>
           The brane isn't infinitely thin. It has a little thickness along
           the hidden direction — a localization profile that determines how
@@ -85,7 +85,7 @@ export default function PlainEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="circulation" eyebrow="magnetic circulation" heading="Magnetism is the swirl channel, not the puncture sign.">
+      <TPSection anchor="circulation" eyebrow="magnetic circulation" heading="Magnetism is the swirl channel, not the puncture sign">
         <TPBody>
           The magnetic side of the story is different from electric charge.
           Electric charge is the throat's orientation along the hidden
@@ -117,7 +117,7 @@ export default function PlainEM() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="maxwell" eyebrow="from bulk gauge rules to Maxwell" heading="When Maxwell's equations appear.">
+      <TPSection anchor="maxwell" eyebrow="from bulk gauge rules to Maxwell" heading="When Maxwell's equations appear">
         <TPBody>
           The model starts this sector with a localized 4+1 Maxwell field. If
           the brane-facing gauge field is dominated by its zero mode, and if
@@ -137,7 +137,7 @@ export default function PlainEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="firewall" eyebrow="charge and magnetism" heading="Charge and circulation are both electromagnetic, but not the same channel.">
+      <TPSection anchor="firewall" eyebrow="charge and magnetism" heading="Charge and circulation are both electromagnetic, but not the same channel">
         <TPBody>
           The fluid picture has two quite different things that both
           <em> could</em> be called "charge" if you're not careful. They
@@ -190,7 +190,7 @@ export default function PlainEM() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Coming up: when you have many charged and circulating throats.">
+      <TPSection anchor="next" eyebrow="up next" heading="Coming up: when you have many charged and circulating throats">
         <TPBody>
           A single charged or circulating throat is instructive. A whole
           population of them — interacting with each other and with the

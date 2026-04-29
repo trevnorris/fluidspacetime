@@ -43,7 +43,7 @@ export default function TechnicalAtoms() {
       <TPSection
         anchor="coulomb"
         eyebrow="Coulomb limit"
-        heading="The atomic sector starts from the controlled brane Maxwell reduction."
+        heading="The atomic sector starts from the controlled brane Maxwell reduction"
       >
         <TPBody>
           In the far-field zero-mode limit, an opposite-charge pair inherits the
@@ -72,7 +72,7 @@ export default function TechnicalAtoms() {
       <TPSection
         anchor="spectrum"
         eyebrow="hydrogenic target"
-        heading="The current source record supports the Bohr-scale reduction, not the full spectrum."
+        heading="The current source record supports the Bohr-scale reduction, not the full spectrum"
       >
         <TPBody>
           The clean one-body variational reduction gives the familiar Bohr
@@ -105,7 +105,7 @@ export default function TechnicalAtoms() {
       <TPSection
         anchor="gfactor"
         eyebrow="g-factor and anomaly"
-        heading="The current g−2 package narrows the miss to one branch-selection datum."
+        heading="The current g−2 package narrows the miss to one branch-selection datum"
       >
         <TPBody>
           The site should present the anomaly story in the same way it presents
@@ -140,7 +140,7 @@ export default function TechnicalAtoms() {
       <TPSection
         anchor="targets"
         eyebrow="open targets"
-        heading="What still belongs on the ledger."
+        heading="What still belongs on the ledger"
       >
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 16 }}>
           <li>Document a clean current-paper derivation of the full hydrogenic spectrum and excited-state structure if one exists in the stack.</li>
@@ -149,7 +149,7 @@ export default function TechnicalAtoms() {
         </ul>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this">
         <TPBody>
           Topic 10 shares the same style of open bridge problem in the outgoing
           sector. Topic 11 is where the branch data behind both the PN and the

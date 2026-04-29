@@ -43,7 +43,7 @@ export default function TechnicalLight() {
       <TPSection
         anchor="speed"
         eyebrow="characteristic speed"
-        heading="The EOS fixes the small-disturbance propagation speed."
+        heading="The EOS fixes the small-disturbance propagation speed"
       >
         <TPBody>
           In the parent GNLS matter sector the background sound speed is
@@ -68,7 +68,7 @@ export default function TechnicalLight() {
       <TPSection
         anchor="maxwell"
         eyebrow="controlled brane limit"
-        heading="The familiar 3+1 propagation law comes from the localized Maxwell zero mode."
+        heading="The familiar 3+1 propagation law comes from the localized Maxwell zero mode"
       >
         <TPBody>
           The Maxwell paper derives a localized 4+1 gauge sector and shows that,
@@ -93,7 +93,7 @@ export default function TechnicalLight() {
       <TPSection
         anchor="kk"
         eyebrow="KK corrections"
-        heading="Profile-dependent deviations appear above the vacuum Maxwell limit."
+        heading="Profile-dependent deviations appear above the vacuum Maxwell limit"
       >
         <TPBody>
           For a Gaussian localization profile, the Maxwell paper derives a
@@ -118,7 +118,7 @@ export default function TechnicalLight() {
       <TPSection
         anchor="lorentz"
         eyebrow="brane covariance"
-        heading="Observer-independent propagation belongs to the controlled brane law."
+        heading="Observer-independent propagation belongs to the controlled brane law"
       >
         <TPBody>
           In the zero-mode Maxwell reduction, the brane-to-brane response depends
@@ -132,7 +132,7 @@ export default function TechnicalLight() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What this page supports.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What this page supports">
         <TPBody>
           Topic 09 should treat atomic physics as a carry-forward Coulomb-limit
           target of this reduction, not as a finished precision-hydrogen claim.

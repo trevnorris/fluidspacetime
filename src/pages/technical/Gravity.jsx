@@ -42,7 +42,7 @@ export default function TechnicalGravity() {
       <TPSection
         anchor="continuity"
         eyebrow="exact projected continuity"
-        heading="Projection introduces a leakage source; it does not close to a 3D fluid automatically."
+        heading="Projection introduces a leakage source; it does not close to a 3D fluid automatically"
       >
         <TPBody>
           Given a normalized projection kernel <Tex tex="W(w)" />, the paper
@@ -66,7 +66,7 @@ export default function TechnicalGravity() {
       <TPSection
         anchor="helmholtz"
         eyebrow="Helmholtz split"
-        heading="The Poisson hook starts as an exact identity for the brane velocity potential."
+        heading="The Poisson hook starts as an exact identity for the brane velocity potential"
       >
         <TPBody>
           Where <Tex tex="\rho_{\rm brane} > 0" />, define the brane velocity
@@ -95,7 +95,7 @@ export default function TechnicalGravity() {
       <TPSection
         anchor="quasi-static"
         eyebrow="Poisson regime · controlled"
-        heading="Newtonian behaviour appears when the explicit correction terms are parametrically small."
+        heading="Newtonian behaviour appears when the explicit correction terms are parametrically small"
       >
         <TPBody>
           In the quasi-static, longitudinal-dominant regime with slowly varying
@@ -121,7 +121,7 @@ export default function TechnicalGravity() {
       <TPSection
         anchor="throat-source"
         eyebrow="localized source regime"
-        heading="A throat enters the Newtonian limit through a localized effective source."
+        heading="A throat enters the Newtonian limit through a localized effective source"
       >
         <TPBody>
           In the localized-source regime one writes
@@ -145,7 +145,7 @@ export default function TechnicalGravity() {
       <TPSection
         anchor="scope"
         eyebrow="scope · what this actually supports"
-        heading="The Poisson hook is the first rung of the PN story, not the whole ladder."
+        heading="The Poisson hook is the first rung of the PN story, not the whole ladder"
       >
         <TPBody>
           The current source record supports the following reading:
@@ -165,7 +165,7 @@ export default function TechnicalGravity() {
         </div>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this">
         <TPBody>
           Topic 10 takes the Newtonian hook and climbs the declared PN ladder.
           Topic 06 gives the analogous controlled brane reduction for

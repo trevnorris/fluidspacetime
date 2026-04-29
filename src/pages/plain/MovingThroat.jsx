@@ -32,7 +32,7 @@ export default function PlainMovingThroat() {
         </TPLede>
       </section>
 
-      <TPSection anchor="what" eyebrow="what's on the page" heading="A moving boundary is a hard problem.">
+      <TPSection anchor="what" eyebrow="what's on the page" heading="A moving boundary is a hard problem">
         <TPBody>
           The simplest way to describe a throat is as a moving boundary in the
           pond — a finite opening from the brane into a bulk conduit. Outside
@@ -62,7 +62,7 @@ export default function PlainMovingThroat() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="why-hard" eyebrow="why it's hard" heading="Three kinds of difficulty stacked.">
+      <TPSection anchor="why-hard" eyebrow="why it's hard" heading="Three kinds of difficulty stacked">
         <TPBody>
           The moving-throat PDE isn't hard for one reason — it's hard for
           several at once:
@@ -101,7 +101,7 @@ export default function PlainMovingThroat() {
         </div>
       </TPSection>
 
-      <TPSection anchor="what-closes" eyebrow="what it closes" heading="Many open items pass through the same gate.">
+      <TPSection anchor="what-closes" eyebrow="what it closes" heading="Many open items pass through the same gate">
         <TPBody>
           Here's why this chapter matters out of proportion to its length.
           Many <em>open</em> entries from earlier in the program point back at
@@ -143,7 +143,7 @@ export default function PlainMovingThroat() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="progress" eyebrow="progress" heading="What's been done.">
+      <TPSection anchor="progress" eyebrow="progress" heading="What's been done">
         <TPBody>
           Three partial windows are already on the table:
         </TPBody>
@@ -180,7 +180,7 @@ export default function PlainMovingThroat() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="stance" eyebrow="honest stance" heading="Where the program sits.">
+      <TPSection anchor="stance" eyebrow="honest stance" heading="Where the program sits">
         <TPBody>
           The framework is in the shape a good physics program should be in
           at this stage: the structure is laid out, large sections are
@@ -216,7 +216,7 @@ export default function PlainMovingThroat() {
         </div>
       </TPSection>
 
-      <TPSection anchor="end" eyebrow="end of the book" heading="Where the thread ends.">
+      <TPSection anchor="end" eyebrow="end of the book" heading="Where the thread ends">
         <TPBody>
           That's the whole argument, start to finish. A stiff pond; some
           defects in it; a single hidden direction; familiar rules appearing as

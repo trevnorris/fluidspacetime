@@ -44,7 +44,7 @@ export default function TechnicalThroats() {
       <TPSection
         anchor="ansatz"
         eyebrow="effective throat geometry"
-        heading="The throat is a surface/open conduit, not a pointlike zero."
+        heading="The throat is a surface/open conduit, not a pointlike zero"
       >
         <TPBody>
           Place the mouth near <Tex tex="x_0" /> on the brane and use local
@@ -88,7 +88,7 @@ export default function TechnicalThroats() {
       <TPSection
         anchor="charges"
         eyebrow="winding and charge branch"
-        heading="Winding and electric sign are separate data."
+        heading="Winding and electric sign are separate data"
       >
         <TPBody>
           The winding integer <Tex tex="n \in \mathbb{Z}" /> counts the phase
@@ -125,7 +125,7 @@ export default function TechnicalThroats() {
       <TPSection
         anchor="bcs"
         eyebrow="boundary conditions"
-        heading="Mouth, interior support, and open exit."
+        heading="Mouth, interior support, and open exit"
       >
         <TPBody>
           A throat is specified by boundary data at three locations:
@@ -157,7 +157,7 @@ export default function TechnicalThroats() {
       <TPSection
         anchor="projected"
         eyebrow="brane projection of a throat"
-        heading="What the brane observer reads."
+        heading="What the brane observer reads"
       >
         <TPBody>
           Applying the projection of topic 03 to a throat produces a pair of
@@ -194,7 +194,7 @@ export default function TechnicalThroats() {
       <TPSection
         anchor="mixed"
         eyebrow="mixed channels resurface here"
-        heading="Mixed sector near a throat is not negligible."
+        heading="Mixed sector near a throat is not negligible"
       >
         <TPBody>
           The suppressed channels of topic 03 — <Tex tex="A_w,\ J^w,\ F_{\mu w},\ E_w,\ C_a = F_{a w}" /> —
@@ -217,7 +217,7 @@ export default function TechnicalThroats() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="end of part I" heading="What Part II does with this.">
+      <TPSection anchor="next" eyebrow="end of part I" heading="What Part II does with this">
         <TPBody>
           Part II will run the throat through each of the familiar force
           sectors. Gravity (topic 05) reads the projected inflow{" "}

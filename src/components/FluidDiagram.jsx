@@ -3,6 +3,10 @@ import React from 'react';
 // Shared diagram used in Part 1 · The Universe as a Fluid.
 // Same geometry on both tracks — only the labels change.
 export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
+  const defectLines = Array.isArray(labels.defect)
+    ? labels.defect
+    : [labels.defect];
+
   return (
     <div
       style={{
@@ -39,11 +43,15 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         style={{ width: '100%', height: 'auto', display: 'block' }}
       >
         <defs>
-          <linearGradient id="fd-medium" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor={accent} stopOpacity="0.22" />
-            <stop offset="60%" stopColor={accent} stopOpacity="0.10" />
-            <stop offset="100%" stopColor={accent} stopOpacity="0.02" />
+          <linearGradient id="fd-medium" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor={accent} stopOpacity="0.16" />
+            <stop offset="48%" stopColor={accent} stopOpacity="0.08" />
+            <stop offset="100%" stopColor="#0a0d18" stopOpacity="0.12" />
           </linearGradient>
+          <radialGradient id="fd-ripple-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor={accent} stopOpacity="0.22" />
+            <stop offset="100%" stopColor={accent} stopOpacity="0" />
+          </radialGradient>
           <radialGradient id="fd-defect" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="#e67ac6" stopOpacity="0.9" />
             <stop offset="60%" stopColor="#e67ac6" stopOpacity="0.2" />
@@ -52,17 +60,17 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         </defs>
 
         {/* Medium — the fluid */}
-        <rect x="0" y="80" width="800" height="260" fill="url(#fd-medium)" />
+        <rect x="0" y="0" width="800" height="420" fill="url(#fd-medium)" />
 
-        {/* Faint horizontal streaks — suggests a medium with structure */}
-        <g opacity="0.55">
-          {Array.from({ length: 13 }).map((_, i) => (
+        {/* Faint structure lines — a continuous medium, not a chart. */}
+        <g opacity="0.44">
+          {Array.from({ length: 12 }).map((_, i) => (
             <line
               key={i}
-              x1="40"
-              y1={100 + i * 18}
-              x2="760"
-              y2={100 + i * 18}
+              x1="46"
+              y1={68 + i * 24}
+              x2="754"
+              y2={68 + i * 24}
               stroke={accent}
               strokeOpacity={0.08 + (i % 3) * 0.02}
               strokeWidth="0.7"
@@ -71,7 +79,8 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         </g>
 
         {/* Ripple — concentric arcs from a point on the left */}
-        <g transform="translate(200, 210)">
+        <g transform="translate(235, 206)">
+          <circle cx="0" cy="0" r="150" fill="url(#fd-ripple-glow)" />
           {[28, 58, 92, 128].map((r, i) => (
             <circle
               key={r}
@@ -88,8 +97,8 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         </g>
 
         {/* Defect — localized mouth on the right */}
-        <g transform="translate(560, 210)">
-          <circle cx="0" cy="0" r="46" fill="url(#fd-defect)" />
+        <g transform="translate(535, 240)">
+          <circle cx="0" cy="0" r="52" fill="url(#fd-defect)" />
           <ellipse
             cx="0"
             cy="0"
@@ -111,28 +120,20 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
             opacity="0.65"
           />
           <circle cx="0" cy="0" r="3.5" fill="#f0c26b" />
-          <g stroke="#e67ac6" strokeWidth="0.8" opacity="0.4" fill="none">
-            <path d="M -90 -4 L -50 -3" />
-            <path d="M -90 4 L -50 3" />
-            <path d="M 90 -4 L 50 -3" />
-            <path d="M 90 4 L 50 3" />
-          </g>
         </g>
 
-        {/* Speed-limit marker — dashed line, labeled c */}
-        <g>
-          <line
-            x1="100"
-            y1="370"
-            x2="340"
-            y2="370"
-            stroke="var(--ink-3)"
-            strokeWidth="0.8"
-            strokeDasharray="3 4"
+        {/* Speed-limit marker — a small wave-sector cue, not chart axes. */}
+        <g opacity="0.9">
+          <path
+            d="M 120 344 C 168 332, 202 356, 250 344 S 332 356, 382 344"
+            fill="none"
+            stroke={accent}
+            strokeWidth="1"
+            strokeOpacity="0.58"
           />
           <text
-            x="220"
-            y="388"
+            x="252"
+            y="372"
             textAnchor="middle"
             fill="var(--ink-2)"
             style={{
@@ -145,66 +146,28 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
           </text>
         </g>
 
-        {/* Axis hints */}
-        <g
-          stroke="var(--ink-4)"
-          strokeWidth="0.8"
-          fill="none"
-          opacity="0.8"
-        >
-          <line x1="40" y1="380" x2="40" y2="60" />
-          <path d="M 36 64 L 40 56 L 44 64" />
-          <line x1="40" y1="380" x2="760" y2="380" />
-          <path d="M 756 376 L 764 380 L 756 384" />
-          <text
-            x="50"
-            y="64"
-            fill="var(--ink-3)"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: 10,
-              letterSpacing: '0.08em',
-            }}
-          >
-            {labels.yAxis}
-          </text>
-          <text
-            x="760"
-            y="398"
-            fill="var(--ink-3)"
-            textAnchor="end"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: 10,
-              letterSpacing: '0.08em',
-            }}
-          >
-            {labels.xAxis}
-          </text>
-        </g>
-
         {/* Callouts */}
         <g>
           <line
-            x1="400"
-            y1="120"
-            x2="400"
-            y2="92"
+            x1="448"
+            y1="104"
+            x2="448"
+            y2="76"
             stroke={accent}
             strokeWidth="0.8"
           />
           <line
-            x1="400"
-            y1="92"
-            x2="480"
-            y2="92"
+            x1="448"
+            y1="76"
+            x2="518"
+            y2="76"
             stroke={accent}
             strokeWidth="0.8"
           />
-          <circle cx="400" cy="120" r="2.2" fill={accent} />
+          <circle cx="448" cy="104" r="2.2" fill={accent} />
           <text
-            x="484"
-            y="96"
+            x="524"
+            y="80"
             fill="var(--ink-1)"
             style={{
               fontFamily: 'var(--font-mono)',
@@ -217,24 +180,24 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         </g>
         <g>
           <line
-            x1="280"
-            y1="210"
-            x2="320"
+            x1="320"
+            y1="206"
+            x2="356"
             y2="158"
             stroke={accent}
             strokeWidth="0.8"
           />
           <line
-            x1="320"
+            x1="356"
             y1="158"
-            x2="400"
+            x2="436"
             y2="158"
             stroke={accent}
             strokeWidth="0.8"
           />
-          <circle cx="280" cy="210" r="2.2" fill={accent} />
+          <circle cx="320" cy="206" r="2.2" fill={accent} />
           <text
-            x="404"
+            x="442"
             y="162"
             fill="var(--ink-1)"
             style={{
@@ -248,34 +211,30 @@ export function FluidDiagram({ labels, accent = '#7aa2ff' }) {
         </g>
         <g>
           <line
-            x1="600"
-            y1="210"
-            x2="680"
-            y2="270"
+            x1="570"
+            y1="240"
+            x2="592"
+            y2="240"
             stroke="#e67ac6"
             strokeWidth="0.8"
           />
-          <line
-            x1="680"
-            y1="270"
-            x2="760"
-            y2="270"
-            stroke="#e67ac6"
-            strokeWidth="0.8"
-          />
-          <circle cx="600" cy="210" r="2.2" fill="#e67ac6" />
+          <circle cx="570" cy="240" r="2.2" fill="#e67ac6" />
           <text
-            x="756"
-            y="274"
+            x="600"
+            y="236"
             fill="var(--ink-1)"
-            textAnchor="end"
+            textAnchor="start"
             style={{
               fontFamily: 'var(--font-mono)',
               fontSize: 12,
               letterSpacing: '0.04em',
             }}
           >
-            {labels.defect}
+            {defectLines.map((line, i) => (
+              <tspan key={line} x="600" dy={i === 0 ? 0 : 17}>
+                {line}
+              </tspan>
+            ))}
           </text>
         </g>
       </svg>

@@ -33,7 +33,7 @@ export default function PlainGravity() {
         </TPLede>
       </section>
 
-      <TPSection anchor="drain" eyebrow="the drain" heading="A bathtub drain curves the water around it.">
+      <TPSection anchor="drain" eyebrow="the drain" heading="A bathtub drain curves the water around it">
         <TPBody>
           Fill a bathtub; pull the plug. The water doesn't sit still and
           disappear at a point — it flows inward toward the drain from every
@@ -52,7 +52,7 @@ export default function PlainGravity() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="inflow-visual" eyebrow="schematic simulation" heading="A local inflow field can look like attraction.">
+      <TPSection anchor="inflow-visual" eyebrow="schematic simulation" heading="A local inflow field can look like attraction">
         <TPBody>
           The picture below is not a full fluid solver. It is a schematic of
           the branch used in this chapter: each visible positive-mass throat
@@ -97,7 +97,7 @@ export default function PlainGravity() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="longitudinal" eyebrow="the quiet current" heading="The flow has two parts, and only one of them does gravity.">
+      <TPSection anchor="longitudinal" eyebrow="the quiet current" heading="The flow has two parts, and only one of them does gravity">
         <TPBody>
           Here's a subtlety that pays off later. The pond's flow near a throat
           can be split into two kinds: a part that spreads
@@ -118,7 +118,7 @@ export default function PlainGravity() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="mass" eyebrow="what mass means here" heading="Mass is tied to source strength.">
+      <TPSection anchor="mass" eyebrow="what mass means here" heading="Mass is tied to source strength">
         <TPBody>
           In ordinary physics, mass is one of those words everyone uses but
           nobody defines — it's just a number attached to a particle. In the
@@ -135,7 +135,7 @@ export default function PlainGravity() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="caveats" eyebrow="honest caveats" heading="What this chapter does and doesn't claim.">
+      <TPSection anchor="caveats" eyebrow="honest caveats" heading="What this chapter does and doesn't claim">
         <TPBody>
           The Fluid Spacetime program has a specific, computable version of
           this story. Under a carefully declared set of assumptions — slow
@@ -155,7 +155,7 @@ export default function PlainGravity() {
 
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Coming up: the other behaviour of the same throat.">
+      <TPSection anchor="next" eyebrow="up next" heading="Coming up: the other behaviour of the same throat">
         <TPBody>
           Gravity came from one throat channel — projected inflow. The next
           chapter is about the electromagnetic channel: puncture orientation,

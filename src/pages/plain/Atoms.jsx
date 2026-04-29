@@ -31,7 +31,7 @@ export default function PlainAtoms() {
         </TPLede>
       </section>
 
-      <TPSection anchor="standing" eyebrow="the standing wave" heading="Why bound states are the natural target.">
+      <TPSection anchor="standing" eyebrow="the standing wave" heading="Why bound states are the natural target">
         <TPBody>
           The intuition still goes through. A charged throat plays the role of a
           Coulomb centre. An electron-like defect is a spread-out wave
@@ -50,7 +50,7 @@ export default function PlainAtoms() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="spectrum" eyebrow="the spectrum" heading="Hydrogen has a reduced Bohr-scale result, not a finished full-spectrum theorem.">
+      <TPSection anchor="spectrum" eyebrow="the spectrum" heading="Hydrogen has a reduced Bohr-scale result, not a finished full-spectrum theorem">
         <TPBody>
           The right claim for this page is modest but still interesting: in the
           Coulomb limit, the reduced action produces the familiar Bohr radius
@@ -67,7 +67,7 @@ export default function PlainAtoms() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="g-factor" eyebrow="the electron anomaly" heading="The anomaly story has narrowed, but it is not finished.">
+      <TPSection anchor="g-factor" eyebrow="the electron anomaly" heading="The anomaly story has narrowed, but it is not finished">
         <TPBody>
           The idea is still the same: the electron is not truly pointlike in the
           fluid picture, so its magnetic response should differ slightly from the
@@ -102,7 +102,7 @@ export default function PlainAtoms() {
         </div>
       </TPSection>
 
-      <TPSection anchor="anomalies" eyebrow="what else is on the list" heading="Other targets under the same umbrella.">
+      <TPSection anchor="anomalies" eyebrow="what else is on the list" heading="Other targets under the same umbrella">
         <TPBody>
           Once the remaining branch and finite-size data are under control, the
           same machinery is supposed to feed several precision observables:
@@ -128,7 +128,7 @@ export default function PlainAtoms() {
         </div>
       </TPSection>
 
-      <TPSection anchor="stance" eyebrow="honest stance" heading="QED is the benchmark this page still owes.">
+      <TPSection anchor="stance" eyebrow="honest stance" heading="QED is the benchmark this page still owes">
         <TPBody>
           QED already owns this terrain experimentally. So the right standard
           for the fluid picture is severe: if it wants to talk about atoms and
@@ -138,7 +138,7 @@ export default function PlainAtoms() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Next: the ledger.">
+      <TPSection anchor="next" eyebrow="up next" heading="Next: the ledger">
         <TPBody>
           The next chapter does the same honesty exercise for gravity: which PN
           rungs are already closed in the current hierarchy, and which still

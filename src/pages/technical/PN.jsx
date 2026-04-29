@@ -47,7 +47,7 @@ export default function TechnicalPN() {
       <TPSection
         anchor="setup"
         eyebrow="setup"
-        heading="The ledger lives inside a declared closure hierarchy."
+        heading="The ledger lives inside a declared closure hierarchy"
       >
         <TPBody>
           The bridge and full 1PN papers freeze the lower-order data carried by
@@ -71,7 +71,7 @@ export default function TechnicalPN() {
       <TPSection
         anchor="ledger"
         eyebrow="the ledger · coefficients"
-        heading="One row per PN rung."
+        heading="One row per PN rung"
       >
         <div style={{ margin: "14px 0" }}>
           {[
@@ -173,7 +173,7 @@ export default function TechnicalPN() {
       <TPSection
         anchor="gap"
         eyebrow="the shared gate"
-        heading="2.5PN and 4PN wait on the same outgoing quadrupole normalization."
+        heading="2.5PN and 4PN wait on the same outgoing quadrupole normalization"
       >
         <TPBody>
           The 2.5PN paper writes the odd sector as the standard quadrupole
@@ -199,7 +199,7 @@ export default function TechnicalPN() {
       <TPSection
         anchor="tests"
         eyebrow="experimental cross-checks"
-        heading="What this ledger must eventually answer to."
+        heading="What this ledger must eventually answer to"
       >
         <TPBody>
           Each rung is anchored to familiar tests:
@@ -213,7 +213,7 @@ export default function TechnicalPN() {
         </ul>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What actually remains to be done.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What actually remains to be done">
         <TPBody>
           Topic 11 is not waiting to invent a new 4PN constant. It is waiting
           to realize the passive/outgoing quadrupole normalization on the

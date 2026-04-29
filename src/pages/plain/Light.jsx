@@ -29,7 +29,7 @@ export default function PlainLight() {
         </TPLede>
       </section>
 
-      <TPSection anchor="ripples" eyebrow="ripples first" heading="Why anything has a speed limit.">
+      <TPSection anchor="ripples" eyebrow="ripples first" heading="Why anything has a speed limit">
         <TPBody>
           Take a bathtub full of water and tap the surface. A ripple runs
           outward at a particular speed. That speed isn't an accident — it's
@@ -52,7 +52,7 @@ export default function PlainLight() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="identity" eyebrow="what light is" heading="A specific kind of ripple.">
+      <TPSection anchor="identity" eyebrow="what light is" heading="A specific kind of ripple">
         <TPBody>
           Not every disturbance of the pond is light. A throat moving
           through the pond has a longitudinal, density-sourcing side —
@@ -97,7 +97,7 @@ export default function PlainLight() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="consequences" eyebrow="consequences" heading="What follows from the pond being stiff.">
+      <TPSection anchor="consequences" eyebrow="consequences" heading="What follows from the pond being stiff">
         <TPBody>
           Three famous results of relativity have a medium-mechanism in the
           controlled regime:
@@ -131,7 +131,7 @@ export default function PlainLight() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="dispersion" eyebrow="what's different" heading="Where this picture predicts something new.">
+      <TPSection anchor="dispersion" eyebrow="what's different" heading="Where this picture predicts something new">
         <TPBody>
           If light were only the zero mode of textbook Maxwell theory in
           empty three-space, the brane response would stay exactly Maxwellian
@@ -151,7 +151,7 @@ export default function PlainLight() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Next: atoms.">
+      <TPSection anchor="next" eyebrow="up next" heading="Next: atoms">
         <TPBody>
           Light on its own is one brane-readable mode of the pond. What we
           see it do in practice — illuminate atoms, get absorbed, get emitted

@@ -46,7 +46,7 @@ export default function TechnicalHiddenDirection() {
       <TPSection
         anchor="arena"
         eyebrow="ambient geometry"
-        heading="The spatial arena is four-dimensional; time is a real line."
+        heading="The spatial arena is four-dimensional; time is a real line"
       >
         <TPBody>
           The parent theory lives on the flat manifold{" "}
@@ -76,7 +76,7 @@ export default function TechnicalHiddenDirection() {
       <TPSection
         anchor="projection"
         eyebrow="projection kernel · exact"
-        heading="What the brane measures is the w-average against a fixed kernel W(w)."
+        heading="What the brane measures is the w-average against a fixed kernel W(w)"
       >
         <TPBody>
           Let <Tex tex="\Phi(x,w,t)" /> denote any bulk field. The brane's
@@ -110,7 +110,7 @@ export default function TechnicalHiddenDirection() {
       <TPSection
         anchor="reduction"
         eyebrow="reduction ≠ projection · controlled limit"
-        heading="Brane reduction is an approximation with explicit assumptions."
+        heading="Brane reduction is an approximation with explicit assumptions"
       >
         <TPBody>
           Many of the brane-side equations used downstream are not the exact
@@ -151,7 +151,7 @@ export default function TechnicalHiddenDirection() {
       <TPSection
         anchor="modes"
         eyebrow="mode structure"
-        heading="Suppressed channels along w."
+        heading="Suppressed channels along w"
       >
         <TPBody>
           The zero-mode closure suppresses — but does not remove — several
@@ -193,7 +193,7 @@ export default function TechnicalHiddenDirection() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What this sets up.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What this sets up">
         <TPBody>
           The machinery defined here is applied immediately in topic 04:
           throats are brane-anchored defect geometries whose full profile

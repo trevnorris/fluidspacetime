@@ -30,7 +30,7 @@ export default function PlainHiddenDirection() {
         </TPLede>
       </section>
 
-      <TPSection anchor="flatland" eyebrow="a warmup" heading="Flatland with a ceiling.">
+      <TPSection anchor="flatland" eyebrow="a warmup" heading="Flatland with a ceiling">
         <TPBody>
           Imagine a sheet of paper hovering inside a room. A tiny, flat
           creature lives on the paper. Its whole world is paper: two directions
@@ -73,7 +73,7 @@ export default function PlainHiddenDirection() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="see" eyebrow="what we see" heading="We see the slice — but the slice sees what passes through it.">
+      <TPSection anchor="see" eyebrow="what we see" heading="We see the slice — but the slice sees what passes through it">
         <TPBody>
           A brane observer — that's us — measures things on the slice. A
           defect that extends into the bulk isn't invisible: its <em>trace</em>
@@ -102,7 +102,7 @@ export default function PlainHiddenDirection() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="so-what" eyebrow="why it matters" heading="Two sector lives — one brane view.">
+      <TPSection anchor="so-what" eyebrow="why it matters" heading="Two sector lives — one brane view">
         <TPBody>
           Gravity and electromagnetism will, in the chapters to come, be modeled
           as two different brane-readable channels tied to what a defect does

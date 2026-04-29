@@ -39,7 +39,7 @@ export default function MetaGlossary() {
       <TPSection
         anchor="geometry"
         eyebrow="13.1 · geometry & background"
-        heading="The stage and its coordinates."
+        heading="The stage and its coordinates"
       >
         <GlossaryList entries={[
           { term: "bulk", aliases: ["4+1 bulk", "ambient"], def: "The full 4+1 dimensional space on which the parent action lives. Four spatial dimensions plus time.", ref: "topic 01" },
@@ -55,7 +55,7 @@ export default function MetaGlossary() {
       <TPSection
         anchor="dynamics"
         eyebrow="13.2 · dynamics & sectors"
-        heading="Equations of motion, sectors, and closures."
+        heading="Equations of motion, sectors, and closures"
       >
         <GlossaryList entries={[
           { term: "parent action", aliases: ["bulk action"], def: "The declared 4+1 action for the GNLS / inviscid, irrotational fluid sector, with localized Maxwell added where used. Autonomous wall dynamics require an additional promoted S_Σ action.", ref: "topic 01, 11" },
@@ -74,7 +74,7 @@ export default function MetaGlossary() {
       <TPSection
         anchor="status"
         eyebrow="13.3 · claim-status vocabulary"
-        heading="The badges, in formal definitions."
+        heading="The badges, in formal definitions"
       >
         <StatusTable />
       </TPSection>
@@ -83,7 +83,7 @@ export default function MetaGlossary() {
       <TPSection
         anchor="ledger"
         eyebrow="13.4 · results-ledger terms"
-        heading="Vocabulary that shows up in topic 10."
+        heading="Vocabulary that shows up in topic 10"
       >
         <GlossaryList entries={[
           { term: "PN / post-Newtonian", def: "Expansion of GR dynamics in powers of v/c. 1PN ≡ (v/c)², 2PN ≡ (v/c)⁴, etc.", ref: "topic 10" },
@@ -100,7 +100,7 @@ export default function MetaGlossary() {
       <TPSection
         anchor="notation"
         eyebrow="13.5 · notation"
-        heading="Symbols, in one table."
+        heading="Symbols, in one table"
       >
         <NotationTable />
       </TPSection>

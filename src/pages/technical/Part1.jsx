@@ -47,7 +47,7 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="picture"
         eyebrow="ambient medium · parent action"
-        heading="A complex order parameter ψ(x,w,t) with a declared equation of state."
+        heading="A complex order parameter ψ(x,w,t) with a declared equation of state"
       >
         <TPBody>
           Let <Tex tex="\psi(x,w,t)" /> denote the complex order parameter on the bulk{' '}
@@ -87,7 +87,7 @@ export default function TechnicalPart1() {
             plateTag: 'technical · schematic',
             medium: 'ψ(x,w,t) — bulk order parameter',
             ripple: 'δψ — small disturbance',
-            defect: 'Σ(X,t) — throat worldsheet (defect locus)',
+            defect: ['Σ(X,t) — throat worldsheet', '(defect locus)'],
             speedLimit: 'characteristic propagation speed c',
             yAxis: 'w',
             xAxis: 'x³',
@@ -102,7 +102,7 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="ripples"
         eyebrow="linear sector · phase velocity"
-        heading="Small disturbances inherit a characteristic speed fixed by the EOS."
+        heading="Small disturbances inherit a characteristic speed fixed by the EOS"
       >
         <TPBody>
           Expanding around a uniform background density <Tex tex="\rho_0" />,
@@ -141,7 +141,7 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="knots"
         eyebrow="topological defects · throats"
-        heading="Non-linear solutions with stable topological charge."
+        heading="Non-linear solutions with stable topological charge"
       >
         <TPBody>
           The same parent framework is used to describe non-linear localized
@@ -230,7 +230,7 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="why"
         eyebrow="program posture"
-        heading="Reduction, not analogy."
+        heading="Reduction, not analogy"
       >
         <TPBody>
           The fluid picture is not a metaphor that is subsequently abandoned.
@@ -270,7 +270,7 @@ export default function TechnicalPart1() {
       <TPSection
         anchor="next"
         eyebrow="next · §02"
-        heading="Next: topological stability and the defect catalogue."
+        heading="Next: topological stability and the defect catalogue"
       >
         <TPBody>
           The ambient fluid admits more than one family of stable defect.

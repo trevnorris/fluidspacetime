@@ -50,7 +50,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="reading-order"
         eyebrow="14.1 · reading order"
-        heading="The canonical path through the current program."
+        heading="The canonical path through the current program"
       >
         <TPBody>
           The 4D papers build a tower. A first reader should take the path
@@ -65,7 +65,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="current-program"
         eyebrow="14.2 · current 4D program"
-        heading="The canonical backbone — nine preprints plus one derivation archive."
+        heading="The canonical backbone — nine preprints plus one derivation archive"
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 24 }}>
           <PaperCard
@@ -150,7 +150,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="prior-work"
         eyebrow="14.3 · prior work"
-        heading="The superfluid-defect toy model — six foundational preprints."
+        heading="The superfluid-defect toy model — six foundational preprints"
       >
         <TPBody>
           Before the unified 4D program, an earlier round of papers
@@ -181,7 +181,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="topic-map"
         eyebrow="14.4 · topic → source"
-        heading="Which topic pages lean on which published current 4D paper."
+        heading="Which topic pages lean on which published current 4D paper"
       >
         <TPBody>
           Topic 11 additionally leans on the published moving-throat derivation
@@ -195,7 +195,7 @@ export default function MetaPaperLibrary() {
       <TPSection
         anchor="conventions"
         eyebrow="14.5 · conventions"
-        heading="How to cite back into the library."
+        heading="How to cite back into the library"
       >
         <TPBody>
           Every technical-track page carries one or more{" "}

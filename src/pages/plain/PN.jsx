@@ -29,7 +29,7 @@ export default function PlainPN() {
         </TPLede>
       </section>
 
-      <TPSection anchor="ladder" eyebrow="the ladder" heading="How gravity gets stress-tested.">
+      <TPSection anchor="ladder" eyebrow="the ladder" heading="How gravity gets stress-tested">
         <TPBody>
           Physicists test gravity rung by rung. Newton handles the first pass.
           Then come the post-Newtonian corrections: 1PN, 2PN, 2.5PN, 3PN, 4PN,
@@ -67,7 +67,7 @@ export default function PlainPN() {
         </div>
       </TPSection>
 
-      <TPSection anchor="ledger" eyebrow="the ledger" heading="Where the current source record says the program stands.">
+      <TPSection anchor="ledger" eyebrow="the ledger" heading="Where the current source record says the program stands">
         <TPBody>
           The right way to read the stack today is:
         </TPBody>
@@ -114,7 +114,7 @@ export default function PlainPN() {
         </div>
       </TPSection>
 
-      <TPSection anchor="normalization" eyebrow="the one shared gap" heading="2.5PN and 4PN are waiting on the same thing.">
+      <TPSection anchor="normalization" eyebrow="the one shared gap" heading="2.5PN and 4PN are waiting on the same thing">
         <TPBody>
           This is the main correction to the older site wording. The open issue
           is not “some extra 4PN propagator tweak.” The 4PN paper says the local
@@ -136,7 +136,7 @@ export default function PlainPN() {
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="why" eyebrow="why the ledger matters" heading="The point is honesty about status.">
+      <TPSection anchor="why" eyebrow="why the ledger matters" heading="The point is honesty about status">
         <TPBody>
           A research program earns trust by keeping exact identities, controlled
           reductions, and open branch data separate. The PN stack is where that
@@ -145,7 +145,7 @@ export default function PlainPN() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="up next" heading="Next: the frontier object.">
+      <TPSection anchor="next" eyebrow="up next" heading="Next: the frontier object">
         <TPBody>
           The next chapter is about the moving-throat PDE framework, which is
           where the shared passive/outgoing quadrupole-normalization question is

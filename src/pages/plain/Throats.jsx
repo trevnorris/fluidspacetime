@@ -32,7 +32,7 @@ export default function PlainThroats() {
         </TPLede>
       </section>
 
-      <TPSection anchor="opening" eyebrow="the opening" heading="Picture a funnel in the bedsheet.">
+      <TPSection anchor="opening" eyebrow="the opening" heading="Picture a funnel in the bedsheet">
         <TPBody>
           Go back to the sheet metaphor. Most defects we've met so far were
           local tangles — the sheet pinched at a point. A throat is different:
@@ -52,7 +52,7 @@ export default function PlainThroats() {
         <ThroatDiagramPlain />
       </TPSection>
 
-      <TPSection anchor="anatomy" eyebrow="the anatomy" heading="Mouth, throat, interior.">
+      <TPSection anchor="anatomy" eyebrow="the anatomy" heading="Mouth, throat, interior">
         <TPBody>
           Three words the program uses over and over:
         </TPBody>
@@ -86,7 +86,7 @@ export default function PlainThroats() {
       <TPSection
         anchor="does"
         eyebrow="what a throat does"
-        heading="One object, two behaviours — and both of them matter."
+        heading="One object, two behaviours — and both of them matter"
       >
         <TPBody>
           Here's the reason throats are the star of the show. A throat carries
@@ -146,7 +146,7 @@ export default function PlainThroats() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="caution" eyebrow="honest caveats" heading="What a throat is not.">
+      <TPSection anchor="caution" eyebrow="honest caveats" heading="What a throat is not">
         <TPBody>
           A throat is not a wormhole to another universe. The fluid on either
           side of the neck is the same fluid. It is also not a surface dimple or
@@ -164,7 +164,7 @@ export default function PlainThroats() {
 
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="end of part I" heading="Coming up: gravity, electromagnetism, light.">
+      <TPSection anchor="next" eyebrow="end of part I" heading="Coming up: gravity, electromagnetism, light">
         <TPBody>
           Part II takes the throat and runs it through each of the forces we
           know. Gravity comes first, because it's the cleanest: inflow, and

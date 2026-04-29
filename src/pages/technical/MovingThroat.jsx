@@ -44,7 +44,7 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="lift"
         eyebrow="geometry lift"
-        heading="The first framework move is to represent the throat as a moving surface."
+        heading="The first framework move is to represent the throat as a moving surface"
       >
         <TPBody>
           The framework paper's starting point is the geometry lift
@@ -69,7 +69,7 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="reduced"
         eyebrow="what the paper actually fixes"
-        heading="The paper fixes a linearized coupled response language and the branch data it needs."
+        heading="The paper fixes a linearized coupled response language and the branch data it needs"
       >
         <TPBody>
           The moving-throat framework is best read as a map from a candidate
@@ -92,7 +92,7 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="outputs"
         eyebrow="operational outputs"
-        heading="The first two observables are the isotropic normalization test and the weak-axisymmetric slope."
+        heading="The first two observables are the isotropic normalization test and the weak-axisymmetric slope"
       >
         <EqCard
           label="◇ first framework outputs"
@@ -111,7 +111,7 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="nonclaims"
         eyebrow="non-claims"
-        heading="What the current paper explicitly refuses to claim."
+        heading="What the current paper explicitly refuses to claim"
       >
         <ul style={{ color: "var(--ink-2)", lineHeight: 1.8, paddingLeft: 24, fontSize: 15.5 }}>
           <li>No complete first-principles solution of the nonlinear moving-throat PDE.</li>
@@ -131,7 +131,7 @@ export default function TechnicalMovingThroat() {
       <TPSection
         anchor="ledger"
         eyebrow="downstream use"
-        heading="Why this still gates so much."
+        heading="Why this still gates so much"
       >
         <TPBody>
           Once a real target-blind branch returns the frozen data in{" "}

@@ -45,7 +45,7 @@ export default function TechnicalPlasma() {
       <TPSection
         anchor="species"
         eyebrow="multi-species setup"
-        heading="A brane plasma is a collection of charged throats advected by the ambient fluid."
+        heading="A brane plasma is a collection of charged throats advected by the ambient fluid"
       >
         <TPBody>
           Label species by <Tex tex="s" /> with charge sign <Tex tex="\eta_s" />,
@@ -71,7 +71,7 @@ export default function TechnicalPlasma() {
       <TPSection
         anchor="ideal"
         eyebrow="ideal MHD limit · controlled reduction"
-        heading="Frozen-in flux emerges when the leakage channel is quiet."
+        heading="Frozen-in flux emerges when the leakage channel is quiet"
       >
         <TPBody>
           Collapse the two-species plasma to a single-fluid description by
@@ -105,7 +105,7 @@ export default function TechnicalPlasma() {
       <TPSection
         anchor="non-ideal"
         eyebrow="non-ideal corrections · open"
-        heading="Standard closures stay standard; 4D adds a diagnostic topology EMF."
+        heading="Standard closures stay standard; 4D adds a diagnostic topology EMF"
       >
         <TPBody>
           When the ideal-MHD assumptions fail, the familiar extended-MHD terms
@@ -148,7 +148,7 @@ export default function TechnicalPlasma() {
       <TPSection
         anchor="stress"
         eyebrow="projection stress · open"
-        heading="An uncompleted term in the brane stress tensor."
+        heading="An uncompleted term in the brane stress tensor"
       >
         <TPBody>
           The exact projection of a bulk equation onto{" "}
@@ -177,7 +177,7 @@ export default function TechnicalPlasma() {
       <TPSection
         anchor="reconnection"
         eyebrow="reconnection · hypothesis"
-        heading="A geometric candidate for fast reconnection."
+        heading="A geometric candidate for fast reconnection"
       >
         <TPBody>
           In ideal MHD the magnetic flux of topic 06's zero-mode is frozen
@@ -206,7 +206,7 @@ export default function TechnicalPlasma() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this.">
+      <TPSection anchor="next" eyebrow="forward reference" heading="What uses this">
         <TPBody>
           The wave-propagation chapter (topic 08) inherits the same
           zero-mode / higher-mode structure and uses it to discuss controlled
