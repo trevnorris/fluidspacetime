@@ -31,41 +31,38 @@ export default function PlainDefects() {
         </TPLede>
       </section>
 
-      <TPSection anchor="flaw" eyebrow="the flaw" heading="Some patterns just can't be smoothed out">
+      <TPSection anchor="flaw" eyebrow="the flaw" heading="A wave passes; a drain stays put">
         <TPBody>
-          Lay a bedsheet on a table and smooth it. Most wrinkles come out with a
-          hand-sweep. But if you pinch one spot and twist, you can produce a
-          pinched point that <em>will not</em> go flat, no matter how you push
-          the cloth around it. The twist has to go somewhere. The only way to
-          remove it is to physically cut the sheet or drag the pinch off the
-          edge.
+          A ripple moves through water and keeps going. A drain is different:
+          it is a localized place where the surface flow has somewhere else to
+          go. Water can rush straight into it. It can also swirl on the way in,
+          but the swirl is not the drain.
         </TPBody>
         <TPBody>
-          That stubborn pinch is a <strong style={{ color: "var(--ink-1)" }}>defect</strong>.
-          Our pond has them too. The fluid is described by a kind of local
-          “state” at every point. In most places, the state varies smoothly from
-          neighbor to neighbor. But once in a while — for pure geometric reasons —
-          the state twists up on itself in a way that can't be unwound by any
-          local fiddling. That twist is stuck. And because it's stuck, it
-          behaves like a <em>thing</em>.
+          That is the role of a <strong style={{ color: "var(--ink-1)" }}>defect</strong>{' '}
+          in this story. It is not extra stuff dropped into the fluid. It is a
+          localized feature <em>of</em> the fluid's own configuration. For the
+          throat-like defects that matter most later, the clean picture is a
+          mouth in the surface: flow can enter it, and the full structure can
+          extend into a direction a surface-bound observer cannot directly see.
         </TPBody>
 
         <DefectDiagramPlain />
       </TPSection>
 
-      <TPSection anchor="types" eyebrow="the family" heading="Three kinds of stubborn">
+      <TPSection anchor="types" eyebrow="representations" heading="Three views of the same defect">
         <TPBody>
-          Defects come in families, distinguished by how they're stuck. The
-          ones the Fluid Spacetime program cares about most share a property:
-          they're <em>localized</em> — you can point at them, and everything
-          outside is smooth pond.
+          The next few pages use several pictures for the same basic object.
+          That does not mean there are three unrelated defects. It means the
+          same throat-like defect can be represented at different levels of
+          detail, depending on what question we are asking.
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16, margin: "24px 0 12px", maxWidth: 820 }}>
           {[
-            { k: "A point", v: "A single spot where the fluid is forced to do something it can't. Like a single tight knot on a smooth thread." },
-            { k: "A line",  v: "A line-shaped defect the fluid has to flow around. A whirlpool's axis, extended." },
-            { k: "A mouth", v: "An opening. The pond surface bends inward, making a kind of tunnel. We'll meet these as throats." },
+            { k: "Point-like view", v: "From far away, the mouth can be treated as a single location: a compact source, sink, or particle-like marker." },
+            { k: "Mouth view", v: "Closer in, the defect is not just a mathematical point. It has a visible opening where surface flow can enter." },
+            { k: "Throat view", v: "In the full picture, that mouth continues into the hidden direction as a finite structure. This is the throat." },
           ].map((c) => (
             <div key={c.k} style={{
               padding: "22px 22px",
@@ -81,34 +78,35 @@ export default function PlainDefects() {
 
         <TPCallout kind="note">
           A defect isn't something dropped <em>into</em> the pond. It's a
-          configuration <em>of</em> the pond itself — a knot in its own fabric.
-          The pond is both the stage and the actor.
+          configuration <em>of</em> the pond itself — an organized pattern in
+          the fluid's own state. Later, throats make the picture sharper: what
+          we see on the surface can be the visible mouth of a structure that
+          extends into a direction we do not directly inspect.
         </TPCallout>
       </TPSection>
 
-      <TPSection anchor="count" eyebrow="counting" heading="Defects carry a number — and that number never changes">
+      <TPSection anchor="identity" eyebrow="stability" heading="Why a defect can keep its identity">
         <TPBody>
-          Here's the strange and useful thing. Each defect carries an integer
-          label. Call it a <em>winding number</em> for short. You can compute it by
-          walking around the defect in a small loop and keeping track of how
-          many full turns the fluid's state makes while you walk. One full turn?
-          Winding number 1. Two turns? Winding number 2. Zero turns? It wasn't
-          actually a defect.
+          Stable does not mean frozen. The mouth can wobble. The nearby flow
+          can surge. The throat can ring for a while after something hits it.
+          But small disturbances are treated more like elastic deformations
+          than permanent damage: the defect can shed the extra energy and settle
+          back toward its ordinary state.
         </TPBody>
         <TPBody>
-          The key point: this number can't change continuously. It's a
-          count, and counts jump in whole units or not at all. So as long as
-          the pond evolves smoothly, a defect with winding number 1 stays at
-          winding number 1. It can't sneakily become zero. It can move. It can
-          meet another defect and annihilate. But it can't vanish alone.
+          The important part is that the basic identity of the defect is not a
+          sliding scale. A mouth does not gradually become half an opposite
+          mouth just because the surrounding flow gets messy. More water can
+          enter. Less water can enter. The pattern can vibrate. But the opening
+          remains the same kind of opening.
         </TPBody>
         <TPBody>
-          This is what makes defects <em>stable</em>. Not because they're made
-          of sturdy stuff, but because their <em>bookkeeping</em> doesn't allow
-          them to disappear. In the Fluid Spacetime picture, this is part of
-          the candidate explanation for why matter persists — why an
-          electron-like object could keep the same identity over time. It
-          isn't a little marble; it is a protected pattern.
+          To actually change that identity, the model needs a bigger event:
+          meeting a compatible opposite defect, leaving through a boundary, or
+          changing the topology of the opening. That is what this site means
+          when it says the defect is <em>protected</em>. In the Fluid Spacetime
+          picture, this is part of the candidate explanation for why a
+          particle-like object could keep the same identity over time.
         </TPBody>
       </TPSection>
 
@@ -118,17 +116,21 @@ export default function PlainDefects() {
         heading="The proposal: stable particle-like objects are defects"
       >
         <TPBody>
-          That's the proposal. Some particle labels are topological branch data,
-          but the current ontology keeps the labels separate: electric charge
-          sign is tied to puncture orientation, while circulation belongs to the
-          magnetic or vortical sector. What we call the <em>identity</em> of a
-          particle-like object — the part that survives ordinary interactions —
-          is, in this story, the geometric stubbornness of the underlying
-          pattern.
+          That's the proposal. A particle-like object is not treated as a tiny
+          bead sitting in the fluid. It is treated as a stable defect of the
+          fluid itself: a throat-like pattern that can move around while keeping
+          the same basic identity.
         </TPBody>
         <TPBody>
-          That is a bold claim, and we haven't earned it yet. The rest of Part I
-          builds the pieces needed to make it precise: a hidden direction the
+          Different physical labels then come from different features of that
+          defect. Electric charge sign is tied to the orientation of the
+          puncture or mouth. Magnetic behavior is tied to circulation around the
+          defect. Those are related parts of the same object, but they are not
+          the same feature.
+        </TPBody>
+        <TPBody>
+          That is a bold claim, and we haven't earned it yet. The rest of Part
+          I builds the pieces needed to make it precise: a hidden direction the
           defects can extend into, and a specific kind of defect — the
           <em> throat</em> — that lets the whole picture hang together.
         </TPBody>
@@ -137,7 +139,7 @@ export default function PlainDefects() {
   );
 }
 
-// ─── diagram: a smooth pond vs. a pinched-up one ────────────────
+// ─── diagram: ordinary flow vs. a mouth-like defect ────────────────
 function DefectDiagramPlain() {
   return (
     <figure style={{
@@ -149,7 +151,7 @@ function DefectDiagramPlain() {
     }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 14 }}>
         <span className="fu-mono fu-small" style={{ color: "var(--accent)", letterSpacing: "0.12em", textTransform: "uppercase", fontSize: 10.5 }}>
-          plate 02 · smooth vs. stubborn
+          plate 02 · ordinary flow vs. defect
         </span>
         <span className="fu-mono fu-small" style={{ color: "var(--ink-4)", fontSize: 10.5 }}>
           metaphor · plain english
@@ -158,21 +160,26 @@ function DefectDiagramPlain() {
 
       <svg viewBox="0 0 720 240" width="100%" style={{ display: "block" }}>
         <defs>
-          <radialGradient id="dp-knot" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#e67ac6" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#e67ac6" stopOpacity="0" />
+          <radialGradient id="dp-defect" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#050815" stopOpacity="1" />
+            <stop offset="54%" stopColor="#111833" stopOpacity="0.98" />
+            <stop offset="100%" stopColor="#7aa2ff" stopOpacity="0" />
+          </radialGradient>
+          <radialGradient id="dp-mouth-glow" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stopColor="#7aa2ff" stopOpacity="0.35" />
+            <stop offset="100%" stopColor="#7aa2ff" stopOpacity="0" />
           </radialGradient>
         </defs>
 
         {/* LEFT — smooth field */}
         <g transform="translate(16,16)">
           <rect x="0" y="0" width="320" height="200" fill="none" stroke="#2a3160" strokeDasharray="3 3" />
-          <text x="10" y="18" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">smooth pond — no defect</text>
+          <text x="10" y="18" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">ordinary flow — no defect</text>
           {/* tidy grid of arrows all pointing the same way */}
           {Array.from({ length: 6 }).map((_, r) =>
             Array.from({ length: 9 }).map((_, c) => {
-              const x = 24 + c * 32;
-              const y = 44 + r * 26;
+              const x = 32 + c * 32;
+              const y = 47 + r * 26;
               return (
                 <g key={`a-${r}-${c}`} transform={`translate(${x},${y})`}>
                   <line x1="-8" y1="0" x2="8" y2="0" stroke="#7aa2ff" strokeWidth="1.1" />
@@ -183,43 +190,46 @@ function DefectDiagramPlain() {
           )}
         </g>
 
-        {/* RIGHT — knotted field */}
+        {/* RIGHT — mouth-like defect */}
         <g transform="translate(384,16)">
           <rect x="0" y="0" width="320" height="200" fill="none" stroke="#2a3160" strokeDasharray="3 3" />
-          <text x="10" y="18" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">a knot — winding number 1</text>
-          {/* arrows circulating around a center; can't be combed flat */}
+          <text x="10" y="18" fill="#6d749a" fontFamily="JetBrains Mono, monospace" fontSize="10">mouth-like defect — no circulation shown</text>
+          {/* arrows flow inward toward the mouth; circulation is a separate label */}
           {Array.from({ length: 6 }).map((_, r) =>
             Array.from({ length: 9 }).map((_, c) => {
-              const x = 24 + c * 32;
-              const y = 44 + r * 26;
+              const x = 32 + c * 32;
+              const y = 47 + r * 26;
               const dx = x - 160;
               const dy = y - 112;
-              const a = Math.atan2(dy, dx) + Math.PI / 2; // tangential
-              const ux = Math.cos(a);
-              const uy = Math.sin(a);
+              const dist = Math.hypot(dx, dy);
+              if (dist < 22) return null;
+              const a = Math.atan2(-dy, -dx);
+              const opacity = Math.max(0.4, 1 - dist / 170);
               return (
                 <g key={`b-${r}-${c}`} transform={`translate(${x},${y}) rotate(${(a * 180) / Math.PI})`}>
-                  <line x1="-8" y1="0" x2="8" y2="0" stroke="#e67ac6" strokeWidth="1.1" opacity="0.85" />
-                  <path d="M8 0 L4 -3 M8 0 L4 3" stroke="#e67ac6" strokeWidth="1.1" fill="none" opacity="0.85" />
+                  <line x1="-8" y1="0" x2="8" y2="0" stroke="#7aa2ff" strokeWidth="1.2" opacity={opacity} />
+                  <path d="M8 0 L4 -3 M8 0 L4 3" stroke="#7aa2ff" strokeWidth="1.2" fill="none" opacity={opacity} />
                 </g>
               );
             })
           )}
-          {/* center glow */}
-          <circle cx="160" cy="112" r="26" fill="url(#dp-knot)" />
-          <circle cx="160" cy="112" r="3" fill="#f0c26b" />
+          {/* mouth */}
+          <circle cx="160" cy="112" r="46" fill="url(#dp-mouth-glow)" />
+          <circle cx="160" cy="112" r="22" fill="url(#dp-defect)" stroke="#7aa2ff" strokeWidth="1.4" opacity="0.95" />
+          <circle cx="160" cy="112" r="9" fill="#050815" stroke="#e4e7f5" strokeWidth="0.8" opacity="0.95" />
           {/* annotation */}
-          <line x1="160" y1="112" x2="244" y2="50" stroke="#e4e7f5" strokeWidth="0.6" opacity="0.6" strokeDasharray="2 2" />
-          <text x="248" y="48" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11">
-            the stuck spot
+          <line x1="160" y1="112" x2="242" y2="52" stroke="#e4e7f5" strokeWidth="0.6" opacity="0.6" strokeDasharray="2 2" />
+          <text x="246" y="50" fill="#e4e7f5" fontFamily="Newsreader, serif" fontStyle="italic" fontSize="11">
+            the mouth
           </text>
         </g>
       </svg>
 
       <figcaption className="fu-small" style={{ color: "var(--ink-3)", marginTop: 14, lineHeight: 1.55, maxWidth: 660 }}>
-        Left: a smooth configuration — every arrow aligned. You can smooth it flat.
-        Right: the arrows circle a central point. No amount of local tidying unwinds them.
-        The center <em>has to be</em> special. That's a defect.
+        Left: ordinary flow, with no localized core. Right: a mouth-like
+        defect, where flow is organized around a special place. Circulation can
+        be added later, but it is a separate magnetic/vortical feature, not the
+        thing that makes every defect a defect.
       </figcaption>
     </figure>
   );
