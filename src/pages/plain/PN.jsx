@@ -116,23 +116,22 @@ export default function PlainPN() {
 
       <TPSection anchor="normalization" eyebrow="the one shared gap" heading="2.5PN and 4PN are waiting on the same thing">
         <TPBody>
-          This is the main correction to the older site wording. The open issue
-          is not “some extra 4PN propagator tweak.” The 4PN paper says the local
-          conservative block is already assembled inside the hierarchy. What
-          remains open is the same passive/outgoing quadrupole normalization
-          already isolated by the 2.5PN radiation problem.
+          The remaining gap is narrower than it may sound. The notes already
+          assemble the local 4PN conservative part inside the hierarchy. What
+          still has to be shown is that a moving throat sends away radiation
+          with the right quadrupole strength. That same missing result controls
+          both the 2.5PN radiation step and the open 4PN tail step.
         </TPBody>
         <TPBody>
-          In plain language: if the moving-throat branch produces the right
-          outgoing quadrupole normalization, then 2.5PN and 4PN close together.
-          If it does not, both miss together. That is why topic 11 matters so
-          much.
+          Put plainly: 2.5PN and the open part of 4PN stand or fall together.
+          They are not two unrelated gaps. They are waiting on the same
+          moving-throat radiation calculation.
         </TPBody>
 
         <TPCallout kind="note">
-          <strong style={{ color: "var(--ink-1)" }}>Stance.</strong> The site
-          should describe 2.5PN and 4PN as <em>conditional on one shared branch
-          datum</em>, not as two unrelated unfinished calculations.
+          <strong style={{ color: "var(--ink-1)" }}>Status.</strong> Treat
+          2.5PN and the open part of 4PN as conditional on one shared
+          moving-throat radiation result, not as separate unfinished problems.
         </TPCallout>
       </TPSection>
 
