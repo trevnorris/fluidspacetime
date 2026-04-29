@@ -83,6 +83,32 @@ export default function PlainThroats() {
         </TPCallout>
       </TPSection>
 
+      <TPSection anchor="support" eyebrow="support" heading="What keeps a throat open">
+        <TPBody>
+          A throat is not just an empty hole that stays open for free. It needs
+          support.
+        </TPBody>
+        <TPBody>
+          In this ontology, one support channel is trapped light-sector energy:
+          a standing photon pattern in or near the throat. That stored energy
+          can press on the throat structure and help keep the opening stable.
+          The inflow and through-flow of the fluid can also contribute support.
+          If the support energy leaves or the flow balance fails, the throat
+          can relax and close.
+        </TPBody>
+        <TPBody>
+          This is why later pages treat particles as maintained structures, not
+          as tiny permanent beads. A particle-like throat is an open
+          configuration of the medium with internal support, intake behavior,
+          puncture orientation, and possible circulation.
+        </TPBody>
+        <TPCallout kind="note">
+          The support picture is part of the moving-throat program. The site
+          uses it as the ontology for what a particle-like throat is, while the
+          fully quantitative moving-throat solution remains open work.
+        </TPCallout>
+      </TPSection>
+
       <TPSection
         anchor="does"
         eyebrow="what a throat does"
