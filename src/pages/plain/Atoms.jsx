@@ -18,16 +18,16 @@ export default function PlainAtoms() {
         <TPTitle>
           An atom is a{" "}
           <em style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", color: "#e67ac6" }}>standing wave</em> of the pond —
-          pinned by a throat, rung by the gauge field
+          anchored by a charged throat and shaped by electric pull
         </TPTitle>
         <TPLede>
-          Three things meet in an atom: a charged throat, a cloud of
-          standing-wave matter around it, and the gauge field that binds the
-          whole pattern together. The honest current status is that the program
-          has a clear reduced Coulomb-limit story for the Bohr scale and
-          binding scale, plus a narrowed anomaly bookkeeping story. What it
-          should not do is present the full hydrogen spectrum or the electron
-          anomaly as already re-derived exactly from the finished stack.
+          Three things meet in an atom: a charged throat, standing-wave matter
+          around it, and the electric pull that holds the whole pattern
+          together. The current research supports a limited but important
+          claim: in the atom-like limit, the model recovers the familiar Bohr
+          scale and binding scale. That is a first atomic result, not yet a
+          complete precision account of every hydrogen spectral line or the
+          electron's small magnetic anomaly.
         </TPLede>
       </section>
 
@@ -56,9 +56,9 @@ export default function PlainAtoms() {
           Coulomb limit, the reduced action produces the familiar Bohr radius
           and binding scale as an energy minimum. The repo also isolates
           correction channels from finite localization, finite throat response,
-          and inherited GNLS stiffness. But the site should stop saying the
-          whole spectrum has already been reproduced exactly and without
-          qualification.
+          and inherited GNLS stiffness. The full hydrogen spectrum is still
+          open work; the result here is the reduced Bohr-scale result, not
+          every spectral line.
         </TPBody>
         <TPBody>
           That does not mean the atomic story is empty. It means the landed
@@ -67,19 +67,20 @@ export default function PlainAtoms() {
         </TPBody>
       </TPSection>
 
-      <TPSection anchor="g-factor" eyebrow="the electron anomaly" heading="The anomaly story has narrowed, but it is not finished">
+      <TPSection anchor="g-factor" eyebrow="the electron anomaly" heading="The electron's small magnetic mismatch has narrowed, but it is not finished">
         <TPBody>
-          The idea is still the same: the electron is not truly pointlike in the
-          fluid picture, so its magnetic response should differ slightly from the
-          point-particle answer. The site's older wording jumped too quickly
-          from that idea to a finished leading-order result.
+          In ordinary measurements, the electron's magnetism is almost exactly
+          what the simplest point-particle model predicts, but not quite. That
+          tiny mismatch is called the electron anomaly. In this framework, an
+          electron-like throat is not a mathematical point, so its magnetic
+          response can carry a small correction from the structure of the throat
+          itself.
         </TPBody>
         <TPBody>
-          What the current package really says is subtler: most of the anomaly
-          bookkeeping has collapsed to one narrow microscopic branch-selection
-          datum. That's progress, but it is not the same thing as saying the
-          measured electron anomaly has already been derived here once and for
-          all.
+          The current work has narrowed that correction to one remaining
+          microscopic choice about how the electron's throat connects through
+          the hidden direction. That is meaningful progress, but it is not yet a
+          completed derivation of the measured electron anomaly.
         </TPBody>
 
         <div style={{
@@ -94,10 +95,11 @@ export default function PlainAtoms() {
             the program's honest claim
           </div>
           <div className="fu-body" style={{ fontSize: 16.5, color: "var(--ink-1)", lineHeight: 1.65 }}>
-            The anomaly looks increasingly like a geometric / outgoing branch
-            problem rather than a wide-open fit problem. But one final branch
-            datum is still open, so the site should describe the result as an
-            in-progress target, not as a closed derivation.
+            The anomaly no longer looks like a wide-open fitting problem. In
+            the current notes, most of the structure has been accounted for,
+            leaving one remaining branch choice inside the throat model. Until
+            that choice is derived, the anomaly stays an in-progress target
+            rather than a closed prediction.
           </div>
         </div>
       </TPSection>
