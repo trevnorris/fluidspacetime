@@ -27,8 +27,8 @@ export default function PlainThroats() {
           object around which the rest of the program is organized: the
           <em> throat</em>. A throat is the defect shape that does the work of
           representing a particle-like branch — and lets gravity and
-          electromagnetism be organized as two brane-readable channels of the
-          same finite bulk object.
+          electromagnetism be organized as distinct brane-readable channels of
+          the same finite bulk object.
         </TPLede>
       </section>
 
@@ -86,13 +86,13 @@ export default function PlainThroats() {
       <TPSection
         anchor="does"
         eyebrow="what a throat does"
-        heading="One object, two behaviours — and both of them matter"
+        heading="One object, three readable channels"
       >
         <TPBody>
-          Here's the reason throats are the star of the show. A throat carries
-          more than one kind of brane-readable data along the hidden direction,
-          and our 3D experience reads those channels as different long-range
-          interactions.
+          Here's the reason throats are the star of the show. The same finite
+          opening can act as an inflow sink, carry a puncture orientation, and
+          support circulation. The site treats those as distinct channels
+          because later pages use them differently.
         </TPBody>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, margin: "18px 0 14px", maxWidth: 820 }}>
@@ -103,10 +103,10 @@ export default function PlainThroats() {
             background: "linear-gradient(160deg, rgba(122,162,255,0.08), rgba(16,20,42,0.5))",
           }}>
             <div className="fu-mono fu-small" style={{ color: "#7aa2ff", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
-              behaviour a
+              channel a
             </div>
             <div className="fu-display" style={{ fontSize: 20, color: "var(--ink-1)", fontWeight: 400, marginBottom: 10 }}>
-              Drinks fluid
+              Inflow
             </div>
             <div className="fu-small" style={{ color: "var(--ink-2)", lineHeight: 1.65 }}>
               Fluid flows into the throat along the hidden direction. The brane
@@ -122,10 +122,10 @@ export default function PlainThroats() {
             background: "linear-gradient(160deg, rgba(230,122,198,0.08), rgba(16,20,42,0.5))",
           }}>
             <div className="fu-mono fu-small" style={{ color: "#e67ac6", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
-              behaviour b
+              channel b
             </div>
             <div className="fu-display" style={{ fontSize: 20, color: "var(--ink-1)", fontWeight: 400, marginBottom: 10 }}>
-              Punctures
+              Puncture orientation
             </div>
             <div className="fu-small" style={{ color: "var(--ink-2)", lineHeight: 1.65 }}>
               The throat opens through the brane into one side of the
@@ -136,13 +136,33 @@ export default function PlainThroats() {
               signs.
             </div>
           </div>
+
+          <div style={{
+            padding: "24px 26px",
+            border: "1px solid #b88bff44",
+            borderRadius: 3,
+            background: "linear-gradient(160deg, rgba(184,139,255,0.08), rgba(16,20,42,0.5))",
+          }}>
+            <div className="fu-mono fu-small" style={{ color: "#b88bff", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 8, fontSize: 10.5 }}>
+              channel c
+            </div>
+            <div className="fu-display" style={{ fontSize: 20, color: "var(--ink-1)", fontWeight: 400, marginBottom: 10 }}>
+              Circulation
+            </div>
+            <div className="fu-small" style={{ color: "var(--ink-2)", lineHeight: 1.65 }}>
+              The fluid can also swirl around or through the throat. That
+              vortical channel belongs to <strong style={{ color: "var(--ink-1)" }}>magnetism</strong>,
+              not to the electric-charge sign and not to the gravity inflow
+              channel.
+            </div>
+          </div>
         </div>
 
         <TPBody>
-          This is the punchline of Part I: gravity and electromagnetism are not
-          introduced here as unrelated primitives. They are modeled as different
-          geometric or field-theoretic channels of a single kind of object — a
-          throat — along a direction we can't see.
+          This is the punchline of Part I: gravity, electric charge, and
+          magnetism are not introduced here as unrelated primitives. They are
+          modeled as different geometric or field-theoretic channels of a
+          single kind of object — a throat — along a direction we can't see.
         </TPBody>
       </TPSection>
 
