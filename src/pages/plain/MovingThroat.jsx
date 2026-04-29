@@ -45,11 +45,11 @@ export default function PlainMovingThroat() {
         <TPBody>
           In every previous chapter, we treated <em>R</em> as approximately
           constant — the throat's walls are smooth, static, and rigid enough
-          that we can ignore their dynamics. The moving-throat framework is
-          what you get when you <em>stop</em> making that approximation. It is
-          a partial differential equation, or effective wall closure, for the
-          full shape function, with the pond's matter and gauge equations
-          providing the forcing once the wall data are specified.
+          that we can ignore their dynamics. The moving-throat PDE is what you
+          get when you <em>stop</em> making that approximation. Here, PDE means
+          partial differential equation: a rule for how something changes
+          across space and time. In this case, the "something" is the shape of
+          the throat wall.
         </TPBody>
 
         <TPCallout kind="note">
@@ -84,7 +84,7 @@ export default function PlainMovingThroat() {
             },
             {
               k: "Topology change",
-              v: "Throats can merge, split, or pinch off. A PDE on a fixed topology doesn't handle those transitions directly; extra work is needed at the moments of change.",
+              v: "Throats can merge, split, or pinch off. A partial differential equation written for one continuous throat shape does not automatically know what to do when that shape joins, tears, or disappears; those moments need extra rules.",
             },
           ].map((c) => (
             <div key={c.k} style={{
@@ -103,9 +103,8 @@ export default function PlainMovingThroat() {
 
       <TPSection anchor="what-closes" eyebrow="what it closes" heading="Many open items pass through the same gate">
         <TPBody>
-          Here's why this chapter matters out of proportion to its length.
-          Many <em>open</em> entries from earlier in the program point back at
-          the same moving-throat branch problem:
+          This short chapter carries a lot of weight. Several open questions
+          from earlier pages all point back to the same moving-throat problem:
         </TPBody>
 
         <div style={{ margin: "20px 0", display: "flex", flexDirection: "column", gap: 8 }}>
@@ -159,15 +158,14 @@ export default function PlainMovingThroat() {
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Rigid-body limit</strong> —
             the throat translates as a whole without changing shape. This is
-            the collective-motion regime behind the lower-order bridge and PN
-            bookkeeping, and behind the effective metric and gauge-field
-            language used earlier on the site.
+            the whole-throat motion limit behind the lower-order gravity
+            bookkeeping and the earlier electric/magnetic approximations.
           </li>
           <li>
             <strong style={{ color: "var(--ink-1)" }}>Linearized perturbation</strong> —
             small deviations from a stationary throat. This gives the first
-            wall/support/gauge response problem and the first observables the
-            PDE framework asks a realized branch to return.
+            small-wobble problem for how the throat wall, its support, and the
+            surrounding field respond together.
           </li>
         </ul>
 
