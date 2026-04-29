@@ -1,5 +1,6 @@
 import React from 'react';
 import { TopicPage, TPTitle, TPLede, TPSection, TPBody, TPCallout } from '../../components/TopicPage.jsx';
+import { MagnetismCirculationSim } from '../../components/MagnetismCirculationSim.jsx';
 
 // Part II · Topic 06 — Electromagnetism: Charge & Circulation — PLAIN ENGLISH
 
@@ -82,6 +83,38 @@ export default function PlainEM() {
           observable coupling scales with localization thickness in a specific
           way.
         </TPBody>
+      </TPSection>
+
+      <TPSection anchor="circulation" eyebrow="magnetic circulation" heading="Magnetism is the swirl channel, not the puncture sign.">
+        <TPBody>
+          The magnetic side of the story is different from electric charge.
+          Electric charge is the throat's orientation along the hidden
+          direction. Magnetic circulation is fluid motion <em>around</em> the
+          throat on the brane. The schematic below treats the picture as a
+          top-down view of two side-by-side circulating defects, not as a pair
+          of magnetic monopoles. Fluxoid winding alone does not set a
+          universal pair force, but under the passive current-like mixed
+          closure with positive plumbing sign, same top-down circulation
+          corresponds to parallel side-by-side dipoles and repels. Opposite
+          top-down circulation attracts in that same conditional branch. The
+          tracers also drift slowly inward so the objects read as throat
+          defects taking in the superfluid, not as passive markers.
+        </TPBody>
+
+        <MagnetismCirculationSim />
+
+        <TPCallout kind="note">
+          <strong style={{ color: "var(--ink-1)" }}>What this is allowed to
+          mean:</strong> this is a conditional magnetism-like force picture,
+          not a fluxoid-only theorem, not a full MHD solver, and not the
+          gravity inflow animation from topic 05. The small inward drift is
+          only a throat-intake cue; the attraction/repulsion arrows come from
+          the conditional circulation/current closure. The swirl toggle is not
+          an electric charge switch. Electric charge sign remains the separate
+          puncture-orientation branch. The remaining PDE-side work is deriving
+          the plumbing coefficient sign from the full mixed moving-throat
+          branch.
+        </TPCallout>
       </TPSection>
 
       <TPSection anchor="maxwell" eyebrow="from bulk gauge rules to Maxwell" heading="When Maxwell's equations appear.">
